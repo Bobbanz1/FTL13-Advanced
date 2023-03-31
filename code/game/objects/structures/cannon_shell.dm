@@ -1,0 +1,131 @@
+/obj/structure/shell
+	name = "cannon shell (High Explosive)"
+	desc = "A large shell designed to deliver a high-yield warhead upon high-speed impact with solid objects."
+	icon = 'icons/obj/stationobjs.dmi'
+	icon_state = "torpedo"
+	density = 1
+	layer = 3.2
+
+	var/projectile = /obj/item/projectile/ship_projectile/mac_round
+	var/casing = /obj/item/weapon/twohanded/required/shell_casing
+
+	var/datum/ship_attack/attack_data = new /datum/ship_attack/ballistic
+
+	var/armed = 0
+
+//This will allow you to set the explosion values for if the shell is ejected from the cannon while armed. See \code\datums\explosion.dm as a reference
+	var/dev_dmg = 2
+	var/heavy_dmg = 5
+	var/light_dmg = 10
+
+/obj/structure/shell/attackby(obj/item/C,mob/user)
+	if(istype(C,/obj/item/device/multitool))
+		playsound(loc,'sound/weapons/empty.ogg',50,0)
+		user.visible_message("<span class=notice>[user] toggles the arming mechanism on [src].</span>","<span class=notice>You toggle the arming mechanism on [src]</span>")
+		toggle_arm()
+
+/obj/structure/shell/proc/toggle_arm()
+	armed = !armed
+
+	update_state()
+
+/obj/structure/shell/proc/update_state()
+	if(armed) icon_state = "[icon_state]_armed"
+	else icon_state = initial(icon_state)
+
+/obj/structure/shell/Collide(atom/A)
+	if((A))
+		if(throwing && armed)
+			explosion(get_turf(src), dev_dmg, heavy_dmg, light_dmg)
+			throwing = null
+
+/obj/item/weapon/twohanded/required/shell_casing
+	name = "cannon shell casing"
+	desc = "The ejected casing from a cannon shell. Not very useful."
+	icon = 'icons/obj/stationobjs.dmi' //for simplicity
+	icon_state = "casing"
+	item_state = "casing"
+
+	w_class = 4
+
+	force = 10
+	throwforce = 80
+
+	force_unwielded = 10
+	force_wielded = 10
+
+
+/obj/item/weapon/twohanded/required/shell_casing/New()
+	..()
+	pixel_x = rand(-5,15)
+	pixel_y = rand(-15,15)
+
+/obj/item/weapon/twohanded/required/shell_casing/Bump()
+	..()
+	throwforce = 10 //wow this is hacky, makes the shell only do 80 damage when ejected
+
+/obj/structure/shell/shield_piercing
+	name = "cannon shell (Shield Piercing)"
+	desc = "A large shell containing bluespace disrupter technology that is designed to phase through shields. Delivers a low-yield warhead upon impact."
+	icon_state = "torpedo_sp"
+
+	casing = /obj/item/weapon/twohanded/required/shell_casing/shield_piercing
+
+	attack_data = new /datum/ship_attack/shield_penetrator
+
+	dev_dmg = 1
+	heavy_dmg = 2
+	light_dmg = 6
+
+/obj/structure/shell/smart_homing
+	name = "cannon shell (Smart Homing)"
+	desc = "A large shell designed with maneuvering jets and a targeting computer integrated into the sabot to allow for course corrections during flight. Delivers a medium-yield warhead upon impact."
+	icon_state = "torpedo_sh"
+
+	casing = /obj/item/weapon/twohanded/required/shell_casing/smart_homing
+
+	attack_data = new /datum/ship_attack/homing
+
+	dev_dmg = 2
+	heavy_dmg = 3
+	light_dmg = 6
+
+/obj/structure/shell/planet_killer
+	name = "ARMAGEDDON SHELL (Planet-Killer)"
+	desc = "The ARMAGEDDON SHELL is considered a planet killer type shell, it only reacts when within the atmosphere of a planet and is useless for ship to ship combat"
+	icon_state = "torpedo_pk"
+
+	casing = /obj/item/weapon/twohanded/required/shell_casing/planet_killer
+
+	attack_data = new /datum/ship_attack/planet_killer
+
+	//Minimal damage to the ship while still destroying itself
+	dev_dmg = 1
+	heavy_dmg = 1
+	light_dmg = 1
+
+/obj/structure/shell/cannon_ball
+	name = "cannon-ball"
+	desc = "the Donk.Co branded cannon-ball is a favored type of ammunition among brigands and criminals alike, adapted from a primitive design the Donk. Co Cannonball is a surprisingly advanced form of ammunition that is relatively easy to make"
+	icon_state = "torpedo_ball"
+
+	casing = /obj/item/weapon/twohanded/required/shell_casing/cannon_ball
+
+	attack_data = new /datum/ship_attack/cannon_ball
+
+	//It's a cannon ball, it shouldn't exploded. It'll still make an explosion sound when it hits the wall to startle the operator
+	dev_dmg = 0
+	heavy_dmg = 0
+	light_dmg = 0
+
+/obj/item/weapon/twohanded/required/shell_casing/shield_piercing
+	icon_state = "sp_casing"
+
+/obj/item/weapon/twohanded/required/shell_casing/smart_homing
+	icon_state = "sh_casing"
+
+/obj/item/weapon/twohanded/required/shell_casing/planet_killer
+	icon_state = "pk_casing"
+
+/obj/item/weapon/twohanded/required/shell_casing/cannon_ball
+	icon_state = "ball_casing"
