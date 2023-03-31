@@ -12,7 +12,7 @@
 			completed_objectives++
 			priority_announce("Ship objective [O.completed?"completed":"failed"].", null, null)
 			generate_ship_objective(TRUE)
-	if(go_home && completed_objectives >= config.mandatory_objectives && !locate(/datum/objective/ftl/gohome) in get_ship_objectives())
+	if(go_home && completed_objectives >= CONFIG_GET(number/mandatory_objectives) && !locate(/datum/objective/ftl/gohome) in get_ship_objectives())
 		priority_announce("Mandatory expedition time exceeded. Feel free to come home if you so wish.", null, null)
 		add_ship_objective(new /datum/objective/ftl/gohome, TRUE)
 

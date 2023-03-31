@@ -2,7 +2,7 @@
 
 /obj/effect/baseturf_helper
 	name = "lava baseturf editor"
-	icon = 'icons/obj/weapons.dmi'
+	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "syndballoon"
 	var/baseturf = /turf/open/lava/smooth/lava_land_surface
 	layer = POINT_LAYER

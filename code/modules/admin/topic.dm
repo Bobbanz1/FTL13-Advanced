@@ -309,12 +309,12 @@
 		if(!check_rights(R_ADMIN))
 			return
 
-		if(!config.continuous[SSticker.mode.config_tag])
-			config.continuous[SSticker.mode.config_tag] = 1
+		if(!CONFIG_GET(keyed_flag_list/continuous)[SSticker.mode.config_tag])
+			CONFIG_GET(keyed_flag_list/continuous)[SSticker.mode.config_tag] = 1
 		else
-			config.continuous[SSticker.mode.config_tag] = 0
+			CONFIG_GET(keyed_flag_list/continuous)[SSticker.mode.config_tag] = 0
 
-		message_admins("<span class='adminnotice'>[key_name_admin(usr)] toggled the round to [config.continuous[SSticker.mode.config_tag] ? "continue if all antagonists die" : "end with the antagonists"].</span>")
+		message_admins("<span class='adminnotice'>[key_name_admin(usr)] toggled the round to [CONFIG_GET(keyed_flag_list/continuous)[SSticker.mode.config_tag] ? "continue if all antagonists die" : "end with the antagonists"].</span>")
 		check_antagonists()
 
 	else if(href_list["toggle_midround_antag"])

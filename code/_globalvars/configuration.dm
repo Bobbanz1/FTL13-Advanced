@@ -1,4 +1,4 @@
-GLOBAL_REAL(config, /datum/configuration)
+GLOBAL_REAL(config, /datum/controller/configuration)
 
 GLOBAL_DATUM_INIT(revdata, /datum/getrev, new)
 
@@ -11,9 +11,7 @@ GLOBAL_VAR_INIT(hub_visibility, FALSE)
 
 GLOBAL_VAR_INIT(ooc_allowed, TRUE)	// used with admin verbs to disable ooc - not a config option apparently
 GLOBAL_VAR_INIT(dooc_allowed, TRUE)
-GLOBAL_VAR_INIT(abandon_allowed, TRUE)
 GLOBAL_VAR_INIT(enter_allowed, TRUE)
-GLOBAL_VAR_INIT(guests_allowed, TRUE)
 GLOBAL_VAR_INIT(shuttle_frozen, FALSE)
 GLOBAL_VAR_INIT(shuttle_left, FALSE)
 GLOBAL_VAR_INIT(tinted_weldhelh, TRUE)
@@ -29,11 +27,16 @@ GLOBAL_VAR_INIT(cross_address, "byond://") //This needs to be global as the mess
 GLOBAL_VAR_INIT(cross_allowed, 0) //Don't bother attempting to send if the address wasn't set.
 
 //This was a define, but I changed it to a variable so it can be changed in-game.(kept the all-caps definition because... code...) -Errorage
+//Protecting these because the proper way to edit them is with the config/secrets
 GLOBAL_VAR_INIT(MAX_EX_DEVESTATION_RANGE, 3)
+GLOBAL_PROTECT(MAX_EX_DEVESTATION_RANGE)
 GLOBAL_VAR_INIT(MAX_EX_HEAVY_RANGE, 7)
+GLOBAL_PROTECT(MAX_EX_HEAVY_RANGE)
 GLOBAL_VAR_INIT(MAX_EX_LIGHT_RANGE, 14)
+GLOBAL_PROTECT(MAX_EX_LIGHT_RANGE)
 GLOBAL_VAR_INIT(MAX_EX_FLASH_RANGE, 14)
+GLOBAL_PROTECT(MAX_EX_FLASH_RANGE)
 GLOBAL_VAR_INIT(MAX_EX_FLAME_RANGE, 14)
+GLOBAL_PROTECT(MAX_EX_FLAME_RANGE)
 GLOBAL_VAR_INIT(DYN_EX_SCALE, 0.5)
-
 

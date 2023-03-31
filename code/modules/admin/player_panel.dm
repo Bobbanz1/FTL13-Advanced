@@ -329,8 +329,8 @@
 			else
 				dat += "ETA: <a href='?_src_=holder;edit_shuttle_time=1'>[(timeleft / 60) % 60]:[add_zero(num2text(timeleft % 60), 2)]</a><BR>"
 		dat += "<B>Continuous Round Status</B><BR>"
-		dat += "<a href='?_src_=holder;toggle_continuous=1'>[config.continuous[SSticker.mode.config_tag] ? "Continue if antagonists die" : "End on antagonist death"]</a>"
-		if(config.continuous[SSticker.mode.config_tag])
+		dat += "<a href='?_src_=holder;toggle_continuous=1'>[CONFIG_GET(keyed_flag_list/continuous)[SSticker.mode.config_tag] ? "Continue if antagonists die" : "End on antagonist death"]</a>"
+		if(CONFIG_GET(keyed_flag_list/continuous)[SSticker.mode.config_tag])
 			dat += ", <a href='?_src_=holder;toggle_midround_antag=1'>[config.midround_antag[SSticker.mode.config_tag] ? "creating replacement antagonists" : "not creating new antagonists"]</a><BR>"
 		else
 			dat += "<BR>"

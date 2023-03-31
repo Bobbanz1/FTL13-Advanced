@@ -134,7 +134,7 @@
 /obj/item/weapon/tapereel
   name = "tape reel"
   desc = "A huge tape reel containing information from a ship. You feel a strong urge to pull the tape out."
-  icon = 'icons/obj/items.dmi'
+  icon = 'icons/obj/items_and_weapons.dmi'
   icon_state = "tape_reel"
   item_state = "tape_reel"
   force = 1

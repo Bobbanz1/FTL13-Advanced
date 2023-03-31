@@ -25,21 +25,14 @@
 	to_chat(world, "<b>Crew</b> - don't get abducted and stop the abductors.")
 
 /datum/game_mode/abduction/pre_setup()
-	abductor_teams = max(1, min(max_teams,round(num_players()/config.abductor_scaling_coeff)))
-	var/possible_teams = max(1,round(antag_candidates.len / 2))
-	abductor_teams = min(abductor_teams,possible_teams)
+	var/num_teams = max(1, min(max_teams, round(num_players() / CONFIG_GET(number/abductor_scaling_coeff))))
+	var/possible_teams = max(1, round(antag_candidates.len / 2))
+	num_teams = min(num_teams, possible_teams)
 
-	abductors.len = 2*abductor_teams
-	scientists.len = abductor_teams
-	agents.len = abductor_teams
-	team_objectives.len = abductor_teams
-	team_names.len = abductor_teams
-
-	for(var/i=1,i<=abductor_teams,i++)
-		if(!make_abductor_team(i))
-			return 0
-
-	return 1
+	for(var/i = 1 to num_teams)
+		if(!make_abductor_team())
+			return FALSE
+	return TRUE
 
 /datum/game_mode/abduction/proc/make_abductor_team(team_number,preset_agent=null,preset_scientist=null)
 	//Team Name

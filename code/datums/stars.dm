@@ -161,7 +161,7 @@
 			if(1 to 50)
 				var/datum/planet_loader/loader = new /datum/planet_loader("lavaland.dmm")
 				loader.has_gravity = 1
-				loader.ruins_args = list(config.lavaland_budget, /area/lavaland/surface/outdoors, SSmapping.lava_ruins_templates)
+				loader.ruins_args = list(CONFIG_GET(number/lavaland_budget), /area/lavaland/surface/outdoors, SSmapping.lava_ruins_templates)
 				map_names += loader
 				planet_z_level = 2
 				planet_type = "Lava Planet"

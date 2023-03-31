@@ -1,7 +1,7 @@
 /obj/item/weapon_chip //PLAYER CUSTOMIZATION FOR WEAPON FRAME
   name = "burst phase cannon chip"
   desc = "I could use this to change the programming of the ship's attack matrix" //lol what does that even mean
-  icon = 'icons/obj/items.dmi'
+  icon = 'icons/obj/items_and_weapons.dmi'
   icon_state = "permit" //PLACEHOLDER
 
   var/weapon_name = "Burst Phaser Cannon"
