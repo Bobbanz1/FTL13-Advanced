@@ -116,7 +116,7 @@ GLOBAL_PROTECT(admin_ranks)
 		return
 	GLOB.admin_ranks.Cut()
 
-	if(config.admin_legacy_system)
+	if(CONFIG_GET(flag/admin_legacy_system))
 		var/previous_rights = 0
 		//load text from file and process each line separately
 		for(var/line in world.file2list("config/admin_ranks.txt"))
@@ -142,7 +142,7 @@ GLOBAL_PROTECT(admin_ranks)
 		if(!SSdbcore.Connect())
 			log_world("Failed to connect to database in load_admin_ranks(). Reverting to legacy system.")
 			GLOB.world_game_log << "Failed to connect to database in load_admin_ranks(). Reverting to legacy system."
-			config.admin_legacy_system = 1
+			CONFIG_SET(flag/admin_legacy_system, TRUE)
 			load_admin_ranks()
 			return
 
@@ -190,7 +190,7 @@ GLOBAL_PROTECT(admin_ranks)
 	for(var/datum/admin_rank/R in GLOB.admin_ranks)
 		rank_names[R.name] = R
 
-	if(config.admin_legacy_system)
+	if(CONFIG_GET(flag/admin_legacy_system))
 		//load text from file
 		var/list/lines = world.file2list("config/admins.txt")
 
@@ -220,7 +220,7 @@ GLOBAL_PROTECT(admin_ranks)
 		if(!SSdbcore.Connect())
 			log_world("Failed to connect to database in load_admins(). Reverting to legacy system.")
 			GLOB.world_game_log << "Failed to connect to database in load_admins(). Reverting to legacy system."
-			config.admin_legacy_system = 1
+			CONFIG_SET(flag/admin_legacy_system, TRUE)
 			load_admins()
 			return
 
