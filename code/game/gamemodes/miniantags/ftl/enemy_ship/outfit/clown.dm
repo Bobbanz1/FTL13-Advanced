@@ -4,12 +4,12 @@
   uniform = /obj/item/clothing/under/rank/clown
   shoes = /obj/item/clothing/shoes/clown_shoes
   gloves = /obj/item/clothing/gloves/color/rainbow/clown
-  back = /obj/item/weapon/storage/backpack/clown
+  back = /obj/item/storage/backpack/clown
 
 /datum/outfit/defender/clown/post_equip(mob/living/carbon/human/H)
   . = ..()
   H.real_name = pick(GLOB.clown_names)
-  var/obj/item/weapon/implant/sad_trombone/S = new/obj/item/weapon/implant/sad_trombone(H)
+  var/obj/item/implant/sad_trombone/S = new/obj/item/implant/sad_trombone(H)
   S.imp_in = H
   H.dna.add_mutation(CLOWNMUT)
   H.rename_self("clown")
@@ -27,26 +27,26 @@
   uniform = /obj/item/clothing/under/rank/clown/sexy
   suit = /obj/item/clothing/suit/space/syndicate/orange
   shoes = /obj/item/clothing/shoes/clown_shoes/banana_shoes
-  back = /obj/item/weapon/storage/backpack/clown
-  suit_store = /obj/item/weapon/gun/energy/tesla_revolver
-  belt = /obj/item/weapon/bikehorn/airhorn
-  backpack_contents = list(/obj/item/weapon/storage/box/syndie=1,\
+  back = /obj/item/storage/backpack/clown
+  suit_store = /obj/item/gun/energy/tesla_revolver
+  belt = /obj/item/bikehorn/airhorn
+  backpack_contents = list(/obj/item/storage/box/syndie=1,\
     /obj/item/clothing/head/helmet/space/syndicate/orange=1,\
-    /obj/item/weapon/tank/jetpack/oxygen/harness=1,\
+    /obj/item/tank/jetpack/oxygen/harness=1,\
     /obj/item/device/firing_pin/clown/ultra=1,\
-    /obj/item/weapon/reagent_containers/food/snacks/grown/banana=1,\
-    /obj/item/weapon/crowbar=1,\
+    /obj/item/reagent_containers/food/snacks/grown/banana=1,\
+    /obj/item/crowbar=1,\
     /obj/item/device/radio=1)
 
 /datum/outfit/defender/command/clown/post_equip(mob/living/carbon/human/H)
   . = ..()
   H.real_name = pick(GLOB.clown_names)
-  var/obj/item/weapon/card/id/I = H.wear_id
+  var/obj/item/card/id/I = H.wear_id
   I.update_label("Lord [H.real_name]", "Clown Noble")
   var/obj/item/device/radio/uplink/U = H.get_item_by_slot(slot_l_store)
   U.hidden_uplink.name = "Honklink!"
   U.hidden_uplink.style = "clown"
-  var/obj/item/weapon/implant/sad_trombone/S = new/obj/item/weapon/implant/sad_trombone(H)
+  var/obj/item/implant/sad_trombone/S = new/obj/item/implant/sad_trombone(H)
   S.imp_in = H
   H.dna.add_mutation(CLOWNMUT)
   H.rename_self("clown")
@@ -60,49 +60,49 @@
 /datum/outfit/defender/clown/knight
   name = "clown ship knight"
   head = /obj/item/clothing/head/helmet/justice/escape
-  belt = /obj/item/weapon/gun/ballistic/automatic/pistol/luger
+  belt = /obj/item/gun/ballistic/automatic/pistol/luger
   suit = /obj/item/clothing/suit/armor/bulletproof
-  backpack_contents = list(/obj/item/weapon/storage/box/syndie=1,\
-    /obj/item/weapon/storage/box/handcuffs=1,\
+  backpack_contents = list(/obj/item/storage/box/syndie=1,\
+    /obj/item/storage/box/handcuffs=1,\
     /obj/item/device/firing_pin/clown/ultra=1,\
     /obj/item/ammo_box/magazine/luger=2,\
-    /obj/item/weapon/crowbar=1,\
+    /obj/item/crowbar=1,\
     /obj/item/device/radio=1)
 
 /datum/outfit/defender/clown/knight/post_equip(mob/living/carbon/human/H)
   . = ..()
-  var/obj/item/weapon/card/id/I = H.wear_id
+  var/obj/item/card/id/I = H.wear_id
   I.update_label("Knight [H.real_name]", "Clown Vassal")
 
 /datum/outfit/defender/clown/builder
   name = "clown ship builder"
   head = /obj/item/clothing/head/welding
-  belt = /obj/item/weapon/storage/belt/utility/full
-  backpack_contents = list(/obj/item/weapon/storage/box/syndie=1,\
+  belt = /obj/item/storage/belt/utility/full
+  backpack_contents = list(/obj/item/storage/box/syndie=1,\
     /obj/item/device/firing_pin/clown/ultra=1,\
-    /obj/item/weapon/storage/box/metalfoam=1,\
-    /obj/item/weapon/crowbar=1,\
+    /obj/item/storage/box/metalfoam=1,\
+    /obj/item/crowbar=1,\
     /obj/item/device/radio=1)
 
 /datum/outfit/defender/clown/builder/post_equip(mob/living/carbon/human/H)
   . = ..()
-  var/obj/item/weapon/card/id/I = H.wear_id
+  var/obj/item/card/id/I = H.wear_id
   I.update_label("[H.real_name] The Builder", "Clown Architect")
 
 /datum/outfit/defender/clown/doc
   name = "clown ship doctor"
   head = /obj/item/clothing/head/nursehat
   glasses = /obj/item/clothing/glasses/hud/health
-  belt = /obj/item/weapon/storage/belt/medical
-  l_hand = /obj/item/weapon/storage/firstaid/regular
-  backpack_contents = list(/obj/item/weapon/storage/box/syndie=1,\
-    /obj/item/weapon/reagent_containers/hypospray/medipen/survival=3,\
-    /obj/item/weapon/crowbar=1,\
-    /obj/item/weapon/storage/firstaid/brute=1,\
-    /obj/item/weapon/storage/firstaid/fire=1,\
+  belt = /obj/item/storage/belt/medical
+  l_hand = /obj/item/storage/firstaid/regular
+  backpack_contents = list(/obj/item/storage/box/syndie=1,\
+    /obj/item/reagent_containers/hypospray/medipen/survival=3,\
+    /obj/item/crowbar=1,\
+    /obj/item/storage/firstaid/brute=1,\
+    /obj/item/storage/firstaid/fire=1,\
     /obj/item/device/radio=1)
 
 /datum/outfit/defender/clown/doc/post_equip(mob/living/carbon/human/H)
   . = ..()
-  var/obj/item/weapon/card/id/I = H.wear_id
+  var/obj/item/card/id/I = H.wear_id
   I.update_label("Doctor [H.real_name]", "Clown Priest")

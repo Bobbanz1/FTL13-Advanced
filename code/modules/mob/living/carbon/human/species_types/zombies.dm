@@ -5,7 +5,7 @@
 	say_mod = "moans"
 	sexes = 0
 	blacklisted = 1
-	meat = /obj/item/weapon/reagent_containers/food/snacks/meat/slab/human/mutant/zombie
+	meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/zombie
 	species_traits = list(NOBREATH,RESISTCOLD,RESISTPRESSURE,NOBLOOD,RADIMMUNE,NOZOMBIE,EASYDISMEMBER,EASYLIMBATTACHMENT)
 	mutant_organs = list(/obj/item/organ/tongue/zombie)
 	disliked_food = NONE
@@ -51,5 +51,5 @@
 	id = "goofzombies"
 	limbs_id = "zombie" //They look like zombies
 	sexes = 0
-	meat = /obj/item/weapon/reagent_containers/food/snacks/meat/slab/human/mutant/zombie
+	meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/zombie
 	mutant_organs = list(/obj/item/organ/tongue/zombie)

@@ -67,7 +67,7 @@
 /area/ship_salvage/component/c_1_2)
 "at" = (
 /obj/structure/table,
-/obj/item/weapon/stock_parts/cell/high/plus,
+/obj/item/stock_parts/cell/high/plus,
 /turf/open/floor/plasteel/brown{
 	dir = 8
 	},
@@ -86,7 +86,7 @@
 /area/ship_salvage/component/c_1_2)
 "aw" = (
 /obj/structure/table,
-/obj/item/weapon/stock_parts/cell/bluespace,
+/obj/item/stock_parts/cell/bluespace,
 /turf/open/floor/plasteel/brown{
 	dir = 4
 	},
@@ -119,7 +119,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/item/weapon/book/manual/detective,
+/obj/item/book/manual/detective,
 /turf/open/floor/plasteel/red,
 /area/ship_salvage/component/c_2_2)
 "aG" = (
@@ -186,7 +186,7 @@
 /turf/open/space,
 /area/ship_salvage/component/c_3_2)
 "aW" = (
-/obj/item/weapon/twohanded/ctf,
+/obj/item/twohanded/ctf,
 /turf/open/floor/plasteel/red/side{
 	dir = 8
 	},
@@ -209,8 +209,8 @@
 /area/ship_salvage/component/c_2_2)
 "bd" = (
 /obj/structure/closet/emcloset,
-/obj/item/weapon/storage/firstaid/fire,
-/obj/item/weapon/storage/firstaid/brute,
+/obj/item/storage/firstaid/fire,
+/obj/item/storage/firstaid/brute,
 /turf/open/floor/plasteel/blue/side{
 	dir = 8
 	},
@@ -218,7 +218,7 @@
 "be" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/sheet/metal/fifty,
-/obj/item/weapon/reagent_containers/spray/pepper,
+/obj/item/reagent_containers/spray/pepper,
 /turf/open/floor/plasteel/red/side{
 	dir = 8
 	},
@@ -258,7 +258,7 @@
 /area/ship_salvage/component/c_2_2)
 "bl" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/storage/toolbox,
+/obj/item/storage/toolbox,
 /turf/open/floor/plasteel/red/side{
 	dir = 8
 	},
@@ -295,7 +295,7 @@
 /area/ship_salvage/component/c_2_2)
 "bt" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/twohanded/required/chainsaw,
+/obj/item/twohanded/required/chainsaw,
 /obj/item/stack/sheet/glass/fifty,
 /turf/open/floor/plasteel/red/side{
 	dir = 8
@@ -310,7 +310,7 @@
 /turf/open/floor/plasteel/neutral,
 /area/ship_salvage/component/c_3_2)
 "by" = (
-/obj/item/weapon/twohanded/required/shell_casing,
+/obj/item/twohanded/required/shell_casing,
 /obj/structure/chair{
 	dir = 1
 	},
@@ -332,7 +332,7 @@
 /turf/open/floor/plasteel/neutral,
 /area/ship_salvage/component/c_3_2)
 "bC" = (
-/obj/item/weapon/twohanded/required/shell_casing,
+/obj/item/twohanded/required/shell_casing,
 /obj/structure/cable{
 	d1 = 2;
 	d2 = 4;
@@ -348,8 +348,8 @@
 /area/ship_salvage/component/c_2_2)
 "bE" = (
 /obj/structure/table,
-/obj/item/weapon/storage/firstaid/tactical,
-/obj/item/weapon/storage/firstaid/regular,
+/obj/item/storage/firstaid/tactical,
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/plasteel/blue/side{
 	dir = 8
 	},
@@ -426,14 +426,14 @@
 /area/ship_salvage/component/c_2_2)
 "bS" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/blue,
+/obj/item/bedsheet/blue,
 /turf/open/floor/plasteel/arrival{
 	dir = 1
 	},
 /area/ship_salvage/component/c_2_2)
 "bT" = (
 /obj/structure/table,
-/obj/item/weapon/book/random,
+/obj/item/book/random,
 /obj/effect/spawner/lootdrop/gambling,
 /turf/open/floor/plasteel/arrival{
 	dir = 1
@@ -448,7 +448,7 @@
 "bV" = (
 /obj/structure/table,
 /obj/machinery/microwave,
-/obj/item/weapon/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
 /turf/open/floor/plasteel/arrival{
 	dir = 1
 	},
@@ -536,7 +536,7 @@
 /area/ship_salvage/component/c_2_2)
 "cf" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/blue,
+/obj/item/bedsheet/blue,
 /turf/open/floor/plasteel/arrival,
 /area/ship_salvage/component/c_2_2)
 "ch" = (
@@ -557,7 +557,7 @@
 /area/ship_salvage/component/c_2_1)
 "ck" = (
 /obj/structure/closet/wardrobe/mixed,
-/obj/item/weapon/reagent_containers/spray/cleaner,
+/obj/item/reagent_containers/spray/cleaner,
 /turf/open/floor/plasteel/arrival,
 /area/ship_salvage/component/c_2_2)
 "cl" = (

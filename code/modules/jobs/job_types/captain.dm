@@ -32,7 +32,7 @@ Captain
 	name = "Captain"
 	jobtype = /datum/job/captain
 
-	id = /obj/item/weapon/card/id/gold
+	id = /obj/item/card/id/gold
 	belt = /obj/item/device/pda/captain
 	glasses = /obj/item/clothing/glasses/sunglasses
 	ears = /obj/item/device/radio/headset/heads/captain/alt
@@ -41,13 +41,13 @@ Captain
 	suit = /obj/item/clothing/suit/toggle/service/captain
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	head = /obj/item/clothing/head/caphat
-	backpack_contents = list(/obj/item/weapon/melee/classic_baton/telescopic=1, /obj/item/weapon/station_charter=1)
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/station_charter=1)
 
-	backpack = /obj/item/weapon/storage/backpack/captain
-	satchel = /obj/item/weapon/storage/backpack/satchel/cap
-	duffelbag = /obj/item/weapon/storage/backpack/duffelbag/captain
+	backpack = /obj/item/storage/backpack/captain
+	satchel = /obj/item/storage/backpack/satchel/cap
+	duffelbag = /obj/item/storage/backpack/duffelbag/captain
 
-	implants = list(/obj/item/weapon/implant/mindshield)
+	implants = list(/obj/item/implant/mindshield)
 
 	accessory = /obj/item/clothing/accessory/medal/gold/captain
 
@@ -92,12 +92,12 @@ Executive Officer
 	name = "Executive Officer"
 	jobtype = /datum/job/xo
 
-	id = /obj/item/weapon/card/id/silver
+	id = /obj/item/card/id/silver
 	belt = /obj/item/device/pda/heads/xo
 	ears = /obj/item/device/radio/headset/heads/xo
 	uniform = /obj/item/clothing/under/rank/executive_officer
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	suit = /obj/item/clothing/suit/toggle/service/xo
 	head = /obj/item/clothing/head/xocap
-	backpack_contents = list(/obj/item/weapon/storage/box/ids=1,\
-		/obj/item/weapon/melee/classic_baton/telescopic=1, /obj/item/device/modular_computer/tablet/preset/advanced = 1)
+	backpack_contents = list(/obj/item/storage/box/ids=1,\
+		/obj/item/melee/classic_baton/telescopic=1, /obj/item/device/modular_computer/tablet/preset/advanced = 1)

@@ -28,16 +28,16 @@
 /area/survivalpod)
 "g" = (
 /obj/structure/closet/secure_closet/freezer/kitchen,
-/obj/item/weapon/kitchen/fork,
-/obj/item/weapon/kitchen/knife,
-/obj/item/weapon/kitchen/rollingpin,
-/obj/item/weapon/reagent_containers/food/snacks/donkpocket,
-/obj/item/weapon/storage/box/donkpockets,
+/obj/item/kitchen/fork,
+/obj/item/kitchen/knife,
+/obj/item/kitchen/rollingpin,
+/obj/item/reagent_containers/food/snacks/donkpocket,
+/obj/item/storage/box/donkpockets,
 /turf/open/floor/plasteel/white,
 /area/survivalpod)
 "h" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/glass/beaker,
+/obj/item/reagent_containers/glass/beaker,
 /obj/machinery/reagentgrinder,
 /turf/open/floor/plasteel/white,
 /area/survivalpod)

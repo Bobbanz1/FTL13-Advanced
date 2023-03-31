@@ -18,7 +18,7 @@
 	icon_state = "[initial(icon_state)]set"
 
 /obj/item/mine/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/weapon/wirecutters))
+	if(istype(I, /obj/item/wirecutters))
 		to_chat(user, "Defusing [src]...")
 		if(do_after(user,50,target = src))
 			visible_message("<span class='notice'>[src] defused by [user]!</span>")
@@ -128,12 +128,12 @@
 
 /obj/item/mine/spawner/soap
 	name = "Soap Mine"
-	spawner_type = /obj/item/weapon/soap/syndie
+	spawner_type = /obj/item/soap/syndie
 	deliveryamt = 5
 
 /obj/item/mine/spawner/banana
 	name = "Banana Mine"
-	spawner_type = /obj/item/weapon/grown/bananapeel/bluespace
+	spawner_type = /obj/item/grown/bananapeel/bluespace
 	deliveryamt = 5
 
 /obj/item/mine/spawner/carp
@@ -192,7 +192,7 @@
 	spawn(0)
 		new /datum/hallucination/delusion(victim,TRUE,force_kind="demon",duration=duration,skip_nearby=0)
 
-	var/obj/item/weapon/twohanded/required/chainsaw/doomslayer/chainsaw = new(victim.loc)
+	var/obj/item/twohanded/required/chainsaw/doomslayer/chainsaw = new(victim.loc)
 	chainsaw.flags |= NODROP
 	victim.drop_all_held_items()
 	victim.put_in_hands(chainsaw)

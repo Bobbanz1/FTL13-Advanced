@@ -54,9 +54,9 @@
 /area/ship_salvage/component/c_3_1)
 "ao" = (
 /obj/structure/closet/abductor,
-/obj/item/weapon/reagent_containers/food/snacks/meat/slab/human/mutant/lizard,
-/obj/item/weapon/reagent_containers/food/snacks/meat/slab/human/mutant/lizard,
-/obj/item/weapon/reagent_containers/food/snacks/meat/slab/human/mutant/lizard,
+/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/lizard,
+/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/lizard,
+/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/lizard,
 /obj/item/organ/tongue/lizard,
 /obj/item/organ/tongue/lizard,
 /turf/open/floor/plating/abductor,
@@ -68,10 +68,10 @@
 /area/ship_salvage/component/c_2_2)
 "aq" = (
 /obj/structure/closet/abductor,
-/obj/item/weapon/reagent_containers/food/snacks/meat/slab/corgi,
-/obj/item/weapon/reagent_containers/food/snacks/meat/cutlet/plain/human,
-/obj/item/weapon/reagent_containers/food/snacks/meat/cutlet/plain/human,
-/obj/item/weapon/reagent_containers/food/snacks/meat/cutlet/plain/human,
+/obj/item/reagent_containers/food/snacks/meat/slab/corgi,
+/obj/item/reagent_containers/food/snacks/meat/cutlet/plain/human,
+/obj/item/reagent_containers/food/snacks/meat/cutlet/plain/human,
+/obj/item/reagent_containers/food/snacks/meat/cutlet/plain/human,
 /turf/open/floor/plating/abductor,
 /area/ship_salvage/component/c_2_2)
 "ar" = (
@@ -84,7 +84,7 @@
 /area/ship_salvage/component/c_2_1)
 "at" = (
 /obj/structure/table/abductor,
-/obj/item/weapon/paper/guides/antag/abductor,
+/obj/item/paper/guides/antag/abductor,
 /obj/item/stack/sheet/animalhide/corgi,
 /turf/open/floor/plating/abductor,
 /area/ship_salvage/component/c_2_1)
@@ -96,10 +96,10 @@
 /area/ship_salvage/component/c_2_1)
 "av" = (
 /obj/structure/closet/abductor,
-/obj/item/weapon/reagent_containers/food/snacks/meat/slab/human,
-/obj/item/weapon/reagent_containers/food/snacks/meat/slab/human,
-/obj/item/weapon/reagent_containers/food/snacks/meat/cutlet/plain/human,
-/obj/item/weapon/reagent_containers/food/snacks/meat/cutlet/plain/human,
+/obj/item/reagent_containers/food/snacks/meat/slab/human,
+/obj/item/reagent_containers/food/snacks/meat/slab/human,
+/obj/item/reagent_containers/food/snacks/meat/cutlet/plain/human,
+/obj/item/reagent_containers/food/snacks/meat/cutlet/plain/human,
 /turf/open/floor/plating/abductor,
 /area/ship_salvage/component/c_2_2)
 "aw" = (
@@ -115,12 +115,12 @@
 /area/ship_salvage/component/c_2_2)
 "ay" = (
 /obj/structure/table/abductor,
-/obj/item/weapon/paper/guides/antag/abductor,
-/obj/item/weapon/hemostat/alien,
-/obj/item/weapon/scalpel/alien,
-/obj/item/weapon/surgicaldrill/alien,
-/obj/item/weapon/cautery/alien,
-/obj/item/weapon/circular_saw/alien,
+/obj/item/paper/guides/antag/abductor,
+/obj/item/hemostat/alien,
+/obj/item/scalpel/alien,
+/obj/item/surgicaldrill/alien,
+/obj/item/cautery/alien,
+/obj/item/circular_saw/alien,
 /turf/open/floor/plating/abductor,
 /area/ship_salvage/component/c_3_1)
 "az" = (
@@ -143,7 +143,7 @@
 /area/ship_salvage/component/c_3_1)
 "aC" = (
 /obj/structure/table/abductor,
-/obj/item/weapon/paper/guides/antag/abductor,
+/obj/item/paper/guides/antag/abductor,
 /obj/item/clothing/under/rank/scientist,
 /turf/open/floor/plating/abductor,
 /area/ship_salvage/component/c_2_1)
@@ -168,7 +168,7 @@
 /area/ship_salvage/component/c_2_2)
 "aG" = (
 /obj/structure/table/abductor,
-/obj/item/weapon/paper/guides/antag/abductor,
+/obj/item/paper/guides/antag/abductor,
 /turf/open/floor/plating/abductor,
 /area/ship_salvage/component/c_3_1)
 "aH" = (
@@ -201,26 +201,26 @@
 /area/ship_salvage/component/c_3_2)
 "aN" = (
 /obj/structure/closet/abductor,
-/obj/item/weapon/paper/guides/antag/nuke_instructions,
+/obj/item/paper/guides/antag/nuke_instructions,
 /turf/open/floor/plating/abductor,
 /area/ship_salvage/component/c_3_2)
 "aO" = (
 /obj/structure/closet/abductor,
-/obj/item/weapon/paper/pmc_contract,
-/obj/item/weapon/paper/guides/antag/abductor,
+/obj/item/paper/pmc_contract,
+/obj/item/paper/guides/antag/abductor,
 /turf/open/floor/plating/abductor,
 /area/ship_salvage/component/c_3_2)
 "aP" = (
 /obj/structure/closet/abductor,
-/obj/item/weapon/reagent_containers/food/snacks/beans,
-/obj/item/weapon/reagent_containers/food/snacks/beans,
-/obj/item/weapon/reagent_containers/food/snacks/beans,
-/obj/item/weapon/reagent_containers/food/snacks/beans,
+/obj/item/reagent_containers/food/snacks/beans,
+/obj/item/reagent_containers/food/snacks/beans,
+/obj/item/reagent_containers/food/snacks/beans,
+/obj/item/reagent_containers/food/snacks/beans,
 /turf/open/floor/plating/abductor,
 /area/ship_salvage/component/c_3_2)
 "aQ" = (
 /obj/structure/closet/abductor,
-/obj/item/weapon/reagent_containers/food/snacks/baguette,
+/obj/item/reagent_containers/food/snacks/baguette,
 /turf/open/floor/plating/abductor,
 /area/ship_salvage/component/c_3_2)
 "aR" = (
@@ -311,7 +311,7 @@
 /area/ship_salvage/component/c_3_3)
 "bp" = (
 /obj/structure/closet/abductor,
-/obj/item/weapon/abductor_baton,
+/obj/item/abductor_baton,
 /turf/open/floor/plating/abductor,
 /area/ship_salvage/component/c_3_3)
 "bq" = (
@@ -324,7 +324,7 @@
 /area/ship_salvage/component/c_3_3)
 "bs" = (
 /obj/structure/closet/abductor,
-/obj/item/weapon/gun/energy/alien,
+/obj/item/gun/energy/alien,
 /turf/open/floor/plating/abductor,
 /area/ship_salvage/component/c_3_3)
 "bt" = (
@@ -350,7 +350,7 @@
 /area/ship_salvage/component/c_3_3)
 "by" = (
 /obj/structure/table/abductor,
-/obj/item/weapon/storage/box/alienhandcuffs,
+/obj/item/storage/box/alienhandcuffs,
 /turf/open/floor/plating/abductor,
 /area/ship_salvage/component/c_3_3)
 "bz" = (

@@ -47,7 +47,7 @@
 /area/ship_salvage/component/c_2_2)
 "al" = (
 /obj/structure/rack,
-/obj/item/weapon/twohanded/bonespear,
+/obj/item/twohanded/bonespear,
 /turf/open/floor/plasteel/neutral,
 /area/generic)
 "am" = (
@@ -66,7 +66,7 @@
 /area/generic)
 "ap" = (
 /obj/structure/rack,
-/obj/item/weapon/staff,
+/obj/item/staff,
 /turf/open/floor/plasteel/neutral,
 /area/generic)
 "aq" = (
@@ -84,12 +84,12 @@
 /area/generic)
 "av" = (
 /obj/structure/rack,
-/obj/item/weapon/gun/ballistic/revolver/doublebarrel/improvised,
+/obj/item/gun/ballistic/revolver/doublebarrel/improvised,
 /turf/open/floor/plasteel/neutral,
 /area/generic)
 "aw" = (
 /obj/structure/rack,
-/obj/item/weapon/gun/energy/e_gun/advtaser,
+/obj/item/gun/energy/e_gun/advtaser,
 /turf/open/floor/plasteel/neutral,
 /area/generic)
 "ax" = (
@@ -99,7 +99,7 @@
 /area/generic)
 "ay" = (
 /obj/structure/rack,
-/obj/item/weapon/soap/deluxe,
+/obj/item/soap/deluxe,
 /turf/open/floor/plasteel/neutral,
 /area/generic)
 "az" = (
@@ -111,7 +111,7 @@
 /area/ship_salvage/component/c_2_2)
 "aA" = (
 /obj/structure/rack,
-/obj/item/weapon/gun/ballistic/automatic/pistol,
+/obj/item/gun/ballistic/automatic/pistol,
 /turf/open/floor/plasteel/neutral,
 /area/generic)
 "aB" = (
@@ -121,7 +121,7 @@
 /area/generic)
 "aC" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/dice/d00,
+/obj/item/dice/d00,
 /turf/open/floor/plasteel/neutral,
 /area/generic)
 "aD" = (
@@ -149,21 +149,21 @@
 /area/generic)
 "aI" = (
 /obj/structure/rack,
-/obj/item/weapon/kitchen/knife/carrotshiv,
+/obj/item/kitchen/knife/carrotshiv,
 /turf/open/floor/plasteel/neutral,
 /area/generic)
 "aJ" = (
 /obj/structure/rack,
-/obj/item/weapon/grenade/smokebomb,
-/obj/item/weapon/grenade/smokebomb,
-/obj/item/weapon/grenade/smokebomb,
-/obj/item/weapon/grenade/smokebomb,
-/obj/item/weapon/grenade/smokebomb,
+/obj/item/grenade/smokebomb,
+/obj/item/grenade/smokebomb,
+/obj/item/grenade/smokebomb,
+/obj/item/grenade/smokebomb,
+/obj/item/grenade/smokebomb,
 /turf/open/floor/plasteel/neutral,
 /area/generic)
 "aK" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/disk/plantgene,
+/obj/item/disk/plantgene,
 /obj/machinery/light{
 	icon_state = "tube1";
 	dir = 4
@@ -192,7 +192,7 @@
 /area/ship_salvage/component/c_2_2)
 "aN" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
 /turf/open/floor/plasteel/darkyellow,
 /area/ship_salvage/component/c_2_2)
 "aO" = (
@@ -218,7 +218,7 @@
 /area/generic)
 "aR" = (
 /obj/structure/rack,
-/obj/item/weapon/tailclub,
+/obj/item/tailclub,
 /turf/open/floor/plasteel/neutral,
 /area/generic)
 "aS" = (
@@ -267,7 +267,7 @@
 /area/generic)
 "ba" = (
 /obj/structure/rack,
-/obj/item/weapon/book/manual/nuclear,
+/obj/item/book/manual/nuclear,
 /turf/open/floor/plasteel/neutral,
 /area/generic)
 "bc" = (
@@ -310,18 +310,18 @@
 /area/ship_salvage/component/c_2_2)
 "bj" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/twohanded/spear{
+/obj/item/twohanded/spear{
 	pixel_x = 6
 	},
-/obj/item/weapon/twohanded/spear,
-/obj/item/weapon/twohanded/spear{
+/obj/item/twohanded/spear,
+/obj/item/twohanded/spear{
 	pixel_x = -6
 	},
 /turf/open/floor/plasteel/neutral,
 /area/generic)
 "bk" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/weldingtool/experimental,
+/obj/item/weldingtool/experimental,
 /turf/open/floor/plasteel/neutral,
 /area/generic)
 "bl" = (
@@ -337,7 +337,7 @@
 	icon_state = "crateopen";
 	opened = 1
 	},
-/obj/item/weapon/nullrod,
+/obj/item/nullrod,
 /turf/open/floor/plating,
 /area/no_entry)
 "bo" = (
@@ -347,7 +347,7 @@
 "bp" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/sheet/metal/fifty,
-/obj/item/weapon/storage/box/handcuffs,
+/obj/item/storage/box/handcuffs,
 /turf/open/floor/plasteel/darkyellow,
 /area/ship_salvage/component/c_2_2)
 "bq" = (
@@ -356,12 +356,12 @@
 /area/ship_salvage/component/c_2_2)
 "br" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/circular_saw,
-/obj/item/weapon/scalpel,
-/obj/item/weapon/hemostat,
-/obj/item/weapon/retractor,
-/obj/item/weapon/surgicaldrill,
-/obj/item/weapon/surgical_drapes,
+/obj/item/circular_saw,
+/obj/item/scalpel,
+/obj/item/hemostat,
+/obj/item/retractor,
+/obj/item/surgicaldrill,
+/obj/item/surgical_drapes,
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	tag = "icon-intact (NORTH)";
 	icon_state = "intact";
@@ -376,7 +376,7 @@
 /area/ship_salvage/component/c_2_2)
 "bt" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/wirerod,
+/obj/item/wirerod,
 /turf/open/floor/plasteel/neutral,
 /area/generic)
 "bu" = (
@@ -392,12 +392,12 @@
 /area/generic)
 "bw" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/sord,
+/obj/item/sord,
 /turf/open/floor/plasteel/neutral,
 /area/generic)
 "bx" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/lazarus_injector,
+/obj/item/lazarus_injector,
 /turf/open/floor/plasteel/neutral,
 /area/generic)
 "by" = (
@@ -428,15 +428,15 @@
 /area/no_entry)
 "bC" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/rum,
-/obj/item/weapon/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/bottle/rum,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
 /obj/structure/mirror{
 	pixel_y = 28
 	},
 /turf/open/floor/plasteel/cmo,
 /area/no_entry)
 "bD" = (
-/obj/item/weapon/grown/log,
+/obj/item/grown/log,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -451,8 +451,8 @@
 /area/no_entry)
 "bG" = (
 /obj/structure/bed,
-/obj/item/weapon/storage/fancy/cigarettes/cigpack_carp,
-/obj/item/weapon/bedsheet/brown,
+/obj/item/storage/fancy/cigarettes/cigpack_carp,
+/obj/item/bedsheet/brown,
 /turf/open/floor/plasteel/cmo,
 /area/no_entry)
 "bH" = (
@@ -477,7 +477,7 @@
 /obj/structure/rack,
 /obj/item/clothing/suit/space/syndicate/black/orange,
 /obj/item/clothing/head/helmet/space/syndicate/black/orange,
-/obj/item/weapon/tank/internals/oxygen/red,
+/obj/item/tank/internals/oxygen/red,
 /turf/open/floor/plating,
 /area/no_entry)
 "bM" = (
@@ -569,17 +569,17 @@
 /area/generic)
 "cb" = (
 /obj/structure/closet/cardboard,
-/obj/item/weapon/reagent_containers/food/snacks/beans,
-/obj/item/weapon/reagent_containers/food/snacks/beans,
-/obj/item/weapon/reagent_containers/food/snacks/beans,
-/obj/item/weapon/reagent_containers/food/snacks/beans,
+/obj/item/reagent_containers/food/snacks/beans,
+/obj/item/reagent_containers/food/snacks/beans,
+/obj/item/reagent_containers/food/snacks/beans,
+/obj/item/reagent_containers/food/snacks/beans,
 /turf/open/floor/plating,
 /area/no_entry)
 "cc" = (
 /obj/structure/closet/cardboard,
-/obj/item/weapon/reagent_containers/food/snacks/beans,
-/obj/item/weapon/reagent_containers/food/snacks/beans,
-/obj/item/weapon/reagent_containers/food/snacks/beans,
+/obj/item/reagent_containers/food/snacks/beans,
+/obj/item/reagent_containers/food/snacks/beans,
+/obj/item/reagent_containers/food/snacks/beans,
 /turf/open/floor/plating,
 /area/no_entry)
 "cd" = (
@@ -701,16 +701,16 @@
 /area/ship_salvage/component/c_1_1)
 "cr" = (
 /obj/structure/table,
-/obj/item/weapon/storage/backpack/medic{
+/obj/item/storage/backpack/medic{
 	pixel_x = -9;
 	pixel_y = -7
 	},
-/obj/item/weapon/storage/backpack/medic,
-/obj/item/weapon/storage/backpack/medic{
+/obj/item/storage/backpack/medic,
+/obj/item/storage/backpack/medic{
 	pixel_x = 6;
 	pixel_y = 7
 	},
-/obj/item/weapon/defibrillator/loaded,
+/obj/item/defibrillator/loaded,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -718,7 +718,7 @@
 /area/no_entry)
 "cs" = (
 /obj/structure/table,
-/obj/item/weapon/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
 /obj/item/stack/medical/bruise_pack,
 /turf/open/floor/plasteel/cmo,
 /area/no_entry)
@@ -739,9 +739,9 @@
 	pump_direction = 0
 	},
 /obj/structure/closet/cardboard,
-/obj/item/weapon/reagent_containers/food/snacks/beans,
-/obj/item/weapon/reagent_containers/food/snacks/beans,
-/obj/item/weapon/reagent_containers/food/snacks/beans,
+/obj/item/reagent_containers/food/snacks/beans,
+/obj/item/reagent_containers/food/snacks/beans,
+/obj/item/reagent_containers/food/snacks/beans,
 /turf/open/floor/plating,
 /area/no_entry)
 "cw" = (
@@ -749,9 +749,9 @@
 	dir = 4
 	},
 /obj/structure/closet/cardboard,
-/obj/item/weapon/reagent_containers/food/snacks/beans,
-/obj/item/weapon/reagent_containers/food/snacks/beans,
-/obj/item/weapon/reagent_containers/food/snacks/beans,
+/obj/item/reagent_containers/food/snacks/beans,
+/obj/item/reagent_containers/food/snacks/beans,
+/obj/item/reagent_containers/food/snacks/beans,
 /turf/open/floor/plating,
 /area/no_entry)
 "cx" = (
@@ -961,7 +961,7 @@
 /turf/closed/wall/r_wall/rust,
 /area/ship_salvage/component/c_2_1)
 "cQ" = (
-/obj/item/weapon/soap,
+/obj/item/soap,
 /turf/open/floor/plasteel/cmo,
 /area/no_entry)
 "cR" = (
@@ -1053,18 +1053,18 @@
 /area/ship_salvage/component/c_2_1)
 "de" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/medical,
+/obj/item/bedsheet/medical,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plasteel/cmo,
 /area/no_entry)
 "df" = (
 /obj/structure/table,
-/obj/item/weapon/book/manual/wiki/engineering_hacking,
+/obj/item/book/manual/wiki/engineering_hacking,
 /turf/open/floor/plasteel/cmo,
 /area/no_entry)
 "dg" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/snacks/cubancarp{
+/obj/item/reagent_containers/food/snacks/cubancarp{
 	pixel_y = 8
 	},
 /turf/open/floor/plasteel/cmo,
@@ -1081,7 +1081,7 @@
 /obj/structure/rack,
 /obj/item/clothing/suit/space/syndicate/black/orange,
 /obj/item/clothing/head/helmet/space/syndicate/black/orange,
-/obj/item/weapon/tank/internals/oxygen/red,
+/obj/item/tank/internals/oxygen/red,
 /turf/open/floor/plasteel/cmo,
 /area/no_entry)
 "dj" = (
@@ -1106,7 +1106,7 @@
 	icon_state = "0-8"
 	},
 /obj/structure/table,
-/obj/item/weapon/storage/firstaid/o2,
+/obj/item/storage/firstaid/o2,
 /turf/open/floor/plasteel/cmo,
 /area/no_entry)
 "dl" = (
@@ -1242,18 +1242,18 @@
 /area/ship_salvage/hull)
 "dJ" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/absinthe/premium{
+/obj/item/reagent_containers/food/drinks/bottle/absinthe/premium{
 	pixel_y = 9
 	},
 /turf/open/floor/wood,
 /area/ship_salvage/component/c_2_1)
 "dK" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/rum,
-/obj/item/weapon/reagent_containers/food/drinks/flask{
+/obj/item/reagent_containers/food/drinks/bottle/rum,
+/obj/item/reagent_containers/food/drinks/flask{
 	pixel_x = 6
 	},
-/obj/item/weapon/reagent_containers/food/snacks/beans{
+/obj/item/reagent_containers/food/snacks/beans{
 	pixel_x = -6
 	},
 /turf/open/floor/wood,
@@ -1265,7 +1265,7 @@
 /area/ship_salvage/component/c_2_1)
 "dM" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/whiskey,
+/obj/item/reagent_containers/food/drinks/bottle/whiskey,
 /turf/open/floor/plasteel/neutral,
 /area/ship_salvage/component/c_2_1)
 "dN" = (
@@ -1289,7 +1289,7 @@
 /obj/structure/rack,
 /obj/item/clothing/suit/space/syndicate/black/orange,
 /obj/item/clothing/head/helmet/space/syndicate/black/orange,
-/obj/item/weapon/tank/internals/oxygen/red,
+/obj/item/tank/internals/oxygen/red,
 /turf/open/floor/plating,
 /area/ship_salvage/hull)
 "dT" = (
@@ -1297,7 +1297,7 @@
 /obj/structure/sign/bluecross{
 	pixel_y = 32
 	},
-/obj/item/weapon/storage/toolbox/emergency,
+/obj/item/storage/toolbox/emergency,
 /turf/open/floor/plating,
 /area/ship_salvage/hull)
 "dU" = (
@@ -1380,7 +1380,7 @@
 /turf/open/floor/plasteel/neutral,
 /area/ship_salvage/component/c_2_1)
 "ef" = (
-/obj/item/weapon/broken_bottle,
+/obj/item/broken_bottle,
 /turf/open/floor/wood,
 /area/ship_salvage/component/c_2_1)
 "eg" = (
@@ -1469,9 +1469,9 @@
 /area/no_entry)
 "et" = (
 /obj/structure/table/wood,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/folder/blue,
-/obj/item/weapon/pen,
+/obj/item/paper_bin,
+/obj/item/folder/blue,
+/obj/item/pen,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -1494,7 +1494,7 @@
 /area/no_entry)
 "ex" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/clown,
+/obj/item/bedsheet/clown,
 /turf/open/floor/wood,
 /area/no_entry)
 "ey" = (
@@ -1562,7 +1562,7 @@
 /turf/open/floor/plating,
 /area/ship_salvage/hull)
 "eJ" = (
-/obj/item/weapon/caution,
+/obj/item/caution,
 /turf/open/floor/plating,
 /area/ship_salvage/hull)
 "eK" = (
@@ -1603,7 +1603,7 @@
 /area/no_entry)
 "eR" = (
 /obj/structure/table/wood,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/absinthe/premium{
+/obj/item/reagent_containers/food/drinks/bottle/absinthe/premium{
 	pixel_y = 9
 	},
 /obj/machinery/recharger,
@@ -1712,7 +1712,7 @@
 /turf/open/floor/plating,
 /area/ship_salvage/hull)
 "fg" = (
-/obj/item/weapon/nullrod,
+/obj/item/nullrod,
 /obj/machinery/light{
 	icon_state = "tube1";
 	dir = 4
@@ -1771,8 +1771,8 @@
 /area/no_entry)
 "fl" = (
 /obj/structure/table/wood,
-/obj/item/weapon/melee/rapier,
-/obj/item/weapon/paper{
+/obj/item/melee/rapier,
+/obj/item/paper{
 	name = "Captains To-Do List"
 	},
 /turf/open/floor/wood,
@@ -1794,7 +1794,7 @@
 /obj/structure/rack,
 /obj/item/clothing/suit/space/syndicate/black/orange,
 /obj/item/clothing/head/helmet/space/syndicate/black/orange,
-/obj/item/weapon/tank/internals/oxygen/red,
+/obj/item/tank/internals/oxygen/red,
 /turf/open/floor/plasteel/neutral,
 /area/ship_salvage/hull)
 "fp" = (
@@ -1965,7 +1965,7 @@
 /turf/open/floor/plasteel/neutral,
 /area/ship_salvage/component/c_2_2)
 "fN" = (
-/obj/item/weapon/lighter,
+/obj/item/lighter,
 /turf/open/floor/plasteel/neutral,
 /area/ship_salvage/component/c_2_2)
 "fO" = (
@@ -2008,12 +2008,12 @@
 /obj/structure/rack,
 /obj/item/clothing/suit/space/syndicate/black/orange,
 /obj/item/clothing/head/helmet/space/syndicate/black/orange,
-/obj/item/weapon/tank/internals/oxygen/red,
+/obj/item/tank/internals/oxygen/red,
 /turf/open/floor/wood,
 /area/no_entry)
 "fU" = (
 /obj/structure/rack,
-/obj/item/weapon/nullrod,
+/obj/item/nullrod,
 /turf/open/floor/wood,
 /area/no_entry)
 "fV" = (
@@ -2640,7 +2640,7 @@
 /area/ship_salvage/component/c_3_2)
 "hh" = (
 /obj/structure/table,
-/obj/item/weapon/wrench,
+/obj/item/wrench,
 /turf/open/floor/plating/airless,
 /area/ship_salvage/component/c_3_2)
 "hi" = (
@@ -2649,7 +2649,7 @@
 /area/ship_salvage/component/c_3_2)
 "hj" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
 /turf/open/floor/plating/airless,
 /area/ship_salvage/component/c_3_2)
 "hk" = (
@@ -2713,8 +2713,8 @@
 /area/ship_salvage/component/c_2_2)
 "hr" = (
 /obj/structure/table,
-/obj/item/weapon/electronics/airlock,
-/obj/item/weapon/electronics/airlock,
+/obj/item/electronics/airlock,
+/obj/item/electronics/airlock,
 /turf/open/floor/plasteel/orange,
 /area/ship_salvage/component/c_2_2)
 "hs" = (
@@ -2864,8 +2864,8 @@
 /area/ship_salvage/component/c_2_2)
 "hJ" = (
 /obj/structure/table,
-/obj/item/weapon/electronics/apc,
-/obj/item/weapon/electronics/apc,
+/obj/item/electronics/apc,
+/obj/item/electronics/apc,
 /turf/open/floor/plasteel/orange,
 /area/ship_salvage/component/c_2_2)
 "hK" = (
@@ -2915,7 +2915,7 @@
 /turf/open/floor/plating,
 /area/ship_salvage/component/c_3_2)
 "hR" = (
-/obj/item/weapon/broken_bottle,
+/obj/item/broken_bottle,
 /turf/open/floor/plating/airless,
 /area/ship_salvage/component/c_3_2)
 "hS" = (
@@ -3205,9 +3205,9 @@
 /area/ship_salvage/component/c_2_2)
 "iz" = (
 /obj/structure/table,
-/obj/item/weapon/storage/belt/utility/full,
-/obj/item/weapon/storage/belt/utility/full,
-/obj/item/weapon/storage/belt/utility/full,
+/obj/item/storage/belt/utility/full,
+/obj/item/storage/belt/utility/full,
+/obj/item/storage/belt/utility/full,
 /turf/open/floor/plasteel/orange,
 /area/ship_salvage/component/c_2_2)
 "iA" = (
@@ -3260,13 +3260,13 @@
 /turf/open/floor/plasteel/orange,
 /area/ship_salvage/component/c_2_2)
 "iG" = (
-/obj/item/weapon/wrench,
+/obj/item/wrench,
 /turf/open/floor/plasteel/orange,
 /area/ship_salvage/component/c_2_2)
 "iI" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/mechanical,
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
 /turf/open/floor/plasteel/orange,
 /area/ship_salvage/component/c_2_2)
 "iJ" = (
@@ -3375,12 +3375,12 @@
 /area/ship_salvage/component/c_2_2)
 "iV" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/electrical,
-/obj/item/weapon/storage/toolbox/electrical,
+/obj/item/storage/toolbox/electrical,
+/obj/item/storage/toolbox/electrical,
 /turf/open/floor/plasteel/orange,
 /area/ship_salvage/component/c_2_2)
 "iW" = (
-/obj/item/weapon/ectoplasm,
+/obj/item/ectoplasm,
 /turf/open/floor/engine,
 /area/ship_salvage/component/c_2_3)
 "iX" = (
@@ -3445,8 +3445,8 @@
 /area/ship_salvage/component/c_2_2)
 "jf" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/emergency,
-/obj/item/weapon/extinguisher,
+/obj/item/storage/toolbox/emergency,
+/obj/item/extinguisher,
 /turf/open/floor/plasteel/orange,
 /area/ship_salvage/component/c_2_2)
 "jg" = (
@@ -3749,7 +3749,7 @@
 /area/ship_salvage/hull)
 "jU" = (
 /obj/structure/rack,
-/obj/item/weapon/tank/internals/oxygen/red,
+/obj/item/tank/internals/oxygen/red,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/hull)
 "jV" = (
@@ -3859,11 +3859,11 @@
 	name = "Captains Footlocker"
 	},
 /obj/item/clothing/under/schoolgirl,
-/obj/item/weapon/coin/mythril,
+/obj/item/coin/mythril,
 /obj/item/clothing/mask/muzzle,
 /obj/item/clothing/glasses/sunglasses/blindfold,
 /obj/item/toy/figure/captain,
-/obj/item/weapon/restraints/handcuffs/fake/kinky,
+/obj/item/restraints/handcuffs/fake/kinky,
 /turf/open/floor/wood,
 /area/no_entry)
 "vX" = (
@@ -3906,7 +3906,7 @@
 /area/ship_salvage/component/c_2_2)
 "DG" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/brown,
+/obj/item/bedsheet/brown,
 /obj/item/stack/spacecash/c10,
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -3936,7 +3936,7 @@
 /area/no_entry)
 "HI" = (
 /obj/structure/rack,
-/obj/item/weapon/storage/bag/money/vault,
+/obj/item/storage/bag/money/vault,
 /turf/open/floor/plasteel/neutral,
 /area/generic)
 "IU" = (

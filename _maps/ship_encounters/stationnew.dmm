@@ -324,7 +324,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/stock_parts/micro_laser,
+/obj/item/stock_parts/micro_laser,
 /turf/open/floor/plasteel/white,
 /area/no_entry{
 	has_gravity = 1;
@@ -435,7 +435,7 @@
 	})
 "mY" = (
 /obj/structure/table/wood,
-/obj/item/weapon/paper,
+/obj/item/paper,
 /turf/open/floor/wood,
 /area/no_entry{
 	has_gravity = 1;
@@ -487,7 +487,7 @@
 /turf/open/floor/plasteel/delivery,
 /area/no_entry/delivery)
 "oc" = (
-/obj/item/weapon/bedsheet,
+/obj/item/bedsheet,
 /obj/structure/bed,
 /turf/open/floor/plasteel/black,
 /area/no_entry{
@@ -630,12 +630,12 @@
 	name = "Space Station"
 	})
 "rP" = (
-/obj/item/weapon/storage/firstaid/fire{
+/obj/item/storage/firstaid/fire{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/storage/firstaid/fire,
-/obj/item/weapon/storage/firstaid/regular{
+/obj/item/storage/firstaid/fire,
+/obj/item/storage/firstaid/regular{
 	pixel_x = -3;
 	pixel_y = -3
 	},
@@ -681,7 +681,7 @@
 	})
 "ts" = (
 /obj/structure/table/glass,
-/obj/item/weapon/disk/design_disk,
+/obj/item/disk/design_disk,
 /turf/open/floor/plasteel/white,
 /area/no_entry{
 	has_gravity = 1;
@@ -880,7 +880,7 @@
 	})
 "Ae" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/reagent_containers/food/snacks/cheesyburrito,
+/obj/item/reagent_containers/food/snacks/cheesyburrito,
 /turf/open/floor/plasteel/cafeteria,
 /area/no_entry{
 	has_gravity = 1;
@@ -1023,7 +1023,7 @@
 	})
 "Eb" = (
 /obj/structure/table/wood,
-/obj/item/weapon/paper_bin,
+/obj/item/paper_bin,
 /turf/open/floor/wood,
 /area/no_entry{
 	has_gravity = 1;
@@ -1031,8 +1031,8 @@
 	})
 "EI" = (
 /obj/structure/table/glass,
-/obj/item/weapon/stock_parts/console_screen,
-/obj/item/weapon/stock_parts/console_screen,
+/obj/item/stock_parts/console_screen,
+/obj/item/stock_parts/console_screen,
 /turf/open/floor/plasteel/white,
 /area/no_entry{
 	has_gravity = 1;
@@ -1110,7 +1110,7 @@
 	})
 "HE" = (
 /obj/structure/table/wood,
-/obj/item/weapon/pen,
+/obj/item/pen,
 /turf/open/floor/wood,
 /area/no_entry{
 	has_gravity = 1;
@@ -1204,8 +1204,8 @@
 	})
 "Kh" = (
 /obj/structure/table/wood,
-/obj/item/weapon/coin/iron,
-/obj/item/weapon/pen/red,
+/obj/item/coin/iron,
+/obj/item/pen/red,
 /turf/open/floor/wood,
 /area/no_entry{
 	has_gravity = 1;
@@ -1213,7 +1213,7 @@
 	})
 "Kk" = (
 /obj/structure/table/wood,
-/obj/item/weapon/clipboard,
+/obj/item/clipboard,
 /turf/open/floor/wood,
 /area/no_entry{
 	has_gravity = 1;
@@ -1281,9 +1281,9 @@
 	})
 "Mi" = (
 /obj/structure/rack,
-/obj/item/weapon/tank/internals/oxygen,
-/obj/item/weapon/tank/internals/oxygen,
-/obj/item/weapon/tank/internals/oxygen,
+/obj/item/tank/internals/oxygen,
+/obj/item/tank/internals/oxygen,
+/obj/item/tank/internals/oxygen,
 /turf/open/floor/plating,
 /area/no_entry{
 	has_gravity = 1;
@@ -1340,7 +1340,7 @@
 	})
 "NX" = (
 /obj/structure/table/glass,
-/obj/item/weapon/reagent_containers/glass/beaker/sulphuric,
+/obj/item/reagent_containers/glass/beaker/sulphuric,
 /turf/open/floor/plasteel/white,
 /area/no_entry{
 	has_gravity = 1;
@@ -1629,7 +1629,7 @@
 	name = "Space Station"
 	})
 "XN" = (
-/obj/item/weapon/caution,
+/obj/item/caution,
 /turf/open/floor/plasteel/freezer,
 /area/no_entry{
 	has_gravity = 1;
@@ -1708,7 +1708,7 @@
 	})
 "Zm" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/reagent_containers/food/drinks/shaker,
+/obj/item/reagent_containers/food/drinks/shaker,
 /turf/open/floor/plasteel/cafeteria,
 /area/no_entry{
 	has_gravity = 1;

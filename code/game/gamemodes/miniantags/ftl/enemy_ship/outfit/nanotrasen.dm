@@ -2,7 +2,7 @@
   name = "NT ship employee"
   uniform = /obj/item/clothing/under/rank/centcom_officer
   shoes = /obj/item/clothing/shoes/laceup
-  back = /obj/item/weapon/storage/backpack/satchel
+  back = /obj/item/storage/backpack/satchel
   glasses = /obj/item/clothing/glasses/eyepatch
 
 /datum/outfit/defender/nanotrasen/post_equip(mob/living/carbon/human/H)
@@ -23,19 +23,19 @@
   suit = /obj/item/clothing/suit/space/syndicate/green
   shoes = /obj/item/clothing/shoes/laceup
   mask = /obj/item/clothing/mask/gas/sechailer/swat
-  back = /obj/item/weapon/storage/backpack/satchel
-  suit_store = /obj/item/weapon/gun/energy/laser/retro
+  back = /obj/item/storage/backpack/satchel
+  suit_store = /obj/item/gun/energy/laser/retro
   glasses = /obj/item/clothing/glasses/hud/security/night
-  belt = /obj/item/weapon/storage/belt/sabre
-  backpack_contents = list(/obj/item/weapon/storage/box/syndie=1,\
-    /obj/item/weapon/tank/jetpack/oxygen/harness=1,\
+  belt = /obj/item/storage/belt/sabre
+  backpack_contents = list(/obj/item/storage/box/syndie=1,\
+    /obj/item/tank/jetpack/oxygen/harness=1,\
     /obj/item/clothing/head/helmet/space/syndicate/green=1,\
-    /obj/item/weapon/crowbar=1,\
+    /obj/item/crowbar=1,\
     /obj/item/device/radio=1)
 
 /datum/outfit/defender/command/nanotrasen/post_equip(mob/living/carbon/human/H)
   . = ..()
-  var/obj/item/weapon/card/id/I = H.wear_id
+  var/obj/item/card/id/I = H.wear_id
   I.update_label("Cpt. [H.real_name]", "NT Ship Commander")
   var/obj/item/device/radio/R = H.ears
   R.set_frequency(GLOB.CENTCOM_FREQ)
@@ -53,43 +53,43 @@
 /datum/outfit/defender/nanotrasen/marine
   name = "NT ship marine"
   head = /obj/item/clothing/head/helmet/swat/nanotrasen
-  belt = /obj/item/weapon/gun/ballistic/automatic/pistol/m1911
+  belt = /obj/item/gun/ballistic/automatic/pistol/m1911
   suit = /obj/item/clothing/suit/armor/bulletproof
-  backpack_contents = list(/obj/item/weapon/storage/box/syndie=1,\
-    /obj/item/weapon/storage/box/handcuffs=1,\
+  backpack_contents = list(/obj/item/storage/box/syndie=1,\
+    /obj/item/storage/box/handcuffs=1,\
     /obj/item/ammo_box/magazine/m45=2,\
-    /obj/item/weapon/crowbar=1,\
+    /obj/item/crowbar=1,\
     /obj/item/device/radio=1)
 
 /datum/outfit/defender/nanotrasen/marine/post_equip(mob/living/carbon/human/H)
   . = ..()
-  var/obj/item/weapon/card/id/I = H.wear_id
+  var/obj/item/card/id/I = H.wear_id
   I.update_label("Lt. [H.real_name]", "NT Ship Marine")
 
 /datum/outfit/defender/nanotrasen/engineer
   name = "NT ship engineer"
   head = /obj/item/clothing/head/welding
-  belt = /obj/item/weapon/storage/belt/utility/full
-  backpack_contents = list(/obj/item/weapon/storage/box/syndie=1,\
-    /obj/item/weapon/storage/box/metalfoam=1)
+  belt = /obj/item/storage/belt/utility/full
+  backpack_contents = list(/obj/item/storage/box/syndie=1,\
+    /obj/item/storage/box/metalfoam=1)
 
 /datum/outfit/defender/nanotrasen/engineer/post_equip(mob/living/carbon/human/H)
   . = ..()
-  var/obj/item/weapon/card/id/I = H.wear_id
+  var/obj/item/card/id/I = H.wear_id
   I.update_label("Sgt. [H.real_name]", "NT Ship Engineering Officer")
 
 /datum/outfit/defender/nanotrasen/medic
   name = "NT ship medic"
   glasses = /obj/item/clothing/glasses/hud/health
-  belt = /obj/item/weapon/storage/belt/medical
-  backpack_contents = list(/obj/item/weapon/storage/box/syndie=1,\
-		/obj/item/weapon/reagent_containers/hypospray/medipen/survival=3,\
-    /obj/item/weapon/crowbar=1,\
-    /obj/item/weapon/storage/firstaid/brute=1,\
-    /obj/item/weapon/storage/firstaid/fire=1,\
+  belt = /obj/item/storage/belt/medical
+  backpack_contents = list(/obj/item/storage/box/syndie=1,\
+		/obj/item/reagent_containers/hypospray/medipen/survival=3,\
+    /obj/item/crowbar=1,\
+    /obj/item/storage/firstaid/brute=1,\
+    /obj/item/storage/firstaid/fire=1,\
     /obj/item/device/radio=1)
 
 /datum/outfit/defender/nanotrasen/medic/post_equip(mob/living/carbon/human/H)
   . = ..()
-  var/obj/item/weapon/card/id/I = H.wear_id
+  var/obj/item/card/id/I = H.wear_id
   I.update_label("Cpl. [H.real_name]", "NT Ship Medical Officer")

@@ -61,7 +61,7 @@
 	if(glasses)
 		H.equip_to_slot_or_del(new glasses(H),slot_glasses)
 	if(id)
-		var/obj/item/weapon/card/id/newid = new id(H)
+		var/obj/item/card/id/newid = new id(H)
 		H.equip_to_slot_or_del(newid,slot_wear_id)
 		if(H.client)
 			newid.update_label(H.real_name, SSjob.GetPlayerAltTitle(H, H.job))
@@ -104,7 +104,7 @@
 			H.update_action_buttons_icon()
 		if(implants)
 			for(var/implant_type in implants)
-				var/obj/item/weapon/implant/I = new implant_type(H)
+				var/obj/item/implant/I = new implant_type(H)
 				I.implant(H, null, silent=TRUE)
 
 	H.update_body()

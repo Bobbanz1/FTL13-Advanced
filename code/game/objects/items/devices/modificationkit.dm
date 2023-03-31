@@ -9,7 +9,7 @@
 	origin_tech = "programming=2;materials=2;magnets=4"
 	var/uses = 1
 
-/obj/item/modkit/afterattack(obj/item/weapon/gun/energy/kinetic_accelerator/C, mob/user)
+/obj/item/modkit/afterattack(obj/item/gun/energy/kinetic_accelerator/C, mob/user)
 	..()
 	if(!uses)
 		qdel(src)

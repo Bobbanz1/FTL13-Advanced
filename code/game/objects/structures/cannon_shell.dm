@@ -7,7 +7,7 @@
 	layer = 3.2
 
 	var/projectile = /obj/item/projectile/ship_projectile/mac_round
-	var/casing = /obj/item/weapon/twohanded/required/shell_casing
+	var/casing = /obj/item/twohanded/required/shell_casing
 
 	var/datum/ship_attack/attack_data = new /datum/ship_attack/ballistic
 
@@ -39,7 +39,7 @@
 			explosion(get_turf(src), dev_dmg, heavy_dmg, light_dmg)
 			throwing = null
 
-/obj/item/weapon/twohanded/required/shell_casing
+/obj/item/twohanded/required/shell_casing
 	name = "cannon shell casing"
 	desc = "The ejected casing from a cannon shell. Not very useful."
 	icon = 'icons/obj/stationobjs.dmi' //for simplicity
@@ -55,12 +55,12 @@
 	force_wielded = 10
 
 
-/obj/item/weapon/twohanded/required/shell_casing/New()
+/obj/item/twohanded/required/shell_casing/New()
 	..()
 	pixel_x = rand(-5,15)
 	pixel_y = rand(-15,15)
 
-/obj/item/weapon/twohanded/required/shell_casing/Bump()
+/obj/item/twohanded/required/shell_casing/Bump()
 	..()
 	throwforce = 10 //wow this is hacky, makes the shell only do 80 damage when ejected
 
@@ -69,7 +69,7 @@
 	desc = "A large shell containing bluespace disrupter technology that is designed to phase through shields. Delivers a low-yield warhead upon impact."
 	icon_state = "torpedo_sp"
 
-	casing = /obj/item/weapon/twohanded/required/shell_casing/shield_piercing
+	casing = /obj/item/twohanded/required/shell_casing/shield_piercing
 
 	attack_data = new /datum/ship_attack/shield_penetrator
 
@@ -82,7 +82,7 @@
 	desc = "A large shell designed with maneuvering jets and a targeting computer integrated into the sabot to allow for course corrections during flight. Delivers a medium-yield warhead upon impact."
 	icon_state = "torpedo_sh"
 
-	casing = /obj/item/weapon/twohanded/required/shell_casing/smart_homing
+	casing = /obj/item/twohanded/required/shell_casing/smart_homing
 
 	attack_data = new /datum/ship_attack/homing
 
@@ -95,7 +95,7 @@
 	desc = "The ARMAGEDDON SHELL is considered a planet killer type shell, it only reacts when within the atmosphere of a planet and is useless for ship to ship combat"
 	icon_state = "torpedo_pk"
 
-	casing = /obj/item/weapon/twohanded/required/shell_casing/planet_killer
+	casing = /obj/item/twohanded/required/shell_casing/planet_killer
 
 	attack_data = new /datum/ship_attack/planet_killer
 
@@ -109,7 +109,7 @@
 	desc = "the Donk.Co branded cannon-ball is a favored type of ammunition among brigands and criminals alike, adapted from a primitive design the Donk. Co Cannonball is a surprisingly advanced form of ammunition that is relatively easy to make"
 	icon_state = "torpedo_ball"
 
-	casing = /obj/item/weapon/twohanded/required/shell_casing/cannon_ball
+	casing = /obj/item/twohanded/required/shell_casing/cannon_ball
 
 	attack_data = new /datum/ship_attack/cannon_ball
 
@@ -118,14 +118,14 @@
 	heavy_dmg = 0
 	light_dmg = 0
 
-/obj/item/weapon/twohanded/required/shell_casing/shield_piercing
+/obj/item/twohanded/required/shell_casing/shield_piercing
 	icon_state = "sp_casing"
 
-/obj/item/weapon/twohanded/required/shell_casing/smart_homing
+/obj/item/twohanded/required/shell_casing/smart_homing
 	icon_state = "sh_casing"
 
-/obj/item/weapon/twohanded/required/shell_casing/planet_killer
+/obj/item/twohanded/required/shell_casing/planet_killer
 	icon_state = "pk_casing"
 
-/obj/item/weapon/twohanded/required/shell_casing/cannon_ball
+/obj/item/twohanded/required/shell_casing/cannon_ball
 	icon_state = "ball_casing"

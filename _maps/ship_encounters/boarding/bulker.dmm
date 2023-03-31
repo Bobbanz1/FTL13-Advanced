@@ -423,7 +423,7 @@
 /area/ship_salvage/hull)
 "dJ" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/electrical,
+/obj/item/storage/toolbox/electrical,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_1_1)
 "dM" = (
@@ -462,7 +462,7 @@
 /area/ship_salvage/component/c_4_2)
 "ef" = (
 /obj/structure/closet/crate/wooden,
-/obj/item/weapon/skub,
+/obj/item/skub,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 1
 	},
@@ -501,7 +501,7 @@
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_1_2)
 "eu" = (
-/obj/item/weapon/stock_parts/scanning_module/phasic,
+/obj/item/stock_parts/scanning_module/phasic,
 /turf/open/floor/plasteel/darkwarning{
 	dir = 6
 	},
@@ -597,7 +597,7 @@
 /turf/open/floor/plasteel/darkwarning/corner,
 /area/ship_salvage/component/c_5_1)
 "fv" = (
-/obj/item/weapon/banner/red,
+/obj/item/banner/red,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 5
 	},
@@ -772,7 +772,7 @@
 /area/ship_salvage/hull)
 "he" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/storage/fancy/donut_box,
+/obj/item/storage/fancy/donut_box,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 5
 	},
@@ -989,7 +989,7 @@
 /turf/open/floor/plasteel/black,
 /area/no_entry)
 "iR" = (
-/obj/item/weapon/stock_parts/manipulator/nano,
+/obj/item/stock_parts/manipulator/nano,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_1_2)
 "iT" = (
@@ -1008,7 +1008,7 @@
 /area/ship_salvage/component/c_1_1)
 "jf" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/drinks/coffee{
+/obj/item/reagent_containers/food/drinks/coffee{
 	pixel_x = 6;
 	pixel_y = 4
 	},
@@ -1302,7 +1302,7 @@
 /area/ship_salvage/hull)
 "lS" = (
 /obj/structure/rack,
-/obj/item/weapon/grenade/flashbang,
+/obj/item/grenade/flashbang,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 4
 	},
@@ -1570,14 +1570,14 @@
 /area/ship_salvage/hull)
 "nB" = (
 /obj/structure/table,
-/obj/item/weapon/grenade/syndieminibomb/concussion/frag,
+/obj/item/grenade/syndieminibomb/concussion/frag,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 4
 	},
 /area/ship_salvage/hull)
 "nI" = (
 /obj/structure/table,
-/obj/item/weapon/grenade/barrier,
+/obj/item/grenade/barrier,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 8
 	},
@@ -1595,7 +1595,7 @@
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/hull)
 "nN" = (
-/obj/item/weapon/stock_parts/manipulator/nano,
+/obj/item/stock_parts/manipulator/nano,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 1
 	},
@@ -1630,7 +1630,7 @@
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/hull)
 "nZ" = (
-/obj/item/weapon/banner/red,
+/obj/item/banner/red,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 9
 	},
@@ -1880,10 +1880,10 @@
 /area/ship_salvage/component/c_5_2)
 "qh" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/condiment/peppermill{
+/obj/item/reagent_containers/food/condiment/peppermill{
 	pixel_x = 3
 	},
-/obj/item/weapon/reagent_containers/food/condiment/saltshaker{
+/obj/item/reagent_containers/food/condiment/saltshaker{
 	pixel_x = -3;
 	pixel_y = 0
 	},
@@ -2130,7 +2130,7 @@
 /area/ship_salvage/component/c_3_2)
 "sj" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/electrical,
+/obj/item/storage/toolbox/electrical,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_5_1)
 "sl" = (
@@ -2289,7 +2289,7 @@
 /area/ship_salvage/component/c_4_1)
 "tw" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/condiment/saltshaker{
+/obj/item/reagent_containers/food/condiment/saltshaker{
 	pixel_x = -3;
 	pixel_y = 0
 	},
@@ -2595,7 +2595,7 @@
 /area/no_entry)
 "vP" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/syndie,
+/obj/item/bedsheet/syndie,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 2
 	},
@@ -2967,7 +2967,7 @@
 /area/ship_salvage/component/c_1_2)
 "zM" = (
 /obj/structure/closet/crate/wooden,
-/obj/item/weapon/suppressor,
+/obj/item/suppressor,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 2
 	},
@@ -3355,7 +3355,7 @@
 	pixel_x = 6;
 	pixel_y = -4
 	},
-/obj/item/weapon/cigbutt/cigarbutt,
+/obj/item/cigbutt/cigarbutt,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 4
 	},
@@ -3397,7 +3397,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/item/weapon/wrench,
+/obj/item/wrench,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_4_2)
 "DY" = (
@@ -3445,7 +3445,7 @@
 /area/no_entry)
 "Et" = (
 /obj/structure/closet/crate/wooden,
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 2
 	},
@@ -3578,9 +3578,9 @@
 /area/ship_salvage/component/c_2_1)
 "FA" = (
 /obj/structure/closet/crate/wooden,
-/obj/item/weapon/shard,
-/obj/item/weapon/shard,
-/obj/item/weapon/reagent_containers/spray/spraytan,
+/obj/item/shard,
+/obj/item/shard,
+/obj/item/reagent_containers/spray/spraytan,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 1
 	},
@@ -3793,7 +3793,7 @@
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/hull)
 "GY" = (
-/obj/item/weapon/stock_parts/subspace/ansible,
+/obj/item/stock_parts/subspace/ansible,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 1
 	},
@@ -3891,7 +3891,7 @@
 /area/ship_salvage/component/c_5_2)
 "HN" = (
 /obj/structure/table,
-/obj/item/weapon/restraints/handcuffs,
+/obj/item/restraints/handcuffs,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 4
 	},
@@ -4009,7 +4009,7 @@
 /turf/open/floor/plasteel/darkwarning/side,
 /area/ship_salvage/component/c_4_1)
 "It" = (
-/obj/item/weapon/stock_parts/capacitor/adv,
+/obj/item/stock_parts/capacitor/adv,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_1_2)
 "IF" = (
@@ -4042,7 +4042,7 @@
 /area/ship_salvage/component/c_5_2)
 "Je" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/condiment/saltshaker{
+/obj/item/reagent_containers/food/condiment/saltshaker{
 	pixel_x = -3;
 	pixel_y = 0
 	},
@@ -4199,7 +4199,7 @@
 /area/ship_salvage/component/c_3_2)
 "JW" = (
 /obj/structure/table,
-/obj/item/weapon/restraints/handcuffs,
+/obj/item/restraints/handcuffs,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 8
 	},
@@ -4214,7 +4214,7 @@
 /area/no_entry)
 "Kc" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/syndicate,
+/obj/item/storage/toolbox/syndicate,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_2_2)
 "Kg" = (
@@ -4571,7 +4571,7 @@
 	},
 /area/ship_salvage/hull)
 "ML" = (
-/obj/item/weapon/stock_parts/subspace/crystal,
+/obj/item/stock_parts/subspace/crystal,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_1_2)
 "MO" = (
@@ -4618,7 +4618,7 @@
 	},
 /area/ship_salvage/hull)
 "Nd" = (
-/obj/item/weapon/stock_parts/subspace/amplifier,
+/obj/item/stock_parts/subspace/amplifier,
 /obj/structure/rack,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_1_2)
@@ -4801,7 +4801,7 @@
 /area/ship_salvage/hull)
 "OT" = (
 /obj/structure/table,
-/obj/item/weapon/storage/firstaid/fire,
+/obj/item/storage/firstaid/fire,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 4
 	},
@@ -5108,7 +5108,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/item/weapon/gun/ballistic/automatic/mini_uzi,
+/obj/item/gun/ballistic/automatic/mini_uzi,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 8
 	},
@@ -5194,7 +5194,7 @@
 /area/ship_salvage/component/c_4_2)
 "RY" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/syndie,
+/obj/item/bedsheet/syndie,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 1
 	},
@@ -5928,8 +5928,8 @@
 /area/ship_salvage/hull)
 "Yo" = (
 /obj/structure/table,
-/obj/item/weapon/crowbar/red,
-/obj/item/weapon/holosign_creator/atmos,
+/obj/item/crowbar/red,
+/obj/item/holosign_creator/atmos,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_2_2)
 "Yv" = (
@@ -5961,7 +5961,7 @@
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_2_2)
 "YJ" = (
-/obj/item/weapon/stock_parts/subspace/analyzer,
+/obj/item/stock_parts/subspace/analyzer,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_1_2)
 "YN" = (

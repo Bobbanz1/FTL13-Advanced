@@ -9,39 +9,39 @@
 	name = "L6 Automatic Weapon"
 	desc = "A fully-loaded Aussec Armoury belt-fed machine gun. \
 			This deadly weapon has a massive 50-round magazine of devastating 1.95x129mm ammunition."
-	item = /obj/item/weapon/gun/ballistic/automatic/l6_saw/unrestricted
+	item = /obj/item/gun/ballistic/automatic/l6_saw/unrestricted
 	cost = 25
 
 /datum/uplink_item/defender/weapon/uzi
   name = "9mm SMG"
   desc = "Lightweitght, burst-fire submachine gun."
   cost = 10
-  item = /obj/item/weapon/gun/ballistic/automatic/mini_uzi
+  item = /obj/item/gun/ballistic/automatic/mini_uzi
 
 /datum/uplink_item/defender/weapon/pistol
   name = "Nagant revolver"
   desc = "Ancient belgium revolver, uses 7.62x38mmR ammo."
-  item = /obj/item/weapon/gun/ballistic/revolver/nagant
+  item = /obj/item/gun/ballistic/revolver/nagant
   cost = 6
 
 /datum/uplink_item/defender/weapon/revolver
   name = "9mm Pistol"
   desc = "A small, easily concealable handgun that uses 10mm auto rounds in 8-round magazines and is compatible \
       with suppressors."
-  item = /obj/item/weapon/gun/ballistic/automatic/pistol
+  item = /obj/item/gun/ballistic/automatic/pistol
   cost = 4
 
 /datum/uplink_item/defender/weapon/bolt_action
   name = "Bolt-action Rifle"
   desc = "A horribly outdated bolt action weapon. You've got to be desperate to use this."
-  item = /obj/item/weapon/gun/ballistic/shotgun/boltaction
+  item = /obj/item/gun/ballistic/shotgun/boltaction
   cost = 2
 
 /datum/uplink_item/defender/weapon/emp
   name = "EMP Grenades and Implanter Kit"
   desc = "A box that contains two EMP grenades and an EMP implant. Useful to disrupt communication, \
       security's energy weapons, and silicon lifeforms when you're in a tight spot."
-  item = /obj/item/weapon/storage/box/syndie_kit/emp
+  item = /obj/item/storage/box/syndie_kit/emp
   cost = 4
 
 /datum/uplink_item/defender/main
@@ -58,7 +58,7 @@
   desc = "Grenade inflates security barrier providing good cover.\
         Different inflating modes included!"
   cost = 1
-  item = /obj/item/weapon/grenade/barrier
+  item = /obj/item/grenade/barrier
 
 /datum/uplink_item/defender/main/at_field
   name = "Anti-Grenade field generator"
@@ -71,14 +71,14 @@
   name = "Energy Shield"
   desc = "An incredibly useful personal shield projector, capable of reflecting energy projectiles and defending \
   			against other attacks. Pair with an Energy Sword for a killer combination."
-  item = /obj/item/weapon/shield/energy
+  item = /obj/item/shield/energy
   cost = 8
 
 /datum/uplink_item/defender/main/cutouts //Literally the best item fight me
 	name = "Adaptive Cardboard Cutouts"
 	desc = "These cardboard cutouts are coated with a thin material that prevents discoloration and makes the images on them appear more lifelike. This pack contains three as well as a \
 	crayon for changing their appearances."
-	item = /obj/item/weapon/storage/box/syndie_kit/cutouts
+	item = /obj/item/storage/box/syndie_kit/cutouts
 	cost = 1
 
 // Defence Stuff (Special Offers)
@@ -147,7 +147,7 @@
   desc = "Cheap and cruel solution for building defence \
    against carbon creatures. Comes with 6 beartraps."
   cost = 2
-  item = /obj/item/weapon/storage/box/beartraps
+  item = /obj/item/storage/box/beartraps
 
 /datum/uplink_item/defender/ammo
   category = "Ammunition"
@@ -195,7 +195,7 @@
   name = "Full Syndicate Toolbox"
   desc = "The syndicate toolbox is a suspicious black and red. It comes loaded with a full tool set including a \
       multitool and combat gloves that are resistant to shocks and heat."
-  item = /obj/item/weapon/storage/toolbox/syndicate
+  item = /obj/item/storage/toolbox/syndicate
   cost = 1
 
 /datum/uplink_item/defender/emergency/magboots
@@ -211,7 +211,7 @@
   desc = "This red and black syndicate space suit is less encumbering than Nanotrasen variants, \
       fits inside bags, and has a weapon slot. Nanotrasen crewmembers are trained to report red space suit \
       sightings, however."
-  item = /obj/item/weapon/storage/box/syndie_kit/space
+  item = /obj/item/storage/box/syndie_kit/space
   cost = 2
 
 /datum/uplink_item/defender/medical
@@ -221,7 +221,7 @@
   name = "Syndicate Surgery duffelbag"
   desc = "The Syndicate surgery duffelbag is a toolkit containing all surgery tools, surgical drapes, \
       a Syndicate brand MMI, a straitjacket, and a muzzle."
-  item = /obj/item/weapon/storage/backpack/duffelbag/syndie/surgery
+  item = /obj/item/storage/backpack/duffelbag/syndie/surgery
   cost = 2
 
 /datum/uplink_item/defender/medical/medkit
@@ -229,12 +229,12 @@
   desc = "This first aid kit is a suspicious brown and red. Included is a combat stimulant injector \
       for rapid healing, a medical HUD for quick identification of injured personnel, \
       and other supplies helpful for a field medic."
-  item = /obj/item/weapon/storage/firstaid/tactical
+  item = /obj/item/storage/firstaid/tactical
   cost = 4
 
 /datum/uplink_item/defender/medical/stimpack
   name = "Stimpack"
   desc = "Stimpacks, the tool of many great heroes, make you nearly immune to stuns and knockdowns for about \
       5 minutes after injection."
-  item = /obj/item/weapon/reagent_containers/syringe/stimulants
+  item = /obj/item/reagent_containers/syringe/stimulants
   cost = 8

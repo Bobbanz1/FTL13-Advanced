@@ -17,12 +17,12 @@
 	var/list/mob/pilot	//There is only ever one pilot and he gets all the privledge
 	var/list/mob/passengers = list() //passengers can't do anything and are variable in number
 	var/max_passengers = 0
-	var/obj/item/weapon/storage/internal/cargo_hold
+	var/obj/item/storage/internal/cargo_hold
 
 	var/datum/spacepod/equipment/equipment_system
 
-	var/battery_type = "/obj/item/weapon/stock_parts/cell/high"
-	var/obj/item/weapon/stock_parts/cell/battery
+	var/battery_type = "/obj/item/stock_parts/cell/high"
+	var/obj/item/stock_parts/cell/battery
 	var/obj/item/pod_parts/armor/installed_armor
 	var/armor_stage = 0
 
@@ -66,7 +66,7 @@
 	src.use_internal_tank = 1
 	equipment_system = new(src)
 	GLOB.spacepods_list += src
-	cargo_hold = new/obj/item/weapon/storage/internal(src)
+	cargo_hold = new/obj/item/storage/internal(src)
 	cargo_hold.w_class = 5	//so you can put bags in
 	cargo_hold.storage_slots = 0	//You need to install cargo modules to use it.
 	cargo_hold.max_w_class = 5		//fit almost anything
@@ -256,8 +256,8 @@
 				empcounter = 20 //Disable movement for 20 ticks.
 
 /obj/spacepod/attackby(obj/item/W as obj, mob/user as mob, params)
-	if(istype(W, /obj/item/weapon/weldingtool) && armor_stage == 0)
-		var/obj/item/weapon/weldingtool/WT = W
+	if(istype(W, /obj/item/weldingtool) && armor_stage == 0)
+		var/obj/item/weldingtool/WT = W
 		if(!WT.isOn())
 			to_chat(user, "<span class='warning'>The welder must be on for this task.</span>")
 			return
@@ -283,7 +283,7 @@
 		playsound(loc, 'sound/items/deconstruct.ogg', 50, 1)
 		update_icons()
 		return
-	if(armor_stage == 1 && istype(W, /obj/item/weapon/crowbar))
+	if(armor_stage == 1 && istype(W, /obj/item/crowbar))
 		if(!user.put_in_any_hand_if_possible(installed_armor))
 			installed_armor.forceMove(get_turf(user))
 		to_chat(user, "You remove the armor")
@@ -297,18 +297,18 @@
 		desc = initial(desc)
 		update_icons()
 		return
-	if(armor_stage == 1 && istype(W, /obj/item/weapon/wrench))
+	if(armor_stage == 1 && istype(W, /obj/item/wrench))
 		armor_stage = 2
 		to_chat(user, "You secure the armor")
 		playsound(loc, 'sound/items/ratchet.ogg', 50, 1)
 		return
-	if(armor_stage == 2 && istype(W, /obj/item/weapon/wrench))
+	if(armor_stage == 2 && istype(W, /obj/item/wrench))
 		armor_stage = 1
 		to_chat(user, "You unsecure the armor")
 		playsound(loc, 'sound/items/ratchet.ogg', 50, 1)
 		return
-	if(armor_stage == 2 && istype(W, /obj/item/weapon/weldingtool))
-		var/obj/item/weapon/weldingtool/WT = W
+	if(armor_stage == 2 && istype(W, /obj/item/weldingtool))
+		var/obj/item/weldingtool/WT = W
 		if(!WT.isOn())
 			to_chat(user, "<span class='warning'>The welder must be on for this task.</span>")
 			return
@@ -322,8 +322,8 @@
 		return
 	if(armor_stage < 3)
 		return
-	if(istype(W, /obj/item/weapon/weldingtool) && hatch_open && !battery && equipment_system.installed_modules.len == 0 && !pilot && passengers.len == 0) // Completely empty pods can have their armor removed
-		var/obj/item/weapon/weldingtool/WT = W
+	if(istype(W, /obj/item/weldingtool) && hatch_open && !battery && equipment_system.installed_modules.len == 0 && !pilot && passengers.len == 0) // Completely empty pods can have their armor removed
+		var/obj/item/weldingtool/WT = W
 		if(!WT.isOn())
 			to_chat(user, "<span class='warning'>The welder must be on for this task.</span>")
 			return
@@ -335,7 +335,7 @@
 			armor_stage = 2
 		return
 
-	if(istype(W, /obj/item/weapon/crowbar))
+	if(istype(W, /obj/item/crowbar))
 		if(!equipment_system.lock_system || unlocked || hatch_open)
 			hatch_open = !hatch_open
 			playsound(loc, 'sound/items/crowbar.ogg', 50, 1)
@@ -343,7 +343,7 @@
 		else
 			to_chat(user, "<span class='warning'>The hatch is locked shut!</span>")
 		return
-	if(istype(W, /obj/item/weapon/stock_parts/cell))
+	if(istype(W, /obj/item/stock_parts/cell))
 		if(!hatch_open)
 			to_chat(user, "\red The maintenance hatch is closed!")
 			return
@@ -386,11 +386,11 @@
 			to_chat(user, "<span class='warning'>This is the wrong key!</span>")
 			return
 
-	if(istype(W, /obj/item/weapon/weldingtool))
+	if(istype(W, /obj/item/weldingtool))
 		if(!hatch_open)
 			to_chat(user, "<span class='warning'>You must open the maintenance hatch before attempting repairs.</span>")
 			return
-		var/obj/item/weapon/weldingtool/WT = W
+		var/obj/item/weldingtool/WT = W
 		if(!WT.isOn())
 			to_chat(user, "<span class='warning'>The welder must be on for this task.</span>")
 			return
@@ -546,7 +546,7 @@ obj/spacepod/proc/add_equipment(mob/user, var/obj/item/device/spacepod_equipment
 
 	L += src.contents
 
-	for(var/obj/item/weapon/storage/S in src)
+	for(var/obj/item/storage/S in src)
 		L += S.return_inv()
 	return L
 
@@ -590,7 +590,7 @@ obj/spacepod/proc/add_equipment(mob/user, var/obj/item/device/spacepod_equipment
 	equipment_system.lock_system.id = 100000
 	equipment_system.installed_modules += K
 
-	battery = new /obj/item/weapon/stock_parts/cell/high()
+	battery = new /obj/item/stock_parts/cell/high()
 
 /obj/spacepod/random/New()
 	..()
@@ -602,7 +602,7 @@ obj/spacepod/proc/add_equipment(mob/user, var/obj/item/device/spacepod_equipment
 	icon_state = installed_armor.pod_icon_state
 	armor_stage = 3
 
-	battery = new /obj/item/weapon/stock_parts/cell/high()
+	battery = new /obj/item/stock_parts/cell/high()
 	update_icons()
 
 /obj/spacepod/verb/toggle_internal_tank()

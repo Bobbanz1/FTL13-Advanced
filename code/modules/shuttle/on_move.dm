@@ -322,7 +322,7 @@ All ShuttleMove procs go here
 
 /************************************Item move procs************************************/
 
-/obj/item/weapon/storage/pod/onShuttleMove(turf/newT, turf/oldT, rotation, list/movement_force, move_dir, old_dock)
+/obj/item/storage/pod/onShuttleMove(turf/newT, turf/oldT, rotation, list/movement_force, move_dir, old_dock)
 	. = ..()
 	unlocked = TRUE
 	// If the pod was launched, the storage will always open.

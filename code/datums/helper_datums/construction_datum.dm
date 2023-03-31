@@ -41,19 +41,19 @@
 	return 0
 
 /datum/construction/proc/custom_action(step, used_atom, user)
-	if(istype(used_atom, /obj/item/weapon/weldingtool))
-		var/obj/item/weapon/weldingtool/W = used_atom
+	if(istype(used_atom, /obj/item/weldingtool))
+		var/obj/item/weldingtool/W = used_atom
 		if (W.remove_fuel(0, user))
 			playsound(holder, 'sound/items/welder2.ogg', 50, 1)
 		else
 			return 0
-	else if(istype(used_atom, /obj/item/weapon/wrench))
+	else if(istype(used_atom, /obj/item/wrench))
 		playsound(holder, 'sound/items/ratchet.ogg', 50, 1)
 
-	else if(istype(used_atom, /obj/item/weapon/screwdriver))
+	else if(istype(used_atom, /obj/item/screwdriver))
 		playsound(holder, 'sound/items/screwdriver.ogg', 50, 1)
 
-	else if(istype(used_atom, /obj/item/weapon/wirecutters))
+	else if(istype(used_atom, /obj/item/wirecutters))
 		playsound(holder, 'sound/items/wirecutter.ogg', 50, 1)
 
 	else if(istype(used_atom, /obj/item/stack/cable_coil))

@@ -642,17 +642,17 @@
 /turf/open/floor/plasteel/floorgrime,
 /area/shuttle/ftl/security/masteratarms)
 "aem" = (
-/obj/item/weapon/reagent_containers/food/condiment/saltshaker{
+/obj/item/reagent_containers/food/condiment/saltshaker{
 	pixel_x = -3;
 	pixel_y = 0
 	},
-/obj/item/weapon/storage/book/bible,
+/obj/item/storage/book/bible,
 /obj/structure/table,
-/obj/item/weapon/storage/box/hug/medical{
+/obj/item/storage/box/hug/medical{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/weapon/storage/box/prisoner,
+/obj/item/storage/box/prisoner,
 /turf/open/floor/plasteel/floorgrime,
 /area/shuttle/ftl/security/masteratarms)
 "aet" = (
@@ -665,7 +665,7 @@
 /area/shuttle/ftl/cargo/office)
 "aey" = (
 /obj/structure/closet/crate,
-/obj/item/weapon/storage/toolbox/emergency,
+/obj/item/storage/toolbox/emergency,
 /obj/item/device/flashlight{
 	pixel_x = 1;
 	pixel_y = 5
@@ -674,7 +674,7 @@
 	pixel_x = 1;
 	pixel_y = 5
 	},
-/obj/item/weapon/stock_parts/cell/high{
+/obj/item/stock_parts/cell/high{
 	charge = 100;
 	maxcharge = 15000
 	},
@@ -887,12 +887,12 @@
 /area/shuttle/ftl/cargo/office)
 "afG" = (
 /obj/structure/closet/crate/medical,
-/obj/item/weapon/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
 /obj/machinery/light{
 	dir = 2
 	},
-/obj/item/weapon/storage/firstaid/regular,
-/obj/item/weapon/storage/pill_bottle,
+/obj/item/storage/firstaid/regular,
+/obj/item/storage/pill_bottle,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
@@ -972,9 +972,9 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/item/weapon/hemostat,
-/obj/item/weapon/retractor,
-/obj/item/weapon/surgical_drapes,
+/obj/item/hemostat,
+/obj/item/retractor,
+/obj/item/surgical_drapes,
 /obj/item/clothing/gloves/color/latex,
 /obj/structure/window/reinforced{
 	dir = 1
@@ -1105,8 +1105,8 @@
 /obj/structure/rack{
 	dir = 1
 	},
-/obj/item/weapon/storage/toolbox/emergency,
-/obj/item/weapon/storage/toolbox/emergency{
+/obj/item/storage/toolbox/emergency,
+/obj/item/storage/toolbox/emergency{
 	pixel_x = 2;
 	pixel_y = -3
 	},
@@ -1196,8 +1196,8 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/item/weapon/circular_saw,
-/obj/item/weapon/scalpel{
+/obj/item/circular_saw,
+/obj/item/scalpel{
 	pixel_y = 10
 	},
 /obj/item/clothing/suit/apron/surgical,
@@ -1489,7 +1489,7 @@
 /turf/closed/wall,
 /area/shuttle/ftl/cargo/storage)
 "aim" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /obj/machinery/newscaster{
 	pixel_y = 30
 	},
@@ -1636,7 +1636,7 @@
 /area/shuttle/ftl/subshuttle/pod_main)
 "aje" = (
 /obj/structure/rack,
-/obj/item/weapon/gun/energy/ionrifle,
+/obj/item/gun/energy/ionrifle,
 /obj/item/clothing/suit/armor/laserproof,
 /obj/structure/window/reinforced{
 	dir = 2
@@ -1650,7 +1650,7 @@
 /obj/item/ammo_box/magazine/sniper_rounds/haemorrhage,
 /obj/item/ammo_box/magazine/sniper_rounds/penetrator,
 /obj/item/ammo_box/magazine/sniper_rounds/soporific,
-/obj/item/weapon/gun/ballistic/automatic/sniper_rifle,
+/obj/item/gun/ballistic/automatic/sniper_rifle,
 /obj/machinery/ai_status_display{
 	pixel_x = 0;
 	pixel_y = 32
@@ -1679,7 +1679,7 @@
 	name = "3maintenance loot spawner"
 	},
 /obj/effect/spawner/lootdrop/armory_contraband{
-	loot = list(/obj/item/weapon/gun/ballistic/automatic/pistol = 5, /obj/item/weapon/gun/ballistic/shotgun/automatic/combat = 5, /obj/item/weapon/gun/ballistic/revolver/mateba, /obj/item/weapon/gun/ballistic/automatic/pistol/deagle, /obj/item/weapon/storage/box/syndie_kit/throwing_weapons = 3)
+	loot = list(/obj/item/gun/ballistic/automatic/pistol = 5, /obj/item/gun/ballistic/shotgun/automatic/combat = 5, /obj/item/gun/ballistic/revolver/mateba, /obj/item/gun/ballistic/automatic/pistol/deagle, /obj/item/storage/box/syndie_kit/throwing_weapons = 3)
 	},
 /obj/structure/window/reinforced{
 	dir = 2
@@ -1747,24 +1747,24 @@
 /obj/structure/closet/crate/freezer,
 /obj/item/clothing/mask/breath/medical,
 /obj/item/clothing/mask/breath/medical,
-/obj/item/weapon/tank/internals/anesthetic,
-/obj/item/weapon/tank/internals/anesthetic,
-/obj/item/weapon/reagent_containers/blood/empty,
-/obj/item/weapon/reagent_containers/blood/empty{
+/obj/item/tank/internals/anesthetic,
+/obj/item/tank/internals/anesthetic,
+/obj/item/reagent_containers/blood/empty,
+/obj/item/reagent_containers/blood/empty{
 	pixel_x = -3;
 	pixel_y = -3
 	},
-/obj/item/weapon/reagent_containers/blood/OMinus,
-/obj/item/weapon/reagent_containers/blood/OPlus{
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OPlus{
 	pixel_x = -2;
 	pixel_y = -1
 	},
-/obj/item/weapon/reagent_containers/blood/random,
-/obj/item/weapon/reagent_containers/blood/random,
-/obj/item/weapon/reagent_containers/blood/random,
-/obj/item/weapon/reagent_containers/blood/random,
-/obj/item/weapon/reagent_containers/blood/random,
-/obj/item/weapon/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
 	},
@@ -2316,12 +2316,12 @@
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/cargo/office)
 "alL" = (
-/obj/item/weapon/reagent_containers/food/snacks/grilledcheese{
+/obj/item/reagent_containers/food/snacks/grilledcheese{
 	pixel_y = 6
 	},
 /obj/structure/closet/crate/medical,
-/obj/item/weapon/storage/firstaid/regular,
-/obj/item/weapon/storage/pill_bottle,
+/obj/item/storage/firstaid/regular,
+/obj/item/storage/pill_bottle,
 /obj/machinery/airalarm{
 	dir = 8;
 	icon_state = "alarm0";
@@ -2651,7 +2651,7 @@
 /area/shuttle/ftl/security/brig)
 "anv" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet,
+/obj/item/bedsheet,
 /turf/open/floor/plasteel/floorgrime,
 /area/shuttle/ftl/security/brig)
 "anw" = (
@@ -2724,7 +2724,7 @@
 /obj/item/clothing/head/beret/sec/navyofficer,
 /obj/item/clothing/head/beret/sec/navyofficer,
 /obj/item/clothing/head/beret/sec/navyofficer,
-/obj/item/weapon/reagent_containers/food/drinks/flask,
+/obj/item/reagent_containers/food/drinks/flask,
 /obj/item/clothing/head/beret/sec/navymasteratarms,
 /obj/item/clothing/head/beret/sec/navyhos,
 /turf/open/floor/plasteel/black,
@@ -3458,7 +3458,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 2
 	},
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /obj/machinery/airalarm{
 	pixel_y = 22
 	},
@@ -3621,24 +3621,24 @@
 /turf/closed/wall,
 /area/shuttle/ftl/hallway/primary/port)
 "arC" = (
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
-/obj/item/weapon/book/manual/wiki/engineering_hacking{
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/book/manual/wiki/engineering_hacking{
 	pixel_x = 4;
 	pixel_y = 5
 	},
-/obj/item/weapon/book/manual/wiki/engineering_guide{
+/obj/item/book/manual/wiki/engineering_guide{
 	pixel_x = 3;
 	pixel_y = 4
 	},
-/obj/item/weapon/book/manual/wiki/engineering_construction{
+/obj/item/book/manual/wiki/engineering_construction{
 	pixel_y = 3
 	},
 /obj/structure/table,
-/obj/item/weapon/book/manual/wiki/supermatter{
+/obj/item/book/manual/wiki/supermatter{
 	pixel_x = -3;
 	pixel_y = 1
 	},
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_engineering{
+/obj/item/book/manual/wiki/department_standard_operating_procedure_engineering{
 	pixel_x = -5;
 	pixel_y = -1
 	},
@@ -3850,7 +3850,7 @@
 /obj/structure/chair/comfy/black{
 	dir = 2
 	},
-/obj/item/weapon/storage/secure/safe{
+/obj/item/storage/secure/safe{
 	pixel_x = 6;
 	pixel_y = 28
 	},
@@ -3876,15 +3876,15 @@
 	dir = 1
 	},
 /obj/structure/table/wood,
-/obj/item/weapon/storage/photo_album,
+/obj/item/storage/photo_album,
 /obj/item/device/camera,
 /turf/open/floor/carpet,
 /area/shuttle/ftl/crew_quarters/captain)
 "asv" = (
 /obj/structure/table/wood,
 /obj/machinery/recharger,
-/obj/item/weapon/hand_tele,
-/obj/item/weapon/melee/chainofcommand,
+/obj/item/hand_tele,
+/obj/item/melee/chainofcommand,
 /obj/machinery/ai_status_display{
 	pixel_x = 32;
 	pixel_y = 0
@@ -4034,10 +4034,10 @@
 /area/shuttle/ftl/crew_quarters/heads)
 "atu" = (
 /obj/structure/table/wood,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
+/obj/item/paper_bin,
+/obj/item/pen,
 /obj/item/device/radio,
-/obj/item/weapon/coin/plasma,
+/obj/item/coin/plasma,
 /obj/machinery/light_switch{
 	pixel_x = -24;
 	pixel_y = -8
@@ -4069,22 +4069,22 @@
 	dir = 8
 	},
 /obj/item/device/analyzer,
-/obj/item/weapon/stock_parts/micro_laser,
-/obj/item/weapon/stock_parts/manipulator,
-/obj/item/weapon/stock_parts/manipulator,
-/obj/item/weapon/stock_parts/manipulator,
-/obj/item/weapon/stock_parts/manipulator,
-/obj/item/weapon/stock_parts/capacitor,
-/obj/item/weapon/stock_parts/micro_laser/high,
-/obj/item/weapon/stock_parts/micro_laser/high,
-/obj/item/weapon/stock_parts/micro_laser/high,
-/obj/item/weapon/stock_parts/micro_laser/high,
+/obj/item/stock_parts/micro_laser,
+/obj/item/stock_parts/manipulator,
+/obj/item/stock_parts/manipulator,
+/obj/item/stock_parts/manipulator,
+/obj/item/stock_parts/manipulator,
+/obj/item/stock_parts/capacitor,
+/obj/item/stock_parts/micro_laser/high,
+/obj/item/stock_parts/micro_laser/high,
+/obj/item/stock_parts/micro_laser/high,
+/obj/item/stock_parts/micro_laser/high,
 /obj/structure/table,
 /obj/item/device/flashlight,
-/obj/item/weapon/aiModule/reset{
+/obj/item/aiModule/reset{
 	pixel_y = 2
 	},
-/obj/item/weapon/electronics/airlock,
+/obj/item/electronics/airlock,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/station{
 	dir = 1
 	},
@@ -4142,7 +4142,7 @@
 	pixel_x = 32;
 	pixel_y = 0
 	},
-/obj/item/weapon/storage/pod{
+/obj/item/storage/pod{
 	pixel_x = -28
 	},
 /turf/open/floor/plasteel/shuttle,
@@ -4156,7 +4156,7 @@
 	pixel_x = 32;
 	pixel_y = 0
 	},
-/obj/item/weapon/storage/pod{
+/obj/item/storage/pod{
 	pixel_x = -28
 	},
 /turf/open/floor/plasteel/shuttle,
@@ -4285,22 +4285,22 @@
 /area/shuttle/ftl/crew_quarters/captain)
 "auF" = (
 /obj/structure/rack,
-/obj/item/weapon/circuitboard/machine/telecomms/broadcaster{
+/obj/item/circuitboard/machine/telecomms/broadcaster{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/circuitboard/machine/telecomms/bus,
-/obj/item/weapon/circuitboard/machine/telecomms/server{
+/obj/item/circuitboard/machine/telecomms/bus,
+/obj/item/circuitboard/machine/telecomms/server{
 	pixel_x = 3;
 	pixel_y = -3;
 	pixel_z = 0
 	},
-/obj/item/weapon/circuitboard/machine/telecomms/receiver{
+/obj/item/circuitboard/machine/telecomms/receiver{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/circuitboard/machine/telecomms/processor,
-/obj/item/weapon/circuitboard/computer/message_monitor{
+/obj/item/circuitboard/machine/telecomms/processor,
+/obj/item/circuitboard/computer/message_monitor{
 	pixel_x = 3;
 	pixel_y = -3
 	},
@@ -4309,21 +4309,21 @@
 /area/shuttle/ftl/storage/tech)
 "auG" = (
 /obj/structure/rack,
-/obj/item/weapon/circuitboard/computer/cloning{
+/obj/item/circuitboard/computer/cloning{
 	pixel_x = 0;
 	pixel_y = 0
 	},
-/obj/item/weapon/circuitboard/computer/med_data{
+/obj/item/circuitboard/computer/med_data{
 	pixel_x = 3;
 	pixel_y = -3;
 	pixel_z = 0
 	},
-/obj/item/weapon/circuitboard/machine/clonescanner{
+/obj/item/circuitboard/machine/clonescanner{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/circuitboard/machine/clonepod,
-/obj/item/weapon/circuitboard/computer/scan_consolenew{
+/obj/item/circuitboard/machine/clonepod,
+/obj/item/circuitboard/computer/scan_consolenew{
 	pixel_x = 3;
 	pixel_y = -3
 	},
@@ -4335,11 +4335,11 @@
 /area/shuttle/ftl/storage/tech)
 "auK" = (
 /obj/structure/rack,
-/obj/item/weapon/circuitboard/computer/mecha_control{
+/obj/item/circuitboard/computer/mecha_control{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/circuitboard/computer/robotics,
+/obj/item/circuitboard/computer/robotics,
 /turf/open/floor/plating,
 /area/shuttle/ftl/storage/tech)
 "auL" = (
@@ -4351,7 +4351,7 @@
 /obj/structure/rack,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/metal/fifty,
-/obj/item/weapon/storage/belt/utility,
+/obj/item/storage/belt/utility,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/tool_storage)
 "auP" = (
@@ -4359,9 +4359,9 @@
 	pixel_x = 4
 	},
 /obj/structure/table,
-/obj/item/weapon/wirecutters,
-/obj/item/weapon/weldingtool,
-/obj/item/weapon/screwdriver,
+/obj/item/wirecutters,
+/obj/item/weldingtool,
+/obj/item/screwdriver,
 /obj/item/device/t_scanner,
 /obj/item/device/assembly/signaler,
 /turf/open/floor/plasteel,
@@ -4514,7 +4514,7 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/obj/item/weapon/storage/fancy/cigarettes/cigars/cohiba,
+/obj/item/storage/fancy/cigarettes/cigars/cohiba,
 /obj/structure/closet/secure_closet/captains,
 /turf/open/floor/carpet,
 /area/shuttle/ftl/crew_quarters/captain)
@@ -4534,12 +4534,12 @@
 /turf/open/floor/carpet,
 /area/shuttle/ftl/crew_quarters/captain)
 "avr" = (
-/obj/item/weapon/storage/secure/briefcase{
+/obj/item/storage/secure/briefcase{
 	pixel_x = -2;
 	pixel_y = 4
 	},
 /obj/structure/table/wood,
-/obj/item/weapon/storage/lockbox/medal,
+/obj/item/storage/lockbox/medal,
 /turf/open/floor/carpet,
 /area/shuttle/ftl/crew_quarters/captain)
 "avs" = (
@@ -4809,7 +4809,7 @@
 	network = list("SS13","Supermatter")
 	},
 /obj/structure/table,
-/obj/item/weapon/storage/firstaid/fire,
+/obj/item/storage/firstaid/fire,
 /obj/machinery/atmospherics/pipe/heat_exchanging/junction{
 	dir = 8;
 	icon_state = "intact";
@@ -5151,9 +5151,9 @@
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/engineering)
 "azM" = (
-/obj/item/weapon/paper_bin,
+/obj/item/paper_bin,
 /obj/structure/table/wood,
-/obj/item/weapon/pen,
+/obj/item/pen,
 /turf/open/floor/wood,
 /area/shuttle/ftl/crew_quarters/theatre{
 	name = "Library"
@@ -5201,9 +5201,9 @@
 	})
 "azT" = (
 /obj/structure/closet/secure_closet/freezer/money,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka/badminka,
-/obj/item/weapon/reagent_containers/food/drinks/drinkingglass/shotglass,
-/obj/item/weapon/reagent_containers/food/drinks/drinkingglass/shotglass,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/badminka,
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
 /obj/machinery/power/apc/ship{
 	auto_name = 1;
 	dir = 1;
@@ -5404,7 +5404,7 @@
 	},
 /obj/item/device/gps,
 /obj/item/device/radio/beacon,
-/obj/item/weapon/hand_tele,
+/obj/item/hand_tele,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 25
 	},
@@ -5414,7 +5414,7 @@
 	})
 "aBq" = (
 /obj/structure/filingcabinet/security,
-/obj/item/weapon/folder/documents,
+/obj/item/folder/documents,
 /obj/machinery/newscaster{
 	pixel_x = -30
 	},
@@ -5442,12 +5442,12 @@
 /obj/item/ammo_box/magazine/wt550m9/wtap,
 /obj/item/ammo_box/magazine/wt550m9/wtap,
 /obj/item/ammo_box/magazine/wt550m9/wtap,
-/obj/item/weapon/gun/ballistic/automatic/wt550{
+/obj/item/gun/ballistic/automatic/wt550{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/gun/ballistic/automatic/wt550,
-/obj/item/weapon/gun/ballistic/automatic/wt550{
+/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/wt550{
 	pixel_x = 3;
 	pixel_y = -3
 	},
@@ -5546,8 +5546,8 @@
 	dir = 1
 	},
 /obj/structure/table,
-/obj/item/weapon/storage/box/donkpockets,
-/obj/item/weapon/hand_labeler{
+/obj/item/storage/box/donkpockets,
+/obj/item/hand_labeler{
 	pixel_x = 5
 	},
 /turf/open/floor/plasteel,
@@ -5674,12 +5674,12 @@
 	name = "lightsout"
 	},
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/electrical,
-/obj/item/weapon/electronics/airlock{
+/obj/item/storage/toolbox/electrical,
+/obj/item/electronics/airlock{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/electronics/airlock,
+/obj/item/electronics/airlock,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/break_room)
 "aCw" = (
@@ -5744,7 +5744,7 @@
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 4
 	},
-/obj/item/weapon/wrench,
+/obj/item/wrench,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/engineering)
 "aCY" = (
@@ -6055,7 +6055,7 @@
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/engine/chiefs_office)
 "aDR" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/central)
 "aDU" = (
@@ -6269,14 +6269,14 @@
 /area/shuttle/ftl/hallway/primary/central)
 "aET" = (
 /obj/structure/table,
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = -3;
 	pixel_y = 7
 	},
-/obj/item/weapon/folder/blue{
+/obj/item/folder/blue{
 	pixel_y = 2
 	},
-/obj/item/weapon/pen,
+/obj/item/pen,
 /obj/item/clothing/glasses/meson,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/bridge/eva)
@@ -6400,11 +6400,11 @@
 	},
 /area/shuttle/ftl/hallway/primary/central)
 "aFw" = (
-/obj/item/weapon/storage/belt/utility,
-/obj/item/weapon/electronics/apc,
+/obj/item/storage/belt/utility,
+/obj/item/electronics/apc,
 /obj/structure/table,
-/obj/item/weapon/electronics/airlock,
-/obj/item/weapon/electronics/airlock,
+/obj/item/electronics/airlock,
+/obj/item/electronics/airlock,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/bridge/eva)
 "aFx" = (
@@ -6461,8 +6461,8 @@
 /area/shuttle/ftl/bridge/eva)
 "aGl" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/mechanical,
-/obj/item/weapon/storage/toolbox/emergency{
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/emergency{
 	pixel_x = -2;
 	pixel_y = -3
 	},
@@ -6735,14 +6735,14 @@
 /turf/closed/wall,
 /area/shuttle/ftl/crew_quarters/locker)
 "aHE" = (
-/obj/item/weapon/book/manual/wiki/chemistry,
+/obj/item/book/manual/wiki/chemistry,
 /obj/machinery/light{
 	dir = 4
 	},
 /obj/structure/table/glass,
-/obj/item/weapon/storage/bag/chemistry,
-/obj/item/weapon/storage/bag/chemistry,
-/obj/item/weapon/storage/pill_bottle,
+/obj/item/storage/bag/chemistry,
+/obj/item/storage/bag/chemistry,
+/obj/item/storage/pill_bottle,
 /obj/item/clothing/glasses/science,
 /turf/open/floor/plasteel/whiteblue/side{
 	dir = 4
@@ -6964,11 +6964,11 @@
 /area/shuttle/ftl/telecomms/server)
 "aJo" = (
 /obj/structure/table,
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = -3;
 	pixel_y = 7
 	},
-/obj/item/weapon/pen,
+/obj/item/pen,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/central)
 "aJq" = (
@@ -6976,20 +6976,20 @@
 /area/shuttle/ftl/janitor)
 "aJs" = (
 /obj/structure/table,
-/obj/item/weapon/storage/box/lights/mixed{
+/obj/item/storage/box/lights/mixed{
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/obj/item/weapon/storage/box/lights/mixed{
+/obj/item/storage/box/lights/mixed{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/weapon/storage/box/mousetraps{
+/obj/item/storage/box/mousetraps{
 	pixel_x = -2;
 	pixel_y = -1
 	},
-/obj/item/weapon/paint/paint_remover,
-/obj/item/weapon/paint/paint_remover,
+/obj/item/paint/paint_remover,
+/obj/item/paint/paint_remover,
 /turf/open/floor/plating,
 /area/shuttle/ftl/janitor)
 "aJu" = (
@@ -7039,14 +7039,14 @@
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/crew_quarters/locker)
 "aJH" = (
-/obj/item/weapon/folder/white,
+/obj/item/folder/white,
 /obj/structure/table,
-/obj/item/weapon/storage/pill_bottle/dice,
+/obj/item/storage/pill_bottle/dice,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/crew_quarters/locker)
 "aJI" = (
 /obj/structure/table,
-/obj/item/weapon/book/random,
+/obj/item/book/random,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/crew_quarters/locker)
@@ -7064,7 +7064,7 @@
 /area/shuttle/ftl/hallway/secondary/construction)
 "aJN" = (
 /obj/structure/table/wood,
-/obj/item/weapon/paper/crumpled/ruins/snowdin/keys,
+/obj/item/paper/crumpled/ruins/snowdin/keys,
 /obj/item/device/assembly/signaler,
 /turf/open/floor/plating,
 /area/shuttle/ftl/hallway/secondary/construction)
@@ -7316,7 +7316,7 @@
 "aLd" = (
 /obj/structure/rack,
 /obj/item/clothing/shoes/magboots,
-/obj/item/weapon/crowbar/red,
+/obj/item/crowbar/red,
 /turf/open/floor/plating,
 /area/shuttle/ftl/research/mineral_storeroom)
 "aLr" = (
@@ -7438,7 +7438,7 @@
 /area/shuttle/ftl/crew_quarters/sleep)
 "aLY" = (
 /obj/structure/closet/toolcloset,
-/obj/item/weapon/storage/belt/utility,
+/obj/item/storage/belt/utility,
 /turf/open/floor/plating,
 /area/shuttle/ftl/hallway/secondary/construction)
 "aMc" = (
@@ -7475,8 +7475,8 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 2
 	},
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen/red,
+/obj/item/paper_bin,
+/obj/item/pen/red,
 /obj/machinery/airalarm{
 	dir = 4;
 	icon_state = "alarm0";
@@ -7623,7 +7623,7 @@
 /turf/open/floor/plating,
 /area/shuttle/ftl/atmos/equipment)
 "aNm" = (
-/obj/item/weapon/storage/pod{
+/obj/item/storage/pod{
 	pixel_x = 32
 	},
 /obj/machinery/light{
@@ -8056,7 +8056,7 @@
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/secondary/exit)
 "aPh" = (
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /obj/structure/table/wood,
 /obj/machinery/status_display{
 	density = 0;
@@ -8064,8 +8064,8 @@
 	pixel_x = 32;
 	pixel_y = 0
 	},
-/obj/item/weapon/storage/secure/briefcase,
-/obj/item/weapon/storage/briefcase{
+/obj/item/storage/secure/briefcase,
+/obj/item/storage/briefcase{
 	pixel_x = 4;
 	pixel_y = -4
 	},
@@ -8086,7 +8086,7 @@
 /obj/item/stack/sheet/glass{
 	amount = 50
 	},
-/obj/item/weapon/storage/belt/utility,
+/obj/item/storage/belt/utility,
 /obj/item/device/t_scanner{
 	pixel_x = 4;
 	pixel_y = 4
@@ -8305,7 +8305,7 @@
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "kitchen_2"
 	},
-/obj/item/weapon/storage/fancy/donut_box,
+/obj/item/storage/fancy/donut_box,
 /turf/open/floor/plating,
 /area/shuttle/ftl/crew_quarters/kitchen)
 "aQT" = (
@@ -8320,7 +8320,7 @@
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "kitchen_2"
 	},
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /turf/open/floor/plating,
 /area/shuttle/ftl/crew_quarters/kitchen)
 "aRj" = (
@@ -8622,7 +8622,7 @@
 /obj/machinery/door/window/eastright{
 	dir = 8
 	},
-/obj/item/weapon/reagent_containers/food/drinks/britcup,
+/obj/item/reagent_containers/food/drinks/britcup,
 /turf/open/floor/plating,
 /area/shuttle/ftl/medical/chemistry)
 "aSH" = (
@@ -8819,12 +8819,12 @@
 /area/shuttle/ftl/crew_quarters/bar)
 "aUm" = (
 /obj/structure/table,
-/obj/item/weapon/kitchen/rollingpin,
-/obj/item/weapon/reagent_containers/food/condiment/saltshaker{
+/obj/item/kitchen/rollingpin,
+/obj/item/reagent_containers/food/condiment/saltshaker{
 	pixel_x = -3;
 	pixel_y = 0
 	},
-/obj/item/weapon/reagent_containers/food/condiment/peppermill{
+/obj/item/reagent_containers/food/condiment/peppermill{
 	pixel_x = 3
 	},
 /obj/structure/disposalpipe/segment{
@@ -8967,9 +8967,9 @@
 /turf/open/floor/plasteel/white,
 /area/shuttle/ftl/medical/sleeper)
 "aVk" = (
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /obj/structure/table/wood,
-/obj/item/weapon/storage/toolbox/emergency,
+/obj/item/storage/toolbox/emergency,
 /turf/open/floor/plating,
 /area/shuttle/ftl/hallway/secondary/construction)
 "aVr" = (
@@ -8997,7 +8997,7 @@
 /area/shuttle/ftl/hallway/primary/starboard)
 "aVC" = (
 /obj/structure/closet/l3closet,
-/obj/item/weapon/coin/iron,
+/obj/item/coin/iron,
 /obj/effect/landmark/xeno_spawn,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/medbay)
@@ -9052,7 +9052,7 @@
 /obj/machinery/atmospherics/pipe/manifold/general/visible{
 	dir = 8
 	},
-/obj/item/weapon/wrench,
+/obj/item/wrench,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/atmos)
 "aVL" = (
@@ -9165,7 +9165,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/station{
 	dir = 1
 	},
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -9646,8 +9646,8 @@
 /area/shuttle/ftl/turret_protected/ai)
 "bad" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/storage/toolbox/mechanical,
-/obj/item/weapon/storage/toolbox/emergency{
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/emergency{
 	pixel_x = -2;
 	pixel_y = -3
 	},
@@ -9899,9 +9899,9 @@
 /area/shuttle/ftl/atmos)
 "bch" = (
 /obj/structure/closet/crate,
-/obj/item/weapon/coin/iron,
+/obj/item/coin/iron,
 /obj/effect/spawner/lootdrop/maintenance,
-/obj/item/weapon/computer_hardware/processor_unit/small,
+/obj/item/computer_hardware/processor_unit/small,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bridge)
 "bcA" = (
@@ -9954,7 +9954,7 @@
 /area/shuttle/ftl/atmos)
 "bcY" = (
 /obj/structure/closet/crate,
-/obj/item/weapon/storage/box/lights/mixed,
+/obj/item/storage/box/lights/mixed,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/item/clothing/neck/stethoscope,
 /turf/open/floor/plating,
@@ -10327,10 +10327,10 @@
 	pixel_x = 3;
 	pixel_y = -7
 	},
-/obj/item/weapon/grenade/chem_grenade,
-/obj/item/weapon/grenade/chem_grenade,
+/obj/item/grenade/chem_grenade,
+/obj/item/grenade/chem_grenade,
 /obj/item/stack/cable_coil,
-/obj/item/weapon/screwdriver{
+/obj/item/screwdriver{
 	pixel_x = -2;
 	pixel_y = 6
 	},
@@ -10373,7 +10373,7 @@
 /obj/machinery/atmospherics/pipe/manifold/general/visible{
 	dir = 4
 	},
-/obj/item/weapon/wrench,
+/obj/item/wrench,
 /turf/open/floor/engine,
 /area/shuttle/ftl/engine/ftl_drive)
 "bvM" = (
@@ -10493,8 +10493,8 @@
 	pixel_x = 32;
 	pixel_y = 0
 	},
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen/blue,
+/obj/item/paper_bin,
+/obj/item/pen/blue,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
@@ -10616,9 +10616,9 @@
 /obj/item/solar_assembly,
 /obj/item/solar_assembly,
 /obj/item/solar_assembly,
-/obj/item/weapon/circuitboard/computer/solar_control,
-/obj/item/weapon/electronics/tracker,
-/obj/item/weapon/paper/guides/jobs/engi/solars,
+/obj/item/circuitboard/computer/solar_control,
+/obj/item/electronics/tracker,
+/obj/item/paper/guides/jobs/engi/solars,
 /turf/open/floor/plating,
 /area/shuttle/ftl/engine/tool_storage{
 	name = "Secure Storage"
@@ -10739,10 +10739,10 @@
 /area/shuttle/ftl/bridge/meeting_room)
 "bIx" = (
 /obj/structure/table/wood,
-/obj/item/weapon/storage/box/matches{
+/obj/item/storage/box/matches{
 	pixel_y = 5
 	},
-/obj/item/weapon/reagent_containers/food/drinks/britcup,
+/obj/item/reagent_containers/food/drinks/britcup,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
 	},
@@ -10750,7 +10750,7 @@
 /turf/open/floor/plasteel/bar,
 /area/shuttle/ftl/crew_quarters/bar)
 "bII" = (
-/obj/item/weapon/storage/firstaid/o2{
+/obj/item/storage/firstaid/o2{
 	pixel_x = 6;
 	pixel_y = 6
 	},
@@ -10761,12 +10761,12 @@
 	dir = 4
 	},
 /obj/structure/table/glass,
-/obj/item/weapon/storage/firstaid/brute{
+/obj/item/storage/firstaid/brute{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/storage/firstaid/brute,
-/obj/item/weapon/storage/firstaid/brute{
+/obj/item/storage/firstaid/brute,
+/obj/item/storage/firstaid/brute{
 	pixel_x = -3;
 	pixel_y = -3
 	},
@@ -10834,7 +10834,7 @@
 /area/shuttle/ftl/bridge)
 "bKW" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /turf/open/floor/plasteel/neutral/corner{
 	dir = 8
 	},
@@ -10856,7 +10856,7 @@
 /turf/open/floor/plasteel/shuttle,
 /area/shuttle/ftl/subshuttle/pod_4)
 "bLF" = (
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /turf/open/floor/plasteel/floorgrime,
 /area/shuttle/ftl/security/masteratarms)
 "bLW" = (
@@ -10998,11 +10998,11 @@
 /area/shuttle/ftl/munitions/loading)
 "bTe" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = 7;
 	pixel_y = 4
 	},
-/obj/item/weapon/pen,
+/obj/item/pen,
 /obj/item/device/flashlight/lamp,
 /obj/machinery/newscaster{
 	pixel_x = -30
@@ -11049,7 +11049,7 @@
 	},
 /area/shuttle/ftl/atmos/equipment)
 "bUJ" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -11082,7 +11082,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/station{
 	dir = 2
 	},
-/obj/item/weapon/storage/toolbox/emergency{
+/obj/item/storage/toolbox/emergency{
 	pixel_x = -2;
 	pixel_y = -3
 	},
@@ -11135,11 +11135,11 @@
 /area/shuttle/ftl/subshuttle/pod_4)
 "bWT" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_command{
+/obj/item/book/manual/wiki/department_standard_operating_procedure_command{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/book/manual/wiki/bo_guide{
+/obj/item/book/manual/wiki/bo_guide{
 	pixel_x = 1;
 	pixel_y = 1
 	},
@@ -11233,11 +11233,11 @@
 	},
 /area/shuttle/ftl/security/brig)
 "cbQ" = (
-/obj/item/weapon/storage/box/gloves{
+/obj/item/storage/box/gloves{
 	pixel_x = 3;
 	pixel_y = 4
 	},
-/obj/item/weapon/storage/box/cookie{
+/obj/item/storage/box/cookie{
 	desc = "Reward cooperative patients with a cookie. Or eat them yourself.";
 	name = "box of cookies"
 	},
@@ -11245,7 +11245,7 @@
 /obj/item/clothing/glasses/sunglasses/blindfold,
 /obj/item/clothing/mask/muzzle,
 /obj/item/clothing/ears/earmuffs,
-/obj/item/weapon/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
 /turf/open/floor/plasteel/whiteblue/side{
 	dir = 6
 	},
@@ -11332,12 +11332,12 @@
 /area/shuttle/ftl/assembly/robotics)
 "cfz" = (
 /obj/structure/table/wood,
-/obj/item/weapon/storage/fancy/candle_box,
-/obj/item/weapon/storage/crayons,
-/obj/item/weapon/reagent_containers/food/snacks/grown/poppy{
+/obj/item/storage/fancy/candle_box,
+/obj/item/storage/crayons,
+/obj/item/reagent_containers/food/snacks/grown/poppy{
 	pixel_y = 2
 	},
-/obj/item/weapon/reagent_containers/food/snacks/grown/poppy{
+/obj/item/reagent_containers/food/snacks/grown/poppy{
 	pixel_y = 2
 	},
 /turf/open/floor/plating,
@@ -11349,7 +11349,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 8
 	},
-/obj/item/weapon/screwdriver{
+/obj/item/screwdriver{
 	pixel_y = 6
 	},
 /obj/item/clothing/glasses/hud/health,
@@ -11630,7 +11630,7 @@
 "crC" = (
 /obj/structure/table/reinforced,
 /obj/item/device/radio/intercom,
-/obj/item/weapon/folder/blue,
+/obj/item/folder/blue,
 /turf/open/floor/plasteel/darkblue/side{
 	dir = 8
 	},
@@ -11697,12 +11697,12 @@
 /area/shuttle/ftl/hallway/secondary/entry)
 "ctY" = (
 /obj/structure/table,
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = 1;
 	pixel_y = 9
 	},
-/obj/item/weapon/folder/red,
-/obj/item/weapon/pen,
+/obj/item/folder/red,
+/obj/item/pen,
 /obj/machinery/camera{
 	c_tag = "Departures Checkpoint";
 	dir = 1;
@@ -11719,7 +11719,7 @@
 	})
 "ctZ" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /turf/open/floor/plasteel/neutral/side{
 	dir = 1
 	},
@@ -11850,10 +11850,10 @@
 /area/shuttle/ftl/atmos/equipment)
 "cxK" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/drinks/britcup{
+/obj/item/reagent_containers/food/drinks/britcup{
 	pixel_x = -4
 	},
-/obj/item/weapon/reagent_containers/food/drinks/beer,
+/obj/item/reagent_containers/food/drinks/beer,
 /obj/structure/cable{
 	crit_fail = 0;
 	d1 = 4;
@@ -11921,7 +11921,7 @@
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/cargo/office)
 "cBc" = (
-/obj/item/weapon/storage/firstaid/brute{
+/obj/item/storage/firstaid/brute{
 	pixel_x = 3;
 	pixel_y = 3
 	},
@@ -11929,13 +11929,13 @@
 	dir = 8
 	},
 /obj/structure/table,
-/obj/item/weapon/storage/firstaid/fire,
-/obj/item/weapon/storage/firstaid/regular{
+/obj/item/storage/firstaid/fire,
+/obj/item/storage/firstaid/regular{
 	pixel_x = -3;
 	pixel_y = -3
 	},
-/obj/item/weapon/reagent_containers/syringe,
-/obj/item/weapon/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
 /turf/open/floor/plasteel/blue/side{
 	dir = 9
 	},
@@ -12029,8 +12029,8 @@
 /area/shuttle/ftl/munitions/loading)
 "cEN" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
+/obj/item/paper_bin,
+/obj/item/pen,
 /turf/open/floor/plasteel/darkblue/side{
 	dir = 6
 	},
@@ -12163,12 +12163,12 @@
 	pixel_y = 28
 	},
 /obj/structure/table,
-/obj/item/weapon/computer_hardware/battery,
-/obj/item/weapon/computer_hardware/hard_drive,
-/obj/item/weapon/computer_hardware/network_card,
-/obj/item/weapon/computer_hardware/hard_drive/portable,
-/obj/item/weapon/computer_hardware/processor_unit,
-/obj/item/weapon/computer_hardware/printer,
+/obj/item/computer_hardware/battery,
+/obj/item/computer_hardware/hard_drive,
+/obj/item/computer_hardware/network_card,
+/obj/item/computer_hardware/hard_drive/portable,
+/obj/item/computer_hardware/processor_unit,
+/obj/item/computer_hardware/printer,
 /turf/open/floor/plating,
 /area/shuttle/ftl/storage/tech)
 "cIO" = (
@@ -12444,7 +12444,7 @@
 "cPO" = (
 /obj/structure/table,
 /obj/machinery/cell_charger,
-/obj/item/weapon/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
 /obj/machinery/power/apc/ship{
 	auto_name = 1;
 	dir = 1;
@@ -12617,11 +12617,11 @@
 /area/shuttle/ftl/crew_quarters/locker)
 "cWa" = (
 /obj/structure/rack,
-/obj/item/weapon/storage/toolbox/electrical{
+/obj/item/storage/toolbox/electrical{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
 /obj/item/device/multitool,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/station{
 	dir = 1
@@ -12692,8 +12692,8 @@
 /area/shuttle/ftl/cargo/mining)
 "daD" = (
 /obj/structure/table,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen/blue,
+/obj/item/paper_bin,
+/obj/item/pen/blue,
 /obj/item/device/radio/intercom{
 	pixel_x = 0;
 	pixel_y = 28
@@ -12855,7 +12855,7 @@
 /turf/open/floor/plating,
 /area/shuttle/ftl/cargo/office)
 "ddO" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/neutral/side{
 	dir = 8
 	},
@@ -12892,8 +12892,8 @@
 	dir = 8
 	},
 /obj/item/device/toner,
-/obj/item/weapon/pen/red,
-/obj/item/weapon/pen,
+/obj/item/pen/red,
+/obj/item/pen,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/cargo/office)
 "deR" = (
@@ -12951,12 +12951,12 @@
 "dgS" = (
 /obj/item/device/analyzer,
 /obj/structure/table/glass,
-/obj/item/weapon/storage/toolbox/emergency{
+/obj/item/storage/toolbox/emergency{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/storage/toolbox/mechanical,
-/obj/item/weapon/electronics/airlock,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/electronics/airlock,
 /obj/item/device/assembly/signaler,
 /obj/item/device/assembly/signaler,
 /turf/open/floor/plasteel{
@@ -13383,7 +13383,7 @@
 	name = "Library"
 	})
 "dvp" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/purple/side{
 	dir = 8
 	},
@@ -13456,11 +13456,11 @@
 	})
 "dyX" = (
 /obj/structure/table,
-/obj/item/weapon/lighter{
+/obj/item/lighter{
 	pixel_x = 4;
 	pixel_y = 3
 	},
-/obj/item/weapon/storage/fancy/cigarettes/cigpack_robust,
+/obj/item/storage/fancy/cigarettes/cigpack_robust,
 /obj/machinery/button/door{
 	id = "engi_warehouse";
 	name = "Warehouse Storage";
@@ -13541,7 +13541,7 @@
 "dAn" = (
 /obj/structure/table/reinforced,
 /obj/item/device/aicard,
-/obj/item/weapon/computer_hardware/ai_slot,
+/obj/item/computer_hardware/ai_slot,
 /turf/open/floor/plasteel/darkyellow/side{
 	dir = 9
 	},
@@ -13623,11 +13623,11 @@
 	pixel_x = 0
 	},
 /obj/structure/table,
-/obj/item/weapon/storage/firstaid/regular{
+/obj/item/storage/firstaid/regular{
 	pixel_x = 2;
 	pixel_y = 3
 	},
-/obj/item/weapon/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/plasteel/blue/side{
 	dir = 9
 	},
@@ -13788,14 +13788,14 @@
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hydroponics)
 "dJi" = (
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /obj/structure/table,
-/obj/item/weapon/book/manual/wiki/security_ship_law{
+/obj/item/book/manual/wiki/security_ship_law{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_security,
-/obj/item/weapon/book/manual/detective{
+/obj/item/book/manual/wiki/department_standard_operating_procedure_security,
+/obj/item/book/manual/detective{
 	pixel_x = -3;
 	pixel_y = -3
 	},
@@ -13891,10 +13891,10 @@
 	dir = 1;
 	pixel_y = -26
 	},
-/obj/item/weapon/scalpel{
+/obj/item/scalpel{
 	pixel_y = 12
 	},
-/obj/item/weapon/circular_saw,
+/obj/item/circular_saw,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/whiteblue/side{
 	dir = 8
@@ -13924,11 +13924,11 @@
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/atmos)
 "dLs" = (
-/obj/item/weapon/storage/firstaid/o2{
+/obj/item/storage/firstaid/o2{
 	pixel_x = 6;
 	pixel_y = 6
 	},
-/obj/item/weapon/storage/firstaid/regular{
+/obj/item/storage/firstaid/regular{
 	pixel_x = 3;
 	pixel_y = 3
 	},
@@ -13936,8 +13936,8 @@
 	dir = 4
 	},
 /obj/structure/table/glass,
-/obj/item/weapon/storage/firstaid/regular,
-/obj/item/weapon/storage/firstaid/regular{
+/obj/item/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular{
 	pixel_x = -3;
 	pixel_y = -3
 	},
@@ -13954,10 +13954,10 @@
 /area/shuttle/ftl/cargo/office)
 "dMi" = (
 /obj/item/device/modular_computer/tablet/preset/cheap,
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
 /obj/item/device/gps/engineering,
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/emergency{
+/obj/item/storage/toolbox/emergency{
 	pixel_x = -2;
 	pixel_y = -3
 	},
@@ -14049,14 +14049,14 @@
 /obj/item/device/instrument/trombone,
 /obj/item/stack/spacecash/c100,
 /obj/item/clothing/head/hardhat/cakehat,
-/obj/item/weapon/card/id{
+/obj/item/card/id{
 	desc = "A plastic card with a sticker.";
 	icon_state = "gold";
 	name = "captain's spare ID";
 	pixel_x = -4;
 	pixel_y = 4
 	},
-/obj/item/weapon/card/id{
+/obj/item/card/id{
 	desc = "A plastic card with a sticker.";
 	icon_state = "emag";
 	name = "cryptographic sequencer";
@@ -14066,13 +14066,13 @@
 	lootcount = 4;
 	name = "4maintenance loot spawner"
 	},
-/obj/item/weapon/storage/pill_bottle/dice,
+/obj/item/storage/pill_bottle/dice,
 /obj/item/device/encryptionkey{
 	desc = "A black piece of cardboard glued to a damaged radio key port. The chances of it functioning are quite low.";
 	icon_state = "syn_cypherkey";
 	name = "syndicate radio encryption key"
 	},
-/obj/item/weapon/paint/blue,
+/obj/item/paint/blue,
 /obj/item/device/encryptionkey{
 	desc = "A green piece of cardboard glued to a damaged radio key port. The chances of it functioning are quite low.";
 	icon_state = "bin_cypherkey";
@@ -14090,7 +14090,7 @@
 /area/shuttle/ftl/maintenance/security)
 "dOk" = (
 /obj/structure/table/wood,
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_servicecivilian,
+/obj/item/book/manual/wiki/department_standard_operating_procedure_servicecivilian,
 /turf/open/floor/plating,
 /area/shuttle/ftl/crew_quarters/emergency_storage{
 	name = "Chapel"
@@ -14213,7 +14213,7 @@
 /area/shuttle/ftl/cargo/office)
 "dQR" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/emergency,
+/obj/item/storage/toolbox/emergency,
 /obj/item/device/radio,
 /obj/item/device/assembly/signaler,
 /obj/machinery/firealarm{
@@ -14239,7 +14239,7 @@
 /turf/open/floor/engine,
 /area/shuttle/ftl/research/xenobiology)
 "dRM" = (
-/obj/item/weapon/storage/belt/utility,
+/obj/item/storage/belt/utility,
 /obj/structure/table,
 /obj/item/device/assembly/signaler,
 /obj/machinery/button/door{
@@ -14285,9 +14285,9 @@
 	c_tag = "Bridge North";
 	dir = 2
 	},
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
-/obj/item/weapon/phone,
+/obj/item/paper_bin,
+/obj/item/pen,
+/obj/item/phone,
 /turf/open/floor/plasteel/darkyellow/corner{
 	dir = 4
 	},
@@ -14301,7 +14301,7 @@
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/turret_protected/ai)
 "dSJ" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plating,
 /area/shuttle/ftl/research/test_area{
 	name = "Abandoned Office"
@@ -14335,12 +14335,12 @@
 	pixel_x = -25
 	},
 /obj/structure/table,
-/obj/item/weapon/folder/blue,
+/obj/item/folder/blue,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
 /obj/item/device/lightreplacer,
-/obj/item/weapon/pen,
+/obj/item/pen,
 /turf/open/floor/plasteel/yellow/side{
 	dir = 2
 	},
@@ -14388,7 +14388,7 @@
 /obj/structure/table,
 /obj/item/device/multitool,
 /obj/item/device/radio,
-/obj/item/weapon/electronics/airlock{
+/obj/item/electronics/airlock{
 	pixel_x = 3;
 	pixel_y = 3
 	},
@@ -14402,7 +14402,7 @@
 "dWF" = (
 /obj/structure/closet/crate,
 /obj/effect/spawner/lootdrop/maintenance,
-/obj/item/weapon/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bar)
 "dXb" = (
@@ -14528,7 +14528,7 @@
 	pixel_y = -32
 	},
 /obj/structure/table,
-/obj/item/weapon/holosign_creator/atmos,
+/obj/item/holosign_creator/atmos,
 /obj/machinery/computer/station_alert{
 	dir = 1
 	},
@@ -14617,10 +14617,10 @@
 	pixel_y = 22
 	},
 /obj/structure/closet/secure_closet/freezer/kitchen/mining,
-/obj/item/weapon/storage/fancy/egg_box,
-/obj/item/weapon/reagent_containers/food/condiment/soymilk,
-/obj/item/weapon/reagent_containers/food/condiment/milk,
-/obj/item/weapon/reagent_containers/food/condiment/milk,
+/obj/item/storage/fancy/egg_box,
+/obj/item/reagent_containers/food/condiment/soymilk,
+/obj/item/reagent_containers/food/condiment/milk,
+/obj/item/reagent_containers/food/condiment/milk,
 /turf/open/floor/plasteel/white/corner{
 	dir = 1
 	},
@@ -14639,24 +14639,24 @@
 /area/shuttle/ftl/medical/morgue)
 "eeS" = (
 /obj/structure/bookcase,
-/obj/item/weapon/book/manual/wiki/standard_operating_procedure{
+/obj/item/book/manual/wiki/standard_operating_procedure{
 	override = 0;
 	pixel_x = 6;
 	pixel_y = 6
 	},
-/obj/item/weapon/book/manual/wiki/supermatter{
+/obj/item/book/manual/wiki/supermatter{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/book/manual/wiki/bo_guide{
+/obj/item/book/manual/wiki/bo_guide{
 	pixel_x = 1;
 	pixel_y = 1
 	},
-/obj/item/weapon/book/manual/wiki/bo_guide{
+/obj/item/book/manual/wiki/bo_guide{
 	pixel_x = -2;
 	pixel_y = -1
 	},
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_command{
+/obj/item/book/manual/wiki/department_standard_operating_procedure_command{
 	pixel_x = -4;
 	pixel_y = -4
 	},
@@ -14686,9 +14686,9 @@
 /area/shuttle/ftl/maintenance/bridge)
 "efY" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/storage/firstaid,
+/obj/item/storage/firstaid,
 /obj/item/device/healthanalyzer,
-/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/glass/bucket,
 /obj/item/device/assembly/signaler,
 /obj/structure/cable{
 	d1 = 1;
@@ -14754,7 +14754,7 @@
 /area/shuttle/ftl/research/xenobiology)
 "ehX" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 25
 	},
@@ -14822,20 +14822,20 @@
 /area/shuttle/ftl/research/lab)
 "ekD" = (
 /obj/item/clothing/gloves/color/red,
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_servicecivilian,
+/obj/item/book/manual/wiki/department_standard_operating_procedure_servicecivilian,
 /obj/structure/table/wood,
-/obj/item/weapon/reagent_containers/food/snacks/cheesiehonkers,
+/obj/item/reagent_containers/food/snacks/cheesiehonkers,
 /obj/machinery/airalarm{
 	pixel_y = 22
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/station{
 	dir = 4
 	},
-/obj/item/weapon/lipstick/random{
+/obj/item/lipstick/random{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/lipstick/random,
+/obj/item/lipstick/random,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/security)
 "ekR" = (
@@ -15043,7 +15043,7 @@
 /turf/open/floor/plating,
 /area/shuttle/ftl/medical/sleeper)
 "eqV" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -15143,11 +15143,11 @@
 /area/shuttle/ftl/munitions/office)
 "etT" = (
 /obj/structure/table,
-/obj/item/weapon/soap/nanotrasen,
+/obj/item/soap/nanotrasen,
 /obj/machinery/recharger{
 	pixel_y = 4
 	},
-/obj/item/weapon/holosign_creator,
+/obj/item/holosign_creator,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/medbay)
 "eun" = (
@@ -15275,7 +15275,7 @@
 	dir = 1;
 	network = list("Mining")
 	},
-/obj/item/weapon/paper/fluff/stations/centcom{
+/obj/item/paper/fluff/stations/centcom{
 	desc = "A paper written in scribbled black ink.";
 	info = "<BR>The secondary mining shuttle console is located in the Quartermaster's office. It is used to recall the shuttle if it is planetside, and all nearby persons are unable to operate it.<BR>Have a secure shift.<BR>";
 	name = "paper- 'shuttle note'"
@@ -15413,7 +15413,7 @@
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bridge)
 "eGc" = (
-/obj/item/weapon/hand_labeler{
+/obj/item/hand_labeler{
 	pixel_x = 5
 	},
 /obj/item/device/camera,
@@ -15444,7 +15444,7 @@
 	pixel_x = 0;
 	pixel_y = 8
 	},
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /turf/open/floor/plasteel/floorgrime,
 /area/shuttle/ftl/crew_quarters/locker/locker_toilet)
 "eGW" = (
@@ -15464,8 +15464,8 @@
 /area/shuttle/ftl/hallway/primary/starboard)
 "eHn" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/emergency,
-/obj/item/weapon/storage/toolbox/emergency,
+/obj/item/storage/toolbox/emergency,
+/obj/item/storage/toolbox/emergency,
 /obj/item/device/flashlight/glowstick/random,
 /obj/item/device/flashlight/glowstick/random,
 /obj/item/device/radio{
@@ -15494,18 +15494,18 @@
 /area/shuttle/ftl/security/masteratarms)
 "eHI" = (
 /obj/structure/table,
-/obj/item/weapon/stock_parts/matter_bin,
-/obj/item/weapon/stock_parts/matter_bin,
-/obj/item/weapon/stock_parts/scanning_module,
-/obj/item/weapon/stock_parts/scanning_module,
-/obj/item/weapon/stock_parts/capacitor,
+/obj/item/stock_parts/matter_bin,
+/obj/item/stock_parts/matter_bin,
+/obj/item/stock_parts/scanning_module,
+/obj/item/stock_parts/scanning_module,
+/obj/item/stock_parts/capacitor,
 /obj/machinery/status_display{
 	pixel_y = -32
 	},
-/obj/item/weapon/stock_parts/console_screen,
-/obj/item/weapon/stock_parts/console_screen,
-/obj/item/weapon/stock_parts/cell/high,
-/obj/item/weapon/stock_parts/cell/high,
+/obj/item/stock_parts/console_screen,
+/obj/item/stock_parts/console_screen,
+/obj/item/stock_parts/cell/high,
+/obj/item/stock_parts/cell/high,
 /turf/open/floor/plating,
 /area/shuttle/ftl/storage/tech)
 "eIF" = (
@@ -15728,18 +15728,18 @@
 /area/shuttle/ftl/maintenance/cargo)
 "eSU" = (
 /obj/item/device/modular_computer/tablet/preset/cargo,
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_supply{
+/obj/item/book/manual/wiki/department_standard_operating_procedure_supply{
 	pixel_x = 3;
 	pixel_y = 3
 	},
 /obj/structure/table,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
+/obj/item/paper_bin,
+/obj/item/pen,
 /obj/item/device/gps/mining,
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/item/weapon/stamp/qm{
+/obj/item/stamp/qm{
 	pixel_x = 0;
 	pixel_y = 0
 	},
@@ -15862,8 +15862,8 @@
 /obj/machinery/airalarm{
 	pixel_y = 22
 	},
-/obj/item/weapon/paper/guides/jobs/engi/gravity_gen,
-/obj/item/weapon/paper/monitorkey,
+/obj/item/paper/guides/jobs/engi/gravity_gen,
+/obj/item/paper/monitorkey,
 /mob/living/simple_animal/parrot/Poly,
 /turf/open/floor/plasteel/darkyellow/side{
 	dir = 1
@@ -15878,16 +15878,16 @@
 	icon_state = "alarm0";
 	pixel_x = 22
 	},
-/obj/item/weapon/restraints/handcuffs,
-/obj/item/weapon/restraints/handcuffs,
-/obj/item/weapon/restraints/handcuffs,
-/obj/item/weapon/restraints/handcuffs,
+/obj/item/restraints/handcuffs,
+/obj/item/restraints/handcuffs,
+/obj/item/restraints/handcuffs,
+/obj/item/restraints/handcuffs,
 /obj/item/device/taperecorder{
 	pixel_x = -3;
 	pixel_y = 0
 	},
 /obj/item/device/assembly/flash/handheld,
-/obj/item/weapon/reagent_containers/spray/pepper{
+/obj/item/reagent_containers/spray/pepper{
 	pixel_x = 6;
 	pixel_y = 4
 	},
@@ -15915,12 +15915,12 @@
 	pixel_y = 22
 	},
 /obj/structure/rack,
-/obj/item/weapon/gun/energy/e_gun/advtaser{
+/obj/item/gun/energy/e_gun/advtaser{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/gun/energy/e_gun/advtaser,
-/obj/item/weapon/gun/energy/e_gun/advtaser{
+/obj/item/gun/energy/e_gun/advtaser,
+/obj/item/gun/energy/e_gun/advtaser{
 	pixel_x = 3;
 	pixel_y = -3
 	},
@@ -16050,7 +16050,7 @@
 	dir = 5;
 	network = list("SS13","Mining")
 	},
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /obj/machinery/door/window/westleft{
 	dir = 1;
 	req_one_access_txt = "48"
@@ -16070,15 +16070,15 @@
 /obj/machinery/atmospherics/pipe/simple/supply/visible{
 	dir = 4
 	},
-/obj/item/weapon/electronics/apc,
-/obj/item/weapon/electronics/airlock,
+/obj/item/electronics/apc,
+/obj/item/electronics/airlock,
 /turf/open/floor/plasteel/caution/corner{
 	dir = 8
 	},
 /area/shuttle/ftl/cargo/mining)
 "fdP" = (
 /obj/structure/table/wood,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/bottleofnothing{
+/obj/item/reagent_containers/food/drinks/bottle/bottleofnothing{
 	pixel_x = 8
 	},
 /obj/item/clothing/glasses/sunglasses,
@@ -16145,13 +16145,13 @@
 	},
 /area/shuttle/ftl/bridge)
 "fic" = (
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_supply,
+/obj/item/book/manual/wiki/department_standard_operating_procedure_supply,
 /obj/structure/table,
-/obj/item/weapon/stamp{
+/obj/item/stamp{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/stamp/denied{
+/obj/item/stamp/denied{
 	pixel_x = 4;
 	pixel_y = -2
 	},
@@ -16193,10 +16193,10 @@
 /turf/closed/wall,
 /area/shuttle/ftl/crew_quarters/kitchen)
 "fki" = (
-/obj/item/weapon/book/manual/wiki/infections,
-/obj/item/weapon/reagent_containers/dropper,
-/obj/item/weapon/reagent_containers/syringe/antiviral,
-/obj/item/weapon/storage/box/monkeycubes{
+/obj/item/book/manual/wiki/infections,
+/obj/item/reagent_containers/dropper,
+/obj/item/reagent_containers/syringe/antiviral,
+/obj/item/storage/box/monkeycubes{
 	pixel_x = 0;
 	pixel_y = 0
 	},
@@ -16215,7 +16215,7 @@
 /obj/machinery/computer/cryopod{
 	pixel_y = 24
 	},
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /obj/machinery/camera{
 	c_tag = "Cryopod Storage";
 	dir = 2
@@ -16373,7 +16373,7 @@
 	},
 /area/shuttle/ftl/bridge/meeting_room)
 "fpi" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/green/corner{
 	dir = 8
 	},
@@ -16531,7 +16531,7 @@
 /obj/item/stack/packageWrap{
 	amount = 30
 	},
-/obj/item/weapon/hand_labeler{
+/obj/item/hand_labeler{
 	pixel_x = 5
 	},
 /turf/open/floor/plasteel/brown{
@@ -16849,7 +16849,7 @@
 	pixel_x = -24;
 	pixel_y = -8
 	},
-/obj/item/weapon/storage/bag/books,
+/obj/item/storage/bag/books,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
@@ -16947,12 +16947,12 @@
 /area/shuttle/ftl/hallway/secondary/entry)
 "fLf" = (
 /obj/structure/table,
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = -3;
 	pixel_y = 7
 	},
-/obj/item/weapon/pen,
-/obj/item/weapon/reagent_containers/food/drinks/coffee{
+/obj/item/pen,
+/obj/item/reagent_containers/food/drinks/coffee{
 	pixel_x = 6;
 	pixel_y = 4
 	},
@@ -17105,7 +17105,7 @@
 /obj/item/clothing/glasses/hud/health,
 /obj/item/clothing/glasses/hud/health,
 /obj/item/clothing/glasses/hud/health,
-/obj/item/weapon/reagent_containers/spray/cleaner,
+/obj/item/reagent_containers/spray/cleaner,
 /turf/open/floor/plasteel/whiteblue/side{
 	dir = 6
 	},
@@ -17241,7 +17241,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /obj/structure/reagent_dispensers/watertank,
 /obj/machinery/light{
 	dir = 8
@@ -17315,7 +17315,7 @@
 	})
 "fXB" = (
 /obj/item/clothing/gloves/color/yellow,
-/obj/item/weapon/storage/firstaid/fire,
+/obj/item/storage/firstaid/fire,
 /obj/structure/table,
 /obj/item/device/assembly/signaler,
 /obj/item/clothing/glasses/meson/engine,
@@ -17478,13 +17478,13 @@
 /area/shuttle/ftl/maintenance/medbay)
 "gcL" = (
 /obj/structure/table,
-/obj/item/weapon/storage/box/papersack,
-/obj/item/weapon/storage/box/papersack,
+/obj/item/storage/box/papersack,
+/obj/item/storage/box/papersack,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/item/weapon/storage/box/papersack,
-/obj/item/weapon/storage/box/papersack,
+/obj/item/storage/box/papersack,
+/obj/item/storage/box/papersack,
 /turf/open/floor/plasteel/cafeteria,
 /area/shuttle/ftl/crew_quarters/kitchen)
 "gda" = (
@@ -17683,7 +17683,7 @@
 "gjP" = (
 /obj/item/device/modular_computer/tablet/preset/cheap,
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/mechanical{
+/obj/item/storage/toolbox/mechanical{
 	pixel_x = -2;
 	pixel_y = -1
 	},
@@ -17843,8 +17843,8 @@
 /area/shuttle/ftl/hallway/primary/port)
 "goL" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/storage/toolbox/mechanical,
-/obj/item/weapon/storage/toolbox/emergency{
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/emergency{
 	pixel_x = -2;
 	pixel_y = -3
 	},
@@ -17893,30 +17893,30 @@
 /area/shuttle/ftl/engine/break_room)
 "grH" = (
 /obj/structure/rack,
-/obj/item/weapon/circuitboard/computer/aifixer{
+/obj/item/circuitboard/computer/aifixer{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/circuitboard/computer/rdconsole{
+/obj/item/circuitboard/computer/rdconsole{
 	pixel_x = 3;
 	pixel_y = -3;
 	pixel_z = 0
 	},
-/obj/item/weapon/circuitboard/computer/pandemic{
+/obj/item/circuitboard/computer/pandemic{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/circuitboard/machine/circuit_imprinter,
-/obj/item/weapon/circuitboard/machine/destructive_analyzer{
+/obj/item/circuitboard/machine/circuit_imprinter,
+/obj/item/circuitboard/machine/destructive_analyzer{
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/obj/item/weapon/circuitboard/machine/mechfab{
+/obj/item/circuitboard/machine/mechfab{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/circuitboard/machine/protolathe,
-/obj/item/weapon/circuitboard/machine/rdserver{
+/obj/item/circuitboard/machine/protolathe,
+/obj/item/circuitboard/machine/rdserver{
 	pixel_x = 3;
 	pixel_y = -3
 	},
@@ -18020,19 +18020,19 @@
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/cargo)
 "guw" = (
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /obj/structure/table,
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = -3;
 	pixel_y = 7
 	},
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -25
 	},
-/obj/item/weapon/folder/blue{
+/obj/item/folder/blue{
 	pixel_y = 2
 	},
-/obj/item/weapon/pen,
+/obj/item/pen,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/turret_protected/ai)
 "gvk" = (
@@ -18172,11 +18172,11 @@
 /area/shuttle/ftl/maintenance/engineering)
 "gBE" = (
 /obj/structure/rack,
-/obj/item/weapon/circuitboard/machine/mac_barrel{
+/obj/item/circuitboard/machine/mac_barrel{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/circuitboard/machine/mac_breech,
+/obj/item/circuitboard/machine/mac_breech,
 /obj/item/weapon_chip{
 	pixel_x = 3;
 	pixel_y = -3
@@ -18197,7 +18197,7 @@
 /obj/machinery/firealarm{
 	pixel_y = 26
 	},
-/obj/item/weapon/reagent_containers/spray/cleaner,
+/obj/item/reagent_containers/spray/cleaner,
 /obj/structure/table,
 /turf/open/floor/plasteel/whitegreen/side{
 	dir = 1
@@ -18302,7 +18302,7 @@
 	},
 /obj/structure/rack,
 /obj/item/clothing/shoes/magboots,
-/obj/item/weapon/crowbar/red,
+/obj/item/crowbar/red,
 /turf/open/floor/plating/warnplate{
 	dir = 1
 	},
@@ -18456,7 +18456,7 @@
 	pixel_y = 32
 	},
 /obj/structure/closet/secure_closet/engineering_personal,
-/obj/item/weapon/storage/belt/utility,
+/obj/item/storage/belt/utility,
 /obj/item/clothing/gloves/color/yellow,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/engine_smes)
@@ -18517,12 +18517,12 @@
 /area/shuttle/ftl/maintenance/medbay)
 "gOO" = (
 /obj/structure/rack,
-/obj/item/weapon/storage/secure/briefcase,
-/obj/item/weapon/storage/briefcase{
+/obj/item/storage/secure/briefcase,
+/obj/item/storage/briefcase{
 	pixel_x = 4;
 	pixel_y = -4
 	},
-/obj/item/weapon/paper/guides/jobs/security/courtroom{
+/obj/item/paper/guides/jobs/security/courtroom{
 	name = "paper- 'A Crash Course in Legal SOP"
 	},
 /obj/structure/extinguisher_cabinet{
@@ -18674,11 +18674,11 @@
 	})
 "gTv" = (
 /obj/structure/table,
-/obj/item/weapon/phone{
+/obj/item/phone{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/cigbutt/cigarbutt{
+/obj/item/cigbutt/cigarbutt{
 	pixel_x = 5;
 	pixel_y = -1
 	},
@@ -18720,9 +18720,9 @@
 /turf/open/floor/plasteel/floorgrime,
 /area/shuttle/ftl/crew_quarters/locker/locker_toilet)
 "gUk" = (
-/obj/item/weapon/storage/fancy/cigarettes/cigars,
+/obj/item/storage/fancy/cigarettes/cigars,
 /obj/structure/closet/secure_closet/hos,
-/obj/item/weapon/door_remote/head_of_security,
+/obj/item/door_remote/head_of_security,
 /turf/open/floor/plasteel/darkblue/side{
 	dir = 8
 	},
@@ -18778,7 +18778,7 @@
 /obj/item/toy/cattoy,
 /obj/item/stack/spacecash/c10,
 /obj/item/toy/prize/gygax,
-/obj/item/weapon/paint/paint_remover,
+/obj/item/paint/paint_remover,
 /obj/effect/spawner/lootdrop/maintenance{
 	lootcount = 3;
 	name = "3maintenance loot spawner"
@@ -18870,9 +18870,9 @@
 /area/shuttle/ftl/subshuttle/pod_main)
 "gYE" = (
 /obj/structure/table,
-/obj/item/weapon/weldingtool,
-/obj/item/weapon/wrench,
-/obj/item/weapon/crowbar,
+/obj/item/weldingtool,
+/obj/item/wrench,
+/obj/item/crowbar,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -18919,10 +18919,10 @@
 /area/shuttle/ftl/crew_quarters/bar)
 "gZD" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
 /obj/item/clothing/head/welding,
 /obj/item/device/gps/mining,
-/obj/item/weapon/electronics/airlock,
+/obj/item/electronics/airlock,
 /turf/open/floor/plasteel/white/side{
 	dir = 1
 	},
@@ -19202,7 +19202,7 @@
 /area/shuttle/ftl/engine/ftl_drive)
 "hmI" = (
 /obj/structure/closet/secure_closet/personal,
-/obj/item/weapon/storage/wallet/random,
+/obj/item/storage/wallet/random,
 /obj/item/clothing/suit/hooded/wintercoat,
 /obj/item/clothing/shoes/winterboots,
 /turf/open/floor/plasteel/yellow/corner{
@@ -19211,8 +19211,8 @@
 /area/shuttle/ftl/crew_quarters/locker)
 "hnz" = (
 /obj/structure/rack,
-/obj/item/weapon/aiModule/core/full/asimov,
-/obj/item/weapon/aiModule/core/full/corp{
+/obj/item/aiModule/core/full/asimov,
+/obj/item/aiModule/core/full/corp{
 	pixel_x = 4;
 	pixel_y = -4
 	},
@@ -19234,7 +19234,7 @@
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/science)
 "hnR" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/engine,
 /area/shuttle/ftl/munitions/loading)
 "hom" = (
@@ -19315,10 +19315,10 @@
 /area/shuttle/ftl/maintenance/bridge)
 "hqc" = (
 /obj/structure/table/wood,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/whiskey{
+/obj/item/reagent_containers/food/drinks/bottle/whiskey{
 	pixel_x = 3
 	},
-/obj/item/weapon/lighter,
+/obj/item/lighter,
 /obj/item/device/flashlight/lamp,
 /turf/open/floor/carpet,
 /area/shuttle/ftl/security/detectives_office)
@@ -19363,8 +19363,8 @@
 /area/shuttle/ftl/hallway/primary/port)
 "hsN" = (
 /obj/structure/table/wood,
-/obj/item/weapon/storage/fancy/cigarettes/cigpack_midori,
-/obj/item/weapon/storage/book/bible,
+/obj/item/storage/fancy/cigarettes/cigpack_midori,
+/obj/item/storage/book/bible,
 /obj/item/candle/infinite,
 /turf/open/floor/plating,
 /area/shuttle/ftl/crew_quarters/emergency_storage{
@@ -19693,10 +19693,10 @@
 /area/shuttle/ftl/research/xenobiology)
 "hCe" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/emergency,
-/obj/item/weapon/storage/toolbox/emergency,
-/obj/item/weapon/storage/box/lights/mixed,
-/obj/item/weapon/crowbar/large,
+/obj/item/storage/toolbox/emergency,
+/obj/item/storage/toolbox/emergency,
+/obj/item/storage/box/lights/mixed,
+/obj/item/crowbar/large,
 /turf/open/floor/plasteel/yellow/side{
 	dir = 8
 	},
@@ -19909,7 +19909,7 @@
 	lootcount = 4;
 	name = "4maintenance loot spawner"
 	},
-/obj/item/weapon/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -19917,13 +19917,13 @@
 /area/shuttle/ftl/bridge/battle_bridge)
 "hKO" = (
 /obj/structure/table,
-/obj/item/weapon/paper/guides/jobs/hydroponics,
+/obj/item/paper/guides/jobs/hydroponics,
 /obj/machinery/camera{
 	c_tag = "Hydroponics";
 	dir = 2
 	},
-/obj/item/weapon/reagent_containers/food/snacks/grown/tomato,
-/obj/item/weapon/reagent_containers/syringe,
+/obj/item/reagent_containers/food/snacks/grown/tomato,
+/obj/item/reagent_containers/syringe,
 /turf/open/floor/plasteel/green/side{
 	dir = 1
 	},
@@ -20166,9 +20166,9 @@
 /turf/open/floor/plasteel/yellow/corner,
 /area/shuttle/ftl/hallway/primary/port)
 "hUR" = (
-/obj/item/weapon/computer_hardware/network_card,
+/obj/item/computer_hardware/network_card,
 /obj/structure/table/wood,
-/obj/item/weapon/stock_parts/cell/computer,
+/obj/item/stock_parts/cell/computer,
 /obj/item/device/flashlight/lamp,
 /turf/open/floor/wood,
 /area/shuttle/ftl/crew_quarters/theatre{
@@ -20284,8 +20284,8 @@
 /obj/machinery/computer/med_data/laptop,
 /obj/structure/table,
 /obj/item/clothing/neck/stethoscope,
-/obj/item/weapon/storage/pill_bottle/epinephrine,
-/obj/item/weapon/reagent_containers/glass/beaker{
+/obj/item/storage/pill_bottle/epinephrine,
+/obj/item/reagent_containers/glass/beaker{
 	pixel_x = 5;
 	pixel_y = 2
 	},
@@ -20437,8 +20437,8 @@
 /area/shuttle/ftl/hallway/secondary/entry)
 "icA" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/emergency,
-/obj/item/weapon/storage/firstaid/regular,
+/obj/item/storage/toolbox/emergency,
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/plasteel/blue/side{
 	dir = 5
 	},
@@ -20513,7 +20513,7 @@
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/central)
 "ieM" = (
-/obj/item/weapon/storage/firstaid/o2{
+/obj/item/storage/firstaid/o2{
 	pixel_x = 6;
 	pixel_y = 6
 	},
@@ -20521,12 +20521,12 @@
 	dir = 4
 	},
 /obj/structure/table/glass,
-/obj/item/weapon/storage/firstaid/fire{
+/obj/item/storage/firstaid/fire{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/storage/firstaid/fire,
-/obj/item/weapon/storage/firstaid/fire{
+/obj/item/storage/firstaid/fire,
+/obj/item/storage/firstaid/fire{
 	pixel_x = -3;
 	pixel_y = -3
 	},
@@ -20541,12 +20541,12 @@
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/engineering)
 "ifX" = (
-/obj/item/weapon/pinpointer{
+/obj/item/pinpointer{
 	pixel_x = 4;
 	pixel_y = 4
 	},
 /obj/structure/table,
-/obj/item/weapon/storage/box/firingpins,
+/obj/item/storage/box/firingpins,
 /turf/open/floor/plasteel/darkwarning{
 	dir = 6
 	},
@@ -20602,12 +20602,12 @@
 	pixel_y = -32
 	},
 /obj/structure/table/wood,
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = -2;
 	pixel_y = 5
 	},
-/obj/item/weapon/pen,
-/obj/item/weapon/folder/white{
+/obj/item/pen,
+/obj/item/folder/white{
 	pixel_x = 3;
 	pixel_y = 7
 	},
@@ -20626,12 +20626,12 @@
 	name = "west bump";
 	pixel_x = -24
 	},
-/obj/item/weapon/storage/toolbox/electrical{
+/obj/item/storage/toolbox/electrical{
 	pixel_x = 2;
 	pixel_y = 3
 	},
-/obj/item/weapon/storage/toolbox/mechanical,
-/obj/item/weapon/storage/toolbox/emergency{
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/emergency{
 	pixel_x = -2;
 	pixel_y = -3
 	},
@@ -20684,13 +20684,13 @@
 	specialfunctions = 1
 	},
 /obj/structure/table,
-/obj/item/weapon/razor{
+/obj/item/razor{
 	pixel_x = -3;
 	pixel_y = 4
 	},
 /obj/item/clothing/suit/apron/surgical,
 /obj/item/clothing/gloves/color/latex,
-/obj/item/weapon/surgical_drapes,
+/obj/item/surgical_drapes,
 /turf/open/floor/plasteel/whiteblue/side{
 	dir = 8
 	},
@@ -20702,7 +20702,7 @@
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/medbay)
 "imy" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/darkred/corner{
 	dir = 2
 	},
@@ -20800,19 +20800,19 @@
 /area/shuttle/ftl/hallway/primary/starboard)
 "ipU" = (
 /obj/structure/table,
-/obj/item/weapon/extinguisher{
+/obj/item/extinguisher{
 	pixel_x = 4;
 	pixel_y = 3
 	},
-/obj/item/weapon/extinguisher{
+/obj/item/extinguisher{
 	pixel_x = -6;
 	pixel_y = 4
 	},
-/obj/item/weapon/extinguisher{
+/obj/item/extinguisher{
 	pixel_x = -6;
 	pixel_y = 4
 	},
-/obj/item/weapon/storage/box/monkeycubes{
+/obj/item/storage/box/monkeycubes{
 	pixel_x = 5;
 	pixel_y = 1
 	},
@@ -20963,7 +20963,7 @@
 	lootcount = 2;
 	name = "2maintenance loot spawner"
 	},
-/obj/item/weapon/computer_hardware/recharger/wired,
+/obj/item/computer_hardware/recharger/wired,
 /turf/open/floor/plating,
 /area/shuttle/ftl/cargo/storage)
 "iuE" = (
@@ -21065,14 +21065,14 @@
 	},
 /area/shuttle/ftl/hydroponics)
 "iym" = (
-/obj/item/weapon/book/manual/wiki/security_ship_law{
+/obj/item/book/manual/wiki/security_ship_law{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_security,
+/obj/item/book/manual/wiki/department_standard_operating_procedure_security,
 /obj/structure/table/wood,
-/obj/item/weapon/folder/red,
-/obj/item/weapon/stamp/hos,
+/obj/item/folder/red,
+/obj/item/stamp/hos,
 /obj/item/device/radio,
 /turf/open/floor/plasteel/darkblue/side{
 	dir = 4
@@ -21222,7 +21222,7 @@
 	amount = 30
 	},
 /obj/item/stack/cable_coil/random,
-/obj/item/weapon/wrench,
+/obj/item/wrench,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
@@ -21253,8 +21253,8 @@
 /area/shuttle/ftl/bridge)
 "iEg" = (
 /obj/structure/table/wood,
-/obj/item/weapon/reagent_containers/food/drinks/shaker,
-/obj/item/weapon/reagent_containers/glass/rag,
+/obj/item/reagent_containers/food/drinks/shaker,
+/obj/item/reagent_containers/glass/rag,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bridge)
 "iEr" = (
@@ -21288,7 +21288,7 @@
 /obj/structure/table,
 /obj/machinery/cell_charger,
 /obj/item/device/modular_computer/tablet/preset/cargo,
-/obj/item/weapon/electronics/airlock,
+/obj/item/electronics/airlock,
 /obj/item/device/radio,
 /turf/open/floor/plasteel/brown{
 	dir = 8
@@ -21382,7 +21382,7 @@
 	dir = 4
 	},
 /obj/structure/table/wood,
-/obj/item/weapon/book/manual/wiki/security_ship_law{
+/obj/item/book/manual/wiki/security_ship_law{
 	pixel_x = -3;
 	pixel_y = 5
 	},
@@ -21415,9 +21415,9 @@
 	pixel_y = -22
 	},
 /obj/structure/table/glass,
-/obj/item/weapon/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
 /obj/item/clothing/neck/stethoscope,
-/obj/item/weapon/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
 /turf/open/floor/plasteel/whiteblue/side,
 /area/shuttle/ftl/medical/sleeper)
 "iID" = (
@@ -21582,8 +21582,8 @@
 	},
 /area/shuttle/ftl/cargo/mining)
 "iNP" = (
-/obj/item/weapon/storage/bag/plants/portaseeder,
-/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/item/storage/bag/plants/portaseeder,
+/obj/item/reagent_containers/glass/bucket,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bridge)
 "iOn" = (
@@ -21707,7 +21707,7 @@
 	pixel_x = 2;
 	pixel_y = 4
 	},
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
 /obj/item/device/assembly/signaler,
 /turf/open/floor/plasteel/warning/corner{
 	dir = 4
@@ -21758,11 +21758,11 @@
 /area/shuttle/ftl/telecomms/computer)
 "iRP" = (
 /obj/structure/table,
-/obj/item/weapon/storage/fancy/cigarettes/cigpack_robust,
-/obj/item/weapon/lighter/greyscale,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/folder/yellow,
-/obj/item/weapon/pen,
+/obj/item/storage/fancy/cigarettes/cigpack_robust,
+/obj/item/lighter/greyscale,
+/obj/item/paper_bin,
+/obj/item/folder/yellow,
+/obj/item/pen,
 /turf/open/floor/plasteel/white/side{
 	dir = 4
 	},
@@ -21836,7 +21836,7 @@
 /obj/structure/window/reinforced{
 	dir = 2
 	},
-/obj/item/weapon/banner,
+/obj/item/banner,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
@@ -21874,7 +21874,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/bridge/meeting_room)
 "iVf" = (
@@ -21902,12 +21902,12 @@
 /area/shuttle/ftl/engine/engineering)
 "iWX" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/mechanical,
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
 /obj/machinery/newscaster{
 	pixel_x = 30
 	},
-/obj/item/weapon/crowbar,
+/obj/item/crowbar,
 /turf/open/floor/plasteel/yellow/side{
 	dir = 4
 	},
@@ -21983,9 +21983,9 @@
 "iZb" = (
 /obj/item/device/modular_computer/tablet/preset/advanced,
 /obj/structure/table/wood,
-/obj/item/weapon/card/id/captains_spare,
-/obj/item/weapon/folder/blue,
-/obj/item/weapon/stamp/captain,
+/obj/item/card/id/captains_spare,
+/obj/item/folder/blue,
+/obj/item/stamp/captain,
 /turf/open/floor/carpet,
 /area/shuttle/ftl/crew_quarters/captain)
 "iZD" = (
@@ -22209,10 +22209,10 @@
 	},
 /obj/structure/table,
 /obj/item/key/janitor,
-/obj/item/weapon/grenade/chem_grenade/cleaner,
-/obj/item/weapon/grenade/chem_grenade/cleaner,
-/obj/item/weapon/grenade/chem_grenade/cleaner,
-/obj/item/weapon/reagent_containers/spray/cleaner,
+/obj/item/grenade/chem_grenade/cleaner,
+/obj/item/grenade/chem_grenade/cleaner,
+/obj/item/grenade/chem_grenade/cleaner,
+/obj/item/reagent_containers/spray/cleaner,
 /obj/machinery/light_switch{
 	pixel_x = -22;
 	pixel_y = -10
@@ -22404,7 +22404,7 @@
 /turf/open/floor/circuit,
 /area/shuttle/ftl/telecomms/server)
 "jmd" = (
-/obj/item/weapon/reagent_containers/food/snacks/beans,
+/obj/item/reagent_containers/food/snacks/beans,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 8
 	},
@@ -22436,14 +22436,14 @@
 /area/shuttle/ftl/maintenance/cargo)
 "jne" = (
 /obj/item/device/analyzer,
-/obj/item/weapon/storage/toolbox/electrical,
+/obj/item/storage/toolbox/electrical,
 /obj/structure/table,
-/obj/item/weapon/electronics/apc,
-/obj/item/weapon/electronics/airlock{
+/obj/item/electronics/apc,
+/obj/item/electronics/airlock{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/electronics/airlock,
+/obj/item/electronics/airlock,
 /obj/item/device/assembly/signaler,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/tool_storage{
@@ -22468,14 +22468,14 @@
 /area/shuttle/ftl/hallway/primary/port)
 "jos" = (
 /obj/structure/table,
-/obj/item/weapon/storage/box/chemimp{
+/obj/item/storage/box/chemimp{
 	pixel_x = 6
 	},
-/obj/item/weapon/storage/box/trackimp{
+/obj/item/storage/box/trackimp{
 	pixel_x = -3
 	},
-/obj/item/weapon/storage/lockbox/loyalty,
-/obj/item/weapon/computer_hardware/card_slot,
+/obj/item/storage/lockbox/loyalty,
+/obj/item/computer_hardware/card_slot,
 /turf/open/floor/plasteel/darkwarning{
 	dir = 2
 	},
@@ -22503,8 +22503,8 @@
 /turf/open/floor/plasteel/darkwarning,
 /area/shuttle/ftl/munitions/loading)
 "jru" = (
-/obj/item/weapon/mining_voucher,
-/obj/item/weapon/storage/fancy/cigarettes/cigars/havana,
+/obj/item/mining_voucher,
+/obj/item/storage/fancy/cigarettes/cigars/havana,
 /obj/structure/closet/secure_closet/xo,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -25
@@ -22721,7 +22721,7 @@
 	},
 /area/shuttle/ftl/crew_quarters/locker)
 "jBu" = (
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /turf/open/floor/plasteel/darkwarning{
 	dir = 1
 	},
@@ -22729,7 +22729,7 @@
 "jBB" = (
 /obj/structure/closet/crate,
 /obj/effect/spawner/lootdrop/maintenance,
-/obj/item/weapon/computer_hardware/battery,
+/obj/item/computer_hardware/battery,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
 	},
@@ -22886,12 +22886,12 @@
 /obj/machinery/airalarm{
 	pixel_y = 22
 	},
-/obj/item/weapon/gun/ballistic/shotgun/riot{
+/obj/item/gun/ballistic/shotgun/riot{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/gun/ballistic/shotgun/riot,
-/obj/item/weapon/gun/ballistic/shotgun/riot{
+/obj/item/gun/ballistic/shotgun/riot,
+/obj/item/gun/ballistic/shotgun/riot{
 	pixel_x = 3;
 	pixel_y = -3
 	},
@@ -23115,12 +23115,12 @@
 /area/shuttle/ftl/maintenance/medbay)
 "jOs" = (
 /obj/structure/rack,
-/obj/item/weapon/circuitboard/computer/borgupload{
+/obj/item/circuitboard/computer/borgupload{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/computer_hardware/ai_slot,
-/obj/item/weapon/circuitboard/computer/aiupload,
+/obj/item/computer_hardware/ai_slot,
+/obj/item/circuitboard/computer/aiupload,
 /turf/open/floor/plating,
 /area/shuttle/ftl/storage/tech)
 "jOI" = (
@@ -23212,11 +23212,11 @@
 	lootcount = 2;
 	name = "2maintenance loot spawner"
 	},
-/obj/item/weapon/computer_hardware/recharger/wired,
+/obj/item/computer_hardware/recharger/wired,
 /obj/structure/table,
-/obj/item/weapon/computer_hardware/hard_drive/portable,
-/obj/item/weapon/computer_hardware/network_card,
-/obj/item/weapon/stock_parts/cell/computer,
+/obj/item/computer_hardware/hard_drive/portable,
+/obj/item/computer_hardware/network_card,
+/obj/item/stock_parts/cell/computer,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 8
 	},
@@ -23414,7 +23414,7 @@
 	},
 /area/shuttle/ftl/hallway/primary/starboard)
 "kaB" = (
-/obj/item/weapon/storage/firstaid/o2{
+/obj/item/storage/firstaid/o2{
 	pixel_x = 6;
 	pixel_y = 6
 	},
@@ -23424,12 +23424,12 @@
 	icon_state = "pipe-c";
 	dir = 2
 	},
-/obj/item/weapon/storage/firstaid/toxin{
+/obj/item/storage/firstaid/toxin{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/storage/firstaid/toxin,
-/obj/item/weapon/storage/firstaid/toxin{
+/obj/item/storage/firstaid/toxin,
+/obj/item/storage/firstaid/toxin{
 	pixel_x = -3;
 	pixel_y = -3
 	},
@@ -23450,8 +23450,8 @@
 /area/shuttle/ftl/medical/medbay)
 "kaL" = (
 /obj/structure/closet/wardrobe/chaplain_black,
-/obj/item/weapon/storage/book/bible,
-/obj/item/weapon/nullrod,
+/obj/item/storage/book/bible,
+/obj/item/nullrod,
 /turf/open/floor/plating,
 /area/shuttle/ftl/crew_quarters/emergency_storage{
 	name = "Chapel"
@@ -23504,8 +23504,8 @@
 /area/shuttle/ftl/crew_quarters/sleep)
 "kdD" = (
 /obj/structure/table,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen/blue,
+/obj/item/paper_bin,
+/obj/item/pen/blue,
 /obj/item/device/assembly/signaler,
 /turf/open/floor/plasteel/brown{
 	dir = 8
@@ -23562,10 +23562,10 @@
 /obj/item/stack/packageWrap{
 	amount = 30
 	},
-/obj/item/weapon/hand_labeler{
+/obj/item/hand_labeler{
 	pixel_x = 5
 	},
-/obj/item/weapon/wirerod,
+/obj/item/wirerod,
 /turf/open/floor/plating/warnplate{
 	dir = 1
 	},
@@ -23631,11 +23631,11 @@
 	},
 /area/shuttle/ftl/hallway/primary/port)
 "khI" = (
-/obj/item/weapon/folder/blue{
+/obj/item/folder/blue{
 	pixel_x = -2;
 	pixel_y = 3
 	},
-/obj/item/weapon/folder/red{
+/obj/item/folder/red{
 	pixel_x = 3
 	},
 /obj/structure/table/wood,
@@ -23796,8 +23796,8 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/rack,
-/obj/item/weapon/storage/toolbox/mechanical,
-/obj/item/weapon/storage/toolbox/emergency{
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/emergency{
 	pixel_x = -2;
 	pixel_y = -3
 	},
@@ -24032,7 +24032,7 @@
 	pixel_x = 32;
 	pixel_y = 0
 	},
-/obj/item/weapon/storage/pod{
+/obj/item/storage/pod{
 	pixel_x = -28
 	},
 /turf/open/floor/plasteel/shuttle,
@@ -24187,7 +24187,7 @@
 	id = "QMLoad";
 	tag = "munitions south"
 	},
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /turf/open/floor/plasteel/warning/side,
 /area/shuttle/ftl/cargo/office)
 "kzz" = (
@@ -24278,7 +24278,7 @@
 /obj/machinery/recharger{
 	pixel_y = 4
 	},
-/obj/item/weapon/restraints/handcuffs,
+/obj/item/restraints/handcuffs,
 /turf/open/floor/plasteel/red/side{
 	dir = 1
 	},
@@ -24403,11 +24403,11 @@
 /area/shuttle/ftl/atmos/equipment)
 "kHq" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/snacks/grown/wheat,
-/obj/item/weapon/reagent_containers/food/snacks/grown/pumpkin{
+/obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/reagent_containers/food/snacks/grown/pumpkin{
 	pixel_y = 4
 	},
-/obj/item/weapon/reagent_containers/glass/bottle/nutrient/ez,
+/obj/item/reagent_containers/glass/bottle/nutrient/ez,
 /turf/open/floor/plasteel/green/corner{
 	dir = 1
 	},
@@ -24474,9 +24474,9 @@
 /area/shuttle/ftl/hallway/primary/starboard)
 "kKe" = (
 /obj/structure/table/wood,
-/obj/item/weapon/storage/box/evidence,
+/obj/item/storage/box/evidence,
 /obj/item/device/taperecorder,
-/obj/item/weapon/hand_labeler{
+/obj/item/hand_labeler{
 	pixel_x = 5
 	},
 /obj/structure/cable{
@@ -24687,7 +24687,7 @@
 	},
 /area/shuttle/ftl/medical/medbay)
 "kPQ" = (
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_servicecivilian{
+/obj/item/book/manual/wiki/department_standard_operating_procedure_servicecivilian{
 	pixel_x = 3;
 	pixel_y = 3
 	},
@@ -24695,9 +24695,9 @@
 /obj/machinery/airalarm{
 	pixel_y = 22
 	},
-/obj/item/weapon/book/codex_gigas,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen/fourcolor,
+/obj/item/book/codex_gigas,
+/obj/item/paper_bin,
+/obj/item/pen/fourcolor,
 /turf/open/floor/wood,
 /area/shuttle/ftl/crew_quarters/theatre{
 	name = "Library"
@@ -24729,7 +24729,7 @@
 /area/shuttle/ftl/bridge/battle_bridge)
 "kRa" = (
 /obj/structure/closet/wardrobe/chemistry_white,
-/obj/item/weapon/storage/backpack/satchel/chem,
+/obj/item/storage/backpack/satchel/chem,
 /turf/open/floor/plasteel/whiteblue/side{
 	dir = 2
 	},
@@ -24903,12 +24903,12 @@
 /area/shuttle/ftl/security/brig)
 "kXt" = (
 /obj/structure/table,
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = -3;
 	pixel_y = 7
 	},
-/obj/item/weapon/lipstick/random,
-/obj/item/weapon/stock_parts/cell/computer,
+/obj/item/lipstick/random,
+/obj/item/stock_parts/cell/computer,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/crew_quarters/locker)
 "kXV" = (
@@ -25131,7 +25131,7 @@
 /obj/machinery/computer/cloning{
 	dir = 1
 	},
-/obj/item/weapon/paper/guides/jobs/medical/cloning,
+/obj/item/paper/guides/jobs/medical/cloning,
 /turf/open/floor/plasteel/whiteblue/side{
 	dir = 2
 	},
@@ -25304,8 +25304,8 @@
 	})
 "llK" = (
 /obj/structure/table/wood,
-/obj/item/weapon/lighter,
-/obj/item/weapon/reagent_containers/glass/rag,
+/obj/item/lighter,
+/obj/item/reagent_containers/glass/rag,
 /turf/open/floor/plasteel/bar,
 /area/shuttle/ftl/crew_quarters/bar)
 "lmp" = (
@@ -25329,7 +25329,7 @@
 	pixel_y = 22
 	},
 /obj/structure/closet/secure_closet/engineering_personal,
-/obj/item/weapon/storage/belt/utility,
+/obj/item/storage/belt/utility,
 /obj/item/clothing/gloves/color/yellow,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/engine_smes)
@@ -25416,9 +25416,9 @@
 /area/shuttle/ftl/hallway/primary/port)
 "lqi" = (
 /obj/structure/rack,
-/obj/item/weapon/aiModule/core/freeformcore,
-/obj/item/weapon/aiModule/reset,
-/obj/item/weapon/aiModule/reset/purge{
+/obj/item/aiModule/core/freeformcore,
+/obj/item/aiModule/reset,
+/obj/item/aiModule/reset/purge{
 	pixel_x = 4;
 	pixel_y = -4
 	},
@@ -25438,7 +25438,7 @@
 /area/shuttle/ftl/crew_quarters/locker/locker_toilet)
 "lrJ" = (
 /obj/machinery/hydroponics/soil,
-/obj/item/weapon/cultivator,
+/obj/item/cultivator,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bridge)
 "lsV" = (
@@ -25468,15 +25468,15 @@
 	},
 /obj/structure/table/glass,
 /obj/item/device/gps/science,
-/obj/item/weapon/reagent_containers/glass/beaker/large{
+/obj/item/reagent_containers/glass/beaker/large{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/reagent_containers/glass/beaker{
+/obj/item/reagent_containers/glass/beaker{
 	pixel_x = 8;
 	pixel_y = 2
 	},
-/obj/item/weapon/reagent_containers/dropper,
+/obj/item/reagent_containers/dropper,
 /turf/open/floor/plasteel/whitepurple/side,
 /area/shuttle/ftl/research/lab)
 "ltb" = (
@@ -25793,8 +25793,8 @@
 	dir = 4
 	},
 /obj/structure/table/wood,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
+/obj/item/paper_bin,
+/obj/item/pen,
 /obj/machinery/firealarm{
 	dir = 4;
 	pixel_x = 26
@@ -25973,41 +25973,41 @@
 	dir = 8;
 	pixel_y = 4
 	},
-/obj/item/weapon/soap/nanotrasen,
+/obj/item/soap/nanotrasen,
 /turf/open/floor/plasteel/floorgrime,
 /area/shuttle/ftl/cargo/mining)
 "lKR" = (
 /obj/structure/closet/crate/medical,
-/obj/item/weapon/tank/internals/emergency_oxygen,
-/obj/item/weapon/tank/internals/emergency_oxygen,
+/obj/item/tank/internals/emergency_oxygen,
+/obj/item/tank/internals/emergency_oxygen,
 /obj/item/clothing/mask/gas,
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/light_switch{
 	pixel_x = 8;
 	pixel_y = 24
 	},
-/obj/item/weapon/storage/box/lights/mixed{
+/obj/item/storage/box/lights/mixed{
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/obj/item/weapon/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bar)
 "lLb" = (
 /obj/structure/table/glass,
-/obj/item/weapon/folder/white{
+/obj/item/folder/white{
 	pixel_x = 3;
 	pixel_y = 7
 	},
-/obj/item/weapon/storage/box/monkeycubes{
+/obj/item/storage/box/monkeycubes{
 	pixel_x = 5;
 	pixel_y = 1
 	},
-/obj/item/weapon/storage/pill_bottle/mannitol{
+/obj/item/storage/pill_bottle/mannitol{
 	pixel_x = -8;
 	pixel_y = -2
 	},
-/obj/item/weapon/storage/pill_bottle/mutadone{
+/obj/item/storage/pill_bottle/mutadone{
 	pixel_x = -8;
 	pixel_y = 9
 	},
@@ -26015,7 +26015,7 @@
 	pixel_x = 4;
 	pixel_y = 3
 	},
-/obj/item/weapon/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
@@ -26134,10 +26134,10 @@
 /area/shuttle/ftl/crew_quarters/bar)
 "lOX" = (
 /obj/structure/table,
-/obj/item/weapon/cautery{
+/obj/item/cautery{
 	pixel_x = 4
 	},
-/obj/item/weapon/surgicaldrill,
+/obj/item/surgicaldrill,
 /turf/open/floor/plasteel/whiteblue/side{
 	dir = 8
 	},
@@ -26252,14 +26252,14 @@
 /obj/structure/table,
 /obj/item/device/radio/intercom,
 /obj/item/device/encryptionkey/headset_mining,
-/obj/item/weapon/phone,
+/obj/item/phone,
 /turf/open/floor/plasteel/white/side{
 	dir = 4
 	},
 /area/shuttle/ftl/cargo/mining)
 "lRj" = (
 /obj/structure/table,
-/obj/item/weapon/storage/box/bodybags,
+/obj/item/storage/box/bodybags,
 /turf/open/floor/plating,
 /area/shuttle/ftl/medical/morgue)
 "lRw" = (
@@ -26336,11 +26336,11 @@
 	},
 /area/shuttle/ftl/hallway/secondary/entry)
 "lUu" = (
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = -3;
 	pixel_y = 7
 	},
-/obj/item/weapon/pen,
+/obj/item/pen,
 /obj/structure/table/glass,
 /turf/open/floor/plasteel/whiteblue/corner,
 /area/shuttle/ftl/medical/medbay)
@@ -26374,7 +26374,7 @@
 /turf/open/floor/plasteel/brown/corner,
 /area/shuttle/ftl/subshuttle/pod_main)
 "lVB" = (
-/obj/item/weapon/hand_labeler{
+/obj/item/hand_labeler{
 	pixel_x = 5
 	},
 /obj/structure/table,
@@ -26385,11 +26385,11 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/item/weapon/storage/box/beakers{
+/obj/item/storage/box/beakers{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/weapon/storage/box/syringes,
+/obj/item/storage/box/syringes,
 /obj/machinery/firealarm{
 	dir = 4;
 	pixel_x = 26
@@ -26431,7 +26431,7 @@
 	},
 /area/shuttle/ftl/bridge)
 "lYb" = (
-/obj/item/weapon/shovel/spade,
+/obj/item/shovel/spade,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bridge)
 "lYg" = (
@@ -26495,10 +26495,10 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/item/weapon/storage/toolbox/emergency,
-/obj/item/weapon/storage/toolbox/emergency,
-/obj/item/weapon/wrench,
-/obj/item/weapon/crowbar/red,
+/obj/item/storage/toolbox/emergency,
+/obj/item/storage/toolbox/emergency,
+/obj/item/wrench,
+/obj/item/crowbar/red,
 /obj/machinery/power/apc/ship{
 	auto_name = 1;
 	dir = 8;
@@ -26546,7 +26546,7 @@
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bar)
 "mbh" = (
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain{
+/obj/item/reagent_containers/food/snacks/cakeslice/plain{
 	desc = "Just a slice of cake, it is enough for everyone.";
 	name = "Nanotrasen brand vanilla cake slice"
 	},
@@ -26555,7 +26555,7 @@
 	dir = 2
 	},
 /obj/item/toy/eightball,
-/obj/item/weapon/folder/blue,
+/obj/item/folder/blue,
 /obj/item/clothing/head/collectable/XO,
 /turf/open/floor/plasteel/darkblue/side{
 	dir = 10
@@ -26732,7 +26732,7 @@
 	},
 /area/shuttle/ftl/research/xenobiology)
 "mgg" = (
-/obj/item/weapon/banner,
+/obj/item/banner,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/bridge/eva)
 "mgq" = (
@@ -26846,23 +26846,23 @@
 /turf/open/floor/plasteel/whiteblue/side,
 /area/shuttle/ftl/medical/medbay)
 "mlR" = (
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_servicecivilian,
+/obj/item/book/manual/wiki/department_standard_operating_procedure_servicecivilian,
 /obj/structure/table,
-/obj/item/weapon/mop,
-/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/item/mop,
+/obj/item/reagent_containers/glass/bucket,
 /obj/item/device/toner,
 /obj/item/device/toner,
 /turf/open/floor/plating,
 /area/shuttle/ftl/janitor)
 "mmk" = (
-/obj/item/weapon/storage/box/beakers{
+/obj/item/storage/box/beakers{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/weapon/reagent_containers/dropper,
-/obj/item/weapon/reagent_containers/dropper,
-/obj/item/weapon/reagent_containers/glass/beaker/large,
-/obj/item/weapon/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/dropper,
+/obj/item/reagent_containers/dropper,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
 /obj/structure/table/glass,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
@@ -27174,20 +27174,20 @@
 	},
 /area/shuttle/ftl/hallway/primary/starboard)
 "mvZ" = (
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_science,
+/obj/item/book/manual/wiki/department_standard_operating_procedure_science,
 /obj/structure/table/glass,
 /obj/item/device/paicard{
 	pixel_x = 4
 	},
-/obj/item/weapon/folder/white{
+/obj/item/folder/white{
 	pixel_x = 3;
 	pixel_y = 7
 	},
-/obj/item/weapon/stamp/rd{
+/obj/item/stamp/rd{
 	pixel_x = 3;
 	pixel_y = -2
 	},
-/obj/item/weapon/pen,
+/obj/item/pen,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/station{
 	dir = 2
 	},
@@ -27327,13 +27327,13 @@
 "mBW" = (
 /obj/item/device/modular_computer/laptop/preset/civillian,
 /obj/structure/table/glass,
-/obj/item/weapon/folder/white,
-/obj/item/weapon/stock_parts/capacitor,
-/obj/item/weapon/stock_parts/capacitor,
-/obj/item/weapon/stock_parts/manipulator,
-/obj/item/weapon/stock_parts/manipulator,
-/obj/item/weapon/stock_parts/micro_laser,
-/obj/item/weapon/stock_parts/micro_laser,
+/obj/item/folder/white,
+/obj/item/stock_parts/capacitor,
+/obj/item/stock_parts/capacitor,
+/obj/item/stock_parts/manipulator,
+/obj/item/stock_parts/manipulator,
+/obj/item/stock_parts/micro_laser,
+/obj/item/stock_parts/micro_laser,
 /turf/open/floor/plasteel/whitepurple/side{
 	dir = 1
 	},
@@ -27648,7 +27648,7 @@
 /turf/open/floor/plasteel/bar,
 /area/shuttle/ftl/crew_quarters/bar)
 "mPN" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/caution/corner{
 	dir = 1
 	},
@@ -27759,8 +27759,8 @@
 /area/shuttle/ftl/crew_quarters/bar)
 "mTy" = (
 /obj/structure/table,
-/obj/item/weapon/wrench,
-/obj/item/weapon/crowbar/red,
+/obj/item/wrench,
+/obj/item/crowbar/red,
 /turf/open/floor/plasteel/whitepurple/side{
 	dir = 10
 	},
@@ -27831,11 +27831,11 @@
 /area/shuttle/ftl/maintenance/medbay)
 "mUw" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/reagent_containers/food/condiment/saltshaker{
+/obj/item/reagent_containers/food/condiment/saltshaker{
 	pixel_x = -3;
 	pixel_y = 0
 	},
-/obj/item/weapon/reagent_containers/food/condiment/peppermill{
+/obj/item/reagent_containers/food/condiment/peppermill{
 	pixel_x = 3
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -27845,12 +27845,12 @@
 /area/shuttle/ftl/crew_quarters/kitchen)
 "mUH" = (
 /obj/structure/table/glass,
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = -3;
 	pixel_y = 7
 	},
-/obj/item/weapon/pen,
-/obj/item/weapon/reagent_containers/syringe,
+/obj/item/pen,
+/obj/item/reagent_containers/syringe,
 /turf/open/floor/plasteel/whiteblue/side{
 	dir = 4
 	},
@@ -28376,7 +28376,7 @@
 /area/shuttle/ftl/maintenance/science)
 "nqP" = (
 /obj/structure/table/wood,
-/obj/item/weapon/storage/toolbox/emergency,
+/obj/item/storage/toolbox/emergency,
 /turf/open/floor/plasteel/darkblue/side{
 	dir = 2
 	},
@@ -28460,15 +28460,15 @@
 /obj/item/device/aicard{
 	pixel_x = -3
 	},
-/obj/item/weapon/book/manual/wiki/supermatter{
+/obj/item/book/manual/wiki/supermatter{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_engineering,
+/obj/item/book/manual/wiki/department_standard_operating_procedure_engineering,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/engine/chiefs_office)
 "ntQ" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/bar,
 /area/shuttle/ftl/crew_quarters/bar)
 "nuj" = (
@@ -28641,7 +28641,7 @@
 	pixel_x = 32;
 	pixel_y = 0
 	},
-/obj/item/weapon/storage/pod{
+/obj/item/storage/pod{
 	pixel_x = -28
 	},
 /turf/open/floor/plasteel/shuttle,
@@ -28669,7 +28669,7 @@
 	icon_state = "alarm0";
 	pixel_x = -22
 	},
-/obj/item/weapon/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
@@ -28699,7 +28699,7 @@
 /turf/open/floor/plating,
 /area/shuttle/ftl/medical/morgue)
 "nCh" = (
-/obj/item/weapon/storage/pill_bottle/dice,
+/obj/item/storage/pill_bottle/dice,
 /obj/structure/table,
 /obj/item/toy/beach_ball/holoball/dodgeball{
 	pixel_x = -5
@@ -28866,7 +28866,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/item/weapon/paper/guides/conveyor,
+/obj/item/paper/guides/conveyor,
 /obj/machinery/conveyor{
 	dir = 8;
 	id = "garbage"
@@ -29049,13 +29049,13 @@
 /area/shuttle/ftl/maintenance/medbay)
 "nMo" = (
 /obj/structure/safe,
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /obj/item/clothing/head/bearpelt,
-/obj/item/weapon/coin/clown{
+/obj/item/coin/clown{
 	pixel_x = 3;
 	pixel_y = -2
 	},
-/obj/item/weapon/coin/clown{
+/obj/item/coin/clown{
 	pixel_x = -5;
 	pixel_y = 3
 	},
@@ -29063,7 +29063,7 @@
 /obj/item/stack/spacecash/c1000,
 /obj/item/stack/spacecash/c1000,
 /obj/item/ammo_box/a357,
-/obj/item/weapon/gun/ballistic/revolver/russian,
+/obj/item/gun/ballistic/revolver/russian,
 /turf/open/floor/plasteel/vault{
 	dir = 8
 	},
@@ -29143,11 +29143,11 @@
 	pixel_y = -10
 	},
 /obj/structure/table/reinforced,
-/obj/item/weapon/folder/blue{
+/obj/item/folder/blue{
 	pixel_x = -2;
 	pixel_y = 3
 	},
-/obj/item/weapon/folder/red,
+/obj/item/folder/red,
 /turf/open/floor/plasteel/darkyellow/side{
 	dir = 8
 	},
@@ -29310,11 +29310,11 @@
 /area/shuttle/ftl/engine/tool_storage)
 "nWj" = (
 /obj/structure/table,
-/obj/item/weapon/book/manual/wiki/security_ship_law{
+/obj/item/book/manual/wiki/security_ship_law{
 	pixel_x = -3;
 	pixel_y = 5
 	},
-/obj/item/weapon/storage/toolbox/emergency,
+/obj/item/storage/toolbox/emergency,
 /obj/item/device/radio/intercom{
 	pixel_x = 0;
 	pixel_y = -32
@@ -29328,8 +29328,8 @@
 /obj/item/stack/spacecash/c100,
 /obj/item/stack/spacecash/c100,
 /obj/item/toy/prize/ripley,
-/obj/item/weapon/paint/yellow,
-/obj/item/weapon/cane,
+/obj/item/paint/yellow,
+/obj/item/cane,
 /obj/item/device/toner,
 /obj/effect/landmark/xeno_spawn,
 /turf/open/floor/plating,
@@ -29364,11 +29364,11 @@
 /area/shuttle/ftl/atmos/equipment)
 "nXf" = (
 /obj/structure/closet/crate/medical,
-/obj/item/weapon/tank/internals/emergency_oxygen,
-/obj/item/weapon/tank/internals/emergency_oxygen,
-/obj/item/weapon/storage/firstaid/regular,
+/obj/item/tank/internals/emergency_oxygen,
+/obj/item/tank/internals/emergency_oxygen,
+/obj/item/storage/firstaid/regular,
 /obj/effect/spawner/lootdrop/maintenance,
-/obj/item/weapon/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -29427,7 +29427,7 @@
 	},
 /area/shuttle/ftl/security/hos)
 "oad" = (
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /obj/structure/closet/crate,
 /obj/item/stack/sheet/metal{
 	amount = 50
@@ -29438,9 +29438,9 @@
 /obj/item/stack/sheet/glass{
 	amount = 50
 	},
-/obj/item/weapon/electronics/airlock,
-/obj/item/weapon/electronics/airlock,
-/obj/item/weapon/stock_parts/cell/high{
+/obj/item/electronics/airlock,
+/obj/item/electronics/airlock,
+/obj/item/stock_parts/cell/high{
 	charge = 100;
 	maxcharge = 15000
 	},
@@ -29512,14 +29512,14 @@
 	pixel_x = 0;
 	pixel_y = 30
 	},
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_command{
+/obj/item/book/manual/wiki/department_standard_operating_procedure_command{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/book/manual/wiki/standard_operating_procedure,
+/obj/item/book/manual/wiki/standard_operating_procedure,
 /obj/structure/table/wood,
-/obj/item/weapon/reagent_containers/food/drinks/flask/gold,
-/obj/item/weapon/lighter/greyscale,
+/obj/item/reagent_containers/food/drinks/flask/gold,
+/obj/item/lighter/greyscale,
 /turf/open/floor/carpet,
 /area/shuttle/ftl/crew_quarters/captain)
 "ocL" = (
@@ -29569,7 +29569,7 @@
 	pixel_x = 32;
 	pixel_y = 0
 	},
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/darkwarning{
 	dir = 5
 	},
@@ -29599,9 +29599,9 @@
 /area/shuttle/ftl/cargo/mining)
 "ofk" = (
 /obj/structure/table,
-/obj/item/weapon/folder/blue,
-/obj/item/weapon/stamp/xo,
-/obj/item/weapon/pen/blue,
+/obj/item/folder/blue,
+/obj/item/stamp/xo,
+/obj/item/pen/blue,
 /turf/open/floor/plasteel/darkblue/side{
 	dir = 1
 	},
@@ -29836,7 +29836,7 @@
 "omY" = (
 /obj/structure/closet/crate,
 /obj/item/stack/spacecash/c100,
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /obj/effect/spawner/lootdrop/maintenance{
 	lootcount = 3;
 	name = "3maintenance loot spawner"
@@ -29875,7 +29875,7 @@
 /area/shuttle/ftl/medical/medbay)
 "opb" = (
 /obj/structure/table/wood,
-/obj/item/weapon/folder/blue,
+/obj/item/folder/blue,
 /obj/item/device/camera{
 	pixel_x = 4;
 	pixel_y = -4
@@ -29900,7 +29900,7 @@
 /turf/open/floor/plating,
 /area/shuttle/ftl/medical/sleeper)
 "oqg" = (
-/obj/item/weapon/storage/pod{
+/obj/item/storage/pod{
 	pixel_x = 32
 	},
 /obj/machinery/light{
@@ -30032,7 +30032,7 @@
 /area/shuttle/ftl/engine/engineering)
 "ouY" = (
 /obj/machinery/r_n_d/circuit_imprinter,
-/obj/item/weapon/reagent_containers/glass/beaker/sulphuric,
+/obj/item/reagent_containers/glass/beaker/sulphuric,
 /obj/machinery/ai_status_display{
 	pixel_x = 0;
 	pixel_y = 32
@@ -30123,8 +30123,8 @@
 	},
 /area/shuttle/ftl/cargo/mining)
 "oxK" = (
-/obj/item/weapon/storage/toolbox/mechanical,
-/obj/item/weapon/storage/toolbox/electrical{
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/electrical{
 	pixel_x = 3;
 	pixel_y = 3
 	},
@@ -30714,7 +30714,7 @@
 	dir = 8
 	},
 /obj/structure/closet/l3closet,
-/obj/item/weapon/coin/iron,
+/obj/item/coin/iron,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bar)
 "oMw" = (
@@ -30777,8 +30777,8 @@
 /area/shuttle/ftl/subshuttle/pod_main)
 "oOI" = (
 /obj/structure/table/wood,
-/obj/item/weapon/reagent_containers/food/snacks/grown/harebell,
-/obj/item/weapon/reagent_containers/food/snacks/grown/harebell,
+/obj/item/reagent_containers/food/snacks/grown/harebell,
+/obj/item/reagent_containers/food/snacks/grown/harebell,
 /turf/open/floor/plating,
 /area/shuttle/ftl/crew_quarters/emergency_storage{
 	name = "Chapel"
@@ -30828,7 +30828,7 @@
 	},
 /area/shuttle/ftl/engine/ftl_drive)
 "oQg" = (
-/obj/item/weapon/soap/homemade,
+/obj/item/soap/homemade,
 /obj/structure/sink{
 	dir = 4;
 	icon_state = "sink";
@@ -30890,8 +30890,8 @@
 	})
 "oRA" = (
 /obj/structure/closet/crate/medical,
-/obj/item/weapon/storage/firstaid/regular,
-/obj/item/weapon/reagent_containers/blood/random,
+/obj/item/storage/firstaid/regular,
+/obj/item/reagent_containers/blood/random,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/research/mineral_storeroom)
@@ -30978,11 +30978,11 @@
 	icon_state = "pda-clown";
 	name = "dusty clown pda"
 	},
-/obj/item/weapon/dice/d20{
+/obj/item/dice/d20{
 	pixel_x = -6;
 	pixel_y = 3
 	},
-/obj/item/weapon/dice{
+/obj/item/dice{
 	pixel_x = -8;
 	pixel_y = -4
 	},
@@ -31076,7 +31076,7 @@
 	},
 /area/shuttle/ftl/atmos)
 "oYP" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -31196,7 +31196,7 @@
 	lootcount = 3;
 	name = "3maintenance loot spawner"
 	},
-/obj/item/weapon/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/cargo)
 "peC" = (
@@ -31310,9 +31310,9 @@
 /area/shuttle/ftl/engine/supermatter_core)
 "piw" = (
 /obj/structure/rack,
-/obj/item/weapon/storage/box/rubbershot,
-/obj/item/weapon/storage/box/rubbershot,
-/obj/item/weapon/storage/box/rubbershot{
+/obj/item/storage/box/rubbershot,
+/obj/item/storage/box/rubbershot,
+/obj/item/storage/box/rubbershot{
 	pixel_x = 3;
 	pixel_y = -3
 	},
@@ -31321,13 +31321,13 @@
 	},
 /area/shuttle/ftl/security/main)
 "pjf" = (
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_science{
+/obj/item/book/manual/wiki/department_standard_operating_procedure_science{
 	pixel_x = 3;
 	pixel_y = 3
 	},
 /obj/structure/table/glass,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
+/obj/item/paper_bin,
+/obj/item/pen,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 8;
@@ -31503,7 +31503,7 @@
 /obj/structure/table/reinforced,
 /obj/item/device/modular_computer/tablet/preset/cheap,
 /obj/item/device/modular_computer/laptop/preset/civillian,
-/obj/item/weapon/stock_parts/cell/computer,
+/obj/item/stock_parts/cell/computer,
 /turf/open/floor/plasteel/darkyellow/side{
 	dir = 10
 	},
@@ -31685,8 +31685,8 @@
 /obj/structure/table/wood,
 /obj/item/device/modular_computer/tablet/preset/cheap,
 /obj/item/device/modular_computer/laptop/preset/civillian,
-/obj/item/weapon/computer_hardware/hard_drive/portable,
-/obj/item/weapon/computer_hardware/printer/mini,
+/obj/item/computer_hardware/hard_drive/portable,
+/obj/item/computer_hardware/printer/mini,
 /turf/open/floor/wood,
 /area/shuttle/ftl/crew_quarters/theatre{
 	name = "Library"
@@ -31710,13 +31710,13 @@
 	},
 /area/shuttle/ftl/hallway/primary/starboard)
 "puD" = (
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_medical,
+/obj/item/book/manual/wiki/department_standard_operating_procedure_medical,
 /obj/structure/table/glass,
-/obj/item/weapon/folder/white{
+/obj/item/folder/white{
 	pixel_x = 3;
 	pixel_y = 7
 	},
-/obj/item/weapon/stamp/cmo,
+/obj/item/stamp/cmo,
 /obj/item/clothing/glasses/hud/health,
 /obj/item/device/assembly/signaler,
 /turf/open/floor/plasteel/whiteblue/side{
@@ -31725,7 +31725,7 @@
 /area/shuttle/ftl/medical/cmo)
 "puJ" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/emergency,
+/obj/item/storage/toolbox/emergency,
 /turf/open/floor/plasteel/blue/side{
 	dir = 5
 	},
@@ -31747,14 +31747,14 @@
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/engineering)
 "pvu" = (
-/obj/item/weapon/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
 /obj/structure/table/glass,
 /turf/open/floor/plasteel/whiteblue/side{
 	dir = 8
 	},
 /area/shuttle/ftl/medical/medbay)
 "pvy" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/floorgrime,
 /area/shuttle/ftl/crew_quarters/toilet)
 "pvD" = (
@@ -31857,12 +31857,12 @@
 /obj/structure/table,
 /obj/item/device/radio,
 /obj/item/device/sensor_device,
-/obj/item/weapon/hand_labeler{
+/obj/item/hand_labeler{
 	pixel_x = 5
 	},
-/obj/item/weapon/folder/red,
+/obj/item/folder/red,
 /obj/item/device/assembly/signaler,
-/obj/item/weapon/pen,
+/obj/item/pen,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 8
 	},
@@ -31970,8 +31970,8 @@
 /area/shuttle/ftl/cargo/office)
 "pAC" = (
 /obj/structure/closet/crate/internals,
-/obj/item/weapon/tank/internals/oxygen,
-/obj/item/weapon/tank/internals/oxygen,
+/obj/item/tank/internals/oxygen,
+/obj/item/tank/internals/oxygen,
 /obj/item/clothing/mask/breath,
 /obj/item/clothing/mask/breath,
 /turf/open/floor/plating,
@@ -32102,11 +32102,11 @@
 /area/shuttle/ftl/hallway/secondary/exit)
 "pDr" = (
 /obj/structure/table/wood,
-/obj/item/weapon/folder/white{
+/obj/item/folder/white{
 	pixel_x = 3;
 	pixel_y = 7
 	},
-/obj/item/weapon/folder/blue,
+/obj/item/folder/blue,
 /obj/item/clothing/glasses/sunglasses/big,
 /turf/open/floor/plating,
 /area/shuttle/ftl/research/test_area{
@@ -32164,7 +32164,7 @@
 /area/shuttle/ftl/cargo/office)
 "pFn" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /turf/open/floor/plasteel/darkred/corner,
 /area/shuttle/ftl/bridge)
 "pFD" = (
@@ -32384,7 +32384,7 @@
 /turf/open/floor/plating,
 /area/shuttle/ftl/medical/chemistry)
 "pNE" = (
-/obj/item/weapon/book/manual/wiki/telescience,
+/obj/item/book/manual/wiki/telescience,
 /obj/structure/table/glass,
 /obj/item/stack/cable_coil{
 	pixel_x = 3;
@@ -32397,7 +32397,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -25
 	},
-/obj/item/weapon/stock_parts/cell/computer,
+/obj/item/stock_parts/cell/computer,
 /turf/open/floor/plasteel/whitepurple/corner{
 	dir = 1
 	},
@@ -32705,8 +32705,8 @@
 	pixel_y = 4
 	},
 /obj/structure/table/wood,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen/blue,
+/obj/item/paper_bin,
+/obj/item/pen/blue,
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -32755,11 +32755,11 @@
 /area/shuttle/ftl/atmos/equipment)
 "qaH" = (
 /obj/structure/table/wood,
-/obj/item/weapon/book/manual/barman_recipes{
+/obj/item/book/manual/barman_recipes{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_servicecivilian,
+/obj/item/book/manual/wiki/department_standard_operating_procedure_servicecivilian,
 /obj/machinery/power/apc/ship{
 	auto_name = 1;
 	dir = 4;
@@ -32963,7 +32963,7 @@
 /turf/open/space/basic,
 /area/space)
 "qeS" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/security/detectives_office)
 "qfj" = (
@@ -33001,7 +33001,7 @@
 "qgI" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
-/obj/item/weapon/restraints/handcuffs{
+/obj/item/restraints/handcuffs{
 	pixel_y = 3
 	},
 /turf/open/floor/plasteel/darkblue/side{
@@ -33113,11 +33113,11 @@
 "qku" = (
 /obj/item/device/taperecorder,
 /obj/structure/table/wood,
-/obj/item/weapon/folder/blue{
+/obj/item/folder/blue{
 	pixel_x = -2;
 	pixel_y = 3
 	},
-/obj/item/weapon/folder/red,
+/obj/item/folder/red,
 /obj/machinery/firealarm{
 	dir = 4;
 	pixel_x = -26
@@ -33131,7 +33131,7 @@
 "qkw" = (
 /obj/structure/table/wood,
 /obj/item/device/modular_computer/laptop/preset/civillian,
-/obj/item/weapon/stock_parts/cell/computer,
+/obj/item/stock_parts/cell/computer,
 /turf/open/floor/plasteel/darkblue/side{
 	dir = 2
 	},
@@ -33379,8 +33379,8 @@
 /obj/item/stack/cable_coil,
 /obj/item/device/mmi,
 /obj/item/device/mmi,
-/obj/item/weapon/storage/box/bodybags,
-/obj/item/weapon/pen,
+/obj/item/storage/box/bodybags,
+/obj/item/pen,
 /turf/open/floor/plasteel/purple/side{
 	dir = 1
 	},
@@ -33407,9 +33407,9 @@
 /area/shuttle/ftl/crew_quarters/kitchen)
 "qqJ" = (
 /obj/structure/table,
-/obj/item/weapon/kitchen/rollingpin,
-/obj/item/weapon/kitchen/knife,
-/obj/item/weapon/reagent_containers/spray/cleaner,
+/obj/item/kitchen/rollingpin,
+/obj/item/kitchen/knife,
+/obj/item/reagent_containers/spray/cleaner,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
@@ -33566,7 +33566,7 @@
 /area/shuttle/ftl/crew_quarters/locker/locker_toilet)
 "qxA" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet,
+/obj/item/bedsheet,
 /mob/living/carbon/monkey,
 /turf/open/floor/plasteel/whitegreen/side{
 	dir = 6
@@ -33723,16 +33723,16 @@
 /area/shuttle/ftl/medical/medbay)
 "qDs" = (
 /obj/structure/table/glass,
-/obj/item/weapon/stock_parts/console_screen,
-/obj/item/weapon/stock_parts/console_screen,
-/obj/item/weapon/stock_parts/console_screen,
-/obj/item/weapon/stock_parts/matter_bin,
-/obj/item/weapon/stock_parts/matter_bin,
-/obj/item/weapon/stock_parts/scanning_module{
+/obj/item/stock_parts/console_screen,
+/obj/item/stock_parts/console_screen,
+/obj/item/stock_parts/console_screen,
+/obj/item/stock_parts/matter_bin,
+/obj/item/stock_parts/matter_bin,
+/obj/item/stock_parts/scanning_module{
 	pixel_x = 2;
 	pixel_y = 3
 	},
-/obj/item/weapon/stock_parts/scanning_module,
+/obj/item/stock_parts/scanning_module,
 /turf/open/floor/plasteel/whitepurple/side{
 	dir = 8
 	},
@@ -33777,7 +33777,7 @@
 /area/shuttle/ftl/maintenance/bridge)
 "qFa" = (
 /obj/structure/table,
-/obj/item/weapon/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
 /obj/item/clothing/glasses/science,
 /obj/item/device/multitool,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/station{
@@ -33801,7 +33801,7 @@
 	},
 /obj/structure/table/wood,
 /obj/item/device/radio,
-/obj/item/weapon/storage/fancy/cigarettes/cigpack_carp,
+/obj/item/storage/fancy/cigarettes/cigpack_carp,
 /obj/item/clothing/glasses/sunglasses,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -25
@@ -33864,8 +33864,8 @@
 	tag = ""
 	},
 /obj/structure/table/wood,
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_command,
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/book/manual/wiki/department_standard_operating_procedure_command,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/bridge/meeting_room)
 "qHr" = (
@@ -33921,7 +33921,7 @@
 	dir = 4;
 	pixel_x = 26
 	},
-/obj/item/weapon/bedsheet/medical,
+/obj/item/bedsheet/medical,
 /obj/structure/bed,
 /turf/open/floor/plasteel/whiteblue/corner,
 /area/shuttle/ftl/medical/sleeper)
@@ -34147,7 +34147,7 @@
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/bridge/meeting_room)
 "qOt" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /obj/machinery/power/apc/ship{
 	auto_name = 1;
 	dir = 8;
@@ -34271,10 +34271,10 @@
 /obj/structure/table,
 /obj/item/clothing/mask/surgical,
 /obj/item/clothing/gloves/color/latex,
-/obj/item/weapon/restraints/handcuffs,
-/obj/item/weapon/reagent_containers/glass/bottle/epinephrine,
-/obj/item/weapon/reagent_containers/glass/bottle/charcoal,
-/obj/item/weapon/reagent_containers/syringe,
+/obj/item/restraints/handcuffs,
+/obj/item/reagent_containers/glass/bottle/epinephrine,
+/obj/item/reagent_containers/glass/bottle/charcoal,
+/obj/item/reagent_containers/syringe,
 /turf/open/floor/plasteel/darkblue/side{
 	dir = 8
 	},
@@ -34327,7 +34327,7 @@
 /turf/open/space/basic,
 /area/shuttle/ftl/space)
 "qSW" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/brown{
 	dir = 10
 	},
@@ -34498,11 +34498,11 @@
 	dir = 8
 	},
 /obj/structure/table,
-/obj/item/weapon/tank/internals/emergency_oxygen{
+/obj/item/tank/internals/emergency_oxygen{
 	pixel_x = -8;
 	pixel_y = 0
 	},
-/obj/item/weapon/tank/internals/emergency_oxygen{
+/obj/item/tank/internals/emergency_oxygen{
 	pixel_x = -8;
 	pixel_y = 0
 	},
@@ -34514,11 +34514,11 @@
 	pixel_x = 4;
 	pixel_y = 0
 	},
-/obj/item/weapon/electronics/airlock{
+/obj/item/electronics/airlock{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/electronics/airlock,
+/obj/item/electronics/airlock,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/caution{
 	dir = 8
@@ -34672,10 +34672,10 @@
 /area/shuttle/ftl/maintenance/bridge)
 "rgQ" = (
 /obj/structure/closet/secure_closet/freezer/kitchen/mining,
-/obj/item/weapon/storage/fancy/egg_box,
-/obj/item/weapon/reagent_containers/food/condiment/soymilk,
-/obj/item/weapon/reagent_containers/food/condiment/milk,
-/obj/item/weapon/reagent_containers/food/condiment/milk,
+/obj/item/storage/fancy/egg_box,
+/obj/item/reagent_containers/food/condiment/soymilk,
+/obj/item/reagent_containers/food/condiment/milk,
+/obj/item/reagent_containers/food/condiment/milk,
 /obj/machinery/camera{
 	c_tag = "Maintenance Kitchen";
 	dir = 8
@@ -34688,11 +34688,11 @@
 	pixel_y = 30
 	},
 /obj/structure/table,
-/obj/item/weapon/storage/firstaid/regular{
+/obj/item/storage/firstaid/regular{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/plasteel/darkblue/side{
 	dir = 1
 	},
@@ -34896,7 +34896,7 @@
 /area/shuttle/ftl/engine/ftl_drive)
 "rpj" = (
 /obj/structure/table,
-/obj/item/weapon/book/manual/wiki/munitions_manual,
+/obj/item/book/manual/wiki/munitions_manual,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -35154,17 +35154,17 @@
 /area/shuttle/ftl/bridge/meeting_room)
 "rvr" = (
 /obj/structure/closet/crate/engineering,
-/obj/item/weapon/storage/belt/utility,
+/obj/item/storage/belt/utility,
 /obj/item/stack/spacecash/c10,
 /obj/item/stack/sheet/glass/fifty,
-/obj/item/weapon/electronics/apc,
-/obj/item/weapon/weldingtool,
+/obj/item/electronics/apc,
+/obj/item/weldingtool,
 /obj/effect/spawner/lootdrop/maintenance{
 	lootcount = 4;
 	name = "4maintenance loot spawner"
 	},
 /obj/item/stack/sheet/metal/fifty,
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
 /obj/item/device/t_scanner,
 /obj/machinery/firealarm{
 	pixel_y = 26
@@ -35278,14 +35278,14 @@
 	dir = 4
 	},
 /obj/structure/table/glass,
-/obj/item/weapon/storage/box/beakers{
+/obj/item/storage/box/beakers{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/weapon/reagent_containers/glass/beaker/large,
-/obj/item/weapon/reagent_containers/glass/beaker/large,
-/obj/item/weapon/reagent_containers/dropper,
-/obj/item/weapon/reagent_containers/syringe,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/dropper,
+/obj/item/reagent_containers/syringe,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 26;
 	pixel_y = -32
@@ -35549,7 +35549,7 @@
 /obj/structure/closet/secure_closet/personal,
 /obj/item/clothing/suit/hooded/wintercoat,
 /obj/item/clothing/shoes/winterboots,
-/obj/item/weapon/storage/wallet/random,
+/obj/item/storage/wallet/random,
 /obj/machinery/requests_console{
 	department = "Locker Room";
 	name = "Recreation RC";
@@ -35645,8 +35645,8 @@
 "rLj" = (
 /obj/structure/closet/crate,
 /obj/effect/spawner/lootdrop/maintenance,
-/obj/item/weapon/coin/iron,
-/obj/item/weapon/storage/box/lights/mixed,
+/obj/item/coin/iron,
+/obj/item/storage/box/lights/mixed,
 /obj/structure/sink{
 	dir = 4;
 	icon_state = "sink";
@@ -35658,11 +35658,11 @@
 "rLl" = (
 /obj/structure/closet/crate,
 /obj/effect/spawner/lootdrop/maintenance,
-/obj/item/weapon/ore/silver{
+/obj/item/ore/silver{
 	pixel_x = -3;
 	pixel_y = -4
 	},
-/obj/item/weapon/ore/silver,
+/obj/item/ore/silver,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/research/mineral_storeroom)
 "rLt" = (
@@ -35759,11 +35759,11 @@
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/cell_charger,
-/obj/item/weapon/book/manual/robotics_cyborgs{
+/obj/item/book/manual/robotics_cyborgs{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/book/manual/ripley_build_and_repair,
+/obj/item/book/manual/ripley_build_and_repair,
 /obj/item/device/radio/intercom{
 	pixel_x = -32
 	},
@@ -35771,7 +35771,7 @@
 	pixel_x = -24;
 	pixel_y = -8
 	},
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_science{
+/obj/item/book/manual/wiki/department_standard_operating_procedure_science{
 	pixel_x = -3;
 	pixel_y = -3
 	},
@@ -35813,7 +35813,7 @@
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hydroponics)
 "rQM" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
@@ -35903,13 +35903,13 @@
 /area/shuttle/ftl/crew_quarters/captain)
 "rVy" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/condiment/enzyme{
+/obj/item/reagent_containers/food/condiment/enzyme{
 	layer = 5
 	},
-/obj/item/weapon/reagent_containers/glass/beaker{
+/obj/item/reagent_containers/glass/beaker{
 	pixel_x = 5
 	},
-/obj/item/weapon/reagent_containers/glass/beaker{
+/obj/item/reagent_containers/glass/beaker{
 	pixel_x = 8;
 	pixel_y = 6
 	},
@@ -35997,7 +35997,7 @@
 	pixel_x = 0;
 	pixel_y = 0
 	},
-/obj/item/weapon/screwdriver{
+/obj/item/screwdriver{
 	pixel_y = 10
 	},
 /turf/open/floor/plasteel/black,
@@ -36038,11 +36038,11 @@
 /area/shuttle/ftl/bridge)
 "rZg" = (
 /obj/structure/table,
-/obj/item/weapon/storage/box/bodybags,
-/obj/item/weapon/hand_labeler{
+/obj/item/storage/box/bodybags,
+/obj/item/hand_labeler{
 	pixel_x = 5
 	},
-/obj/item/weapon/reagent_containers/spray/cleaner,
+/obj/item/reagent_containers/spray/cleaner,
 /turf/open/floor/plasteel/darkblue/corner{
 	dir = 1
 	},
@@ -36079,8 +36079,8 @@
 /area/shuttle/ftl/maintenance/science)
 "rZN" = (
 /obj/structure/table/wood,
-/obj/item/weapon/gun/ballistic/revolver/doublebarrel,
-/obj/item/weapon/reagent_containers/food/drinks/shaker,
+/obj/item/gun/ballistic/revolver/doublebarrel,
+/obj/item/reagent_containers/food/drinks/shaker,
 /obj/machinery/airalarm{
 	dir = 8;
 	icon_state = "alarm0";
@@ -36127,7 +36127,7 @@
 	tag = "90Curve"
 	},
 /obj/structure/table/wood,
-/obj/item/weapon/storage/toolbox/emergency{
+/obj/item/storage/toolbox/emergency{
 	pixel_x = -2;
 	pixel_y = -3
 	},
@@ -36339,7 +36339,7 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -36358,7 +36358,7 @@
 /area/shuttle/ftl/bridge/meeting_room)
 "sgC" = (
 /obj/structure/table/wood,
-/obj/item/weapon/reagent_containers/food/snacks/beans,
+/obj/item/reagent_containers/food/snacks/beans,
 /turf/open/floor/plating,
 /area/shuttle/ftl/crew_quarters/emergency_storage{
 	name = "Chapel"
@@ -36410,12 +36410,12 @@
 /area/shuttle/ftl/engine/break_room)
 "shB" = (
 /obj/structure/table,
-/obj/item/weapon/storage/bag/tray,
-/obj/item/weapon/reagent_containers/food/condiment/saltshaker{
+/obj/item/storage/bag/tray,
+/obj/item/reagent_containers/food/condiment/saltshaker{
 	pixel_x = -3;
 	pixel_y = 0
 	},
-/obj/item/weapon/reagent_containers/food/condiment/peppermill{
+/obj/item/reagent_containers/food/condiment/peppermill{
 	pixel_x = 3
 	},
 /turf/open/floor/plating,
@@ -36523,7 +36523,7 @@
 /area/shuttle/ftl/bridge/meeting_room)
 "slj" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
 /obj/item/device/flashlight/glowstick/random,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/science)
@@ -36604,10 +36604,10 @@
 /area/shuttle/ftl/medical/chemistry)
 "soI" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/condiment/enzyme{
+/obj/item/reagent_containers/food/condiment/enzyme{
 	layer = 5
 	},
-/obj/item/weapon/reagent_containers/glass/beaker{
+/obj/item/reagent_containers/glass/beaker{
 	pixel_x = 5
 	},
 /obj/structure/disposalpipe/segment{
@@ -36664,13 +36664,13 @@
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/central)
 "sqR" = (
-/obj/item/weapon/book/manual/medical_cloning,
-/obj/item/weapon/storage/box/disks{
+/obj/item/book/manual/medical_cloning,
+/obj/item/storage/box/disks{
 	pixel_x = 2;
 	pixel_y = 2
 	},
 /obj/structure/table/glass,
-/obj/item/weapon/storage/firstaid/toxin,
+/obj/item/storage/firstaid/toxin,
 /turf/open/floor/plasteel/whiteblue/side{
 	dir = 1
 	},
@@ -36695,7 +36695,7 @@
 /area/shuttle/ftl/hallway/secondary/entry)
 "srx" = (
 /obj/item/trash/candy,
-/obj/item/weapon/reagent_containers/food/snacks/candy_corn,
+/obj/item/reagent_containers/food/snacks/candy_corn,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bar)
 "srZ" = (
@@ -36881,7 +36881,7 @@
 /obj/structure/closet/secure_closet/security/sec{
 	anchored = 1
 	},
-/obj/item/weapon/holosign_creator/security,
+/obj/item/holosign_creator/security,
 /obj/machinery/camera{
 	c_tag = "Security Hallway Access";
 	dir = 6;
@@ -36987,11 +36987,11 @@
 "sAO" = (
 /obj/item/device/modular_computer/laptop/preset/civillian,
 /obj/structure/table,
-/obj/item/weapon/storage/box/beakers{
+/obj/item/storage/box/beakers{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/weapon/storage/box/syringes,
+/obj/item/storage/box/syringes,
 /obj/machinery/requests_console{
 	department = "Science";
 	departmentType = 2;
@@ -37275,7 +37275,7 @@
 /obj/machinery/recharger{
 	pixel_y = 4
 	},
-/obj/item/weapon/restraints/handcuffs,
+/obj/item/restraints/handcuffs,
 /obj/item/device/taperecorder{
 	pixel_x = 4;
 	pixel_y = 0
@@ -37324,8 +37324,8 @@
 	dir = 4
 	},
 /obj/structure/table/wood,
-/obj/item/weapon/storage/fancy/donut_box,
-/obj/item/weapon/folder/white,
+/obj/item/storage/fancy/donut_box,
+/obj/item/folder/white,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/bridge/meeting_room)
 "sOA" = (
@@ -37380,8 +37380,8 @@
 /obj/item/stack/sheet/mineral/plasma{
 	layer = 2.9
 	},
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
+/obj/item/paper_bin,
+/obj/item/pen,
 /obj/machinery/light_switch{
 	pixel_x = 24;
 	pixel_y = -8
@@ -37438,7 +37438,7 @@
 	pixel_y = -32
 	},
 /obj/structure/rack,
-/obj/item/weapon/circuitboard/computer/shuttle/advanced,
+/obj/item/circuitboard/computer/shuttle/advanced,
 /turf/open/floor/plating/warnplate{
 	dir = 4
 	},
@@ -37716,21 +37716,21 @@
 	},
 /area/shuttle/ftl/engine/break_room)
 "sYr" = (
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_servicecivilian,
+/obj/item/book/manual/wiki/department_standard_operating_procedure_servicecivilian,
 /obj/machinery/newscaster{
 	pixel_y = -30
 	},
 /obj/structure/table,
-/obj/item/weapon/watertank,
-/obj/item/weapon/reagent_containers/spray/plantbgone{
+/obj/item/watertank,
+/obj/item/reagent_containers/spray/plantbgone{
 	pixel_x = 13;
 	pixel_y = 5
 	},
-/obj/item/weapon/reagent_containers/spray/plantbgone{
+/obj/item/reagent_containers/spray/plantbgone{
 	pixel_x = 0;
 	pixel_y = 3
 	},
-/obj/item/weapon/reagent_containers/spray/plantbgone{
+/obj/item/reagent_containers/spray/plantbgone{
 	pixel_x = 8;
 	pixel_y = 8
 	},
@@ -37740,11 +37740,11 @@
 /area/shuttle/ftl/hydroponics)
 "sZl" = (
 /obj/structure/table,
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = -3;
 	pixel_y = 7
 	},
-/obj/item/weapon/pen,
+/obj/item/pen,
 /obj/item/device/radio/intercom{
 	pixel_x = 32;
 	pixel_y = 0
@@ -37754,7 +37754,7 @@
 	pixel_y = -22
 	},
 /obj/item/device/encryptionkey/headset_eng,
-/obj/item/weapon/reagent_containers/food/drinks/mug/coco{
+/obj/item/reagent_containers/food/drinks/mug/coco{
 	pixel_x = 3;
 	pixel_y = 3
 	},
@@ -37769,16 +37769,16 @@
 /obj/item/stack/sheet/mineral/plasma{
 	layer = 2.9
 	},
-/obj/item/weapon/book/manual/wiki/chemistry,
-/obj/item/weapon/reagent_containers/glass/bottle/charcoal{
+/obj/item/book/manual/wiki/chemistry,
+/obj/item/reagent_containers/glass/bottle/charcoal{
 	pixel_x = 7;
 	pixel_y = 4
 	},
-/obj/item/weapon/reagent_containers/glass/bottle/epinephrine,
-/obj/item/weapon/storage/pill_bottle/epinephrine{
+/obj/item/reagent_containers/glass/bottle/epinephrine,
+/obj/item/storage/pill_bottle/epinephrine{
 	pixel_x = 3
 	},
-/obj/item/weapon/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
 /obj/machinery/camera{
 	c_tag = "Chemistry";
 	dir = 2
@@ -37916,16 +37916,16 @@
 "tgG" = (
 /obj/structure/rack,
 /obj/item/device/radio,
-/obj/item/weapon/storage/toolbox/electrical{
+/obj/item/storage/toolbox/electrical{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/weapon/storage/toolbox/electrical,
+/obj/item/storage/toolbox/electrical,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -25
 	},
-/obj/item/weapon/storage/belt/utility,
+/obj/item/storage/belt/utility,
 /obj/item/clothing/gloves/color/yellow{
 	pixel_x = 2;
 	pixel_y = 2
@@ -38045,7 +38045,7 @@
 /area/shuttle/ftl/hallway/primary/port)
 "tlk" = (
 /obj/structure/table/wood,
-/obj/item/weapon/pen,
+/obj/item/pen,
 /turf/open/floor/plasteel/darkyellow/corner{
 	dir = 1
 	},
@@ -38099,11 +38099,11 @@
 /area/shuttle/ftl/cargo/mining)
 "tmP" = (
 /obj/structure/table,
-/obj/item/weapon/storage/box/teargas{
+/obj/item/storage/box/teargas{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/storage/box/flashbangs{
+/obj/item/storage/box/flashbangs{
 	pixel_x = 3;
 	pixel_y = -3
 	},
@@ -38113,8 +38113,8 @@
 /obj/structure/sign/poster/random{
 	pixel_x = -32
 	},
-/obj/item/weapon/storage/fancy/donut_box,
-/obj/item/weapon/reagent_containers/glass/bottle/morphine,
+/obj/item/storage/fancy/donut_box,
+/obj/item/reagent_containers/glass/bottle/morphine,
 /turf/open/floor/plasteel/darkwarning{
 	dir = 9
 	},
@@ -38183,9 +38183,9 @@
 /area/shuttle/ftl/atmos/equipment)
 "toM" = (
 /obj/structure/table/wood,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
-/obj/item/weapon/stock_parts/cell/computer,
+/obj/item/paper_bin,
+/obj/item/pen,
+/obj/item/stock_parts/cell/computer,
 /turf/open/floor/plating,
 /area/shuttle/ftl/hallway/secondary/construction)
 "toR" = (
@@ -38306,7 +38306,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -25
 	},
-/obj/item/weapon/melee/classic_baton/telescopic{
+/obj/item/melee/classic_baton/telescopic{
 	pixel_x = 8;
 	pixel_y = 8
 	},
@@ -38326,11 +38326,11 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = 7;
 	pixel_y = 4
 	},
-/obj/item/weapon/pen,
+/obj/item/pen,
 /obj/item/device/radio,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/tool_storage{
@@ -38375,23 +38375,23 @@
 /area/shuttle/ftl/subshuttle/pod_main)
 "tsh" = (
 /obj/structure/closet/crate,
-/obj/item/weapon/coin/silver{
+/obj/item/coin/silver{
 	pixel_x = -4;
 	pixel_y = -4;
 	pixel_z = 0
 	},
-/obj/item/weapon/coin/silver{
+/obj/item/coin/silver{
 	pixel_x = -2;
 	pixel_y = -2
 	},
-/obj/item/weapon/coin/silver{
+/obj/item/coin/silver{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/weapon/coin/silver{
+/obj/item/coin/silver{
 	pixel_x = 4
 	},
-/obj/item/weapon/coin/silver,
+/obj/item/coin/silver,
 /obj/item/stack/sheet/mineral/gold{
 	pixel_x = 2;
 	pixel_y = 2
@@ -38403,7 +38403,7 @@
 	},
 /obj/item/stack/spacecash/c200,
 /obj/item/stack/spacecash/c200,
-/obj/item/weapon/storage/belt/champion,
+/obj/item/storage/belt/champion,
 /turf/open/floor/plasteel/vault{
 	dir = 8
 	},
@@ -38421,11 +38421,11 @@
 /turf/open/floor/plating,
 /area/shuttle/ftl/munitions/loading)
 "tsN" = (
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_medical,
+/obj/item/book/manual/wiki/department_standard_operating_procedure_medical,
 /obj/structure/table/glass,
 /obj/item/device/radio,
-/obj/item/weapon/wrench/medical,
-/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,
+/obj/item/wrench/medical,
+/obj/item/reagent_containers/glass/beaker/cryoxadone,
 /obj/structure/sign/poster/random{
 	pixel_y = -32
 	},
@@ -38484,12 +38484,12 @@
 /area/shuttle/ftl/subshuttle/pod_main)
 "tuz" = (
 /obj/structure/table/wood,
-/obj/item/weapon/pen/red,
-/obj/item/weapon/pen/blue{
+/obj/item/pen/red,
+/obj/item/pen/blue{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/pen{
+/obj/item/pen{
 	pixel_x = -3;
 	pixel_y = -3
 	},
@@ -38657,12 +38657,12 @@
 /area/shuttle/ftl/medical/medbay)
 "tCc" = (
 /obj/structure/rack,
-/obj/item/weapon/reagent_containers/food/snacks/candy,
+/obj/item/reagent_containers/food/snacks/candy,
 /obj/effect/spawner/lootdrop/maintenance{
 	lootcount = 3;
 	name = "3maintenance loot spawner"
 	},
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/security)
 "tCt" = (
@@ -38701,20 +38701,20 @@
 /area/shuttle/ftl/security/brig)
 "tDe" = (
 /obj/structure/closet,
-/obj/item/weapon/reagent_containers/spray/plantbgone{
+/obj/item/reagent_containers/spray/plantbgone{
 	pixel_x = 0;
 	pixel_y = 3
 	},
-/obj/item/weapon/reagent_containers/syringe,
-/obj/item/weapon/reagent_containers/spray/cleaner,
-/obj/item/weapon/reagent_containers/glass/bottle/nutrient/rh,
-/obj/item/weapon/reagent_containers/glass/bottle/nutrient/rh,
-/obj/item/weapon/reagent_containers/glass/bottle/nutrient/l4z,
-/obj/item/weapon/reagent_containers/glass/bottle/nutrient/l4z,
-/obj/item/weapon/reagent_containers/glass/bottle/nutrient/ez,
-/obj/item/weapon/reagent_containers/glass/bottle/nutrient/ez,
-/obj/item/weapon/reagent_containers/glass/bottle/nutrient/ez,
-/obj/item/weapon/reagent_containers/glass/bottle/nutrient/ez,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/spray/cleaner,
+/obj/item/reagent_containers/glass/bottle/nutrient/rh,
+/obj/item/reagent_containers/glass/bottle/nutrient/rh,
+/obj/item/reagent_containers/glass/bottle/nutrient/l4z,
+/obj/item/reagent_containers/glass/bottle/nutrient/l4z,
+/obj/item/reagent_containers/glass/bottle/nutrient/ez,
+/obj/item/reagent_containers/glass/bottle/nutrient/ez,
+/obj/item/reagent_containers/glass/bottle/nutrient/ez,
+/obj/item/reagent_containers/glass/bottle/nutrient/ez,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 25
 	},
@@ -38727,7 +38727,7 @@
 	pixel_x = 4;
 	pixel_y = 6
 	},
-/obj/item/weapon/folder/blue,
+/obj/item/folder/blue,
 /obj/item/device/assembly/signaler,
 /turf/open/floor/plasteel/darkblue/side{
 	dir = 1
@@ -38761,7 +38761,7 @@
 /area/shuttle/ftl/engine/break_room)
 "tFj" = (
 /obj/item/device/modular_computer/tablet/preset/advanced,
-/obj/item/weapon/book/manual/wiki/security_ship_law{
+/obj/item/book/manual/wiki/security_ship_law{
 	pixel_x = 3;
 	pixel_y = 3
 	},
@@ -38922,8 +38922,8 @@
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/secondary/entry)
 "tJK" = (
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
+/obj/item/paper_bin,
+/obj/item/pen,
 /obj/structure/cable/yellow{
 	d1 = 4;
 	d2 = 8;
@@ -38950,8 +38950,8 @@
 /obj/item/device/assembly/prox_sensor{
 	pixel_x = -10
 	},
-/obj/item/weapon/stock_parts/cell/high/plus,
-/obj/item/weapon/stock_parts/cell/high/plus,
+/obj/item/stock_parts/cell/high/plus,
+/obj/item/stock_parts/cell/high/plus,
 /obj/item/device/multitool{
 	pixel_x = 4
 	},
@@ -39106,12 +39106,12 @@
 	name = "Abandoned Office"
 	})
 "tTb" = (
-/obj/item/weapon/pinpointer,
+/obj/item/pinpointer,
 /obj/structure/table/wood,
-/obj/item/weapon/locator,
-/obj/item/weapon/disk/nuclear,
-/obj/item/weapon/implanter/tracking,
-/obj/item/weapon/implanter/tracking,
+/obj/item/locator,
+/obj/item/disk/nuclear,
+/obj/item/implanter/tracking,
+/obj/item/implanter/tracking,
 /turf/open/floor/carpet,
 /area/shuttle/ftl/crew_quarters/captain)
 "tTP" = (
@@ -39220,11 +39220,11 @@
 /area/shuttle/ftl/crew_quarters/locker)
 "tWB" = (
 /obj/structure/table,
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = -3;
 	pixel_y = 7
 	},
-/obj/item/weapon/pen,
+/obj/item/pen,
 /obj/machinery/light_switch{
 	pixel_x = -22;
 	pixel_y = -10
@@ -39272,26 +39272,26 @@
 	pixel_x = -12;
 	pixel_y = 2
 	},
-/obj/item/weapon/storage/box/masks{
+/obj/item/storage/box/masks{
 	pixel_x = 6;
 	pixel_y = 6
 	},
-/obj/item/weapon/storage/box/bodybags{
+/obj/item/storage/box/bodybags{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/storage/box/rxglasses{
+/obj/item/storage/box/rxglasses{
 	pixel_x = 1;
 	pixel_y = 1
 	},
 /obj/structure/table/glass,
-/obj/item/weapon/storage/box/syringes{
+/obj/item/storage/box/syringes{
 	pixel_x = -2;
 	pixel_y = -2
 	},
 /obj/item/clothing/neck/stethoscope,
 /obj/item/clothing/neck/stethoscope,
-/obj/item/weapon/gun/syringe,
+/obj/item/gun/syringe,
 /obj/machinery/airalarm{
 	dir = 4;
 	icon_state = "alarm0";
@@ -39303,9 +39303,9 @@
 /area/shuttle/ftl/medical/medbay)
 "tYP" = (
 /obj/structure/table,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/folder/blue,
-/obj/item/weapon/pen,
+/obj/item/paper_bin,
+/obj/item/folder/blue,
+/obj/item/pen,
 /obj/item/device/radio,
 /obj/item/device/assembly/signaler,
 /obj/item/device/t_scanner{
@@ -39318,11 +39318,11 @@
 /area/shuttle/ftl/telecomms/computer)
 "tYW" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = -2;
 	pixel_y = 5
 	},
-/obj/item/weapon/pen,
+/obj/item/pen,
 /obj/machinery/light_switch{
 	pixel_x = -24;
 	pixel_y = 8
@@ -39360,7 +39360,7 @@
 /area/shuttle/ftl/hallway/primary/port)
 "uai" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/medical,
+/obj/item/bedsheet/medical,
 /turf/open/floor/plasteel/whiteblue/side{
 	dir = 4
 	},
@@ -39410,11 +39410,11 @@
 "udb" = (
 /obj/structure/table/wood,
 /obj/item/trash/plate,
-/obj/item/weapon/reagent_containers/food/snacks/chips,
+/obj/item/reagent_containers/food/snacks/chips,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bar)
 "uec" = (
-/obj/item/weapon/storage/toolbox/electrical{
+/obj/item/storage/toolbox/electrical{
 	pixel_x = 4;
 	pixel_y = 4
 	},
@@ -39422,7 +39422,7 @@
 	pixel_x = 4
 	},
 /obj/structure/table/reinforced,
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
 /obj/machinery/camera{
 	c_tag = "Robotics West";
 	dir = 4;
@@ -39431,7 +39431,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -25
 	},
-/obj/item/weapon/stock_parts/cell/computer/advanced,
+/obj/item/stock_parts/cell/computer/advanced,
 /obj/item/clothing/glasses/welding,
 /turf/open/floor/plasteel/purple/side{
 	dir = 8
@@ -39950,7 +39950,7 @@
 	dir = 8;
 	layer = 5
 	},
-/obj/item/weapon/soap/deluxe,
+/obj/item/soap/deluxe,
 /turf/open/floor/plasteel/white,
 /area/shuttle/ftl/crew_quarters/captain)
 "uvL" = (
@@ -39964,7 +39964,7 @@
 /obj/machinery/recharger{
 	pixel_y = 4
 	},
-/obj/item/weapon/restraints/handcuffs{
+/obj/item/restraints/handcuffs{
 	pixel_y = 3
 	},
 /turf/open/floor/plasteel/darkblue/side{
@@ -40084,7 +40084,7 @@
 	pixel_y = 22
 	},
 /obj/structure/closet/wardrobe/virology_white,
-/obj/item/weapon/storage/backpack/satchel/vir,
+/obj/item/storage/backpack/satchel/vir,
 /turf/open/floor/plasteel/whitegreen/side{
 	dir = 5
 	},
@@ -40118,12 +40118,12 @@
 "uBK" = (
 /obj/item/device/analyzer,
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/mechanical,
-/obj/item/weapon/storage/toolbox/mechanical,
-/obj/item/weapon/wrench,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/wrench,
 /obj/item/device/flashlight/glowstick/random,
 /obj/item/device/flashlight/glowstick/random,
-/obj/item/weapon/screwdriver,
+/obj/item/screwdriver,
 /obj/item/device/toner,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/tool_storage)
@@ -40164,7 +40164,7 @@
 	dir = 8;
 	network = list("SS13","Mining")
 	},
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/white/corner{
 	dir = 2
 	},
@@ -40514,7 +40514,7 @@
 "uQt" = (
 /obj/structure/table/reinforced,
 /obj/item/device/radio/intercom,
-/obj/item/weapon/paper/fluff/stations/centcom{
+/obj/item/paper/fluff/stations/centcom{
 	desc = "A paper written in scribbled black ink.";
 	info = "<BR>The secondary mining shuttle console is located in the Quartermaster's office. It is used to recall the shuttle if it is planetside, and all nearby persons are unable to operate it.<BR>Have a secure shift.<BR>";
 	name = "paper- 'shuttle note'"
@@ -40715,7 +40715,7 @@
 	pixel_x = 0;
 	pixel_y = 32
 	},
-/obj/item/weapon/computer_hardware/ai_slot,
+/obj/item/computer_hardware/ai_slot,
 /turf/open/floor/plasteel/darkblue/side{
 	dir = 1
 	},
@@ -40725,13 +40725,13 @@
 	dir = 4
 	},
 /obj/structure/rack,
-/obj/item/weapon/circuitboard/computer/communications{
+/obj/item/circuitboard/computer/communications{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/circuitboard/computer/card,
-/obj/item/weapon/computer_hardware/card_slot,
-/obj/item/weapon/circuitboard/computer/crew{
+/obj/item/circuitboard/computer/card,
+/obj/item/computer_hardware/card_slot,
+/obj/item/circuitboard/computer/crew{
 	pixel_x = 3;
 	pixel_y = -3
 	},
@@ -40765,20 +40765,20 @@
 	name = "Chapel"
 	})
 "uYT" = (
-/obj/item/weapon/storage/box/lights/mixed{
+/obj/item/storage/box/lights/mixed{
 	pixel_x = 2;
 	pixel_y = 2
 	},
 /obj/structure/table,
-/obj/item/weapon/storage/box/donkpockets,
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/storage/box/donkpockets,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /turf/open/floor/plasteel/white/side{
 	dir = 8
 	},
 /area/shuttle/ftl/cargo/mining)
 "uZn" = (
 /obj/structure/table,
-/obj/item/weapon/storage/fancy/donut_box,
+/obj/item/storage/fancy/donut_box,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/station{
 	dir = 4
 	},
@@ -40798,10 +40798,10 @@
 	dir = 8
 	},
 /obj/structure/table,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/folder/red,
+/obj/item/paper_bin,
+/obj/item/folder/red,
 /obj/machinery/recharger,
-/obj/item/weapon/pen/red,
+/obj/item/pen/red,
 /turf/open/floor/plasteel/darkblue/side{
 	dir = 9
 	},
@@ -40858,7 +40858,7 @@
 	name = "south bump";
 	pixel_y = -24
 	},
-/obj/item/weapon/reagent_containers/food/snacks/cheesiehonkers,
+/obj/item/reagent_containers/food/snacks/cheesiehonkers,
 /obj/effect/landmark/start{
 	name = "AI";
 	shuttle_abstract_movable = 1
@@ -40871,7 +40871,7 @@
 /area/shuttle/ftl/turret_protected/ai)
 "uZW" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /turf/open/floor/plasteel/darkblue/side{
 	dir = 2
 	},
@@ -40972,7 +40972,7 @@
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bridge)
 "vda" = (
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /obj/item/device/modular_computer/tablet/preset/cheap,
 /obj/item/device/modular_computer/laptop/preset/civillian,
 /obj/structure/table,
@@ -40982,10 +40982,10 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -25
 	},
-/obj/item/weapon/stock_parts/console_screen,
-/obj/item/weapon/stock_parts/console_screen,
-/obj/item/weapon/stock_parts/cell/computer,
-/obj/item/weapon/screwdriver,
+/obj/item/stock_parts/console_screen,
+/obj/item/stock_parts/console_screen,
+/obj/item/stock_parts/cell/computer,
+/obj/item/screwdriver,
 /obj/item/device/assembly/signaler,
 /turf/open/floor/plasteel/yellow/side{
 	dir = 8
@@ -41003,10 +41003,10 @@
 /area/shuttle/ftl/space)
 "veK" = (
 /obj/structure/closet/crate/hydroponics,
-/obj/item/weapon/reagent_containers/glass/bucket,
-/obj/item/weapon/shovel/spade,
-/obj/item/weapon/wrench,
-/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/glass/bucket,
+/obj/item/shovel/spade,
+/obj/item/wrench,
+/obj/item/reagent_containers/glass/bucket,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hydroponics)
 "veL" = (
@@ -41114,11 +41114,11 @@
 /area/shuttle/ftl/maintenance/bridge)
 "vhO" = (
 /obj/structure/table,
-/obj/item/weapon/storage/box/hug/medical{
+/obj/item/storage/box/hug/medical{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/weapon/storage/box/survival_mining,
+/obj/item/storage/box/survival_mining,
 /obj/item/device/gps/mining,
 /turf/open/floor/plasteel/blue/side{
 	dir = 1
@@ -41167,7 +41167,7 @@
 /obj/item/chair{
 	dir = 8
 	},
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /obj/structure/cable{
 	crit_fail = 0;
 	d1 = 4;
@@ -41220,7 +41220,7 @@
 /obj/machinery/firealarm{
 	pixel_y = -26
 	},
-/obj/item/weapon/holosign_creator/atmos,
+/obj/item/holosign_creator/atmos,
 /turf/open/floor/plasteel/darkyellow/side,
 /area/shuttle/ftl/engine/chiefs_office)
 "vmB" = (
@@ -41258,7 +41258,7 @@
 /turf/open/floor/plating,
 /area/shuttle/ftl/security/brig)
 "vmS" = (
-/obj/item/weapon/storage/wallet/random,
+/obj/item/storage/wallet/random,
 /obj/structure/closet/secure_closet/personal,
 /obj/item/clothing/suit/hooded/wintercoat,
 /obj/item/clothing/shoes/winterboots,
@@ -41541,8 +41541,8 @@
 /obj/structure/closet/crate/engineering,
 /obj/item/stack/spacecash/c10,
 /obj/item/stack/sheet/glass/fifty,
-/obj/item/weapon/electronics/apc,
-/obj/item/weapon/weldingtool,
+/obj/item/electronics/apc,
+/obj/item/weldingtool,
 /obj/effect/spawner/lootdrop/maintenance{
 	lootcount = 4;
 	name = "4maintenance loot spawner"
@@ -41758,8 +41758,8 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/item/weapon/storage/fancy/donut_box,
-/obj/item/weapon/circuitboard/computer/powermonitor{
+/obj/item/storage/fancy/donut_box,
+/obj/item/circuitboard/computer/powermonitor{
 	pixel_x = 4;
 	pixel_y = -4
 	},
@@ -41847,10 +41847,10 @@
 	dir = 4
 	},
 /obj/structure/table/reinforced,
-/obj/item/weapon/reagent_containers/food/drinks/britcup{
+/obj/item/reagent_containers/food/drinks/britcup{
 	pixel_x = -4
 	},
-/obj/item/weapon/reagent_containers/food/drinks/coffee{
+/obj/item/reagent_containers/food/drinks/coffee{
 	pixel_x = 6;
 	pixel_y = 4
 	},
@@ -41900,7 +41900,7 @@
 /obj/structure/closet/crate,
 /obj/item/device/camera_film,
 /obj/effect/spawner/lootdrop/maintenance,
-/obj/item/weapon/computer_hardware/hard_drive,
+/obj/item/computer_hardware/hard_drive,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/station{
 	dir = 1
 	},
@@ -41940,7 +41940,7 @@
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/starboard)
 "vFy" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/floorgrime,
 /area/shuttle/ftl/crew_quarters/locker/locker_toilet)
 "vGv" = (
@@ -42021,14 +42021,14 @@
 	},
 /area/shuttle/ftl/bridge/battle_bridge)
 "vIA" = (
-/obj/item/weapon/storage/toolbox/electrical,
-/obj/item/weapon/dice/d6,
+/obj/item/storage/toolbox/electrical,
+/obj/item/dice/d6,
 /obj/structure/table,
 /obj/machinery/light/small{
 	dir = 4
 	},
 /obj/item/clothing/gloves/color/fyellow,
-/obj/item/weapon/stock_parts/cell/high,
+/obj/item/stock_parts/cell/high,
 /obj/item/device/t_scanner,
 /obj/item/device/radio/intercom{
 	pixel_x = 32;
@@ -42050,8 +42050,8 @@
 "vJF" = (
 /obj/item/device/t_scanner,
 /obj/structure/table,
-/obj/item/weapon/storage/belt/utility,
-/obj/item/weapon/storage/belt/utility,
+/obj/item/storage/belt/utility,
+/obj/item/storage/belt/utility,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/station{
 	dir = 2
 	},
@@ -42061,7 +42061,7 @@
 	icon_state = "1-4";
 	tag = "90Curve"
 	},
-/obj/item/weapon/holosign_creator/atmos,
+/obj/item/holosign_creator/atmos,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/tool_storage{
 	name = "Engineering Tool Storage"
@@ -42152,11 +42152,11 @@
 	pixel_x = 0;
 	pixel_y = -32
 	},
-/obj/item/weapon/storage/toolbox/emergency{
+/obj/item/storage/toolbox/emergency{
 	pixel_x = -2;
 	pixel_y = -3
 	},
-/obj/item/weapon/storage/toolbox/electrical,
+/obj/item/storage/toolbox/electrical,
 /obj/item/device/radio,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 6
@@ -42186,8 +42186,8 @@
 /area/shuttle/ftl/medical/genetics)
 "vPi" = (
 /obj/structure/table,
-/obj/item/weapon/kitchen/rollingpin,
-/obj/item/weapon/kitchen/knife,
+/obj/item/kitchen/rollingpin,
+/obj/item/kitchen/knife,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bridge)
 "vQc" = (
@@ -42208,7 +42208,7 @@
 /obj/machinery/airalarm{
 	pixel_y = 22
 	},
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/bridge/meeting_room)
 "vQA" = (
@@ -42296,22 +42296,22 @@
 /area/shuttle/ftl/hallway/primary/port)
 "vTf" = (
 /obj/structure/closet/crate/freezer,
-/obj/item/weapon/reagent_containers/blood/empty,
-/obj/item/weapon/reagent_containers/blood/empty{
+/obj/item/reagent_containers/blood/empty,
+/obj/item/reagent_containers/blood/empty{
 	pixel_x = -3;
 	pixel_y = -3
 	},
-/obj/item/weapon/reagent_containers/blood/OMinus,
-/obj/item/weapon/reagent_containers/blood/OPlus{
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OPlus{
 	pixel_x = -2;
 	pixel_y = -1
 	},
-/obj/item/weapon/reagent_containers/blood/random,
-/obj/item/weapon/reagent_containers/blood/random,
-/obj/item/weapon/reagent_containers/blood/random,
-/obj/item/weapon/reagent_containers/blood/random,
-/obj/item/weapon/reagent_containers/blood/random,
-/obj/item/weapon/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -42425,9 +42425,9 @@
 	},
 /obj/structure/table/wood,
 /obj/item/device/flashlight/lamp,
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
-/obj/item/weapon/gun/ballistic/revolver/russian,
-/obj/item/weapon/computer_hardware/printer/mini,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/gun/ballistic/revolver/russian,
+/obj/item/computer_hardware/printer/mini,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/security)
 "vXw" = (
@@ -42567,12 +42567,12 @@
 /area/shuttle/ftl/hallway/primary/port)
 "wdV" = (
 /obj/structure/closet/firecloset/full,
-/obj/item/weapon/coin/iron,
+/obj/item/coin/iron,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bridge)
 "weq" = (
 /obj/structure/table,
-/obj/item/weapon/folder/yellow,
+/obj/item/folder/yellow,
 /obj/item/device/radio,
 /obj/structure/disposalpipe/segment{
 	dir = 1
@@ -42659,14 +42659,14 @@
 /turf/open/floor/engine,
 /area/shuttle/ftl/engine/ftl_drive)
 "wgk" = (
-/obj/item/weapon/inducer,
+/obj/item/inducer,
 /obj/structure/rack,
 /obj/item/stack/sheet/plasteel/fifty,
 /obj/item/stack/sheet/metal/fifty,
 /obj/item/stack/sheet/metal/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/glass/fifty,
-/obj/item/weapon/storage/belt/utility,
+/obj/item/storage/belt/utility,
 /turf/open/floor/plasteel/yellow/side{
 	dir = 6
 	},
@@ -42751,7 +42751,7 @@
 	},
 /area/shuttle/ftl/medical/medbay)
 "wjo" = (
-/obj/item/weapon/restraints/handcuffs/cable/zipties/used,
+/obj/item/restraints/handcuffs/cable/zipties/used,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/security)
 "wjB" = (
@@ -42893,7 +42893,7 @@
 	pixel_y = 6
 	},
 /obj/item/toy/crayon/spraycan,
-/obj/item/weapon/paint/red,
+/obj/item/paint/red,
 /obj/effect/spawner/lootdrop/costume,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/medbay)
@@ -42930,8 +42930,8 @@
 /area/shuttle/ftl/hallway/secondary/entry)
 "wpT" = (
 /obj/structure/table,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
+/obj/item/paper_bin,
+/obj/item/pen,
 /obj/item/device/radio/intercom{
 	pixel_x = 0;
 	pixel_y = -32
@@ -43035,14 +43035,14 @@
 	pixel_x = -32;
 	pixel_y = 0
 	},
-/obj/item/weapon/book/manual/wiki/security_ship_law{
+/obj/item/book/manual/wiki/security_ship_law{
 	pixel_x = 3;
 	pixel_y = 3
 	},
 /obj/structure/table,
-/obj/item/weapon/paper_bin,
+/obj/item/paper_bin,
 /obj/machinery/recharger,
-/obj/item/weapon/restraints/handcuffs,
+/obj/item/restraints/handcuffs,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 9
 	},
@@ -43112,7 +43112,7 @@
 	name = "west bump";
 	pixel_x = -24
 	},
-/obj/item/weapon/storage/fancy/donut_box,
+/obj/item/storage/fancy/donut_box,
 /obj/item/device/gps,
 /obj/structure/cable{
 	d2 = 2;
@@ -43277,7 +43277,7 @@
 "wxp" = (
 /obj/structure/rack,
 /obj/item/clothing/shoes/magboots,
-/obj/item/weapon/crowbar/red,
+/obj/item/crowbar/red,
 /obj/structure/cable{
 	crit_fail = 0;
 	d1 = 4;
@@ -43339,8 +43339,8 @@
 /area/shuttle/ftl/crew_quarters/toilet)
 "wzt" = (
 /obj/structure/table,
-/obj/item/weapon/retractor,
-/obj/item/weapon/hemostat,
+/obj/item/retractor,
+/obj/item/hemostat,
 /obj/machinery/camera{
 	c_tag = "Medbay Surgery";
 	dir = 4
@@ -43425,16 +43425,16 @@
 /obj/structure/table/glass,
 /obj/item/clothing/glasses/sunglasses/blindfold,
 /obj/item/clothing/mask/muzzle,
-/obj/item/weapon/hand_labeler,
-/obj/item/weapon/storage/belt/medical{
+/obj/item/hand_labeler,
+/obj/item/storage/belt/medical{
 	pixel_x = 0;
 	pixel_y = 2
 	},
-/obj/item/weapon/storage/belt/medical{
+/obj/item/storage/belt/medical{
 	pixel_x = 0;
 	pixel_y = 2
 	},
-/obj/item/weapon/storage/belt/medical{
+/obj/item/storage/belt/medical{
 	pixel_x = 0;
 	pixel_y = 2
 	},
@@ -43449,7 +43449,7 @@
 	},
 /area/shuttle/ftl/medical/medbay)
 "wBG" = (
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bridge)
 "wCw" = (
@@ -43516,7 +43516,7 @@
 "wEJ" = (
 /obj/structure/rack,
 /obj/item/stack/spacecash/c100,
-/obj/item/weapon/storage/briefcase,
+/obj/item/storage/briefcase,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bridge)
@@ -43543,18 +43543,18 @@
 /area/shuttle/ftl/crew_quarters/kitchen)
 "wFC" = (
 /obj/structure/bookcase,
-/obj/item/weapon/book/manual/wiki/security_ship_law{
+/obj/item/book/manual/wiki/security_ship_law{
 	pixel_x = 4;
 	pixel_y = 4
 	},
-/obj/item/weapon/book/manual/wiki/standard_operating_procedure,
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_engineering,
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_medical,
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_science,
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_security,
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_servicecivilian,
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_supply,
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_command,
+/obj/item/book/manual/wiki/standard_operating_procedure,
+/obj/item/book/manual/wiki/department_standard_operating_procedure_engineering,
+/obj/item/book/manual/wiki/department_standard_operating_procedure_medical,
+/obj/item/book/manual/wiki/department_standard_operating_procedure_science,
+/obj/item/book/manual/wiki/department_standard_operating_procedure_security,
+/obj/item/book/manual/wiki/department_standard_operating_procedure_servicecivilian,
+/obj/item/book/manual/wiki/department_standard_operating_procedure_supply,
+/obj/item/book/manual/wiki/department_standard_operating_procedure_command,
 /turf/open/floor/plating,
 /area/shuttle/ftl/research/test_area{
 	name = "Abandoned Office"
@@ -43610,11 +43610,11 @@
 	pixel_x = -24
 	},
 /obj/structure/cable,
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = -3;
 	pixel_y = 7
 	},
-/obj/item/weapon/pen,
+/obj/item/pen,
 /turf/open/floor/plating,
 /area/shuttle/ftl/medical/morgue)
 "wHe" = (
@@ -43732,7 +43732,7 @@
 	},
 /area/shuttle/ftl/hallway/primary/central)
 "wIq" = (
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/science)
 "wJA" = (
@@ -43877,11 +43877,11 @@
 /area/shuttle/ftl/hallway/primary/starboard)
 "wNs" = (
 /obj/structure/table/glass,
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = -3;
 	pixel_y = 7
 	},
-/obj/item/weapon/pen,
+/obj/item/pen,
 /obj/item/device/radio,
 /obj/machinery/firealarm{
 	pixel_y = 26
@@ -44020,11 +44020,11 @@
 	pixel_x = 6;
 	pixel_y = 6
 	},
-/obj/item/weapon/grenade/barrier{
+/obj/item/grenade/barrier{
 	pixel_x = -4
 	},
-/obj/item/weapon/grenade/barrier,
-/obj/item/weapon/grenade/barrier{
+/obj/item/grenade/barrier,
+/obj/item/grenade/barrier{
 	pixel_x = 4
 	},
 /obj/item/device/assembly/signaler,
@@ -44060,16 +44060,16 @@
 /area/shuttle/ftl/research/xenobiology)
 "wUM" = (
 /obj/structure/table/glass,
-/obj/item/weapon/storage/box/rxglasses{
+/obj/item/storage/box/rxglasses{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/storage/box/bodybags,
-/obj/item/weapon/reagent_containers/glass/beaker{
+/obj/item/storage/box/bodybags,
+/obj/item/reagent_containers/glass/beaker{
 	pixel_x = 8;
 	pixel_y = 2
 	},
-/obj/item/weapon/reagent_containers/dropper,
+/obj/item/reagent_containers/dropper,
 /obj/item/clothing/gloves/color/latex,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/station{
 	dir = 2
@@ -44193,7 +44193,7 @@
 	dir = 8
 	},
 /obj/item/clothing/gloves/color/latex,
-/obj/item/weapon/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
 /obj/structure/table,
 /obj/item/device/radio/intercom{
 	pixel_x = 32;
@@ -44315,9 +44315,9 @@
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bridge)
 "xfv" = (
-/obj/item/weapon/storage/fancy/cigarettes/cigars,
+/obj/item/storage/fancy/cigarettes/cigars,
 /obj/structure/table/wood,
-/obj/item/weapon/restraints/handcuffs{
+/obj/item/restraints/handcuffs{
 	pixel_y = 3
 	},
 /obj/item/toy/gun,
@@ -44398,10 +44398,10 @@
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/science)
 "xhQ" = (
-/obj/item/weapon/book/manual/wiki/supermatter,
+/obj/item/book/manual/wiki/supermatter,
 /obj/structure/table,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
+/obj/item/paper_bin,
+/obj/item/pen,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
@@ -44459,38 +44459,38 @@
 /area/shuttle/ftl/hallway/secondary/exit)
 "xjw" = (
 /obj/structure/rack,
-/obj/item/weapon/circuitboard/computer/security,
-/obj/item/weapon/circuitboard/computer/secure_data{
+/obj/item/circuitboard/computer/security,
+/obj/item/circuitboard/computer/secure_data{
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/obj/item/weapon/circuitboard/computer/arcade/battle{
+/obj/item/circuitboard/computer/arcade/battle{
 	permeability_coefficient = 1;
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/circuitboard/computer/mining,
-/obj/item/weapon/circuitboard/machine/autolathe{
+/obj/item/circuitboard/computer/mining,
+/obj/item/circuitboard/machine/autolathe{
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/obj/item/weapon/circuitboard/computer/atmos_alert{
+/obj/item/circuitboard/computer/atmos_alert{
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/weapon/circuitboard/computer/stationalert,
-/obj/item/weapon/circuitboard/computer/powermonitor{
+/obj/item/circuitboard/computer/stationalert,
+/obj/item/circuitboard/computer/powermonitor{
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/obj/item/weapon/circuitboard/machine/thermomachine/freezer{
+/obj/item/circuitboard/machine/thermomachine/freezer{
 	pixel_x = 4;
 	pixel_y = -4
 	},
 /turf/open/floor/plating,
 /area/shuttle/ftl/storage/tech)
 "xjJ" = (
-/obj/item/weapon/cigbutt/cigarbutt,
+/obj/item/cigbutt/cigarbutt,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/medbay)
 "xlH" = (
@@ -44659,7 +44659,7 @@
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/security/hos)
 "xrv" = (
-/obj/item/weapon/twohanded/required/kirbyplants/random,
+/obj/item/twohanded/required/kirbyplants/random,
 /obj/structure/cable{
 	crit_fail = 0;
 	d1 = 4;
@@ -44860,14 +44860,14 @@
 	},
 /area/shuttle/ftl/hallway/primary/central)
 "xwk" = (
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = -2;
 	pixel_y = 5
 	},
-/obj/item/weapon/pen/red,
+/obj/item/pen/red,
 /obj/item/device/healthanalyzer,
 /obj/item/clothing/gloves/color/latex,
-/obj/item/weapon/hand_labeler,
+/obj/item/hand_labeler,
 /obj/machinery/newscaster{
 	pixel_x = -30
 	},
@@ -44878,11 +44878,11 @@
 /area/shuttle/ftl/medical/virology)
 "xwl" = (
 /obj/structure/table/wood,
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = 1;
 	pixel_y = 9
 	},
-/obj/item/weapon/pen,
+/obj/item/pen,
 /turf/open/floor/plating,
 /area/shuttle/ftl/research/test_area{
 	name = "Abandoned Office"
@@ -45038,7 +45038,7 @@
 /obj/machinery/newscaster{
 	pixel_y = 30
 	},
-/obj/item/weapon/paper/fluff/stations/centcom{
+/obj/item/paper/fluff/stations/centcom{
 	desc = "A paper written in black ink. The characters were written perfectly. Surely this wasn't made by human hands.";
 	info = "<BR>Please refill the drone dispenser at your latest convenience.<BR>Have a secure shift.<BR>";
 	name = "paper- 'drone dispenser'"
@@ -45051,7 +45051,7 @@
 /obj/item/stack/spacecash/c100,
 /obj/structure/table/wood,
 /obj/item/toy/cards/deck,
-/obj/item/weapon/coin/iron,
+/obj/item/coin/iron,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bridge)
 "xBr" = (
@@ -45096,26 +45096,26 @@
 /area/shuttle/ftl/research/lab)
 "xCA" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/glass/bottle/epinephrine{
+/obj/item/reagent_containers/glass/bottle/epinephrine{
 	pixel_x = 6;
 	pixel_y = 0
 	},
-/obj/item/weapon/reagent_containers/glass/bottle/charcoal{
+/obj/item/reagent_containers/glass/bottle/charcoal{
 	pixel_x = -3
 	},
-/obj/item/weapon/reagent_containers/glass/bottle/epinephrine{
+/obj/item/reagent_containers/glass/bottle/epinephrine{
 	pixel_x = -3;
 	pixel_y = 8
 	},
-/obj/item/weapon/reagent_containers/glass/bottle/charcoal{
+/obj/item/reagent_containers/glass/bottle/charcoal{
 	pixel_x = 6;
 	pixel_y = 8
 	},
-/obj/item/weapon/reagent_containers/syringe/epinephrine{
+/obj/item/reagent_containers/syringe/epinephrine{
 	pixel_x = 3;
 	pixel_y = -2
 	},
-/obj/item/weapon/reagent_containers/syringe/epinephrine{
+/obj/item/reagent_containers/syringe/epinephrine{
 	pixel_x = -2;
 	pixel_y = 5
 	},
@@ -45377,7 +45377,7 @@
 	},
 /area/shuttle/ftl/atmos/equipment)
 "xKX" = (
-/obj/item/weapon/bedsheet/captain,
+/obj/item/bedsheet/captain,
 /obj/structure/bed,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
@@ -45407,7 +45407,7 @@
 /area/shuttle/ftl/cargo/mining)
 "xLL" = (
 /obj/structure/closet/toolcloset,
-/obj/item/weapon/storage/belt/utility,
+/obj/item/storage/belt/utility,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/station{
 	dir = 8
 	},
@@ -45421,7 +45421,7 @@
 "xLV" = (
 /obj/structure/table,
 /obj/item/device/modular_computer/laptop/preset/civillian,
-/obj/item/weapon/computer_hardware/network_card,
+/obj/item/computer_hardware/network_card,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/crew_quarters/locker)
 "xMx" = (
@@ -45432,8 +45432,8 @@
 	name = "west bump";
 	pixel_x = -24
 	},
-/obj/item/weapon/hand_labeler,
-/obj/item/weapon/reagent_containers/food/snacks/cakeslice/plain,
+/obj/item/hand_labeler,
+/obj/item/reagent_containers/food/snacks/cakeslice/plain,
 /obj/structure/cable{
 	d2 = 2;
 	icon_state = "0-2";
@@ -45583,8 +45583,8 @@
 	dir = 2
 	},
 /obj/structure/rack,
-/obj/item/weapon/storage/toolbox/mechanical,
-/obj/item/weapon/storage/toolbox/emergency{
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/emergency{
 	pixel_x = -2;
 	pixel_y = -3
 	},
@@ -45661,18 +45661,18 @@
 	},
 /area/shuttle/ftl/bridge/meeting_room)
 "xXd" = (
-/obj/item/weapon/book/manual/wiki/department_standard_operating_procedure_servicecivilian{
+/obj/item/book/manual/wiki/department_standard_operating_procedure_servicecivilian{
 	pixel_x = 4;
 	pixel_y = 4
 	},
 /obj/structure/table,
 /obj/item/clothing/head/hardhat/cakehat,
-/obj/item/weapon/book/manual/chef_recipes,
-/obj/item/weapon/storage/box/donkpockets,
+/obj/item/book/manual/chef_recipes,
+/obj/item/storage/box/donkpockets,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/item/weapon/reagent_containers/food/snacks/mint,
+/obj/item/reagent_containers/food/snacks/mint,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
 	},
@@ -45802,7 +45802,7 @@
 /area/shuttle/ftl/maintenance/security)
 "yde" = (
 /obj/structure/table,
-/obj/item/weapon/kitchen/fork,
+/obj/item/kitchen/fork,
 /obj/item/trash/plate,
 /turf/open/floor/plating,
 /area/shuttle/ftl/maintenance/bridge)
@@ -45907,8 +45907,8 @@
 /area/shuttle/ftl/hallway/primary/port)
 "yiY" = (
 /obj/structure/table,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
+/obj/item/paper_bin,
+/obj/item/pen,
 /turf/open/floor/plasteel/brown{
 	dir = 2
 	},

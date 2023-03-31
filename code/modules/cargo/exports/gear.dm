@@ -46,7 +46,7 @@
 	cost = 400
 	unit_name = "riot shield"
 	cost_modifiers = list("Security")
-	export_types = list(/obj/item/weapon/shield/riot)
+	export_types = list(/obj/item/shield/riot)
 
 
 // Masks

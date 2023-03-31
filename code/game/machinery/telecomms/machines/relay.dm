@@ -47,17 +47,17 @@
 
 /obj/machinery/telecomms/relay/New()
 	..()
-	var/obj/item/weapon/circuitboard/machine/B = new /obj/item/weapon/circuitboard/machine/telecomms/relay(null)
+	var/obj/item/circuitboard/machine/B = new /obj/item/circuitboard/machine/telecomms/relay(null)
 	B.apply_default_parts(src)
 
-/obj/item/weapon/circuitboard/machine/telecomms/relay
+/obj/item/circuitboard/machine/telecomms/relay
 	name = "Relay Mainframe (Machine Board)"
 	build_path = /obj/machinery/telecomms/relay
 	origin_tech = "programming=2;engineering=2;bluespace=2"
 	req_components = list(
-							/obj/item/weapon/stock_parts/manipulator = 2,
+							/obj/item/stock_parts/manipulator = 2,
 							/obj/item/stack/cable_coil = 2,
-							/obj/item/weapon/stock_parts/subspace/filter = 2)
+							/obj/item/stock_parts/subspace/filter = 2)
 
 
 
@@ -87,7 +87,7 @@
 
 // Portable Relay - A relay that can be dragged around
 /obj/machinery/telecomms/relay/portable
-	var/obj/item/weapon/stock_parts/cell/power_cell
+	var/obj/item/stock_parts/cell/power_cell
 	name = "portable telecommunication relay"
 	desc = "A relay capable of holding it's own power cell and being dragged around."
 
@@ -95,7 +95,7 @@
 	if(default_unfasten_wrench(user, P))
 		power_change()
 		return
-	if(istype(P, /obj/item/weapon/stock_parts/cell) && !power_cell)
+	if(istype(P, /obj/item/stock_parts/cell) && !power_cell)
 		if(!user.drop_item())
 			return 1
 		P.loc = src
@@ -105,7 +105,7 @@
 	. = ..()
 
 /obj/machinery/telecomms/relay/portable/New()
-	power_cell = new /obj/item/weapon/stock_parts/cell/high(src)
+	power_cell = new /obj/item/stock_parts/cell/high(src)
 	..()
 
 /obj/machinery/telecomms/relay/portable/Move()

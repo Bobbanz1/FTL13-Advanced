@@ -177,7 +177,7 @@
 /area/ruin/unpowered/ash_walkers)
 "aC" = (
 /obj/structure/stone_tile/block/cracked,
-/obj/item/weapon/storage/toolbox/syndicate,
+/obj/item/storage/toolbox/syndicate,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/unpowered/ash_walkers)
 "aE" = (
@@ -185,10 +185,10 @@
 	dir = 4
 	},
 /obj/structure/closet/crate/medical,
-/obj/item/weapon/storage/firstaid/regular,
-/obj/item/weapon/reagent_containers/blood/random,
-/obj/item/weapon/reagent_containers/blood/lizard,
-/obj/item/weapon/reagent_containers/blood/lizard,
+/obj/item/storage/firstaid/regular,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/lizard,
+/obj/item/reagent_containers/blood/lizard,
 /obj/item/stack/sheet/cloth/ten,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/unpowered/ash_walkers)
@@ -257,7 +257,7 @@
 /obj/structure/stone_tile{
 	dir = 1
 	},
-/obj/item/weapon/weldingtool/experimental,
+/obj/item/weldingtool/experimental,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/unpowered/ash_walkers)
 "aO" = (
@@ -276,7 +276,7 @@
 	dir = 8
 	},
 /obj/machinery/iv_drip,
-/obj/item/weapon/reagent_containers/glass/beaker/waterbottle/large,
+/obj/item/reagent_containers/glass/beaker/waterbottle/large,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/unpowered/ash_walkers)
 "aR" = (
@@ -440,7 +440,7 @@
 /obj/structure/stone_tile/cracked{
 	dir = 4
 	},
-/obj/item/weapon/storage/bag/plants/portaseeder,
+/obj/item/storage/bag/plants/portaseeder,
 /turf/open/indestructible/boss,
 /area/ruin/unpowered/ash_walkers)
 "bk" = (
@@ -474,7 +474,7 @@
 /obj/structure/stone_tile/cracked{
 	dir = 4
 	},
-/obj/item/weapon/construction/rcd/loaded,
+/obj/item/construction/rcd/loaded,
 /turf/open/indestructible/boss,
 /area/ruin/unpowered/ash_walkers)
 "bn" = (
@@ -495,7 +495,7 @@
 /obj/structure/stone_tile/block{
 	dir = 8
 	},
-/obj/item/weapon/pickaxe,
+/obj/item/pickaxe,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "bp" = (
@@ -689,7 +689,7 @@
 /area/lavaland/surface/outdoors)
 "bP" = (
 /obj/structure/stone_tile/block,
-/obj/item/weapon/twohanded/spear,
+/obj/item/twohanded/spear,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "bQ" = (
@@ -798,12 +798,12 @@
 	dir = 4
 	},
 /obj/structure/closet/crate/internals,
-/obj/item/weapon/pickaxe,
-/obj/item/weapon/pickaxe,
-/obj/item/weapon/pickaxe,
-/obj/item/weapon/pickaxe,
-/obj/item/weapon/pickaxe,
-/obj/item/weapon/pickaxe,
+/obj/item/pickaxe,
+/obj/item/pickaxe,
+/obj/item/pickaxe,
+/obj/item/pickaxe,
+/obj/item/pickaxe,
+/obj/item/pickaxe,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "cg" = (
@@ -843,7 +843,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "ck" = (
-/obj/item/weapon/twohanded/spear,
+/obj/item/twohanded/spear,
 /obj/structure/stone_tile{
 	dir = 4
 	},
@@ -856,7 +856,7 @@
 /obj/structure/stone_tile/cracked{
 	dir = 8
 	},
-/obj/item/weapon/twohanded/spear,
+/obj/item/twohanded/spear,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "cm" = (
@@ -950,7 +950,7 @@
 /obj/structure/stone_tile/cracked{
 	dir = 1
 	},
-/obj/item/weapon/twohanded/spear,
+/obj/item/twohanded/spear,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/unpowered/ash_walkers)
 "cA" = (
@@ -995,8 +995,8 @@
 	dir = 1
 	},
 /obj/structure/table/wood,
-/obj/item/weapon/twohanded/spear,
-/obj/item/weapon/storage/belt,
+/obj/item/twohanded/spear,
+/obj/item/storage/belt,
 /turf/open/indestructible/boss/air,
 /area/ruin/unpowered/ash_walkers)
 "cI" = (
@@ -1009,7 +1009,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "cJ" = (
-/obj/item/weapon/shovel,
+/obj/item/shovel,
 /obj/structure/stone_tile/cracked{
 	dir = 8
 	},
@@ -1034,8 +1034,8 @@
 	dir = 4
 	},
 /obj/structure/table/wood,
-/obj/item/weapon/twohanded/spear,
-/obj/item/weapon/scythe,
+/obj/item/twohanded/spear,
+/obj/item/scythe,
 /turf/open/indestructible/boss/air,
 /area/ruin/unpowered/ash_walkers)
 "cM" = (
@@ -1047,7 +1047,7 @@
 	dir = 8
 	},
 /obj/structure/table/wood,
-/obj/item/weapon/twohanded/spear,
+/obj/item/twohanded/spear,
 /turf/open/indestructible/boss,
 /area/ruin/unpowered/ash_walkers)
 "cN" = (
@@ -1062,7 +1062,7 @@
 	dir = 4
 	},
 /obj/structure/table/wood,
-/obj/item/weapon/twohanded/spear,
+/obj/item/twohanded/spear,
 /obj/item/clothing/head/helmet/roman/legionaire,
 /turf/open/indestructible/boss,
 /area/ruin/unpowered/ash_walkers)
@@ -1106,7 +1106,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/unpowered/ash_walkers)
 "cX" = (
-/obj/item/weapon/storage/box/rxglasses,
+/obj/item/storage/box/rxglasses,
 /obj/structure/stone_tile{
 	dir = 1
 	},
@@ -1209,7 +1209,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "dp" = (
-/obj/item/weapon/pickaxe,
+/obj/item/pickaxe,
 /obj/structure/stone_tile/cracked{
 	dir = 1
 	},
@@ -1266,7 +1266,7 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "dw" = (
-/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/glass/bucket,
 /obj/structure/stone_tile/block/cracked{
 	dir = 4
 	},

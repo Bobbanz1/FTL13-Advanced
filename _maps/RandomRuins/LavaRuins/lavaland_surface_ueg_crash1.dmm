@@ -53,7 +53,7 @@
 /area/ruin/powered)
 "ak" = (
 /obj/effect/decal/cleanable/blood/gibs/body,
-/obj/item/weapon/pickaxe/drill,
+/obj/item/pickaxe/drill,
 /turf/open/floor/plasteel/vault{
 	dir = 5
 	},
@@ -73,8 +73,8 @@
 	},
 /area/ruin/powered)
 "an" = (
-/obj/item/weapon/rack_parts,
-/obj/item/weapon/survivalcapsule,
+/obj/item/rack_parts,
+/obj/item/survivalcapsule,
 /turf/open/floor/plating{
 	tag = "icon-platingdmg1";
 	icon_state = "platingdmg1"
@@ -169,18 +169,18 @@
 /area/ruin/powered)
 "aD" = (
 /obj/structure/rack,
-/obj/item/weapon/storage/firstaid/tactical,
+/obj/item/storage/firstaid/tactical,
 /obj/item/device/flashlight/seclite{
 	desc = "A robust flashlight used by the military.";
 	name = "combat flashlight"
 	},
-/obj/item/weapon/kitchen/knife/combat/survival{
+/obj/item/kitchen/knife/combat/survival{
 	name = "military knife"
 	},
-/obj/item/weapon/survivalcapsule,
+/obj/item/survivalcapsule,
 /obj/item/ammo_box/magazine/carbine,
 /obj/item/ammo_box/magazine/carbine,
-/obj/item/weapon/gun/ballistic/automatic/carbine,
+/obj/item/gun/ballistic/automatic/carbine,
 /turf/open/floor/plating,
 /area/ruin/powered)
 "aE" = (
@@ -342,7 +342,7 @@
 "bc" = (
 /obj/effect/decal/cleanable/blood,
 /obj/structure/closet,
-/obj/item/weapon/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
 /turf/open/floor/plasteel/vault{
 	dir = 5
 	},
@@ -351,12 +351,12 @@
 /obj/structure/closet,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/under/syndicate/camo,
-/obj/item/weapon/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
 /obj/item/clothing/gloves/combat,
-/obj/item/weapon/storage/backpack/explorer{
+/obj/item/storage/backpack/explorer{
 	name = "marine bag"
 	},
-/obj/item/weapon/card/id/marine,
+/obj/item/card/id/marine,
 /turf/open/floor/plasteel/vault{
 	dir = 5
 	},

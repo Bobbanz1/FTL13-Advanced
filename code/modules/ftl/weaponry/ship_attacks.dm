@@ -179,7 +179,7 @@
 /datum/ship_attack/stun_bomb/damage_effects(turf/epicenter)
 	playsound(epicenter, 'sound/magic/lightningbolt.ogg', 100, 1)
 
-	var/obj/item/weapon/grenade/flashbang/B = new(epicenter)
+	var/obj/item/grenade/flashbang/B = new(epicenter)
 	B.prime()
 
 /datum/ship_attack/ion
@@ -367,7 +367,7 @@
 	playsound(epicenter, 'sound/items/bikehorn.ogg', 100, 1)
 	for(var/turf/T in range(2,epicenter))
 		if(istype(T,/turf/open))
-			new /obj/item/weapon/grown/bananapeel(T)
+			new /obj/item/grown/bananapeel(T)
 
 /datum/ship_attack/vape_bomb
 	cname = "Vape bomb"

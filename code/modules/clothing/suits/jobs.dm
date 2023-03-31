@@ -10,7 +10,7 @@
 	item_state = "apron"
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|GROIN
-	allowed = list(/obj/item/weapon/reagent_containers/spray/plantbgone, /obj/item/device/plant_analyzer, /obj/item/seeds, /obj/item/weapon/reagent_containers/glass/bottle, /obj/item/weapon/reagent_containers/glass/beaker, /obj/item/weapon/cultivator, /obj/item/weapon/reagent_containers/spray/pestspray, /obj/item/weapon/hatchet, /obj/item/weapon/storage/bag/plants)
+	allowed = list(/obj/item/reagent_containers/spray/plantbgone, /obj/item/device/plant_analyzer, /obj/item/seeds, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/cultivator, /obj/item/reagent_containers/spray/pestspray, /obj/item/hatchet, /obj/item/storage/bag/plants)
 
 //Captain
 /obj/item/clothing/suit/captunic
@@ -20,7 +20,7 @@
 	item_state = "bio_suit"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	flags_inv = HIDEJUMPSUIT
-	allowed = list(/obj/item/weapon/disk, /obj/item/weapon/stamp, /obj/item/weapon/reagent_containers/food/drinks/flask, /obj/item/weapon/melee, /obj/item/weapon/storage/lockbox/medal, /obj/item/device/assembly/flash/handheld, /obj/item/weapon/storage/box/matches, /obj/item/weapon/lighter, /obj/item/clothing/mask/cigarette, /obj/item/weapon/storage/fancy/cigarettes, /obj/item/weapon/tank/internals/emergency_oxygen)
+	allowed = list(/obj/item/disk, /obj/item/stamp, /obj/item/reagent_containers/food/drinks/flask, /obj/item/melee, /obj/item/storage/lockbox/medal, /obj/item/device/assembly/flash/handheld, /obj/item/storage/box/matches, /obj/item/lighter, /obj/item/clothing/mask/cigarette, /obj/item/storage/fancy/cigarettes, /obj/item/tank/internals/emergency_oxygen)
 
 //Chaplain
 /obj/item/clothing/suit/hooded/chaplain_hoodie
@@ -29,7 +29,7 @@
 	icon_state = "chaplain_hoodie"
 	item_state = "chaplain_hoodie"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	allowed = list(/obj/item/weapon/storage/book/bible, /obj/item/weapon/nullrod, /obj/item/weapon/reagent_containers/food/drinks/bottle/holywater, /obj/item/weapon/storage/fancy/candle_box, /obj/item/candle, /obj/item/weapon/tank/internals/emergency_oxygen)
+	allowed = list(/obj/item/storage/book/bible, /obj/item/nullrod, /obj/item/reagent_containers/food/drinks/bottle/holywater, /obj/item/storage/fancy/candle_box, /obj/item/candle, /obj/item/tank/internals/emergency_oxygen)
 	hoodtype = /obj/item/clothing/head/hooded/chaplain_hood
 
 /obj/item/clothing/head/hooded/chaplain_hood
@@ -46,7 +46,7 @@
 	item_state = "nun"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
 	flags_inv = HIDESHOES|HIDEJUMPSUIT
-	allowed = list(/obj/item/weapon/storage/book/bible, /obj/item/weapon/nullrod, /obj/item/weapon/reagent_containers/food/drinks/bottle/holywater, /obj/item/weapon/storage/fancy/candle_box, /obj/item/candle, /obj/item/weapon/tank/internals/emergency_oxygen)
+	allowed = list(/obj/item/storage/book/bible, /obj/item/nullrod, /obj/item/reagent_containers/food/drinks/bottle/holywater, /obj/item/storage/fancy/candle_box, /obj/item/candle, /obj/item/tank/internals/emergency_oxygen)
 
 /obj/item/clothing/suit/studentuni
 	name = "student robe"
@@ -54,7 +54,7 @@
 	icon_state = "studentuni"
 	item_state = "studentuni"
 	body_parts_covered = ARMS|CHEST
-	allowed = list(/obj/item/weapon/storage/book/bible, /obj/item/weapon/nullrod, /obj/item/weapon/reagent_containers/food/drinks/bottle/holywater, /obj/item/weapon/storage/fancy/candle_box, /obj/item/candle, /obj/item/weapon/tank/internals/emergency_oxygen)
+	allowed = list(/obj/item/storage/book/bible, /obj/item/nullrod, /obj/item/reagent_containers/food/drinks/bottle/holywater, /obj/item/storage/fancy/candle_box, /obj/item/candle, /obj/item/tank/internals/emergency_oxygen)
 
 /obj/item/clothing/suit/witchhunter
 	name = "witchunter garb"
@@ -62,7 +62,7 @@
 	icon_state = "witchhunter"
 	item_state = "witchhunter"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	allowed = list(/obj/item/weapon/storage/book/bible, /obj/item/weapon/nullrod, /obj/item/weapon/reagent_containers/food/drinks/bottle/holywater, /obj/item/weapon/storage/fancy/candle_box, /obj/item/candle, /obj/item/weapon/tank/internals/emergency_oxygen)
+	allowed = list(/obj/item/storage/book/bible, /obj/item/nullrod, /obj/item/reagent_containers/food/drinks/bottle/holywater, /obj/item/storage/fancy/candle_box, /obj/item/candle, /obj/item/tank/internals/emergency_oxygen)
 
 //Chef
 /obj/item/clothing/suit/toggle/chef
@@ -73,7 +73,7 @@
 	gas_transfer_coefficient = 0.90
 	permeability_coefficient = 0.50
 	body_parts_covered = CHEST|GROIN|ARMS
-	allowed = list(/obj/item/weapon/kitchen)
+	allowed = list(/obj/item/kitchen)
 	togglename = "sleeves"
 
 //Cook
@@ -84,7 +84,7 @@
 	item_state = "apronchef"
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|GROIN
-	allowed = list(/obj/item/weapon/kitchen)
+	allowed = list(/obj/item/kitchen)
 
 //Detective
 /obj/item/clothing/suit/det_suit
@@ -94,7 +94,7 @@
 	item_state = "det_suit"
 	blood_overlay_type = "coat"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	allowed = list(/obj/item/weapon/tank/internals/emergency_oxygen, /obj/item/weapon/reagent_containers/spray/pepper, /obj/item/device/flashlight, /obj/item/weapon/gun/energy, /obj/item/weapon/gun/ballistic, /obj/item/ammo_box, /obj/item/ammo_casing, /obj/item/weapon/melee/baton, /obj/item/weapon/restraints/handcuffs, /obj/item/weapon/storage/fancy/cigarettes, /obj/item/weapon/lighter, /obj/item/device/detective_scanner, /obj/item/device/taperecorder, /obj/item/weapon/melee/classic_baton)
+	allowed = list(/obj/item/tank/internals/emergency_oxygen, /obj/item/reagent_containers/spray/pepper, /obj/item/device/flashlight, /obj/item/gun/energy, /obj/item/gun/ballistic, /obj/item/ammo_box, /obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/restraints/handcuffs, /obj/item/storage/fancy/cigarettes, /obj/item/lighter, /obj/item/device/detective_scanner, /obj/item/device/taperecorder, /obj/item/melee/classic_baton)
 	armor = list(melee = 25, bullet = 10, laser = 25, energy = 10, bomb = 0, bio = 0, rad = 0, fire = 0, acid = 45)
 	cold_protection = CHEST|GROIN|LEGS|ARMS
 	heat_protection = CHEST|GROIN|LEGS|ARMS
@@ -112,7 +112,7 @@
 	icon_state = "hazard"
 	item_state = "hazard"
 	blood_overlay_type = "armor"
-	allowed = list(/obj/item/device/flashlight, /obj/item/weapon/tank/internals/emergency_oxygen, /obj/item/device/t_scanner, /obj/item/device/radio)
+	allowed = list(/obj/item/device/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/device/t_scanner, /obj/item/device/radio)
 	resistance_flags = 0
 //Lawyer
 /obj/item/clothing/suit/toggle/lawyer
@@ -172,7 +172,7 @@
 	name = "surgical apron"
 	desc = "A sterile blue surgical apron."
 	icon_state = "surgical"
-	allowed = list(/obj/item/weapon/scalpel, /obj/item/weapon/surgical_drapes, /obj/item/weapon/cautery, /obj/item/weapon/hemostat, /obj/item/weapon/retractor)
+	allowed = list(/obj/item/scalpel, /obj/item/surgical_drapes, /obj/item/cautery, /obj/item/hemostat, /obj/item/retractor)
 
 //Curator
 /obj/item/clothing/suit/curator
@@ -182,7 +182,7 @@
 	item_state = "curator"
 	blood_overlay_type = "coat"
 	body_parts_covered = CHEST|ARMS
-	allowed = list(/obj/item/weapon/tank/internals, /obj/item/weapon/melee/curator_whip)
+	allowed = list(/obj/item/tank/internals, /obj/item/melee/curator_whip)
 	armor = list(melee = 25, bullet = 10, laser = 25, energy = 10, bomb = 0, bio = 0, rad = 0, fire = 0, acid = 45)
 	cold_protection = CHEST|ARMS
 	heat_protection = CHEST|ARMS
@@ -195,14 +195,14 @@
 	desc = "Worn around the ship for comfort and style by assistants, although it is no way near as fancy as the other ones it still feels quite well made."
 	icon_state = "service_assistant"
 	item_state = "service_assistant" //TODO add in item states
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank/internals/emergency_oxygen,/obj/item/weapon/reagent_containers/glass/bottle,/obj/item/device/radio) //holds stuff so that crew will actually wear it
+	allowed = list(/obj/item/device/flashlight,/obj/item/tank/internals/emergency_oxygen,/obj/item/reagent_containers/glass/bottle,/obj/item/device/radio) //holds stuff so that crew will actually wear it
 
 /obj/item/clothing/suit/toggle/service/clown
 	name = "clown's service uniform"
 	desc = "A jacket denoting a former admiral in the clown navy, the mime spun fibres are laced with pure bananium and it is slippery to the touch."
 	icon_state = "service_clown"
 	item_state = "service_clown" //TODO add in item states
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/bikehorn, /obj/item/weapon/tank/internals/emergency_oxygen,/obj/item/weapon/reagent_containers/glass/bottle,/obj/item/device/radio)
+	allowed = list(/obj/item/device/flashlight,/obj/item/bikehorn, /obj/item/tank/internals/emergency_oxygen,/obj/item/reagent_containers/glass/bottle,/obj/item/device/radio)
 
 /obj/item/clothing/suit/toggle/service/clown/Crossed(AM)
 	if(iscarbon(AM))
@@ -216,7 +216,7 @@
 	desc = "Worn around the ship by the bridge staff, it is well made and should last well."
 	icon_state = "service_bridge"
 	item_state = "service_bridge" //TODO add in item states
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank/internals/emergency_oxygen,/obj/item/weapon/reagent_containers/glass/bottle,/obj/item/device/radio) //holds stuff so that crew will actually wear it
+	allowed = list(/obj/item/device/flashlight,/obj/item/tank/internals/emergency_oxygen,/obj/item/reagent_containers/glass/bottle,/obj/item/device/radio) //holds stuff so that crew will actually wear it
 
 
 /obj/item/clothing/suit/toggle/service/captain
@@ -224,7 +224,7 @@
 	desc = "A cuban silk spun, highly luxury coat worn by only the best, it has a kevlar nanoweave to protect even the least popular captains from assasination."
 	icon_state = "service_captain"
 	item_state = "service_captain" //TODO add in item states
-	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/restraints/handcuffs,/obj/item/device/flashlight/seclite,/obj/item/weapon/melee/classic_baton/telescopic,/obj/item/weapon/kitchen/knife/combat,/obj/item/weapon/tank/internals/emergency_oxygen)
+	allowed = list(/obj/item/gun/energy,/obj/item/reagent_containers/spray/pepper,/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/restraints/handcuffs,/obj/item/device/flashlight/seclite,/obj/item/melee/classic_baton/telescopic,/obj/item/kitchen/knife/combat,/obj/item/tank/internals/emergency_oxygen)
 	body_parts_covered = CHEST|GROIN
 	armor = list(melee = 50, bullet = 40, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0, fire = 100, acid = 90)
 	resistance_flags = FIRE_PROOF
@@ -235,7 +235,7 @@
 	desc = "Worn around the ship by those who police it, it has a lot of padding and is robust enough to replace armour."
 	icon_state = "service_sec"
 	item_state = "service_sec" //TODO add in item states
-	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/restraints/handcuffs,/obj/item/device/flashlight/seclite,/obj/item/weapon/melee/classic_baton/telescopic,/obj/item/weapon/kitchen/knife/combat,/obj/item/weapon/tank/internals/emergency_oxygen)
+	allowed = list(/obj/item/gun/energy,/obj/item/reagent_containers/spray/pepper,/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/restraints/handcuffs,/obj/item/device/flashlight/seclite,/obj/item/melee/classic_baton/telescopic,/obj/item/kitchen/knife/combat,/obj/item/tank/internals/emergency_oxygen)
 	armor = list(melee = 30, bullet = 30, laser = 30, energy = 10, bomb = 25, bio = 0, rad = 0, fire = 50, acid = 50)
 	body_parts_covered = CHEST
 	cold_protection = CHEST|GROIN
@@ -248,7 +248,7 @@
 	desc = "Worn around the ship by the chief of security, it is heavily padded to protect the wearer in the line of duty."
 	icon_state = "service_hos"
 	item_state = "service_hos" //TODO add in item states
-	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/restraints/handcuffs,/obj/item/device/flashlight/seclite,/obj/item/weapon/melee/classic_baton/telescopic,/obj/item/weapon/kitchen/knife/combat,/obj/item/weapon/tank/internals/emergency_oxygen)
+	allowed = list(/obj/item/gun/energy,/obj/item/reagent_containers/spray/pepper,/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/restraints/handcuffs,/obj/item/device/flashlight/seclite,/obj/item/melee/classic_baton/telescopic,/obj/item/kitchen/knife/combat,/obj/item/tank/internals/emergency_oxygen)
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	armor = list(melee = 30, bullet = 30, laser = 30, energy = 10, bomb = 25, bio = 0, rad = 0, fire = 70, acid = 90)
 	cold_protection = CHEST|GROIN|LEGS|ARMS
@@ -259,28 +259,28 @@
 	desc = "Worn around the ship by its doctors, it is splash proof and machine washable."
 	icon_state = "service_med"
 	item_state = "service_med" //TODO add in item states
-	allowed = list(/obj/item/weapon/scalpel, /obj/item/weapon/storage/firstaid/, /obj/item/weapon/surgical_drapes, /obj/item/weapon/cautery, /obj/item/weapon/hemostat, /obj/item/weapon/retractor)
+	allowed = list(/obj/item/scalpel, /obj/item/storage/firstaid/, /obj/item/surgical_drapes, /obj/item/cautery, /obj/item/hemostat, /obj/item/retractor)
 
 /obj/item/clothing/suit/toggle/service/cmo
 	name = "Chief Medical Officer's service uniform"
 	desc = "A blue styled coat which doubles as a labcoat for the CMO.."
 	icon_state = "service_cmo"
 	item_state = "service_cmo" //TODO add in item states
-	allowed = list(/obj/item/weapon/scalpel, /obj/item/weapon/storage/firstaid/, /obj/item/weapon/surgical_drapes, /obj/item/weapon/cautery, /obj/item/weapon/hemostat, /obj/item/weapon/retractor)
+	allowed = list(/obj/item/scalpel, /obj/item/storage/firstaid/, /obj/item/surgical_drapes, /obj/item/cautery, /obj/item/hemostat, /obj/item/retractor)
 
 /obj/item/clothing/suit/toggle/service/cargo
 	name = "cargo officer's service uniform"
 	desc = "Worn around the ship by the cargonians, it has a box emblazened on the back."
 	icon_state = "service_cargo"
 	item_state = "service_cargo" //TODO add in item states
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank/internals/emergency_oxygen,/obj/item/weapon/reagent_containers/glass/bottle,/obj/item/device/radio)
+	allowed = list(/obj/item/device/flashlight,/obj/item/tank/internals/emergency_oxygen,/obj/item/reagent_containers/glass/bottle,/obj/item/device/radio)
 
 /obj/item/clothing/suit/toggle/service/munitions
 	name = "munitions officer's service uniform"
 	desc = "Worn around the ship by the MO, it is padded slightly to protect you"
 	icon_state = "service_munitions"
 	item_state = "service_munitions" //TODO add in item states
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank/internals/emergency_oxygen,/obj/item/weapon/reagent_containers/glass/bottle,/obj/item/device/radio)
+	allowed = list(/obj/item/device/flashlight,/obj/item/tank/internals/emergency_oxygen,/obj/item/reagent_containers/glass/bottle,/obj/item/device/radio)
 	armor = list(melee = 10, bullet = 10, laser = 0, energy = 0, bomb = 50, bio = 0, rad = 0)
 
 
@@ -289,35 +289,35 @@
 	desc = "Worn around the ship by research staff, it feels more like a labcoat than a proper coat"
 	icon_state = "service_science"
 	item_state = "service_science" //TODO add in item states
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank/internals/emergency_oxygen,/obj/item/weapon/reagent_containers/glass/bottle,/obj/item/device/radio)
+	allowed = list(/obj/item/device/flashlight,/obj/item/tank/internals/emergency_oxygen,/obj/item/reagent_containers/glass/bottle,/obj/item/device/radio)
 
 /obj/item/clothing/suit/toggle/service/rd
 	name = "Research Director's service uniform"
 	desc = "Worn around the ship by the head researcher, it smells of curry and sweat from countless all-nighters"
 	icon_state = "service_rd"
 	item_state = "service_rd" //TODO add in item states
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank/internals/emergency_oxygen,/obj/item/weapon/reagent_containers/glass/bottle,/obj/item/device/radio)
+	allowed = list(/obj/item/device/flashlight,/obj/item/tank/internals/emergency_oxygen,/obj/item/reagent_containers/glass/bottle,/obj/item/device/radio)
 
 /obj/item/clothing/suit/toggle/service/civilian
 	name = "Civilian service uniform"
 	desc = "Worn around the ship by uncomissioned officers."
 	icon_state = "service_civilian"
 	item_state = "service_civilian" //TODO add in item states
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank/internals/emergency_oxygen,/obj/item/weapon/reagent_containers/glass/bottle,/obj/item/device/radio,/obj/item/weapon/storage/bag/plants/portaseeder,/obj/item/device/plant_analyzer,/obj/item/weapon/cultivator,/obj/item/weapon/hatchet)
+	allowed = list(/obj/item/device/flashlight,/obj/item/tank/internals/emergency_oxygen,/obj/item/reagent_containers/glass/bottle,/obj/item/device/radio,/obj/item/storage/bag/plants/portaseeder,/obj/item/device/plant_analyzer,/obj/item/cultivator,/obj/item/hatchet)
 
 /obj/item/clothing/suit/toggle/service/xo/silly //meme coat for XO
 	name = "XO's modified service uniform"
 	desc = "Ian's favey wavey snuggley wuggly coat!."
 	icon_state = "service_xosilly"
 	item_state = "service_xosilly" //TODO add in item states
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank/internals/emergency_oxygen,/obj/item/weapon/reagent_containers/glass/bottle,/obj/item/device/radio)
+	allowed = list(/obj/item/device/flashlight,/obj/item/tank/internals/emergency_oxygen,/obj/item/reagent_containers/glass/bottle,/obj/item/device/radio)
 
 /obj/item/clothing/suit/toggle/service/xo
 	name = "XO's modified service uniform"
 	desc = "Worn by the second in command, this coat is padded and extremely comfortable."
 	icon_state = "service_xo"
 	item_state = "service_xo" //TODO add in item states
-	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/restraints/handcuffs,/obj/item/device/flashlight/seclite,/obj/item/weapon/melee/classic_baton/telescopic,/obj/item/weapon/kitchen/knife/combat,/obj/item/weapon/tank/internals/emergency_oxygen)
+	allowed = list(/obj/item/gun/energy,/obj/item/reagent_containers/spray/pepper,/obj/item/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/restraints/handcuffs,/obj/item/device/flashlight/seclite,/obj/item/melee/classic_baton/telescopic,/obj/item/kitchen/knife/combat,/obj/item/tank/internals/emergency_oxygen)
 	armor = list(melee = 30, bullet = 30, laser = 30, energy = 10, bomb = 25, bio = 0, rad = 0, fire = 50, acid = 50)
 	body_parts_covered = CHEST
 	cold_protection = CHEST|GROIN
@@ -330,7 +330,7 @@
 	desc = "This jacket is worn by the workers on the ship, they keep you breathing and powered and all they get for it is this stupid jacket."
 	icon_state = "service_eng"
 	item_state = "service_eng" //TODO add in item states
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank/internals/emergency_oxygen,/obj/item/weapon/reagent_containers/glass/bottle,/obj/item/device/radio)
+	allowed = list(/obj/item/device/flashlight,/obj/item/tank/internals/emergency_oxygen,/obj/item/reagent_containers/glass/bottle,/obj/item/device/radio)
 
 
 /obj/item/clothing/suit/toggle/service/ce
@@ -338,4 +338,4 @@
 	desc = "This jacket is worn by the Chief Engineer, it is very comfortable."
 	icon_state = "service_ce"
 	item_state = "service_ce" //TODO add in item states
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank/internals/emergency_oxygen,/obj/item/weapon/reagent_containers/glass/bottle,/obj/item/device/radio)
+	allowed = list(/obj/item/device/flashlight,/obj/item/tank/internals/emergency_oxygen,/obj/item/reagent_containers/glass/bottle,/obj/item/device/radio)

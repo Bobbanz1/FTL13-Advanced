@@ -25,7 +25,7 @@
 			visible_message("<span class='warning'>[src]'s panel flies open with a flurry of sparks!</span>")
 		update_icon()
 
-/obj/item/weapon/stock_parts/cell/power_drain(clockcult_user)
+/obj/item/stock_parts/cell/power_drain(clockcult_user)
 	if(charge)
 		. = min(charge, MIN_CLOCKCULT_POWER*3)
 		charge = use(.)

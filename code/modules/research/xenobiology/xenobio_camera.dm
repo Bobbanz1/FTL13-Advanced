@@ -20,9 +20,9 @@
 /obj/machinery/computer/camera_advanced/xenobio
 	name = "Slime management console"
 	desc = "A computer used for remotely handling slimes."
-	circuit = /obj/item/weapon/circuitboard/computer/xenobio
+	circuit = /obj/item/circuitboard/computer/xenobio
 	networks = list("SS13")
-	circuit = /obj/item/weapon/circuitboard/computer/xenobiology
+	circuit = /obj/item/circuitboard/computer/xenobiology
 	var/datum/action/innate/slime_place/slime_place_action = new
 	var/datum/action/innate/slime_pick_up/slime_up_action = new
 	var/datum/action/innate/feed_slime/feed_slime_action = new
@@ -68,17 +68,17 @@
 		actions += monkey_recycle_action
 
 /obj/machinery/computer/camera_advanced/xenobio/attackby(obj/item/O, mob/user, params)
-	if(istype(O, /obj/item/weapon/reagent_containers/food/snacks/monkeycube))
+	if(istype(O, /obj/item/reagent_containers/food/snacks/monkeycube))
 		monkeys++
 		to_chat(user, "<span class='notice'>You feed [O] to [src]. It now has [monkeys] monkey cubes stored.</span>")
 		user.drop_item()
 		qdel(O)
 		return
-	else if(istype(O, /obj/item/weapon/storage/bag))
-		var/obj/item/weapon/storage/P = O
+	else if(istype(O, /obj/item/storage/bag))
+		var/obj/item/storage/P = O
 		var/loaded = 0
 		for(var/obj/G in P.contents)
-			if(istype(G, /obj/item/weapon/reagent_containers/food/snacks/monkeycube))
+			if(istype(G, /obj/item/reagent_containers/food/snacks/monkeycube))
 				loaded = 1
 				monkeys++
 				qdel(G)

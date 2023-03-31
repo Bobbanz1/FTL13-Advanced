@@ -191,12 +191,12 @@
 /area/no_entry/boarding)
 "aM" = (
 /obj/structure/table/wood,
-/obj/item/weapon/book/manual/wiki/infections,
+/obj/item/book/manual/wiki/infections,
 /turf/open/floor/plasteel,
 /area/no_entry/boarding)
 "aN" = (
 /obj/structure/table/wood,
-/obj/item/weapon/book/manual/wiki/telescience,
+/obj/item/book/manual/wiki/telescience,
 /turf/open/floor/plasteel,
 /area/no_entry/boarding)
 "aO" = (
@@ -228,18 +228,18 @@
 /area/no_entry/boarding)
 "aU" = (
 /obj/structure/table/wood,
-/obj/item/weapon/paper/fluff/stations/centcom/disk_memo,
+/obj/item/paper/fluff/stations/centcom/disk_memo,
 /turf/open/floor/plasteel,
 /area/no_entry/boarding)
 "aV" = (
 /obj/structure/table/wood,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
+/obj/item/paper_bin,
+/obj/item/pen,
 /turf/open/floor/plasteel,
 /area/no_entry/boarding)
 "aW" = (
 /obj/structure/table/wood,
-/obj/item/weapon/book/manual/research_and_development,
+/obj/item/book/manual/research_and_development,
 /turf/open/floor/plasteel,
 /area/no_entry/boarding)
 "aX" = (
@@ -274,7 +274,7 @@
 /area/no_entry/boarding)
 "bd" = (
 /obj/structure/table/wood,
-/obj/item/weapon/pen/fountain,
+/obj/item/pen/fountain,
 /turf/open/floor/plasteel,
 /area/no_entry/boarding)
 "be" = (
@@ -418,13 +418,13 @@
 /area/no_entry/boarding)
 "bF" = (
 /obj/structure/table/wood,
-/obj/item/weapon/paper/fluff/awaymissions/academy/console_maint,
+/obj/item/paper/fluff/awaymissions/academy/console_maint,
 /turf/open/floor/plasteel,
 /area/no_entry/boarding)
 "bG" = (
 /obj/structure/table/wood,
-/obj/item/weapon/paper/crumpled,
-/obj/item/weapon/pen,
+/obj/item/paper/crumpled,
+/obj/item/pen,
 /turf/open/floor/plasteel,
 /area/no_entry/boarding)
 "bH" = (
@@ -445,7 +445,7 @@
 /turf/open/floor/circuit/red,
 /area/no_entry/boarding)
 "bK" = (
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
 /turf/open/floor/oldshuttle,
 /area/no_entry/boarding)
 "bL" = (
@@ -784,7 +784,7 @@
 	},
 /area/no_entry/boarding)
 "cN" = (
-/obj/item/weapon/card/id/centcom{
+/obj/item/card/id/centcom{
 	access = 6969
 	},
 /turf/open/floor/plasteel,
@@ -880,12 +880,12 @@
 /turf/open/floor/plasteel/white,
 /area/no_entry/boarding)
 "dg" = (
-/obj/item/weapon/storage/firstaid/fire{
+/obj/item/storage/firstaid/fire{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/weapon/storage/firstaid/fire,
-/obj/item/weapon/storage/firstaid/regular{
+/obj/item/storage/firstaid/fire,
+/obj/item/storage/firstaid/regular{
 	pixel_x = -3;
 	pixel_y = -3
 	},
@@ -1053,9 +1053,9 @@
 /area/no_entry/boarding)
 "dv" = (
 /obj/structure/rack,
-/obj/item/weapon/tank/internals/oxygen,
-/obj/item/weapon/tank/internals/oxygen,
-/obj/item/weapon/tank/internals/oxygen,
+/obj/item/tank/internals/oxygen,
+/obj/item/tank/internals/oxygen,
+/obj/item/tank/internals/oxygen,
 /turf/open/floor/plating,
 /area/no_entry/boarding)
 "dw" = (
@@ -1099,7 +1099,7 @@
 /turf/open/floor/plasteel,
 /area/no_entry/boarding)
 "dB" = (
-/obj/item/weapon/paper/crumpled/bloody,
+/obj/item/paper/crumpled/bloody,
 /obj/effect/decal/cleanable/blood,
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -1202,7 +1202,7 @@
 /area/no_entry/boarding)
 "dS" = (
 /obj/structure/table,
-/obj/item/weapon/clipboard,
+/obj/item/clipboard,
 /turf/open/floor/plasteel/floorgrime,
 /area/no_entry/boarding)
 "dT" = (
@@ -1222,7 +1222,7 @@
 /area/no_entry/boarding)
 "dW" = (
 /obj/structure/table,
-/obj/item/weapon/folder/blue,
+/obj/item/folder/blue,
 /turf/open/floor/plasteel,
 /area/no_entry/boarding)
 "dX" = (

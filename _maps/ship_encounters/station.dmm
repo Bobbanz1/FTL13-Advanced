@@ -209,7 +209,7 @@
 	})
 "az" = (
 /obj/structure/table/wood,
-/obj/item/weapon/pen,
+/obj/item/pen,
 /turf/open/floor/wood,
 /area/no_entry{
 	has_gravity = 1;
@@ -226,7 +226,7 @@
 	})
 "aB" = (
 /obj/structure/table/wood,
-/obj/item/weapon/paper_bin,
+/obj/item/paper_bin,
 /turf/open/floor/wood,
 /area/no_entry{
 	has_gravity = 1;
@@ -248,7 +248,7 @@
 	})
 "aF" = (
 /obj/structure/table/wood,
-/obj/item/weapon/clipboard,
+/obj/item/clipboard,
 /turf/open/floor/wood,
 /area/no_entry{
 	has_gravity = 1;
@@ -435,7 +435,7 @@
 	})
 "bf" = (
 /obj/structure/table,
-/obj/item/weapon/circular_saw,
+/obj/item/circular_saw,
 /turf/open/floor/plasteel,
 /area/no_entry{
 	has_gravity = 1;
@@ -476,8 +476,8 @@
 	})
 "bj" = (
 /obj/structure/table,
-/obj/item/weapon/scalpel,
-/obj/item/weapon/hemostat,
+/obj/item/scalpel,
+/obj/item/hemostat,
 /turf/open/floor/plasteel,
 /area/no_entry{
 	has_gravity = 1;
@@ -485,7 +485,7 @@
 	})
 "bk" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/book/manual/experimentor,
+/obj/item/book/manual/experimentor,
 /turf/open/floor/plasteel,
 /area/no_entry{
 	has_gravity = 1;
@@ -508,8 +508,8 @@
 	dir = 1
 	},
 /obj/structure/table,
-/obj/item/weapon/kitchen/fork,
-/obj/item/weapon/reagent_containers/food/condiment/saltshaker,
+/obj/item/kitchen/fork,
+/obj/item/reagent_containers/food/condiment/saltshaker,
 /turf/open/floor/wood,
 /area/no_entry{
 	has_gravity = 1;
@@ -617,7 +617,7 @@
 	})
 "bx" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/book/manual/research_and_development,
+/obj/item/book/manual/research_and_development,
 /turf/open/floor/plasteel,
 /area/no_entry{
 	has_gravity = 1;
@@ -643,7 +643,7 @@
 	})
 "bA" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/gun,
+/obj/item/gun,
 /turf/open/floor/plasteel,
 /area/no_entry{
 	has_gravity = 1;
@@ -651,7 +651,7 @@
 	})
 "bB" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/gun/energy/pulse/destroyer,
+/obj/item/gun/energy/pulse/destroyer,
 /turf/open/floor/plasteel,
 /area/no_entry{
 	has_gravity = 1;
@@ -689,7 +689,7 @@
 	})
 "bG" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/gun/energy/e_gun,
+/obj/item/gun/energy/e_gun,
 /turf/open/floor/plasteel/darkblue,
 /area/no_entry{
 	has_gravity = 1;
@@ -729,7 +729,7 @@
 "bN" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/preopen,
-/obj/item/weapon/reagent_containers/food/snacks/bearsteak,
+/obj/item/reagent_containers/food/snacks/bearsteak,
 /turf/open/floor/plasteel/cafeteria,
 /area/no_entry{
 	has_gravity = 1;
@@ -738,7 +738,7 @@
 "bO" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/preopen,
-/obj/item/weapon/reagent_containers/food/snacks/boiledspiderleg,
+/obj/item/reagent_containers/food/snacks/boiledspiderleg,
 /turf/open/floor/plasteel/cafeteria,
 /area/no_entry{
 	has_gravity = 1;
@@ -747,7 +747,7 @@
 "bP" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/preopen,
-/obj/item/weapon/reagent_containers/food/snacks/boiledspaghetti,
+/obj/item/reagent_containers/food/snacks/boiledspaghetti,
 /turf/open/floor/plasteel/cafeteria,
 /area/no_entry{
 	has_gravity = 1;
@@ -765,8 +765,8 @@
 	dir = 4
 	},
 /obj/structure/table,
-/obj/item/weapon/kitchen/fork,
-/obj/item/weapon/reagent_containers/food/condiment/saltshaker,
+/obj/item/kitchen/fork,
+/obj/item/reagent_containers/food/condiment/saltshaker,
 /turf/open/floor/wood,
 /area/no_entry{
 	has_gravity = 1;
@@ -774,7 +774,7 @@
 	})
 "bT" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/gun/energy/xray,
+/obj/item/gun/energy/xray,
 /turf/open/floor/plasteel/darkblue,
 /area/no_entry{
 	has_gravity = 1;
@@ -789,7 +789,7 @@
 	})
 "bV" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/gun/energy/pulse/pistol/m1911,
+/obj/item/gun/energy/pulse/pistol/m1911,
 /turf/open/floor/plasteel/darkblue,
 /area/no_entry{
 	has_gravity = 1;
@@ -818,7 +818,7 @@
 "bZ" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/preopen,
-/obj/item/weapon/reagent_containers/food/snacks/cubannachos,
+/obj/item/reagent_containers/food/snacks/cubannachos,
 /turf/open/floor/plasteel/cafeteria,
 /area/no_entry{
 	has_gravity = 1;
@@ -838,7 +838,7 @@
 	})
 "cb" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/gun/energy/lasercannon,
+/obj/item/gun/energy/lasercannon,
 /turf/open/floor/plasteel/darkblue,
 /area/no_entry{
 	has_gravity = 1;
@@ -853,7 +853,7 @@
 	})
 "cd" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/gun/energy/plasmacutter/adv,
+/obj/item/gun/energy/plasmacutter/adv,
 /turf/open/floor/plasteel/darkblue,
 /area/no_entry{
 	has_gravity = 1;
@@ -884,7 +884,7 @@
 "ci" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/preopen,
-/obj/item/weapon/reagent_containers/food/snacks/cornedbeef,
+/obj/item/reagent_containers/food/snacks/cornedbeef,
 /turf/open/floor/plasteel/cafeteria,
 /area/no_entry{
 	has_gravity = 1;
@@ -900,7 +900,7 @@
 	})
 "ck" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/gun/energy/alien,
+/obj/item/gun/energy/alien,
 /turf/open/floor/plasteel/darkblue,
 /area/no_entry{
 	has_gravity = 1;
@@ -915,7 +915,7 @@
 	})
 "cm" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/gun/grenadelauncher,
+/obj/item/gun/grenadelauncher,
 /turf/open/floor/plasteel/darkblue,
 /area/no_entry{
 	has_gravity = 1;
@@ -923,7 +923,7 @@
 	})
 "cn" = (
 /obj/structure/table,
-/obj/item/weapon/storage/firstaid,
+/obj/item/storage/firstaid,
 /turf/open/floor/plasteel,
 /area/no_entry{
 	has_gravity = 1;
@@ -946,7 +946,7 @@
 	})
 "cr" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/gun/medbeam,
+/obj/item/gun/medbeam,
 /turf/open/floor/plasteel/darkblue,
 /area/no_entry{
 	has_gravity = 1;
@@ -961,7 +961,7 @@
 	})
 "ct" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/gun/medbeam/mech,
+/obj/item/gun/medbeam/mech,
 /turf/open/floor/plasteel/darkblue,
 /area/no_entry{
 	has_gravity = 1;
@@ -969,7 +969,7 @@
 	})
 "cu" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/hypospray/medipen,
+/obj/item/reagent_containers/hypospray/medipen,
 /turf/open/floor/plasteel,
 /area/no_entry{
 	has_gravity = 1;
@@ -985,7 +985,7 @@
 "cw" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/preopen,
-/obj/item/weapon/reagent_containers/food/snacks/cherrycupcake,
+/obj/item/reagent_containers/food/snacks/cherrycupcake,
 /turf/open/floor/plasteel/cafeteria,
 /area/no_entry{
 	has_gravity = 1;
@@ -1000,7 +1000,7 @@
 	})
 "cy" = (
 /obj/structure/table,
-/obj/item/weapon/storage/backpack/duffelbag/syndie/med/medicalbundle,
+/obj/item/storage/backpack/duffelbag/syndie/med/medicalbundle,
 /turf/open/floor/plasteel,
 /area/no_entry{
 	has_gravity = 1;
@@ -1025,7 +1025,7 @@
 "cB" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/preopen,
-/obj/item/weapon/reagent_containers/food/snacks/cheesiehonkers,
+/obj/item/reagent_containers/food/snacks/cheesiehonkers,
 /turf/open/floor/plasteel/cafeteria,
 /area/no_entry{
 	has_gravity = 1;
@@ -1033,8 +1033,8 @@
 	})
 "cD" = (
 /obj/structure/table,
-/obj/item/weapon/surgical_drapes,
-/obj/item/weapon/surgicaldrill,
+/obj/item/surgical_drapes,
+/obj/item/surgicaldrill,
 /turf/open/floor/plasteel,
 /area/no_entry{
 	has_gravity = 1;
@@ -1114,8 +1114,8 @@
 	})
 "cO" = (
 /obj/structure/table/wood,
-/obj/item/weapon/book/random,
-/obj/item/weapon/newspaper,
+/obj/item/book/random,
+/obj/item/newspaper,
 /turf/open/floor/plasteel,
 /area/no_entry{
 	has_gravity = 1;
@@ -1293,7 +1293,7 @@
 	name = "Space Station"
 	})
 "jt" = (
-/obj/item/weapon/caution,
+/obj/item/caution,
 /turf/open/floor/plasteel/darkblue,
 /area/no_entry{
 	has_gravity = 1;
@@ -1342,7 +1342,7 @@
 /area/space)
 "qB" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/gun/energy/pulse,
+/obj/item/gun/energy/pulse,
 /turf/open/floor/plasteel/darkblue,
 /area/no_entry{
 	has_gravity = 1;
@@ -1369,7 +1369,7 @@
 "uF" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/preopen,
-/obj/item/weapon/reagent_containers/food/snacks/cheesyburrito,
+/obj/item/reagent_containers/food/snacks/cheesyburrito,
 /turf/open/floor/plasteel/cafeteria,
 /area/no_entry{
 	has_gravity = 1;
@@ -1421,7 +1421,7 @@
 	id = "StationSell";
 	tag = "StationSell"
 	},
-/obj/item/weapon/caution,
+/obj/item/caution,
 /turf/open/floor/plating,
 /area/no_entry{
 	has_gravity = 1;

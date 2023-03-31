@@ -41,12 +41,12 @@
 /area/ruin/unpowered)
 "k" = (
 /obj/structure/closet/crate,
-/obj/item/weapon/crowbar,
+/obj/item/crowbar,
 /turf/open/indestructible,
 /area/ruin/unpowered)
 "l" = (
 /obj/structure/closet/crate,
-/obj/item/weapon/gun/energy/laser{
+/obj/item/gun/energy/laser{
 	can_charge = 0;
 	desc = "A basic energy-based laser gun. The charge port on the weapon itself seems purposefully disabled.";
 	name = "modified laser gun"
@@ -81,11 +81,11 @@
 /area/ruin/unpowered)
 "q" = (
 /obj/structure/closet/crate,
-/obj/item/weapon/paper{
+/obj/item/paper{
 	info = "Congradulations, strange space traveler. You have solved the puzzle of this box!  Your prize is the satisfaction of understanding which side to shoot and a useless gun!";
 	name = "congradulations!"
 	},
-/obj/item/weapon/reagent_containers/food/drinks/trophy,
+/obj/item/reagent_containers/food/drinks/trophy,
 /turf/open/indestructible,
 /area/ruin/unpowered)
 "r" = (

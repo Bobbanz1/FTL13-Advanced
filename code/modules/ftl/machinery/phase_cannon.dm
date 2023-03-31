@@ -154,8 +154,8 @@
 
 
 		if(CONSTRUCTION_STATE1) //Weld the cannon in place or decon it
-			if(istype(W, /obj/item/weapon/weldingtool)) //Fully decon
-				var/obj/item/weapon/weldingtool/WT = W
+			if(istype(W, /obj/item/weldingtool)) //Fully decon
+				var/obj/item/weldingtool/WT = W
 				if(!WT.remove_fuel(0, user))
 					if(!WT.isOn())
 						to_chat(user, "<span class='warning'>\The [WT] must be on to complete this task!</span>")
@@ -170,7 +170,7 @@
 					W.add_fingerprint(user)
 					state = CONSTRUCTION_STATE0
 
-			if(istype(W, /obj/item/weapon/wrench)) //construct
+			if(istype(W, /obj/item/wrench)) //construct
 				playsound(src.loc, W.usesound, 50, 1)
 				to_chat(user, "<span class='notice'>You begin to bolt cannon the frame to \the [src]...</span>")
 				if(do_after(user, 20*W.toolspeed, target = src))
@@ -183,7 +183,7 @@
 
 		if(CONSTRUCTION_STATE2) //unbolt the cannon or weld it down
 
-			if(istype(W, /obj/item/weapon/wrench)) //decon
+			if(istype(W, /obj/item/wrench)) //decon
 				playsound(src.loc, W.usesound, 50, 1)
 				to_chat(user, "<span class='notice'>You start to unbolt the frame from \the [src]...</span>")
 				if(do_after(user, 20*W.toolspeed, target = src))
@@ -192,8 +192,8 @@
 					state = CONSTRUCTION_STATE1
 					W.add_fingerprint(user)
 
-			if(istype(W, /obj/item/weapon/weldingtool)) //Contruct
-				var/obj/item/weapon/weldingtool/WT = W
+			if(istype(W, /obj/item/weldingtool)) //Contruct
+				var/obj/item/weldingtool/WT = W
 				if(!WT.remove_fuel(0, user))
 					if(!WT.isOn())
 						to_chat(user, "<span class='warning'>\The [WT] must be on to complete this task!</span>")
@@ -209,8 +209,8 @@
 
 
 		if(CONSTRUCTION_STATE3) //unweld the cannon or add focusing lenses
-			if(istype(W, /obj/item/weapon/weldingtool)) //Decon
-				var/obj/item/weapon/weldingtool/WT = W
+			if(istype(W, /obj/item/weldingtool)) //Decon
+				var/obj/item/weldingtool/WT = W
 				if(!WT.remove_fuel(0, user))
 					if(!WT.isOn())
 						to_chat(user, "<span class='warning'>\The [WT] must be on to complete this task!</span>")
@@ -240,7 +240,7 @@
 
 
 		if(CONSTRUCTION_STATE4) //remove lenses or add chip
-			if(istype(W, /obj/item/weapon/crowbar)) //Decon
+			if(istype(W, /obj/item/crowbar)) //Decon
 				to_chat(user, "<span class='notice'>You pry \the [lens] focusing lenses out of \the [src].</span>")
 				lens.loc = src.loc
 				W.add_fingerprint(user)
@@ -260,14 +260,14 @@
 
 
 		if(CONSTRUCTION_STATE5) //remove chip or close cover
-			if(istype(W, /obj/item/weapon/crowbar)) //Decon
+			if(istype(W, /obj/item/crowbar)) //Decon
 				chip.loc = src.loc
 				to_chat(user, "<span class='notice'>You remove \the [chip] out of \the [src].</span>")
 				if(istype(lens, /obj/item/stack/sheet/glass)) chip.attack_data.shot_accuracy = initial(chip.attack_data.shot_accuracy) //Undo any bad lens based aim
 				chip = null
 				state = CONSTRUCTION_STATE4
 
-			if(istype(W, /obj/item/weapon/screwdriver)) //Contruct
+			if(istype(W, /obj/item/screwdriver)) //Contruct
 				to_chat(user, "<span class='notice'>You close the maintenance hatch of \the [src].</span>")
 				name = chip.weapon_name
 				desc = chip.weapon_desc
@@ -278,7 +278,7 @@
 
 		if(CONSTRUCTION_COMPLETED) //open cover
 
-			if(istype(W, /obj/item/weapon/screwdriver)) //Decon
+			if(istype(W, /obj/item/screwdriver)) //Decon
 				to_chat(user, "<span class='notice'>You open the maintenance hatch of \the [src].</span>")
 				name = "unfinished cannon"
 				desc = "A hardpoint designed to hold a ship to ship weapon."

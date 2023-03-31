@@ -47,9 +47,9 @@
 	var/tmp_load_max = 100000
 	var/tmp_plasma_charge_max = 100
 	var/tmp_power_charge_max = 4000
-	for(var/obj/item/weapon/stock_parts/manipulator/M in component_parts)
+	for(var/obj/item/stock_parts/manipulator/M in component_parts)
 		tmp_plasma_charge_rate_max += (M.rating - 1) * 10 // 20, 30, 40, 50
-	for(var/obj/item/weapon/stock_parts/capacitor/C in component_parts)
+	for(var/obj/item/stock_parts/capacitor/C in component_parts)
 		tmp_load_max += (C.rating - 1) * 50000 // 100k, 150k, 200k, 250k
 		tmp_plasma_charge_max += (C.rating - 1) * 50 // 100, 150, 200, 250
 		tmp_power_charge_max += (C.rating - 1) * 2000 // 4000, 6000, 8000, 10000
@@ -59,13 +59,13 @@
 	power_charge_max = tmp_power_charge_max
 
 
-/obj/item/weapon/circuitboard/machine/ftl_shieldgen
+/obj/item/circuitboard/machine/ftl_shieldgen
 	name = "FTL Shield Generator (Machine Board)"
 	build_path = /obj/machinery/ftl_shieldgen
 	origin_tech = "programming=3;powerstorage=3;combat=2;engineering=2"
 	req_components = list(
-		/obj/item/weapon/stock_parts/manipulator = 1,
-		/obj/item/weapon/stock_parts/capacitor = 1
+		/obj/item/stock_parts/manipulator = 1,
+		/obj/item/stock_parts/capacitor = 1
 	)
 
 /obj/machinery/ftl_shieldgen/New()
@@ -92,7 +92,7 @@
 	if(!istype(get_area(src), /area/shuttle/ftl) || (SSstarmap.ftl_shieldgen && isturf(SSstarmap.ftl_shieldgen.loc)))
 		stat |= BROKEN
 		return
-	var/obj/item/weapon/circuitboard/machine/ftl_shieldgen/B = new
+	var/obj/item/circuitboard/machine/ftl_shieldgen/B = new
 	B.apply_default_parts(src)
 	SSstarmap.ftl_shieldgen = src
 	update_physical()
@@ -125,7 +125,7 @@
 	update_icon()
 	update_active()
 
-/obj/machinery/ftl_shieldgen/attackby(obj/item/weapon/W, mob/user, params)
+/obj/machinery/ftl_shieldgen/attackby(obj/item/W, mob/user, params)
 	if(exchange_parts(user, W))
 		return
 	if(default_deconstruction_screwdriver(user, "ore_redemption-open", "ore_redemption", W))

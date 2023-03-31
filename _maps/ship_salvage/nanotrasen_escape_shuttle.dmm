@@ -44,7 +44,7 @@
 /area/ship_salvage/hull)
 "m" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/medical,
+/obj/item/bedsheet/medical,
 /obj/effect/mob_spawn/human/corpse,
 /turf/open/floor/plasteel/white,
 /area/ship_salvage/hull)
@@ -73,7 +73,7 @@
 /area/ship_salvage/hull)
 "q" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/medical,
+/obj/item/bedsheet/medical,
 /turf/open/floor/plasteel/white,
 /area/ship_salvage/hull)
 "r" = (

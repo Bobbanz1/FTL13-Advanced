@@ -20,19 +20,19 @@
 	..()
 	find_breech()
 
-	var/obj/item/weapon/circuitboard/machine/B = new /obj/item/weapon/circuitboard/machine/mac_barrel(null)
+	var/obj/item/circuitboard/machine/B = new /obj/item/circuitboard/machine/mac_barrel(null)
 	B.apply_default_parts(src)
 	RefreshParts()
 	dir = EAST
 
-/obj/item/weapon/circuitboard/machine/mac_barrel
+/obj/item/circuitboard/machine/mac_barrel
 	name = "circuit board (MAC cannon barrel)"
 	build_path = /obj/machinery/mac_barrel
 	origin_tech = "programming=3;powerstorage=4;combat=4"
 	req_components = list(
-							/obj/item/weapon/stock_parts/scanning_module = 1,
-							/obj/item/weapon/stock_parts/capacitor = 1,
-							/obj/item/weapon/stock_parts/console_screen = 1,)
+							/obj/item/stock_parts/scanning_module = 1,
+							/obj/item/stock_parts/capacitor = 1,
+							/obj/item/stock_parts/console_screen = 1,)
 
 /obj/machinery/mac_barrel/proc/can_fire(console=FALSE)
 	. = 0
@@ -76,7 +76,7 @@
 			M.starting = src.loc
 			M.fire()
 			fire_sound()
-		var/obj/item/weapon/twohanded/required/shell_casing/C = new breech.loaded_shell.casing
+		var/obj/item/twohanded/required/shell_casing/C = new breech.loaded_shell.casing
 		C.forceMove(breech)
 		qdel(breech.loaded_shell)
 		breech.loaded_objects -= breech.loaded_shell
@@ -151,7 +151,7 @@
 	var/obj/structure/loader/loader = null
 	var/list/loaded_objects = list()
 	var/obj/structure/shell/loaded_shell = null
-	var/obj/item/weapon/twohanded/required/firing_actuator/actuator = new
+	var/obj/item/twohanded/required/firing_actuator/actuator = new
 	container_type = OPENCONTAINER
 	var/charge_process = 100
 
@@ -166,7 +166,7 @@
 
 /obj/machinery/mac_breech/New()
 	..()
-	var/obj/item/weapon/circuitboard/machine/B = new /obj/item/weapon/circuitboard/machine/mac_breech(null)
+	var/obj/item/circuitboard/machine/B = new /obj/item/circuitboard/machine/mac_breech(null)
 	B.apply_default_parts(src)
 	RefreshParts()
 	create_reagents(1000)
@@ -182,14 +182,14 @@
 			return
 
 
-/obj/item/weapon/circuitboard/machine/mac_breech
+/obj/item/circuitboard/machine/mac_breech
 	name = "circuit board (MAC cannon breech)"
 	build_path = /obj/machinery/mac_breech
 	origin_tech = "programming=3;powerstorage=4;combat=4"
 	req_components = list(
-							/obj/item/weapon/stock_parts/scanning_module = 1,
-							/obj/item/weapon/stock_parts/capacitor = 1,
-							/obj/item/weapon/stock_parts/console_screen = 1,)
+							/obj/item/stock_parts/scanning_module = 1,
+							/obj/item/stock_parts/capacitor = 1,
+							/obj/item/stock_parts/console_screen = 1,)
 
 
 /obj/machinery/mac_breech/process()
@@ -209,7 +209,7 @@
 
 
 /obj/machinery/mac_breech/Entered(var/atom/A)
-	if(istype(A,/obj/item/weapon/twohanded/required/firing_actuator))
+	if(istype(A,/obj/item/twohanded/required/firing_actuator))
 		return
 	loaded_objects += A
 	if(istype(A,/obj/structure/shell))
@@ -279,7 +279,7 @@
 		return
 
 	if(panel_open)
-		if(istype(O, /obj/item/weapon/crowbar))
+		if(istype(O, /obj/item/crowbar))
 			if(actuator)
 				actuator.forceMove(src.loc)
 				if(actuator.spent)
@@ -288,7 +288,7 @@
 				else
 					user.visible_message("<span class='notice'>[user] pries out the cannon's actuator.</span>", "<span class='notice'>You pry out the cannon's firing actuator.</span>")
 				actuator = null
-		if(istype(O,/obj/item/weapon/twohanded/required/firing_actuator))
+		if(istype(O,/obj/item/twohanded/required/firing_actuator))
 			if(actuator)
 				to_chat(user, "<span class=notice>There is already a firing actuator loaded into the cannon.</span>")
 				return
@@ -461,7 +461,7 @@
 	name = "ammunition rack (SH)"
 	shell_type = /obj/structure/shell/smart_homing
 
-/obj/item/weapon/twohanded/required/firing_actuator
+/obj/item/twohanded/required/firing_actuator
 	name = "cannon firing actuator"
 	desc = "The actuator that releases the charged up energy of the MAC cannon and allows it to fire. Tends to burn out."
 	icon = 'icons/obj/stationobjs.dmi' //for simplicity

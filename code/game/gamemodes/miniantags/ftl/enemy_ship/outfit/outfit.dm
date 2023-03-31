@@ -14,13 +14,13 @@
   uniform = /obj/item/clothing/under/syndicate
   shoes = /obj/item/clothing/shoes/combat
   gloves = /obj/item/clothing/gloves/combat
-  id = /obj/item/weapon/card/id/syndicate
+  id = /obj/item/card/id/syndicate
   l_pocket = /obj/item/device/radio/uplink
-  back = /obj/item/weapon/storage/backpack
+  back = /obj/item/storage/backpack
   ears = /obj/item/device/radio/headset/syndicate/alt
 
 /datum/outfit/defender/post_equip(mob/living/carbon/human/H)
-  var/obj/item/weapon/card/id/I = H.wear_id
+  var/obj/item/card/id/I = H.wear_id
   I.update_label("[H.real_name]", "Crewman")
   I.access += ACCESS_SYNDICATE
   var/obj/item/device/radio/R = H.ears
@@ -42,14 +42,14 @@
 /datum/outfit/defender/command
   name = "defender command gear"
   glasses = /obj/item/clothing/glasses/night
-  id = /obj/item/weapon/card/id/syndicate_command
-  r_pocket = /obj/item/weapon/tank/internals/emergency_oxygen/engi
-  belt = /obj/item/weapon/storage/belt/military
-  backpack_contents = list(/obj/item/weapon/storage/box/syndie=1,\
-		/obj/item/weapon/tank/jetpack/oxygen/harness=1,\
-		/obj/item/weapon/gun/ballistic/automatic/pistol=1,\
+  id = /obj/item/card/id/syndicate_command
+  r_pocket = /obj/item/tank/internals/emergency_oxygen/engi
+  belt = /obj/item/storage/belt/military
+  backpack_contents = list(/obj/item/storage/box/syndie=1,\
+		/obj/item/tank/jetpack/oxygen/harness=1,\
+		/obj/item/gun/ballistic/automatic/pistol=1,\
     /obj/item/ammo_box/magazine/m10mm=2,\
-    /obj/item/weapon/crowbar=1,\
+    /obj/item/crowbar=1,\
     /obj/item/device/radio=1)
 
 /datum/outfit/defender/command/announce_to()
@@ -60,7 +60,7 @@
 
 /datum/outfit/defender/command/post_equip(mob/living/carbon/human/H)
   . = ..()
-  var/obj/item/weapon/card/id/I = H.wear_id
+  var/obj/item/card/id/I = H.wear_id
   I.update_label("Captain [H.real_name]", "Officer")
   I.access += ACCESS_SYNDICATE_LEADER
   var/obj/item/device/radio/uplink/U = H.get_item_by_slot(slot_l_store)

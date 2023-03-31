@@ -124,14 +124,14 @@
     if(user.mind.special_role != "Defender")
       if(do_after(user,300,target = src)) //30 seconds
         mode.victory()
-        new /obj/item/weapon/tapereel(loc)
+        new /obj/item/tapereel(loc)
         isactive = 0
         icon_state = "blackbox_empty"
         desc = "The recorder seems to be missing it's tape reel..."
 
 // ######### SHIP BLACKBOX TAPE REEL #########
 
-/obj/item/weapon/tapereel
+/obj/item/tapereel
   name = "tape reel"
   desc = "A huge tape reel containing information from a ship. You feel a strong urge to pull the tape out."
   icon = 'icons/obj/items_and_weapons.dmi'

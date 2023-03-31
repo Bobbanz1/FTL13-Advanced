@@ -40,7 +40,7 @@
 /proc/print_command_report(text = "", title = "Central Command Update")
 	for (var/obj/machinery/computer/communications/C in machines)
 		if(!(C.stat & (BROKEN|NOPOWER)) && C.z == ZLEVEL_STATION)
-			var/obj/item/weapon/paper/P = new /obj/item/weapon/paper( C.loc )
+			var/obj/item/paper/P = new /obj/item/paper( C.loc )
 			P.name = "paper- '[title]'"
 			P.info = text
 			C.messagetitle.Add("[title]")

@@ -72,7 +72,7 @@
 	})
 "l" = (
 /obj/structure/table,
-/obj/item/weapon/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/plasteel/darkblue,
 /area/ruin/powered{
 	name = "Shuttle"

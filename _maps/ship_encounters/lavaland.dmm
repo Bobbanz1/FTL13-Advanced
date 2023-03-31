@@ -19,7 +19,7 @@
 /turf/open/lava,
 /area/lavaland/surface/outdoors)
 "g" = (
-/obj/item/weapon/pickaxe,
+/obj/item/pickaxe,
 /turf/closed/indestructible/riveted,
 /area/ruin/unpowered{
 	name = "Necropolis Bridge"

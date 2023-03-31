@@ -66,7 +66,7 @@
 	add_fingerprint(user)
 	return
 
-/obj/structure/inflatable/attackby(obj/item/weapon/W as obj, mob/user as mob, params)
+/obj/structure/inflatable/attackby(obj/item/W as obj, mob/user as mob, params)
 	if(!istype(W))
 		return
 	if(W.is_sharp() || is_pointed(W))
@@ -230,7 +230,7 @@
 	to_chat(user, "<span class='warning'>The inflatable door is too torn to be inflated!</span>")
 	add_fingerprint(user)
 
-/obj/item/weapon/storage/briefcase/inflatable
+/obj/item/storage/briefcase/inflatable
 	name = "inflatable barrier case"
 	desc = "Contains inflatable walls and doors."
 	icon_state = "inf_box"
@@ -238,7 +238,7 @@
 	max_combined_w_class = 21
 	w_class = 3
 
-/obj/item/weapon/storage/briefcase/inflatable/PopulateContents()
+/obj/item/storage/briefcase/inflatable/PopulateContents()
 	new /obj/item/inflatable/door(src)
 	new /obj/item/inflatable/door(src)
 	new /obj/item/inflatable/door(src)

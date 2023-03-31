@@ -31,9 +31,9 @@
 	else
 		to_chat(M, "<span class='warning'>This wall is far too strong for you to destroy.</span>")
 
-/turf/closed/wall/r_wall/try_destroy(obj/item/weapon/W, mob/user, turf/T)
-	if(istype(W, /obj/item/weapon/pickaxe/drill/jackhammer))
-		var/obj/item/weapon/pickaxe/drill/jackhammer/D = W
+/turf/closed/wall/r_wall/try_destroy(obj/item/W, mob/user, turf/T)
+	if(istype(W, /obj/item/pickaxe/drill/jackhammer))
+		var/obj/item/pickaxe/drill/jackhammer/D = W
 		to_chat(user, "<span class='notice'>You begin to smash though the [name]...</span>")
 		if(do_after(user, 50, target = src))
 			if( !istype(src, /turf/closed/wall/r_wall) || !user || !W || !T )
@@ -60,11 +60,11 @@
 			return 1
 	return 0
 
-/turf/closed/wall/r_wall/try_decon(obj/item/weapon/W, mob/user, turf/T)
+/turf/closed/wall/r_wall/try_decon(obj/item/W, mob/user, turf/T)
 	//DECONSTRUCTION
 	switch(d_state)
 		if(0)
-			if (istype(W, /obj/item/weapon/wirecutters))
+			if (istype(W, /obj/item/wirecutters))
 				playsound(src, 'sound/items/wirecutter.ogg', 100, 1)
 				src.d_state = 1
 				update_icon()
@@ -72,7 +72,7 @@
 				return 1
 
 		if(1)
-			if (istype(W, /obj/item/weapon/screwdriver))
+			if (istype(W, /obj/item/screwdriver))
 				to_chat(user, "<span class='notice'>You begin removing the support lines...</span>")
 				playsound(src, 'sound/items/screwdriver.ogg', 100, 1)
 
@@ -100,8 +100,8 @@
 				return 1
 
 		if(2)
-			if( istype(W, /obj/item/weapon/weldingtool) )
-				var/obj/item/weapon/weldingtool/WT = W
+			if( istype(W, /obj/item/weldingtool) )
+				var/obj/item/weldingtool/WT = W
 				if( WT.remove_fuel(0,user) )
 
 					to_chat(user, "<span class='notice'>You begin slicing through the metal cover...</span>")
@@ -117,7 +117,7 @@
 							to_chat(user, "<span class='notice'>You press firmly on the cover, dislodging it.</span>")
 				return 1
 
-			if( istype(W, /obj/item/weapon/gun/energy/plasmacutter) )
+			if( istype(W, /obj/item/gun/energy/plasmacutter) )
 
 				to_chat(user, "<span class='notice'>You begin slicing through the metal cover...</span>")
 				playsound(src, 'sound/items/welder.ogg', 100, 1)
@@ -133,7 +133,7 @@
 				return 1
 
 		if(3)
-			if (istype(W, /obj/item/weapon/crowbar))
+			if (istype(W, /obj/item/crowbar))
 
 				to_chat(user, "<span class='notice'>You struggle to pry off the cover...</span>")
 				playsound(src, 'sound/items/crowbar.ogg', 100, 1)
@@ -149,7 +149,7 @@
 				return 1
 
 		if(4)
-			if (istype(W, /obj/item/weapon/wrench))
+			if (istype(W, /obj/item/wrench))
 
 				to_chat(user, "<span class='notice'>You start loosening the anchoring bolts which secure the support rods to their frame...</span>")
 				playsound(src, 'sound/items/ratchet.ogg', 100, 1)
@@ -165,8 +165,8 @@
 				return 1
 
 		if(5)
-			if( istype(W, /obj/item/weapon/weldingtool) )
-				var/obj/item/weapon/weldingtool/WT = W
+			if( istype(W, /obj/item/weldingtool) )
+				var/obj/item/weldingtool/WT = W
 				if( WT.remove_fuel(0,user) )
 
 					to_chat(user, "<span class='notice'>You begin slicing through the support rods...</span>")
@@ -182,7 +182,7 @@
 							to_chat(user, "<span class='notice'>You slice through the support rods.</span>")
 				return 1
 
-			if( istype(W, /obj/item/weapon/gun/energy/plasmacutter) )
+			if( istype(W, /obj/item/gun/energy/plasmacutter) )
 
 				to_chat(user, "<span class='notice'>You begin slicing through the support rods...</span>")
 				playsound(src, 'sound/items/welder.ogg', 100, 1)
@@ -198,7 +198,7 @@
 				return 1
 
 		if(6)
-			if( istype(W, /obj/item/weapon/crowbar) )
+			if( istype(W, /obj/item/crowbar) )
 
 				to_chat(user, "<span class='notice'>You struggle to pry off the outer sheath...</span>")
 				playsound(src, 'sound/items/crowbar.ogg', 100, 1)

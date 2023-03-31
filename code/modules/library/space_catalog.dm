@@ -1,12 +1,12 @@
 GLOBAL_LIST_EMPTY(space_catalog_buffer)
 
-/obj/item/weapon/book/space_catalog
+/obj/item/book/space_catalog
 	unique = 1
 	window_size = "570x680"
 	desc = "A book full of useful information about nearby space stations"
 	icon_state = "space_yellow_pages"
 
-/obj/item/weapon/book/space_catalog/Initialize()
+/obj/item/book/space_catalog/Initialize()
 	var/turf/T = get_turf(src)
 	var/datum/planet/PL = SSstarmap.current_system.get_planet_for_z(T.z)
 	if(!PL)

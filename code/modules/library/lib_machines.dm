@@ -19,7 +19,7 @@
 	icon_state = "oldcomp"
 	icon_screen = "library"
 	icon_keyboard = null
-	circuit = /obj/item/weapon/circuitboard/computer/libraryconsole
+	circuit = /obj/item/circuitboard/computer/libraryconsole
 	var/screenstate = 0
 	var/title
 	var/category = "Any"
@@ -220,7 +220,7 @@ GLOBAL_LIST(cachedbooks) // List of our cached book datums
 		if(1)
 			// Inventory
 			dat += "<H3>Inventory</H3><BR>"
-			for(var/obj/item/weapon/book/b in inventory)
+			for(var/obj/item/book/b in inventory)
 				dat += "[b.name] <A href='?src=\ref[src];delbook=\ref[b]'>(Delete)</A><BR>"
 			dat += "<A href='?src=\ref[src];switchscreen=0'>(Return to main menu)</A><BR>"
 		if(2)
@@ -322,16 +322,16 @@ GLOBAL_LIST(cachedbooks) // List of our cached book datums
 	var/spook = pick("blood", "brass")
 	var/turf/T = get_turf(src)
 	if(spook == "blood")
-		new /obj/item/weapon/tome(T)
+		new /obj/item/tome(T)
 	else
 		new /obj/item/clockwork/slab(T)
 
 	to_chat(user, "<span class='warning'>Your sanity barely endures the seconds spent in the vault's browsing window. The only thing to remind you of this when you stop browsing is a [spook == "blood" ? "dusty old tome" : "strange metal tablet"] sitting on the desk. You don't really remember printing it.[spook == "brass" ? " And how did it print something made of metal?" : ""]</span>")
 	user.visible_message("[user] stares at the blank screen for a few moments, [user.p_their()] expression frozen in fear. When [user.p_they()] finally awaken[user.p_s()] from it, [user.p_they()] look[user.p_s()] a lot older.", 2)
 
-/obj/machinery/computer/libraryconsole/bookmanagement/attackby(obj/item/weapon/W, mob/user, params)
-	if(istype(W, /obj/item/weapon/barcodescanner))
-		var/obj/item/weapon/barcodescanner/scanner = W
+/obj/machinery/computer/libraryconsole/bookmanagement/attackby(obj/item/W, mob/user, params)
+	if(istype(W, /obj/item/barcodescanner))
+		var/obj/item/barcodescanner/scanner = W
 		scanner.computer = src
 		to_chat(user, "[scanner]'s associated machine has been set to [src].")
 		audible_message("[src] lets out a low, short blip.")
@@ -395,7 +395,7 @@ GLOBAL_LIST(cachedbooks) // List of our cached book datums
 		if(b && istype(b))
 			checkouts.Remove(b)
 	if(href_list["delbook"])
-		var/obj/item/weapon/book/b = locate(href_list["delbook"]) in inventory
+		var/obj/item/book/b = locate(href_list["delbook"]) in inventory
 		if(b && istype(b))
 			inventory.Remove(b)
 	if(href_list["setauthor"])
@@ -463,7 +463,7 @@ GLOBAL_LIST(cachedbooks) // List of our cached book datums
 				var/author = query_library_print.item[2]
 				var/title = query_library_print.item[3]
 				var/content = query_library_print.item[4]
-				var/obj/item/weapon/book/B = new(get_turf(src))
+				var/obj/item/book/B = new(get_turf(src))
 				B.name = "Book: [title]"
 				B.title = title
 				B.author = author
@@ -473,7 +473,7 @@ GLOBAL_LIST(cachedbooks) // List of our cached book datums
 				break
 	if(href_list["printbible"])
 		if(cooldown < world.time)
-			var/obj/item/weapon/storage/book/bible/B = new /obj/item/weapon/storage/book/bible(src.loc)
+			var/obj/item/storage/book/bible/B = new /obj/item/storage/book/bible(src.loc)
 			if(SSreligion.bible_icon_state && SSreligion.bible_item_state)
 				B.icon_state = SSreligion.bible_icon_state
 				B.item_state = SSreligion.bible_item_state
@@ -484,7 +484,7 @@ GLOBAL_LIST(cachedbooks) // List of our cached book datums
 			say("Printer currently unavailable, please wait a moment.")
 	if(href_list["printposter"])
 		if(cooldown < world.time)
-			new /obj/item/weapon/poster/random_official(src.loc)
+			new /obj/item/poster/random_official(src.loc)
 			cooldown = world.time + PRINTER_COOLDOWN
 		else
 			say("Printer currently unavailable, please wait a moment.")
@@ -500,33 +500,33 @@ GLOBAL_LIST(cachedbooks) // List of our cached book datums
 	icon_state = "bigscanner"
 	anchored = TRUE
 	density = TRUE
-	var/obj/item/weapon/book/cache		// Last scanned book
+	var/obj/item/book/cache		// Last scanned book
 	var/stage = 0
 
 /obj/machinery/libraryscanner/New()
 	..()
-	var/obj/item/weapon/circuitboard/machine/B = new /obj/item/weapon/circuitboard/machine/libraryscanner(null)
+	var/obj/item/circuitboard/machine/B = new /obj/item/circuitboard/machine/libraryscanner(null)
 	B.apply_default_parts(src)
 
 /obj/machinery/libraryscanner/Destroy()
 	..()
 
-/obj/item/weapon/circuitboard/machine/libraryscanner
+/obj/item/circuitboard/machine/libraryscanner
 	name = "circuit board (Library Scanner)"
 	build_path = /obj/machinery/libraryscanner
 	origin_tech = "programming=1"
 	req_components = list(
-		/obj/item/weapon/stock_parts/micro_laser = 1,
-		/obj/item/weapon/stock_parts/scanning_module = 1)
+		/obj/item/stock_parts/micro_laser = 1,
+		/obj/item/stock_parts/scanning_module = 1)
 
 /obj/machinery/libraryscanner/attackby(obj/O, mob/user, params)
-	if(istype(O, /obj/item/weapon/book))
+	if(istype(O, /obj/item/book))
 		if(!user.drop_item())
 			return
 		O.loc = src
 	else if(default_unfasten_wrench(user, O))
 		return 1
-	else if(istype(O, /obj/item/weapon/screwdriver))
+	else if(istype(O, /obj/item/screwdriver))
 		if(stage == 0)
 			playsound(src, 'sound/items/screwdriver.ogg', 50, 1)
 			to_chat(user, "<span class='caution'>You unscrew the maintenance cover.</span>")
@@ -535,12 +535,12 @@ GLOBAL_LIST(cachedbooks) // List of our cached book datums
 			playsound(src, 'sound/items/screwdriver.ogg', 50, 1)
 			to_chat(user, "<span class='caution'>You screw in the maintenance cover.</span>")
 			stage = 0
-	else if(istype(O, /obj/item/weapon/crowbar) && stage == 1)
+	else if(istype(O, /obj/item/crowbar) && stage == 1)
 		playsound(src, 'sound/items/crowbar.ogg', 50, 1)
 		to_chat(user, "<span class='notice'>You start disassembling [src]...</span>")
 		new /obj/item/stack/sheet/metal(get_turf(src))
-		new /obj/item/weapon/stock_parts/micro_laser(get_turf(src))
-		new /obj/item/weapon/stock_parts/scanning_module(get_turf(src))
+		new /obj/item/stock_parts/micro_laser(get_turf(src))
+		new /obj/item/stock_parts/scanning_module(get_turf(src))
 		qdel(src)
 	else
 		return ..()
@@ -569,13 +569,13 @@ GLOBAL_LIST(cachedbooks) // List of our cached book datums
 		return
 
 	if(href_list["scan"])
-		for(var/obj/item/weapon/book/B in contents)
+		for(var/obj/item/book/B in contents)
 			cache = B
 			break
 	if(href_list["clear"])
 		cache = null
 	if(href_list["eject"])
-		for(var/obj/item/weapon/book/B in contents)
+		for(var/obj/item/book/B in contents)
 			B.loc = src.loc
 	src.add_fingerprint(usr)
 	src.updateUsrDialog()
@@ -596,26 +596,26 @@ GLOBAL_LIST(cachedbooks) // List of our cached book datums
 
 /obj/machinery/bookbinder/New()
 	..()
-	var/obj/item/weapon/circuitboard/machine/B = new /obj/item/weapon/circuitboard/machine/bookbinder(null)
+	var/obj/item/circuitboard/machine/B = new /obj/item/circuitboard/machine/bookbinder(null)
 	B.apply_default_parts(src)
 
 /obj/machinery/bookbinder/Destroy()
 	..()
 
-/obj/item/weapon/circuitboard/machine/bookbinder
+/obj/item/circuitboard/machine/bookbinder
 	name = "circuit board (Book Binder)"
 	build_path = /obj/machinery/bookbinder
 	origin_tech = "programming=1"
 	req_components = list(
-		/obj/item/weapon/stock_parts/micro_laser = 1,
-		/obj/item/weapon/stock_parts/manipulator = 1)
+		/obj/item/stock_parts/micro_laser = 1,
+		/obj/item/stock_parts/manipulator = 1)
 
 /obj/machinery/bookbinder/attackby(obj/O, mob/user, params)
-	if(istype(O, /obj/item/weapon/paper))
+	if(istype(O, /obj/item/paper))
 		bind_book(user, O)
 	else if(default_unfasten_wrench(user, O))
 		return 1
-	else if(istype(O, /obj/item/weapon/screwdriver))
+	else if(istype(O, /obj/item/screwdriver))
 		if(stage == 0)
 			playsound(src, 'sound/items/screwdriver.ogg', 50, 1)
 			to_chat(user, "<span class='caution'>You unscrew the maintenance cover.</span>")
@@ -624,17 +624,17 @@ GLOBAL_LIST(cachedbooks) // List of our cached book datums
 			playsound(src, 'sound/items/screwdriver.ogg', 50, 1)
 			to_chat(user, "<span class='caution'>You screw in the maintenance cover.</span>")
 			stage = 0
-	else if(istype(O, /obj/item/weapon/crowbar) && stage == 1)
+	else if(istype(O, /obj/item/crowbar) && stage == 1)
 		playsound(src, 'sound/items/crowbar.ogg', 50, 1)
 		to_chat(user, "<span class='notice'>You start disassembling [src]...</span>")
 		new /obj/item/stack/sheet/metal(get_turf(src))
-		new /obj/item/weapon/stock_parts/micro_laser(get_turf(src))
-		new /obj/item/weapon/stock_parts/manipulator(get_turf(src))
+		new /obj/item/stock_parts/micro_laser(get_turf(src))
+		new /obj/item/stock_parts/manipulator(get_turf(src))
 		qdel(src)
 	else
 		return ..()
 
-/obj/machinery/bookbinder/proc/bind_book(mob/user, obj/item/weapon/paper/P)
+/obj/machinery/bookbinder/proc/bind_book(mob/user, obj/item/paper/P)
 	if(stat)
 		return
 	if(busy)
@@ -651,7 +651,7 @@ GLOBAL_LIST(cachedbooks) // List of our cached book datums
 	if(P)
 		if(!stat)
 			visible_message("[src] whirs as it prints and binds a new book.")
-			var/obj/item/weapon/book/B = new(src.loc)
+			var/obj/item/book/B = new(src.loc)
 			B.dat = P.info
 			B.name = "Print Job #" + "[rand(100, 999)]"
 			B.icon_state = "book[rand(1,7)]"

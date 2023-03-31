@@ -1,19 +1,19 @@
-obj/item/weapon/circuitboard/computer/shuttle/advanced
+obj/item/circuitboard/computer/shuttle/advanced
 	name = "Advanced Shuttle - FOB (Computer Board)"
 	build_path = /obj/machinery/computer/shuttle/advanced
 	shuttleId = "fob"
 
-obj/item/weapon/circuitboard/computer/shuttle/advanced/cargo
+obj/item/circuitboard/computer/shuttle/advanced/cargo
 	name = "Advanced Shuttle - Cargo (Computer Board)"
 	build_path = /obj/machinery/computer/shuttle/advanced/cargo
 	shuttleId = "cargo"
 
-obj/item/weapon/circuitboard/computer/shuttle/advanced/attackby(obj/item/I, mob/user, params)
-	var/obj/item/weapon/circuitboard/computer/shuttle/advanced/fob_shuttle = /obj/item/weapon/circuitboard/computer/shuttle/advanced
-	var/obj/item/weapon/circuitboard/computer/shuttle/advanced/cargo_shuttle = /obj/item/weapon/circuitboard/computer/shuttle/advanced/cargo
-	var/obj/item/weapon/circuitboard/computer/shuttle/advanced/newtype
+obj/item/circuitboard/computer/shuttle/advanced/attackby(obj/item/I, mob/user, params)
+	var/obj/item/circuitboard/computer/shuttle/advanced/fob_shuttle = /obj/item/circuitboard/computer/shuttle/advanced
+	var/obj/item/circuitboard/computer/shuttle/advanced/cargo_shuttle = /obj/item/circuitboard/computer/shuttle/advanced/cargo
+	var/obj/item/circuitboard/computer/shuttle/advanced/newtype
 
-	if(istype(I, /obj/item/weapon/screwdriver))
+	if(istype(I, /obj/item/screwdriver))
 		var/new_setting = "FOB"
 		playsound(src.loc, I.usesound, 50, 1)
 		if(build_path == initial(fob_shuttle.build_path))
@@ -30,7 +30,7 @@ obj/item/weapon/circuitboard/computer/shuttle/advanced/attackby(obj/item/I, mob/
 /obj/machinery/computer/shuttle/advanced //rename
 	name = "Advanced shuttle console (FOB)"
 	desc = "Used to control the FOB shuttle."
-	circuit = /obj/item/weapon/circuitboard/computer/shuttle/advanced
+	circuit = /obj/item/circuitboard/computer/shuttle/advanced
 	shuttleId = "fob"
 	no_destination_swap = 1
 	can_move_if_ship_moving = FALSE
@@ -38,7 +38,7 @@ obj/item/weapon/circuitboard/computer/shuttle/advanced/attackby(obj/item/I, mob/
 /obj/machinery/computer/shuttle/advanced/cargo
 	name = "Advanced shuttle console (Cargo)"
 	desc = "Used to control the Cargo shuttle."
-	circuit = /obj/item/weapon/circuitboard/computer/shuttle/advanced/cargo
+	circuit = /obj/item/circuitboard/computer/shuttle/advanced/cargo
 	shuttleId = "cargo"
 
 

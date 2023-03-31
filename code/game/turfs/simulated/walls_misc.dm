@@ -59,8 +59,8 @@
 	..()
 
 /turf/closed/wall/clockwork/attackby(obj/item/I, mob/living/user, params)
-	if(istype(I, /obj/item/weapon/weldingtool))
-		var/obj/item/weapon/weldingtool/WT = I
+	if(istype(I, /obj/item/weldingtool))
+		var/obj/item/weldingtool/WT = I
 		if(!WT.isOn())
 			return 0
 		user.visible_message("<span class='notice'>[user] begins slowly breaking down [src]...</span>", "<span class='notice'>You begin painstakingly destroying [src]...</span>")

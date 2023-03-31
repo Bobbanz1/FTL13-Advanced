@@ -39,12 +39,12 @@
 	ME.attach(src)
 	return
 
-/obj/mecha/combat/gygax/dark/add_cell(obj/item/weapon/stock_parts/cell/hyper/C=null)
+/obj/mecha/combat/gygax/dark/add_cell(obj/item/stock_parts/cell/hyper/C=null)
 	if(C)
 		C.forceMove(src)
 		cell = C
 		return
-	cell = new/obj/item/weapon/stock_parts/cell/hyper(src)
+	cell = new/obj/item/stock_parts/cell/hyper(src)
 	cell.charge = 1750
 	cell.maxcharge = 1750
 

@@ -383,7 +383,7 @@
 	},
 /area/ship_salvage/component/c_1_2)
 "bx" = (
-/obj/item/weapon/twohanded/required/shell_casing,
+/obj/item/twohanded/required/shell_casing,
 /turf/open/floor/pod,
 /area/ship_salvage/component/c_2_2)
 "by" = (
@@ -396,7 +396,7 @@
 /turf/closed/wall/r_wall,
 /area/ship_salvage/component/c_3_2)
 "bA" = (
-/obj/item/weapon/twohanded/required/shell_casing/smart_homing,
+/obj/item/twohanded/required/shell_casing/smart_homing,
 /turf/open/floor/plasteel/caution{
 	tag = "icon-warningline (WEST)";
 	dir = 8
@@ -837,7 +837,7 @@
 /area/ship_salvage/component/c_3_3)
 "cW" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/storage/toolbox,
+/obj/item/storage/toolbox,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_3_3)
 "cX" = (
@@ -886,19 +886,19 @@
 /area/ship_salvage/component/c_3_3)
 "df" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/storage/toolbox,
+/obj/item/storage/toolbox,
 /obj/item/clothing/head/hardhat,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_3_3)
 "dg" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/wrench,
-/obj/item/weapon/crowbar,
+/obj/item/wrench,
+/obj/item/crowbar,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_3_3)
 "dh" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/storage/belt,
+/obj/item/storage/belt,
 /obj/item/stack/sheet/metal,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_3_3)
@@ -967,7 +967,7 @@
 /area/ship_salvage/component/c_5_3)
 "ds" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/syndie,
+/obj/item/bedsheet/syndie,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_5_3)
 "dt" = (
@@ -1044,7 +1044,7 @@
 /area/ship_salvage/component/c_4_3)
 "dI" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/syndie,
+/obj/item/bedsheet/syndie,
 /mob/living/simple_animal/hostile/syndicate/civilian,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_5_3)
@@ -1060,7 +1060,7 @@
 /area/ship_salvage/component/c_1_3)
 "dK" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/gun/energy,
+/obj/item/gun/energy,
 /obj/structure/cable{
 	crit_fail = 0;
 	d1 = 4;
@@ -1522,12 +1522,12 @@
 /area/ship_salvage/component/c_1_4)
 "fp" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/condiment/saltshaker,
+/obj/item/reagent_containers/food/condiment/saltshaker,
 /turf/open/floor/plasteel/redblue,
 /area/ship_salvage/component/c_1_4)
 "fq" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/condiment/peppermill,
+/obj/item/reagent_containers/food/condiment/peppermill,
 /turf/open/floor/plasteel/redblue,
 /area/ship_salvage/component/c_1_4)
 "fr" = (
@@ -1563,7 +1563,7 @@
 /area/ship_salvage/component/c_3_4)
 "fA" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/condiment/soysauce,
+/obj/item/reagent_containers/food/condiment/soysauce,
 /turf/open/floor/plasteel/redblue,
 /area/ship_salvage/component/c_1_4)
 "fB" = (
@@ -1572,12 +1572,12 @@
 /area/ship_salvage/component/c_1_4)
 "fC" = (
 /obj/structure/table,
-/obj/item/weapon/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
 /turf/open/floor/plasteel/cafeteria,
 /area/ship_salvage/component/c_2_4)
 "fD" = (
 /obj/structure/table/wood,
-/obj/item/weapon/melee/chainofcommand,
+/obj/item/melee/chainofcommand,
 /turf/open/floor/wood,
 /area/ship_salvage/component/c_5_4)
 "fE" = (
@@ -1617,7 +1617,7 @@
 /area/ship_salvage/component/c_2_4)
 "fJ" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/snacks/donut,
+/obj/item/reagent_containers/food/snacks/donut,
 /obj/machinery/light{
 	icon_state = "tube1";
 	dir = 4
@@ -2125,7 +2125,7 @@
 "hp" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/head/welding,
-/obj/item/weapon/weldingtool,
+/obj/item/weldingtool,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_2_1)
 "hs" = (
@@ -2426,7 +2426,7 @@
 /area/ship_salvage/component/c_5_3)
 "ik" = (
 /obj/structure/table/wood,
-/obj/item/weapon/dice/d20,
+/obj/item/dice/d20,
 /turf/open/floor/plasteel/black,
 /area/ship_salvage/component/c_5_3)
 "il" = (
@@ -3190,7 +3190,7 @@
 /area/ship_salvage/hull)
 "LY" = (
 /obj/structure/table/wood,
-/obj/item/weapon/paper_bin,
+/obj/item/paper_bin,
 /obj/structure/cable{
 	crit_fail = 0;
 	d1 = 4;

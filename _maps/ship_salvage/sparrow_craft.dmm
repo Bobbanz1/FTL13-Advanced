@@ -41,7 +41,7 @@
 /area/ship_salvage/component/c_2_2)
 "as" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/electrical,
+/obj/item/storage/toolbox/electrical,
 /turf/open/floor/plasteel/darkbrown,
 /area/ship_salvage/component/c_2_2)
 "au" = (
@@ -92,13 +92,13 @@
 /area/ship_salvage/hull)
 "aM" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/orange,
+/obj/item/bedsheet/orange,
 /obj/effect/spawner/lootdrop/gambling,
 /turf/open/floor/plasteel/darkbrown,
 /area/ship_salvage/hull)
 "aQ" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/orange,
+/obj/item/bedsheet/orange,
 /turf/open/floor/plasteel/darkbrown,
 /area/ship_salvage/hull)
 "aT" = (
@@ -228,7 +228,7 @@
 /area/ship_salvage/component/c_2_2)
 "cB" = (
 /obj/structure/table,
-/obj/item/weapon/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
 /obj/structure/cable{
 	crit_fail = 0;
 	d1 = 4;
@@ -273,7 +273,7 @@
 /area/ship_salvage/component/c_2_1)
 "lm" = (
 /obj/structure/table,
-/obj/item/weapon/storage/firstaid/tactical,
+/obj/item/storage/firstaid/tactical,
 /obj/structure/cable{
 	crit_fail = 0;
 	d1 = 4;
@@ -507,7 +507,7 @@
 /area/ship_salvage/component/c_2_2)
 "LE" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/orange,
+/obj/item/bedsheet/orange,
 /obj/machinery/atmospherics/pipe/manifold/general/visible{
 	dir = 1
 	},
@@ -663,7 +663,7 @@
 /area/ship_salvage/hull)
 "WV" = (
 /obj/structure/table,
-/obj/item/weapon/storage/firstaid,
+/obj/item/storage/firstaid,
 /obj/effect/spawner/lootdrop/gambling,
 /obj/structure/cable{
 	icon_state = "0-4";

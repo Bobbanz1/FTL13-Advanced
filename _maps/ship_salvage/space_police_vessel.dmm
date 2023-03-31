@@ -481,7 +481,7 @@
 /area/ship_salvage/component/c_6_2)
 "bw" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/drinks/coffee,
+/obj/item/reagent_containers/food/drinks/coffee,
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_y = 32
 	},
@@ -490,7 +490,7 @@
 "bx" = (
 /obj/structure/table,
 /obj/machinery/recharger,
-/obj/item/weapon/soap,
+/obj/item/soap,
 /turf/open/floor/plasteel/darkyellow,
 /area/ship_salvage/component/c_6_2)
 "by" = (
@@ -520,7 +520,7 @@
 /area/ship_salvage/component/c_6_2)
 "bD" = (
 /obj/structure/table,
-/obj/item/weapon/paper/pamphlet,
+/obj/item/paper/pamphlet,
 /turf/open/floor/plasteel/darkyellow,
 /area/ship_salvage/component/c_6_2)
 "bE" = (
@@ -775,7 +775,7 @@
 /area/ship_salvage/component/c_4_3)
 "cp" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/orange,
+/obj/item/bedsheet/orange,
 /obj/machinery/atmospherics/components/unary/vent_pump{
 	dir = 4;
 	external_pressure_bound = 0;
@@ -825,7 +825,7 @@
 /area/ship_salvage/component/c_4_3)
 "cu" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/orange,
+/obj/item/bedsheet/orange,
 /obj/machinery/atmospherics/components/unary/vent_pump{
 	dir = 8;
 	external_pressure_bound = 0;
@@ -874,7 +874,7 @@
 	pump_direction = 0
 	},
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/snacks/tofu,
+/obj/item/reagent_containers/food/snacks/tofu,
 /turf/open/floor/engine,
 /area/ship_salvage/component/c_4_3)
 "cz" = (
@@ -948,7 +948,7 @@
 /area/ship_salvage/component/c_4_3)
 "cG" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/orange,
+/obj/item/bedsheet/orange,
 /obj/effect/mob_spawn/human/prisoner_transport,
 /turf/open/floor/engine,
 /area/ship_salvage/component/c_4_3)
@@ -961,7 +961,7 @@
 /area/ship_salvage/component/c_4_3)
 "cI" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/orange,
+/obj/item/bedsheet/orange,
 /turf/open/floor/engine,
 /area/ship_salvage/component/c_4_3)
 "cJ" = (

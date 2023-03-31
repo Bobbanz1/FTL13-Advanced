@@ -29,7 +29,7 @@
 	name = "\improper BMP Asteroid Level 3"
 	})
 "af" = (
-/obj/item/weapon/greentext,
+/obj/item/greentext,
 /turf/open/floor/plating/asteroid/basalt{
 	initial_gas_mix = "n2=23;o2=14"
 	},
@@ -117,7 +117,7 @@
 	name = "\improper BMP Asteroid Level 4"
 	})
 "aq" = (
-/obj/item/weapon/ectoplasm,
+/obj/item/ectoplasm,
 /turf/open/floor/plating/asteroid/basalt/lava{
 	initial_gas_mix = "n2=23;o2=14"
 	},
@@ -156,7 +156,7 @@
 /obj/item/stack/sheet/runed_metal{
 	amount = 25
 	},
-/obj/item/weapon/veilrender/honkrender,
+/obj/item/veilrender/honkrender,
 /obj/item/clothing/mask/gas/clown_hat,
 /obj/item/organ/heart/demon,
 /turf/open/floor/engine/cult{
@@ -196,11 +196,11 @@
 	})
 "ay" = (
 /obj/structure/destructible/cult/tome,
-/obj/item/weapon/tome,
+/obj/item/tome,
 /obj/item/stack/sheet/runed_metal{
 	amount = 25
 	},
-/obj/item/weapon/coin/antagtoken,
+/obj/item/coin/antagtoken,
 /turf/open/floor/engine/cult{
 	baseturf = /turf/open/lava/smooth;
 	initial_gas_mix = "n2=23;o2=14"
@@ -238,7 +238,7 @@
 	})
 "aC" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/cult,
+/obj/item/bedsheet/cult,
 /turf/open/floor/engine/cult{
 	baseturf = /turf/open/lava/smooth;
 	initial_gas_mix = "n2=23;o2=14"
@@ -260,8 +260,8 @@
 /obj/item/stack/sheet/runed_metal{
 	amount = 25
 	},
-/obj/item/weapon/coin/antagtoken,
-/obj/item/weapon/spellbook/oneuse/summonitem{
+/obj/item/coin/antagtoken,
+/obj/item/spellbook/oneuse/summonitem{
 	name = "an extremely flamboyant book"
 	},
 /turf/open/floor/engine/cult{
@@ -286,7 +286,7 @@
 	name = "\improper BMP Asteroid Level 4"
 	})
 "aG" = (
-/obj/item/weapon/ectoplasm,
+/obj/item/ectoplasm,
 /turf/open/floor/engine/cult{
 	baseturf = /turf/open/lava/smooth;
 	initial_gas_mix = "n2=23;o2=14"
@@ -492,7 +492,7 @@
 	})
 "ba" = (
 /obj/structure/destructible/cult/talisman,
-/obj/item/weapon/plasma_fist_scroll,
+/obj/item/plasma_fist_scroll,
 /turf/open/floor/engine/cult{
 	baseturf = /turf/open/lava/smooth;
 	initial_gas_mix = "n2=23;o2=14"
@@ -710,7 +710,7 @@
 	name = "\improper BMP Asteroid Level 3"
 	})
 "by" = (
-/obj/item/weapon/twohanded/mjollnir,
+/obj/item/twohanded/mjollnir,
 /mob/living/simple_animal/hostile/poison/giant_spider/nurse,
 /turf/open/floor/plating/asteroid/basalt{
 	initial_gas_mix = "n2=23;o2=14"
@@ -789,7 +789,7 @@
 	name = "\improper BMP Asteroid Level 3"
 	})
 "bG" = (
-/obj/item/weapon/gun/ballistic/automatic/pistol/deagle/gold,
+/obj/item/gun/ballistic/automatic/pistol/deagle/gold,
 /turf/open/floor/plating/asteroid/basalt/lava{
 	initial_gas_mix = "n2=23;o2=14"
 	},
@@ -806,7 +806,7 @@
 	name = "\improper BMP Asteroid Level 4"
 	})
 "bI" = (
-/obj/item/weapon/bedsheet/patriot,
+/obj/item/bedsheet/patriot,
 /turf/open/floor/plating/asteroid/basalt/lava{
 	initial_gas_mix = "n2=23;o2=14"
 	},
@@ -928,7 +928,7 @@
 	})
 "bX" = (
 /obj/structure/table,
-/obj/item/weapon/paper/crumpled/awaymissions/caves/unsafe_area,
+/obj/item/paper/crumpled/awaymissions/caves/unsafe_area,
 /turf/open/floor/plating/asteroid/basalt{
 	initial_gas_mix = "n2=23;o2=14"
 	},
@@ -964,7 +964,7 @@
 /obj/structure/closet/crate/miningcar{
 	name = "Mining cart"
 	},
-/obj/item/weapon/pickaxe{
+/obj/item/pickaxe{
 	attack_verb = list("ineffectively hit");
 	desc = "A pickaxe thats been left to rust.";
 	force = 1;
@@ -1029,7 +1029,7 @@
 	},
 /area/awaymission/research)
 "ci" = (
-/obj/item/weapon/shard,
+/obj/item/shard,
 /turf/open/floor/plating/asteroid/basalt{
 	initial_gas_mix = "n2=23;o2=14"
 	},
@@ -1075,7 +1075,7 @@
 	dir = 1
 	},
 /obj/structure/filingcabinet,
-/obj/item/weapon/paper/fluff/awaymissions/caves/omega,
+/obj/item/paper/fluff/awaymissions/caves/omega,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt;
 	initial_gas_mix = "n2=23;o2=14"
@@ -1103,14 +1103,14 @@
 	},
 /area/awaymission/research)
 "cs" = (
-/obj/item/weapon/shard,
+/obj/item/shard,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/basalt;
 	initial_gas_mix = "n2=23;o2=14"
 	},
 /area/awaymission/research)
 "ct" = (
-/obj/item/weapon/shard,
+/obj/item/shard,
 /obj/item/stack/rods,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plasteel{
@@ -1176,8 +1176,8 @@
 /area/awaymission/research)
 "cC" = (
 /obj/structure/table,
-/obj/item/weapon/restraints/handcuffs/cable,
-/obj/item/weapon/restraints/handcuffs/cable,
+/obj/item/restraints/handcuffs/cable,
+/obj/item/restraints/handcuffs/cable,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt;
 	initial_gas_mix = "n2=23;o2=14"
@@ -1287,7 +1287,7 @@
 	},
 /area/awaymission/research)
 "cQ" = (
-/obj/item/weapon/pickaxe{
+/obj/item/pickaxe{
 	attack_verb = list("ineffectively hit");
 	desc = "A pickaxe thats been left to rust.";
 	force = 1;
@@ -1360,7 +1360,7 @@
 /area/awaymission/research)
 "cX" = (
 /obj/structure/table,
-/obj/item/weapon/melee/baton,
+/obj/item/melee/baton,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt;
 	initial_gas_mix = "n2=23;o2=14"
@@ -1392,7 +1392,7 @@
 "db" = (
 /obj/structure/table,
 /obj/machinery/cell_charger,
-/obj/item/weapon/stock_parts/cell/crap,
+/obj/item/stock_parts/cell/crap,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt;
 	initial_gas_mix = "n2=23;o2=14"
@@ -1431,9 +1431,9 @@
 /obj/structure/closet/secure_closet/miner{
 	name = "weapon equipment"
 	},
-/obj/item/weapon/grenade/syndieminibomb/concussion,
-/obj/item/weapon/grenade/syndieminibomb/concussion,
-/obj/item/weapon/grenade/syndieminibomb/concussion,
+/obj/item/grenade/syndieminibomb/concussion,
+/obj/item/grenade/syndieminibomb/concussion,
+/obj/item/grenade/syndieminibomb/concussion,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt;
 	initial_gas_mix = "n2=23;o2=14"
@@ -1461,8 +1461,8 @@
 	})
 "di" = (
 /obj/structure/table,
-/obj/item/weapon/paper/fluff/awaymissions/caves/magma,
-/obj/item/weapon/pen,
+/obj/item/paper/fluff/awaymissions/caves/magma,
+/obj/item/pen,
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
@@ -1526,7 +1526,7 @@
 	})
 "dp" = (
 /obj/structure/table,
-/obj/item/weapon/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
 /obj/item/clothing/glasses/meson,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
@@ -1555,7 +1555,7 @@
 	})
 "ds" = (
 /obj/structure/closet/secure_closet/personal,
-/obj/item/weapon/pickaxe{
+/obj/item/pickaxe{
 	attack_verb = list("ineffectively hit");
 	desc = "A pickaxe thats been left to rust.";
 	force = 1;
@@ -1592,7 +1592,7 @@
 	})
 "dw" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet,
+/obj/item/bedsheet,
 /obj/effect/landmark/awaystart,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
@@ -1603,7 +1603,7 @@
 "dx" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/effect/decal/cleanable/cobweb,
-/obj/item/weapon/sord,
+/obj/item/sord,
 /turf/open/floor/wood{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},
@@ -1621,7 +1621,7 @@
 /area/awaymission/northblock)
 "dA" = (
 /obj/structure/closet/secure_closet/personal,
-/obj/item/weapon/gun/energy/kinetic_accelerator,
+/obj/item/gun/energy/kinetic_accelerator,
 /turf/open/floor/wood{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},
@@ -1656,7 +1656,7 @@
 /area/awaymission/northblock)
 "dF" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet,
+/obj/item/bedsheet,
 /turf/open/floor/wood{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},
@@ -1671,7 +1671,7 @@
 /area/awaymission/northblock)
 "dH" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet,
+/obj/item/bedsheet,
 /obj/effect/landmark/awaystart,
 /turf/open/floor/wood{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
@@ -1783,7 +1783,7 @@
 /area/awaymission/BMPship)
 "dY" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet,
+/obj/item/bedsheet,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/effect/landmark/awaystart,
 /turf/open/floor/wood{
@@ -1857,8 +1857,8 @@
 /area/awaymission/BMPship)
 "ei" = (
 /obj/structure/table,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
+/obj/item/paper_bin,
+/obj/item/pen,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},
@@ -1880,7 +1880,7 @@
 /area/awaymission/BMPship)
 "el" = (
 /obj/structure/closet/secure_closet/personal,
-/obj/item/weapon/gun/energy/laser/captain/scattershot,
+/obj/item/gun/energy/laser/captain/scattershot,
 /turf/open/floor/wood{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},
@@ -1966,8 +1966,8 @@
 "ex" = (
 /obj/structure/closet/secure_closet/miner,
 /obj/effect/decal/cleanable/cobweb,
-/obj/item/weapon/survivalcapsule,
-/obj/item/weapon/extinguisher/mini,
+/obj/item/survivalcapsule,
+/obj/item/extinguisher/mini,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},
@@ -1992,7 +1992,7 @@
 /area/awaymission/BMPship)
 "eA" = (
 /obj/structure/table,
-/obj/item/weapon/paper/fluff/awaymissions/caves/work_notice,
+/obj/item/paper/fluff/awaymissions/caves/work_notice,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},
@@ -2016,8 +2016,8 @@
 /area/awaymission/BMPship)
 "eD" = (
 /obj/structure/closet/secure_closet/miner,
-/obj/item/weapon/survivalcapsule,
-/obj/item/weapon/extinguisher/mini,
+/obj/item/survivalcapsule,
+/obj/item/extinguisher/mini,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},
@@ -2046,8 +2046,8 @@
 /area/awaymission/BMPship)
 "eI" = (
 /obj/structure/closet/crate/trashcart,
-/obj/item/weapon/switchblade,
-/obj/item/weapon/switchblade,
+/obj/item/switchblade,
+/obj/item/switchblade,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},
@@ -2059,8 +2059,8 @@
 /area/awaymission/listeningpost)
 "eK" = (
 /obj/structure/table,
-/obj/item/weapon/gun/energy/kinetic_accelerator,
-/obj/item/weapon/gun/energy/kinetic_accelerator,
+/obj/item/gun/energy/kinetic_accelerator,
+/obj/item/gun/energy/kinetic_accelerator,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
@@ -2077,7 +2077,7 @@
 	dir = 8
 	},
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/electrical,
+/obj/item/storage/toolbox/electrical,
 /obj/item/device/multitool,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
@@ -2097,7 +2097,7 @@
 /area/awaymission/listeningpost)
 "eP" = (
 /obj/structure/table,
-/obj/item/weapon/pickaxe{
+/obj/item/pickaxe{
 	attack_verb = list("ineffectively hit");
 	desc = "A pickaxe thats been left to rust.";
 	force = 1;
@@ -2105,7 +2105,7 @@
 	pixel_x = 5;
 	throwforce = 1
 	},
-/obj/item/weapon/pickaxe{
+/obj/item/pickaxe{
 	attack_verb = list("ineffectively hit");
 	desc = "A pickaxe thats been left to rust.";
 	force = 1;
@@ -2147,8 +2147,8 @@
 /area/awaymission/BMPship)
 "eU" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/mechanical,
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},
@@ -2165,7 +2165,7 @@
 /area/awaymission/listeningpost)
 "eX" = (
 /obj/structure/table,
-/obj/item/weapon/paper/pamphlet/gateway,
+/obj/item/paper/pamphlet/gateway,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},
@@ -2188,8 +2188,8 @@
 /obj/structure/noticeboard{
 	pixel_y = 32
 	},
-/obj/item/weapon/paper/fluff/awaymissions/caves/shipment_notice,
-/obj/item/weapon/paper/fluff/awaymissions/caves/saftey_notice,
+/obj/item/paper/fluff/awaymissions/caves/shipment_notice,
+/obj/item/paper/fluff/awaymissions/caves/saftey_notice,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},
@@ -2204,13 +2204,13 @@
 	})
 "fc" = (
 /obj/structure/closet/crate,
-/obj/item/weapon/paper/fluff/awaymissions/caves/shipment_receipt,
-/obj/item/weapon/gun/energy/laser/captain/scattershot,
-/obj/item/weapon/gun/energy/laser/captain/scattershot,
-/obj/item/weapon/gun/energy/laser,
-/obj/item/weapon/grenade/syndieminibomb/concussion,
-/obj/item/weapon/grenade/syndieminibomb/concussion,
-/obj/item/weapon/grenade/syndieminibomb/concussion,
+/obj/item/paper/fluff/awaymissions/caves/shipment_receipt,
+/obj/item/gun/energy/laser/captain/scattershot,
+/obj/item/gun/energy/laser/captain/scattershot,
+/obj/item/gun/energy/laser,
+/obj/item/grenade/syndieminibomb/concussion,
+/obj/item/grenade/syndieminibomb/concussion,
+/obj/item/grenade/syndieminibomb/concussion,
 /obj/item/slimepotion/fireproof,
 /obj/item/slimepotion/fireproof,
 /obj/item/clothing/glasses/thermal,
@@ -2273,7 +2273,7 @@
 	name = "\improper BMP Asteroid Level 2"
 	})
 "fk" = (
-/obj/item/weapon/grenade/syndieminibomb/concussion,
+/obj/item/grenade/syndieminibomb/concussion,
 /turf/open/floor/plating/asteroid/basalt{
 	initial_gas_mix = "n2=23;o2=14"
 	},
@@ -2298,9 +2298,9 @@
 	icon_state = "crateopen";
 	opened = 1
 	},
-/obj/item/weapon/paper/fluff/awaymissions/caves/shipment_receipt,
+/obj/item/paper/fluff/awaymissions/caves/shipment_receipt,
 /obj/item/organ/eyes/robotic/thermals,
-/obj/item/weapon/gun/energy/laser/captain/scattershot,
+/obj/item/gun/energy/laser/captain/scattershot,
 /obj/item/slimepotion/fireproof,
 /turf/open/floor/plating/asteroid/basalt{
 	initial_gas_mix = "n2=23;o2=14"
@@ -2348,15 +2348,15 @@
 /area/awaymission/BMPship)
 "fs" = (
 /obj/structure/table,
-/obj/item/weapon/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},
 /area/awaymission/BMPship)
 "ft" = (
 /obj/structure/table,
-/obj/item/weapon/storage/firstaid/fire,
-/obj/item/weapon/storage/firstaid/fire,
+/obj/item/storage/firstaid/fire,
+/obj/item/storage/firstaid/fire,
 /obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
@@ -2364,8 +2364,8 @@
 /area/awaymission/BMPship)
 "fu" = (
 /obj/structure/table,
-/obj/item/weapon/storage/firstaid/brute,
-/obj/item/weapon/reagent_containers/blood/OPlus,
+/obj/item/storage/firstaid/brute,
+/obj/item/reagent_containers/blood/OPlus,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},
@@ -2379,7 +2379,7 @@
 	name = "\improper BMP Asteroid Level 2"
 	})
 "fw" = (
-/obj/item/weapon/gun/energy/laser/captain/scattershot,
+/obj/item/gun/energy/laser/captain/scattershot,
 /turf/open/floor/plating/asteroid/basalt{
 	initial_gas_mix = "n2=23;o2=14"
 	},
@@ -2538,9 +2538,9 @@
 	})
 "fS" = (
 /obj/structure/table,
-/obj/item/weapon/storage/firstaid/toxin,
-/obj/item/weapon/storage/firstaid/toxin,
-/obj/item/weapon/reagent_containers/blood/OPlus,
+/obj/item/storage/firstaid/toxin,
+/obj/item/storage/firstaid/toxin,
+/obj/item/reagent_containers/blood/OPlus,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},
@@ -2576,7 +2576,7 @@
 /obj/structure/closet/crate/miningcar{
 	name = "Mining cart"
 	},
-/obj/item/weapon/pickaxe{
+/obj/item/pickaxe{
 	attack_verb = list("ineffectively hit");
 	desc = "A pickaxe thats been left to rust.";
 	force = 1;
@@ -2651,14 +2651,14 @@
 /area/awaymission/BMPship)
 "gf" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},
 /area/awaymission/BMPship)
 "gg" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
 /turf/open/floor/plating{
 	baseturf = /turf/open/lava/smooth;
 	initial_gas_mix = "n2=23;o2=14"
@@ -2708,7 +2708,7 @@
 	},
 /area/awaymission/BMPship)
 "gn" = (
-/obj/item/weapon/grown/log,
+/obj/item/grown/log,
 /turf/open/floor/plating/asteroid/basalt{
 	initial_gas_mix = "n2=23;o2=14"
 	},
@@ -2737,7 +2737,7 @@
 /area/awaymission/BMPship)
 "gr" = (
 /obj/structure/table,
-/obj/item/weapon/kitchen/fork,
+/obj/item/kitchen/fork,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},
@@ -2777,14 +2777,14 @@
 /area/awaymission/BMPship)
 "gx" = (
 /obj/structure/table,
-/obj/item/weapon/kitchen/fork,
+/obj/item/kitchen/fork,
 /obj/item/trash/plate,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},
 /area/awaymission/BMPship)
 "gy" = (
-/obj/item/weapon/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},
@@ -2834,7 +2834,7 @@
 /area/awaymission/BMPship)
 "gF" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
 /obj/item/clothing/glasses/material,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt;
@@ -2848,7 +2848,7 @@
 "gH" = (
 /obj/structure/table,
 /obj/item/mecha_parts/mecha_equipment/drill/diamonddrill,
-/obj/item/weapon/paper/fluff/awaymissions/caves/mech_notice,
+/obj/item/paper/fluff/awaymissions/caves/mech_notice,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/basalt
 	},

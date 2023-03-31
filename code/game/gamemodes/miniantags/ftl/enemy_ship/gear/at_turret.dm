@@ -10,7 +10,7 @@
 
 /obj/machinery/at_field/process()
   if(anchored)
-    for(var/obj/item/weapon/grenade/G in orange(at_range,src))
+    for(var/obj/item/grenade/G in orange(at_range,src))
       if(G.active)
         playsound(src.loc, 'sound/magic/repulse.ogg', 100, 1, extrarange = 30)
         Beam(G, icon_state="lightning[rand(1,5)]", icon='icons/effects/effects.dmi', time=5)
@@ -24,7 +24,7 @@
     var/datum/effect_system/spark_spread/s = new /datum/effect_system/spark_spread
     s.set_up(3, 1, src)
     s.start()
-    for(var/obj/item/weapon/grenade/G in orange(at_range,src))
+    for(var/obj/item/grenade/G in orange(at_range,src))
       G.prime()
     visible_message("<span class='notice'>Grenades got primed again!")
     qdel(src)

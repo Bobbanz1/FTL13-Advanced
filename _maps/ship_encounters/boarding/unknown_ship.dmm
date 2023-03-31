@@ -125,7 +125,7 @@
 	},
 /area/no_entry/boarding)
 "aD" = (
-/obj/item/weapon/card/id/captains_spare,
+/obj/item/card/id/captains_spare,
 /turf/open/floor/engine,
 /area/no_entry/boarding)
 "aE" = (
@@ -188,7 +188,7 @@
 /area/no_entry/boarding)
 "aQ" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/implanter/explosive,
+/obj/item/implanter/explosive,
 /turf/open/floor/engine,
 /area/no_entry/boarding)
 "aR" = (
@@ -442,13 +442,13 @@
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "bL" = (
-/obj/item/weapon/razor{
+/obj/item/razor{
 	pixel_x = -3;
 	pixel_y = 4
 	},
 /obj/item/clothing/suit/apron/surgical,
 /obj/item/clothing/gloves/color/latex,
-/obj/item/weapon/surgical_drapes,
+/obj/item/surgical_drapes,
 /obj/structure/table,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
@@ -463,11 +463,11 @@
 /turf/open/floor/plasteel/darkred,
 /area/no_entry/boarding)
 "bO" = (
-/obj/item/weapon/cautery{
+/obj/item/cautery{
 	pixel_x = 4
 	},
-/obj/item/weapon/surgicaldrill,
-/obj/item/weapon/scalpel{
+/obj/item/surgicaldrill,
+/obj/item/scalpel{
 	pixel_y = 12
 	},
 /obj/structure/table,
@@ -483,9 +483,9 @@
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "bR" = (
-/obj/item/weapon/retractor,
-/obj/item/weapon/hemostat,
-/obj/item/weapon/circular_saw,
+/obj/item/retractor,
+/obj/item/hemostat,
+/obj/item/circular_saw,
 /obj/structure/table,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
@@ -493,24 +493,24 @@
 /obj/structure/closet/crate/freezer,
 /obj/item/clothing/mask/breath/medical,
 /obj/item/clothing/mask/breath/medical,
-/obj/item/weapon/tank/internals/anesthetic,
-/obj/item/weapon/tank/internals/anesthetic,
-/obj/item/weapon/reagent_containers/blood/empty,
-/obj/item/weapon/reagent_containers/blood/empty{
+/obj/item/tank/internals/anesthetic,
+/obj/item/tank/internals/anesthetic,
+/obj/item/reagent_containers/blood/empty,
+/obj/item/reagent_containers/blood/empty{
 	pixel_x = -3;
 	pixel_y = -3
 	},
-/obj/item/weapon/reagent_containers/blood/OMinus,
-/obj/item/weapon/reagent_containers/blood/OPlus{
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OPlus{
 	pixel_x = -2;
 	pixel_y = -1
 	},
-/obj/item/weapon/reagent_containers/blood/random,
-/obj/item/weapon/reagent_containers/blood/random,
-/obj/item/weapon/reagent_containers/blood/random,
-/obj/item/weapon/reagent_containers/blood/random,
-/obj/item/weapon/reagent_containers/blood/random,
-/obj/item/weapon/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
+/obj/item/reagent_containers/blood/random,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "bT" = (
@@ -656,9 +656,9 @@
 /area/no_entry/boarding)
 "cq" = (
 /obj/structure/table/glass,
-/obj/item/weapon/storage/firstaid/tactical,
-/obj/item/weapon/storage/firstaid/tactical,
-/obj/item/weapon/storage/firstaid/tactical,
+/obj/item/storage/firstaid/tactical,
+/obj/item/storage/firstaid/tactical,
+/obj/item/storage/firstaid/tactical,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "cr" = (
@@ -671,9 +671,9 @@
 /area/no_entry/boarding)
 "ct" = (
 /obj/structure/table/glass,
-/obj/item/weapon/reagent_containers/glass/beaker/large,
-/obj/item/weapon/reagent_containers/glass/beaker/large,
-/obj/item/weapon/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "cu" = (
@@ -683,22 +683,22 @@
 /area/no_entry/boarding)
 "cv" = (
 /obj/structure/table/glass,
-/obj/item/weapon/storage/firstaid,
-/obj/item/weapon/storage/firstaid,
+/obj/item/storage/firstaid,
+/obj/item/storage/firstaid,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "cw" = (
 /obj/structure/table/glass,
-/obj/item/weapon/storage/firstaid/brute,
-/obj/item/weapon/storage/firstaid/brute,
-/obj/item/weapon/storage/firstaid/brute,
+/obj/item/storage/firstaid/brute,
+/obj/item/storage/firstaid/brute,
+/obj/item/storage/firstaid/brute,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "cx" = (
 /obj/structure/table/glass,
-/obj/item/weapon/reagent_containers/spray/cleaner,
-/obj/item/weapon/reagent_containers/spray/cleaner,
-/obj/item/weapon/reagent_containers/spray/cleaner,
+/obj/item/reagent_containers/spray/cleaner,
+/obj/item/reagent_containers/spray/cleaner,
+/obj/item/reagent_containers/spray/cleaner,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "cy" = (
@@ -909,7 +909,7 @@
 /area/no_entry/boarding)
 "dd" = (
 /obj/structure/closet/syndicate/nuclear,
-/obj/item/weapon/storage/backpack/duffelbag/syndie/ammo,
+/obj/item/storage/backpack/duffelbag/syndie/ammo,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "de" = (
@@ -917,12 +917,12 @@
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "df" = (
-/obj/item/weapon/storage/backpack/duffelbag/syndie/c20rbundle,
+/obj/item/storage/backpack/duffelbag/syndie/c20rbundle,
 /obj/structure/closet/crate,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "dg" = (
-/obj/item/weapon/storage/backpack/duffelbag/syndie/bulldogbundle,
+/obj/item/storage/backpack/duffelbag/syndie/bulldogbundle,
 /obj/structure/closet/crate,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
@@ -939,7 +939,7 @@
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "dk" = (
-/obj/item/weapon/storage/backpack/duffelbag/syndie/ammo,
+/obj/item/storage/backpack/duffelbag/syndie/ammo,
 /obj/structure/closet/crate,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
@@ -958,7 +958,7 @@
 /area/no_entry/boarding)
 "do" = (
 /obj/structure/closet/syndicate/nuclear,
-/obj/item/weapon/storage/backpack/duffelbag/syndie/x4,
+/obj/item/storage/backpack/duffelbag/syndie/x4,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "dp" = (
@@ -982,7 +982,7 @@
 /area/no_entry/boarding)
 "dt" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/syndie,
+/obj/item/bedsheet/syndie,
 /turf/open/floor/plasteel/black{
 	initial_gas_mix = "TEMP=2.7"
 	},
@@ -1007,7 +1007,7 @@
 	},
 /area/no_entry/boarding)
 "dx" = (
-/obj/item/weapon/bedsheet/syndie,
+/obj/item/bedsheet/syndie,
 /turf/open/floor/plasteel/black{
 	initial_gas_mix = "TEMP=2.7"
 	},
@@ -1021,14 +1021,14 @@
 /area/no_entry/boarding)
 "dz" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/syndie,
+/obj/item/bedsheet/syndie,
 /obj/effect/mob_spawn/human/corpse/syndicatesoldier,
 /turf/open/floor/plasteel/darkred{
 	initial_gas_mix = "TEMP=2.7"
 	},
 /area/no_entry/boarding)
 "dA" = (
-/obj/item/weapon/bedsheet/syndie,
+/obj/item/bedsheet/syndie,
 /turf/open/floor/plasteel/darkred{
 	initial_gas_mix = "TEMP=2.7"
 	},
@@ -1041,17 +1041,17 @@
 /area/no_entry/boarding)
 "dC" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/gun/energy/lasercannon,
+/obj/item/gun/energy/lasercannon,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "dD" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/gun/ballistic/revolver/mateba,
+/obj/item/gun/ballistic/revolver/mateba,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "dE" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/gun/ballistic/automatic/l6_saw/unrestricted,
+/obj/item/gun/ballistic/automatic/l6_saw/unrestricted,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "dF" = (
@@ -1067,7 +1067,7 @@
 /area/no_entry/boarding)
 "dH" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/syndie,
+/obj/item/bedsheet/syndie,
 /obj/effect/mob_spawn/human/corpse/syndicatesoldier,
 /turf/open/floor/plasteel/black{
 	initial_gas_mix = "TEMP=2.7"
@@ -1080,7 +1080,7 @@
 /area/no_entry/boarding)
 "dJ" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/gun/ballistic/automatic/shotgun/bulldog/unrestricted,
+/obj/item/gun/ballistic/automatic/shotgun/bulldog/unrestricted,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "dK" = (
@@ -1107,7 +1107,7 @@
 /area/no_entry/boarding)
 "dO" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/syndie,
+/obj/item/bedsheet/syndie,
 /obj/effect/mob_spawn/human/corpse/syndicatesoldier,
 /obj/effect/mob_spawn/human/corpse/syndicatesoldier,
 /turf/open/floor/plasteel/black{
@@ -1123,7 +1123,7 @@
 /area/no_entry/boarding)
 "dQ" = (
 /obj/structure/closet/syndicate/nuclear,
-/obj/item/weapon/storage/backpack/duffelbag/syndie/c4,
+/obj/item/storage/backpack/duffelbag/syndie/c4,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "dR" = (
@@ -1147,7 +1147,7 @@
 /area/no_entry/boarding)
 "dV" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/gun/ballistic/automatic/sniper_rifle,
+/obj/item/gun/ballistic/automatic/sniper_rifle,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "dW" = (
@@ -1196,14 +1196,14 @@
 /area/no_entry/boarding)
 "ee" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/syndie,
+/obj/item/bedsheet/syndie,
 /turf/open/floor/plasteel/darkred{
 	initial_gas_mix = "TEMP=2.7"
 	},
 /area/no_entry/boarding)
 "ef" = (
 /obj/structure/bed,
-/obj/item/weapon/bedsheet/syndie,
+/obj/item/bedsheet/syndie,
 /obj/effect/mob_spawn/human/corpse/syndicatesoldier,
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plasteel/black{
@@ -1405,15 +1405,15 @@
 /turf/open/floor/engine,
 /area/no_entry/boarding)
 "eD" = (
-/obj/item/weapon/stock_parts/cell/infinite,
+/obj/item/stock_parts/cell/infinite,
 /turf/open/floor/plating,
 /area/no_entry/boarding)
 "eE" = (
-/obj/item/weapon/crowbar,
+/obj/item/crowbar,
 /turf/open/floor/plating,
 /area/no_entry/boarding)
 "eF" = (
-/obj/item/weapon/card/id/captains_spare,
+/obj/item/card/id/captains_spare,
 /turf/open/floor/plating,
 /area/no_entry/boarding)
 "eG" = (
@@ -1518,8 +1518,8 @@
 /area/no_entry/boarding)
 "eV" = (
 /obj/structure/table/glass,
-/obj/item/weapon/storage/firstaid/fire,
-/obj/item/weapon/storage/firstaid/fire,
+/obj/item/storage/firstaid/fire,
+/obj/item/storage/firstaid/fire,
 /obj/machinery/light{
 	icon_state = "tube1";
 	dir = 4
@@ -1561,7 +1561,7 @@
 	},
 /area/no_entry/boarding)
 "fa" = (
-/obj/item/weapon/storage/backpack/duffelbag/syndie/ammo,
+/obj/item/storage/backpack/duffelbag/syndie/ammo,
 /obj/structure/closet/crate,
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel/black,
@@ -1929,7 +1929,7 @@
 	},
 /obj/machinery/light/floor,
 /obj/structure/frame,
-/obj/item/weapon/skub,
+/obj/item/skub,
 /turf/open/floor/engine,
 /area/no_entry/boarding)
 "gm" = (
@@ -1956,13 +1956,13 @@
 /area/no_entry/boarding)
 "gq" = (
 /obj/structure/table,
-/obj/item/weapon/wrench,
+/obj/item/wrench,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "gr" = (
 /obj/vehicle/scooter,
 /obj/structure/table,
-/obj/item/weapon/weldingtool/experimental,
+/obj/item/weldingtool/experimental,
 /turf/open/floor/plasteel/black,
 /area/no_entry/boarding)
 "gs" = (
@@ -2012,11 +2012,11 @@
 /turf/open/floor/engine,
 /area/no_entry/boarding)
 "gD" = (
-/obj/item/weapon/stock_parts/cell/infinite,
+/obj/item/stock_parts/cell/infinite,
 /turf/open/floor/engine,
 /area/no_entry/boarding)
 "gE" = (
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
 /turf/open/floor/engine,
 /area/no_entry/boarding)
 "gF" = (
@@ -2027,8 +2027,8 @@
 /area/no_entry/boarding)
 "gG" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/stock_parts/cell/bluespace,
-/obj/item/weapon/stock_parts/cell/bluespace,
+/obj/item/stock_parts/cell/bluespace,
+/obj/item/stock_parts/cell/bluespace,
 /turf/open/floor/mineral/plastitanium,
 /area/no_entry/boarding)
 "gH" = (

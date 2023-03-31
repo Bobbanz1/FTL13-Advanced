@@ -51,7 +51,7 @@ Possible to do for anyone motivated enough:
 
 /obj/machinery/holopad/Initialize()
 	. = ..()
-	var/obj/item/weapon/circuitboard/machine/B = new /obj/item/weapon/circuitboard/machine/holopad(null)
+	var/obj/item/circuitboard/machine/B = new /obj/item/circuitboard/machine/holopad(null)
 	B.apply_default_parts(src)
 	holopads += src
 
@@ -83,7 +83,7 @@ Possible to do for anyone motivated enough:
 
 /obj/machinery/holopad/RefreshParts()
 	var/holograph_range = 4
-	for(var/obj/item/weapon/stock_parts/capacitor/B in component_parts)
+	for(var/obj/item/stock_parts/capacitor/B in component_parts)
 		holograph_range += 1 * B.rating
 	holo_range = holograph_range
 
@@ -384,11 +384,11 @@ For the other part of the code, check silicon say.dm. Particularly robot talk.*/
 		return Impersonation.examine(user)
 	return ..()
 
-/obj/item/weapon/circuitboard/machine/holopad
+/obj/item/circuitboard/machine/holopad
 	name = "AI Holopad (Machine Board)"
 	build_path = /obj/machinery/holopad
 	origin_tech = "programming=1"
-	req_components = list(/obj/item/weapon/stock_parts/capacitor = 1)
+	req_components = list(/obj/item/stock_parts/capacitor = 1)
 	
 // COMMUNICATIONS HOLOPAD
 
@@ -402,7 +402,7 @@ For the other part of the code, check silicon say.dm. Particularly robot talk.*/
 
 /obj/machinery/hologram/comms_pad/New()
 	..()
-	var/obj/item/weapon/circuitboard/machine/B = new /obj/item/weapon/circuitboard/machine/comms_pad(null)
+	var/obj/item/circuitboard/machine/B = new /obj/item/circuitboard/machine/comms_pad(null)
 	B.apply_default_parts(src)
 	for(var/obj/machinery/computer/communications/console in range(4, src))
 		if(!console.linked_comms_pad)
@@ -422,11 +422,11 @@ For the other part of the code, check silicon say.dm. Particularly robot talk.*/
 		console.unlink_comms_pad()
 	. = ..()
 
-/obj/item/weapon/circuitboard/machine/comms_pad
+/obj/item/circuitboard/machine/comms_pad
 	name = "circuit board (Communications Holopad)"
 	build_path = /obj/machinery/hologram/comms_pad
 	origin_tech = "programming=1"
-	req_components = list(/obj/item/weapon/stock_parts/capacitor = 1)
+	req_components = list(/obj/item/stock_parts/capacitor = 1)
 
 /obj/machinery/hologram/comms_pad/attackby(obj/item/P, mob/user, params)
 	if(default_deconstruction_screwdriver(user, "holopad_open", "comms_pad0", P))

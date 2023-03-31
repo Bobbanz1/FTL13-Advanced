@@ -98,7 +98,7 @@
 /area/ship_salvage/component/c_2_2)
 "au" = (
 /obj/structure/table,
-/obj/item/weapon/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
 /obj/machinery/light/built,
 /turf/open/floor/plasteel/sepia,
 /area/ship_salvage/component/c_2_2)
@@ -417,7 +417,7 @@
 /area/ship_salvage/component/c_3_2)
 "bl" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
 /turf/open/floor/plasteel/sepia,
 /area/ship_salvage/component/c_1_3)
 "bn" = (

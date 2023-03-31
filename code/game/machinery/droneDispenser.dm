@@ -59,16 +59,16 @@
 		MINERAL_MATERIAL_AMOUNT*MAX_STACK_SIZE*2)
 
 	using_materials = list(MAT_METAL=metal_cost, MAT_GLASS=glass_cost)
-	var/obj/item/weapon/circuitboard/machine/B = new /obj/item/weapon/circuitboard/machine/droneDispenser(null)
+	var/obj/item/circuitboard/machine/B = new /obj/item/circuitboard/machine/droneDispenser(null)
 	B.apply_default_parts(src)
 
-/obj/item/weapon/circuitboard/machine/droneDispenser
+/obj/item/circuitboard/machine/droneDispenser
 	name = "circuit board (Drone Dispenser)"
 	build_path = /obj/machinery/droneDispenser
 	origin_tech = "engineering=2;programming=2"
 	req_components = list(
-							/obj/item/weapon/stock_parts/matter_bin = 3,
-							/obj/item/weapon/stock_parts/manipulator = 2)
+							/obj/item/stock_parts/matter_bin = 3,
+							/obj/item/stock_parts/manipulator = 2)
 
 /obj/machinery/droneDispenser/Destroy()
 	qdel(materials)
@@ -260,7 +260,7 @@
 			update_icon()
 		return
 	if(panel_open)
-		if(istype(O, /obj/item/weapon/crowbar))
+		if(istype(O, /obj/item/crowbar))
 			default_deconstruction_crowbar(O)
 			return 1
 	if(istype(O, /obj/item/stack))
@@ -281,17 +281,17 @@
 		else
 			to_chat(user, "<span class='warning'>The [src] isn't accepting the [sheets].</span>")
 
-	else if(istype(O, /obj/item/weapon/crowbar))
+	else if(istype(O, /obj/item/crowbar))
 		materials.retrieve_all()
 		playsound(loc, O.usesound, 50, 1)
 		to_chat(user, "<span class='notice'>You retrieve the materials from [src].</span>")
 
-	else if(istype(O, /obj/item/weapon/weldingtool))
+	else if(istype(O, /obj/item/weldingtool))
 		if(!(stat & BROKEN))
 			to_chat(user, "<span class='warning'>[src] doesn't need repairs.</span>")
 			return
 
-		var/obj/item/weapon/weldingtool/WT = O
+		var/obj/item/weldingtool/WT = O
 
 		if(!WT.isOn())
 			return
@@ -319,7 +319,7 @@
 		stat &= ~BROKEN
 		obj_integrity = max_integrity
 		update_icon()
-	else if(istype(O, /obj/item/weapon/crowbar))
+	else if(istype(O, /obj/item/crowbar))
 		var/obj/item/stack/Retmats = materials.retrieve_all() //Cant get the last 1000cm3 out. deal with it.
 		if(Retmats)
 			to_chat(user, "<span class='notice'>You pry [Retmats] sheets of material out of the [src].</span>")

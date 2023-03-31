@@ -27,28 +27,28 @@
 	lootdoubles = FALSE
 
 	loot = list(
-				/obj/item/weapon/gun/ballistic/automatic/pistol = 8,
-				/obj/item/weapon/gun/ballistic/shotgun/automatic/combat = 5,
-				/obj/item/weapon/gun/ballistic/revolver/mateba,
-				/obj/item/weapon/gun/ballistic/automatic/pistol/deagle
+				/obj/item/gun/ballistic/automatic/pistol = 8,
+				/obj/item/gun/ballistic/shotgun/automatic/combat = 5,
+				/obj/item/gun/ballistic/revolver/mateba,
+				/obj/item/gun/ballistic/automatic/pistol/deagle
 				)
 
 /obj/effect/spawner/lootdrop/gambling
 	name = "gambling valuables spawner"
 	loot = list(
-				/obj/item/weapon/gun/ballistic/revolver/russian = 5,
-				/obj/item/weapon/storage/box/syndie_kit/throwing_weapons = 1,
+				/obj/item/gun/ballistic/revolver/russian = 5,
+				/obj/item/storage/box/syndie_kit/throwing_weapons = 1,
 				/obj/item/toy/cards/deck/syndicate = 2
 				)
 
 /obj/effect/spawner/lootdrop/grille_or_trash
 	name = "maint grille or trash spawner"
 	loot = list(/obj/structure/grille = 5,
-			/obj/item/weapon/cigbutt = 1,
+			/obj/item/cigbutt = 1,
 			/obj/item/trash/cheesie = 1,
 			/obj/item/trash/candy = 1,
 			/obj/item/trash/chips = 1,
-			/obj/item/weapon/reagent_containers/food/snacks/deadmouse = 1,
+			/obj/item/reagent_containers/food/snacks/deadmouse = 1,
 			/obj/item/trash/pistachios = 1,
 			/obj/item/trash/plate = 1,
 			/obj/item/trash/popcorn = 1,
@@ -61,25 +61,25 @@
 	lootcount = 3
 	lootdoubles = FALSE
 	var/soups = list(
-			/obj/item/weapon/reagent_containers/food/snacks/soup/beet,
-			/obj/item/weapon/reagent_containers/food/snacks/soup/sweetpotato,
-			/obj/item/weapon/reagent_containers/food/snacks/soup/stew,
-			/obj/item/weapon/reagent_containers/food/snacks/soup/hotchili,
-			/obj/item/weapon/reagent_containers/food/snacks/soup/nettle,
-			/obj/item/weapon/reagent_containers/food/snacks/soup/meatball)
+			/obj/item/reagent_containers/food/snacks/soup/beet,
+			/obj/item/reagent_containers/food/snacks/soup/sweetpotato,
+			/obj/item/reagent_containers/food/snacks/soup/stew,
+			/obj/item/reagent_containers/food/snacks/soup/hotchili,
+			/obj/item/reagent_containers/food/snacks/soup/nettle,
+			/obj/item/reagent_containers/food/snacks/soup/meatball)
 	var/salads = list(
-			/obj/item/weapon/reagent_containers/food/snacks/salad/herbsalad,
-			/obj/item/weapon/reagent_containers/food/snacks/salad/validsalad,
-			/obj/item/weapon/reagent_containers/food/snacks/salad/fruit,
-			/obj/item/weapon/reagent_containers/food/snacks/salad/jungle,
-			/obj/item/weapon/reagent_containers/food/snacks/salad/aesirsalad)
+			/obj/item/reagent_containers/food/snacks/salad/herbsalad,
+			/obj/item/reagent_containers/food/snacks/salad/validsalad,
+			/obj/item/reagent_containers/food/snacks/salad/fruit,
+			/obj/item/reagent_containers/food/snacks/salad/jungle,
+			/obj/item/reagent_containers/food/snacks/salad/aesirsalad)
 	var/mains = list(
-			/obj/item/weapon/reagent_containers/food/snacks/bearsteak,
-			/obj/item/weapon/reagent_containers/food/snacks/enchiladas,
-			/obj/item/weapon/reagent_containers/food/snacks/stewedsoymeat,
-			/obj/item/weapon/reagent_containers/food/snacks/burger/bigbite,
-			/obj/item/weapon/reagent_containers/food/snacks/burger/superbite,
-			/obj/item/weapon/reagent_containers/food/snacks/burger/fivealarm)
+			/obj/item/reagent_containers/food/snacks/bearsteak,
+			/obj/item/reagent_containers/food/snacks/enchiladas,
+			/obj/item/reagent_containers/food/snacks/stewedsoymeat,
+			/obj/item/reagent_containers/food/snacks/burger/bigbite,
+			/obj/item/reagent_containers/food/snacks/burger/superbite,
+			/obj/item/reagent_containers/food/snacks/burger/fivealarm)
 
 /obj/effect/spawner/lootdrop/three_course_meal/Initialize(mapload)
 	loot = list(pick(soups) = 1,pick(salads) = 1,pick(mains) = 1)
@@ -100,7 +100,7 @@
 	// The chance that the loot is nothing which is the "" should be 25% of the total chance, to prevent OP shit. Same goes for rare loot
 	loot = list(
 		/obj/structure/closet/ammunitionlocker = 3,
-  	/obj/item/weapon/pickaxe/drill = 2,
+  	/obj/item/pickaxe/drill = 2,
 		/obj/structure/janitorialcart = 3,
 		/obj/structure/reagent_dispensers/beerkeg = 3,
 		/obj/structure/reagent_dispensers/watertank = 3,
@@ -108,9 +108,9 @@
 		/obj/machinery/suit_storage_unit/mining/eva = 2,
 		/obj/machinery/monkey_recycler = 2,
 		/obj/machinery/hydroponics = 2,
-		/obj/item/weapon/circuitboard/machine/smes = 2,
-		/obj/item/weapon/circuitboard/machine/mac_breech = 1,
-		/obj/item/weapon/circuitboard/machine/mac_barrel = 1,
+		/obj/item/circuitboard/machine/smes = 2,
+		/obj/item/circuitboard/machine/mac_breech = 1,
+		/obj/item/circuitboard/machine/mac_barrel = 1,
 		/obj/structure/shell = 1,
 		/obj/structure/shell/shield_piercing = 1,
 		/obj/structure/shell/smart_homing = 1,
@@ -121,7 +121,7 @@
 		/obj/machinery/portable_atmospherics/canister/toxins = 2,
 		/obj/item/slime_extract/metal = 2,
 		/obj/item/slime_extract/grey = 2,
-		/obj/item/weapon/pickaxe/diamond = 1,
+		/obj/item/pickaxe/diamond = 1,
 		/obj/structure/statue/sandstone/assistant = 2,
 		/obj/item/stack/sheet/glass{amount = 15} = 2,
 		/obj/item/stack/sheet/metal{amount = 15} = 2,
@@ -137,9 +137,9 @@
 		/mob/living/simple_animal/bot/cleanbot = 2,
 		/mob/living/simple_animal/bot/medbot = 2,
 		/obj/item/seeds/tomato/blue = 1,
-		/obj/item/weapon/storage/box/firingpins = 1,
-		/obj/item/weapon/suppressor = 2,
-		/obj/item/weapon/grenade/plastic/c4  = 1,
+		/obj/item/storage/box/firingpins = 1,
+		/obj/item/suppressor = 2,
+		/obj/item/grenade/plastic/c4  = 1,
 		"" = 25, //estimate
 		)
 
@@ -149,8 +149,8 @@
 		lootdoubles = 1
 		nolootchance = 20
 		loot = list(
-			/obj/item/weapon/pickaxe/drill/diamonddrill = 3,
-			/obj/item/weapon/pickaxe/drill/jackhammer = 2,
+			/obj/item/pickaxe/drill/diamonddrill = 3,
+			/obj/item/pickaxe/drill/jackhammer = 2,
 			/obj/structure/AIcore = 2,
 			/obj/machinery/vending/boozeomat = 3,
 			/obj/machinery/suit_storage_unit/captain = 1,
@@ -169,23 +169,23 @@
 			/obj/structure/displaycase/shiplabcage = 2,
 			/obj/mecha/combat/gygax = 1,
 			/obj/structure/closet/crate/secure/loot = 2,
-			/obj/item/weapon/storage/bag/money = 1,
+			/obj/item/storage/bag/money = 1,
 			/obj/item/slime_extract/adamantine = 1,
 			/obj/item/slime_extract/bluespace = 1,
 			/obj/item/slime_extract/gold = 2,
 			/obj/item/slime_extract/cerulean = 2,
 			/obj/item/slimepotion/transference = 1,
 			/obj/item/slimepotion/sentience = 1,
-			/obj/item/weapon/abductor_baton = 2,
-			/obj/item/weapon/grenade/plastic/x4 = 3,
-			/obj/item/weapon/grenade/syndieminibomb = 2,
-			/obj/item/weapon/grenade/clusterbuster = 1,
-			/obj/item/weapon/gun/medbeam = 1,
-			/obj/item/weapon/gun/energy/floragun = 2,
-			/obj/item/weapon/gun/magic/staff/honk = 1,
-			/obj/item/weapon/gun/ballistic/shotgun/automatic/combat = 1,
-			/obj/item/weapon/gun/ballistic/revolver/golden = 1,
-			/obj/item/weapon/gun/ballistic/revolver = 3,
+			/obj/item/abductor_baton = 2,
+			/obj/item/grenade/plastic/x4 = 3,
+			/obj/item/grenade/syndieminibomb = 2,
+			/obj/item/grenade/clusterbuster = 1,
+			/obj/item/gun/medbeam = 1,
+			/obj/item/gun/energy/floragun = 2,
+			/obj/item/gun/magic/staff/honk = 1,
+			/obj/item/gun/ballistic/shotgun/automatic/combat = 1,
+			/obj/item/gun/ballistic/revolver/golden = 1,
+			/obj/item/gun/ballistic/revolver = 3,
 			/obj/structure/statue/bananium/clown = 1,
 			/obj/structure/statue/gold/xo = 2,
 			/obj/structure/statue/silver/janitor = 3,
@@ -206,18 +206,18 @@
 			/mob/living/simple_animal/bot/ed209 = 2,
 			/obj/item/seeds/banana/bluespace = 2,
 			/obj/item/seeds/tomato/blue/bluespace = 2,
-			/obj/item/weapon/gun/energy/alien = 2,
-			/obj/item/weapon/gun/energy = 2,
-			/obj/item/weapon/gun/energy/e_gun/turret = 1,
-			/obj/item/weapon/gun/energy/e_gun/dragnet/snare = 1,
-			/obj/item/weapon/katana = 3,
-			/obj/item/weapon/gun/ballistic/automatic/wt550 = 3,
-			/obj/item/weapon/gun/ballistic/automatic/xmg80 = 3,
-			/obj/item/weapon/gun/ballistic/automatic/shotgun/bulldog = 1,
-			/obj/item/weapon/storage/backpack/duffelbag/syndie/bulldogbundle = 1,
-			/obj/item/weapon/storage/backpack/duffelbag/syndie/c20rbundle = 1,
-			/obj/item/weapon/storage/backpack/duffelbag/syndie/ammo = 2,
-			/obj/item/weapon/storage/backpack/duffelbag/syndie/surgery = 2,
+			/obj/item/gun/energy/alien = 2,
+			/obj/item/gun/energy = 2,
+			/obj/item/gun/energy/e_gun/turret = 1,
+			/obj/item/gun/energy/e_gun/dragnet/snare = 1,
+			/obj/item/katana = 3,
+			/obj/item/gun/ballistic/automatic/wt550 = 3,
+			/obj/item/gun/ballistic/automatic/xmg80 = 3,
+			/obj/item/gun/ballistic/automatic/shotgun/bulldog = 1,
+			/obj/item/storage/backpack/duffelbag/syndie/bulldogbundle = 1,
+			/obj/item/storage/backpack/duffelbag/syndie/c20rbundle = 1,
+			/obj/item/storage/backpack/duffelbag/syndie/ammo = 2,
+			/obj/item/storage/backpack/duffelbag/syndie/surgery = 2,
 			"" = 20, //estimate
 			)
 

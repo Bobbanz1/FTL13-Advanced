@@ -33,7 +33,7 @@ GLOBAL_LIST_INIT(posts, list("weapons", "helms"))
 	gloves = /obj/item/clothing/gloves/color/grey/xo
 	suit = /obj/item/clothing/suit/toggle/service/bridge
 
-	implants = list(/obj/item/weapon/implant/mindshield)
+	implants = list(/obj/item/implant/mindshield)
 
 	var/post = null
 	var/list/post_access = null //so we don't have people fighting over posts
@@ -64,7 +64,7 @@ GLOBAL_LIST_INIT(posts, list("weapons", "helms"))
 
 	H.sec_hud_set_implants()
 
-	var/obj/item/weapon/card/id/W = H.wear_id
+	var/obj/item/card/id/W = H.wear_id
 	W.access |= post_access
 
 	if(ACCESS_WEAPONS_CONSOLE in W.access) //I'm sorry
