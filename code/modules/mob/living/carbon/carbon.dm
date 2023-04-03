@@ -290,10 +290,9 @@
 
 /mob/living/carbon/proc/cuff_resist(obj/item/I, breakouttime = 600, cuff_break = 0)
 	breakouttime = I.breakouttime
-	var/displaytime = breakouttime / 600
 	if(!cuff_break)
 		visible_message("<span class='warning'>[src] attempts to remove [I]!</span>")
-		to_chat(src, "<span class='notice'>You attempt to remove [I]... (This will take around [displaytime] minutes and you need to stand still.)</span>")
+		to_chat(src, "<span class='notice'>You attempt to remove [I]... (This will take around [DisplayTimeText(breakouttime)] and you need to stand still.)</span>")
 		if(do_after(src, breakouttime, 0, target = src))
 			clear_cuffs(I, cuff_break)
 		else
@@ -809,7 +808,7 @@
 /mob/living/carbon/vv_get_dropdown()
 	. = ..()
 	. += "---"
-	.["Make AI"] = "?_src_=vars;makeai=\ref[src]"
-	.["Modify bodypart"] = "?_src_=vars;editbodypart=\ref[src]"
-	.["Modify organs"] = "?_src_=vars;editorgans=\ref[src]"
-	.["Hallucinate"] = "?_src_=vars;hallucinate=\ref[src]"
+	.["Make AI"] = "?_src_=vars;[HrefToken()];makeai=\ref[src]"
+	.["Modify bodypart"] = "?_src_=vars;[HrefToken()];editbodypart=\ref[src]"
+	.["Modify organs"] = "?_src_=vars;[HrefToken()];editorgans=\ref[src]"
+	.["Hallucinate"] = "?_src_=vars;[HrefToken()];hallucinate=\ref[src]"

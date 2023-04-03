@@ -102,10 +102,12 @@
 
 	//Determines Relevent Population Cap
 	var/relevant_cap
-	if(config.hard_popcap && config.extreme_popcap)
-		relevant_cap = min(config.hard_popcap, config.extreme_popcap)
+	var/hpc = CONFIG_GET(number/hard_popcap)
+	var/epc = CONFIG_GET(number/extreme_popcap)
+	if(hpc && epc)
+		relevant_cap = min(hpc, epc)
 	else
-		relevant_cap = max(config.hard_popcap, config.extreme_popcap)
+		relevant_cap = max(hpc, epc)
 
 	if(href_list["show_preferences"])
 		client.prefs.ShowChoices(src)
@@ -137,7 +139,7 @@
 			return
 
 		if(SSticker.queued_players.len || (relevant_cap && living_player_count() >= relevant_cap && !(ckey(key) in GLOB.admin_datums)))
-			to_chat(usr, "<span class='danger'>[config.hard_popcap_message]</span>")
+			to_chat(usr, "<span class='danger'>[CONFIG_GET(string/hard_popcap_message)]</span>")
 
 			var/queue_position = SSticker.queued_players.Find(usr)
 			if(queue_position == 1)
@@ -385,7 +387,7 @@
 
 	GLOB.joined_player_list += character.ckey
 
-	if(config.allow_latejoin_antagonists && humanc)	//Borgs aren't allowed to be antags. Will need to be tweaked if we get true latejoin ais.
+	if(CONFIG_GET(flag/allow_latejoin_antagonists) && humanc)	//Borgs aren't allowed to be antags. Will need to be tweaked if we get true latejoin ais.
 		if(SSshuttle.emergency)
 			switch(SSshuttle.emergency.mode)
 				if(SHUTTLE_RECALL, SHUTTLE_IDLE)
@@ -403,12 +405,7 @@
 
 
 /mob/dead/new_player/proc/LateChoices()
-	var/mills = world.time - SSticker.round_start_time // 1/10 of a second, not real milliseconds but whatever
-	//var/secs = ((mills % 36000) % 600) / 10 //Not really needed, but I'll leave it here for refrence.. or something
-	var/mins = (mills % 36000) / 600
-	var/hours = mills / 36000
-
-	var/dat = "<div class='notice'>Round Duration: [round(hours)]h [round(mins)]m</div>"
+	var/dat = "<div class='notice'>Round Duration: [DisplayTimeText(world.time - SSticker.round_start_time)]</div>"
 
 	if(SSshuttle.emergency)
 		switch(SSshuttle.emergency.mode)
@@ -469,7 +466,7 @@
 
 	var/mob/living/carbon/human/H = new(loc)
 
-	if(config.force_random_names || jobban_isbanned(src, "appearance"))
+	if(CONFIG_GET(flag/force_random_names) || jobban_isbanned(src, "appearance"))
 		client.prefs.random_character()
 		client.prefs.real_name = client.prefs.pref_species.random_name(gender,1)
 	client.prefs.copy_to(H)

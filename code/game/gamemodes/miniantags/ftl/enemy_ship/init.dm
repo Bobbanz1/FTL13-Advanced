@@ -16,7 +16,7 @@ Def wins = ship explodes into the pieces, everyone involved dies. VIOLENTLY. Bon
 	//doing this because ship should get to qdel faster than map loads
 	var/full_name = "boarding/[S.boarding_map]"
 	var/ship_name = S.name
-	var/datum/star_faction.F = SSship.cname2faction(S.faction)
+	var/datum/star_faction/F = SSship.cname2faction(S.faction)
 	var/crew_type = F.default_crew_outfit
 	var/captain_type = F.default_captain_outfit
 	var/planet_type = S.planet

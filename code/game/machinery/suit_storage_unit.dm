@@ -26,6 +26,7 @@
 	var/uv = FALSE
 	var/uv_super = FALSE
 	var/uv_cycles = 6
+	var/breakout_time = 300
 
 /obj/machinery/suit_storage_unit/standard_unit
 	suit_type = /obj/item/clothing/suit/space/eva
@@ -265,9 +266,27 @@
 	container_resist(user)
 
 /obj/machinery/suit_storage_unit/container_resist(mob/living/user)
+	if(!locked)
+		open_machine()
+		dump_contents()
+		return
+	user.changeNext_move(CLICK_CD_BREAKOUT)
+	user.last_special = world.time + CLICK_CD_BREAKOUT
+	user.visible_message("<span class='notice'>You see [user] kicking against the doors of [src]!</span>", \
+		"<span class='notice'>You start kicking against the doors... (this will take about [DisplayTimeText(breakout_time)].)</span>", \
+		"<span class='italics'>You hear a thump from [src].</span>")
+	if(do_after(user,(breakout_time), target = src))
+		if(!user || user.stat != CONSCIOUS || user.loc != src )
+			return
+		user.visible_message("<span class='warning'>[user] successfully broke out of [src]!</span>", \
+			"<span class='notice'>You successfully break out of [src]!</span>")
+		open_machine()
+		dump_contents()
+		
 	add_fingerprint(user)
 	if(locked)
-		visible_message("<span class='notice'>You see [user] kicking against the doors of [src]!</span>", "<span class='notice'>You start kicking against the doors...</span>")
+		visible_message("<span class='notice'>You see [user] kicking against the doors of [src]!</span>", \
+			"<span class='notice'>You start kicking against the doors...</span>")
 		addtimer(CALLBACK(src, .proc/resist_open, user), 300)
 	else
 		open_machine()

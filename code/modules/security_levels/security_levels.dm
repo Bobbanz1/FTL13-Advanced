@@ -5,8 +5,6 @@ GLOBAL_VAR_INIT(previous_level, 0)
 //2 = general quarters
 //3 = code delta
 
-//config.alert_desc_blue_downto
-
 /proc/set_security_level(level)
 	switch(level)
 		if("green")
@@ -22,7 +20,7 @@ GLOBAL_VAR_INIT(previous_level, 0)
 	if(level >= SEC_LEVEL_GREEN && level <= SEC_LEVEL_DELTA && level != GLOB.security_level)
 		switch(level)
 			if(SEC_LEVEL_GREEN)
-				minor_announce(config.alert_desc_green, "Attention! Situation Green - All systems nominal.")
+				minor_announce(CONFIG_GET(string/alert_green), "Attention! Situation Green - All systems nominal.")
 				if(SSshuttle.emergency.mode == SHUTTLE_CALL || SSshuttle.emergency.mode == SHUTTLE_RECALL)
 					if(GLOB.security_level >= SEC_LEVEL_DELTA)
 						SSshuttle.emergency.modTimer(4)
@@ -34,11 +32,11 @@ GLOBAL_VAR_INIT(previous_level, 0)
 						FA.update_icon()
 			if(SEC_LEVEL_AMBER)
 				if(GLOB.security_level < SEC_LEVEL_AMBER)
-					minor_announce(config.alert_desc_blue_upto, "Attention! Situation Amber - Martial Law",1)
+					minor_announce(CONFIG_GET(string/alert_blue_upto), "Attention! Situation Amber - Martial Law",1)
 					if(SSshuttle.emergency.mode == SHUTTLE_CALL || SSshuttle.emergency.mode == SHUTTLE_RECALL)
 						SSshuttle.emergency.modTimer(0.5)
 				else
-					minor_announce(config.alert_desc_blue_downto, "Attention! Situation Amber - Martial Law")
+					minor_announce(CONFIG_GET(string/alert_blue_downto), "Attention! Situation Amber - Martial Law")
 					if(SSshuttle.emergency.mode == SHUTTLE_CALL || SSshuttle.emergency.mode == SHUTTLE_RECALL)
 						SSshuttle.emergency.modTimer(2)
 				GLOB.security_level = SEC_LEVEL_AMBER
@@ -47,14 +45,14 @@ GLOBAL_VAR_INIT(previous_level, 0)
 						FA.update_icon()
 			if(SEC_LEVEL_GQ)
 				if(GLOB.security_level < SEC_LEVEL_DELTA)
-					minor_announce(config.alert_desc_red_upto, "All hands! General Quarters - Man your battle stations!",1)
+					minor_announce(CONFIG_GET(string/alert_red_upto), "All hands! General Quarters - Man your battle stations!",1)
 					if(SSshuttle.emergency.mode == SHUTTLE_CALL || SSshuttle.emergency.mode == SHUTTLE_RECALL)
 						if(GLOB.security_level == SEC_LEVEL_GREEN)
 							SSshuttle.emergency.modTimer(0.25)
 						else
 							SSshuttle.emergency.modTimer(0.5)
 				else
-					minor_announce(config.alert_desc_red_downto, "All hands! General Quarters - Man your battle stations!")
+					minor_announce(CONFIG_GET(string/alert_red_downto), "All hands! General Quarters - Man your battle stations!")
 				GLOB.security_level = SEC_LEVEL_GQ
 
 				/*	- At the time of commit, setting status displays didn't work properly
@@ -72,7 +70,7 @@ GLOBAL_VAR_INIT(previous_level, 0)
 				for(var/obj/machinery/computer/ftl_navigation/ftl_navigation in GLOB.machines)
 					ftl_navigation.general_quarters = TRUE
 			if(SEC_LEVEL_DELTA)
-				minor_announce(config.alert_desc_delta, "Attention! Delta security level reached!",1)
+				minor_announce(CONFIG_GET(string/alert_delta), "Attention! Delta security level reached!",1)
 				if(SSshuttle.emergency.mode == SHUTTLE_CALL || SSshuttle.emergency.mode == SHUTTLE_RECALL)
 					if(GLOB.security_level == SEC_LEVEL_GREEN)
 						SSshuttle.emergency.modTimer(0.25)

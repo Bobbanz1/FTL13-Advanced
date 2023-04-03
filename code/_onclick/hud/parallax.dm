@@ -283,8 +283,3 @@
 	icon_state = "layer3"
 	speed = 1.4
 	layer = 3
-
-#undef LOOP_NONE
-#undef LOOP_NORMAL
-#undef LOOP_REVERSE
-#undef LOOP_TIME

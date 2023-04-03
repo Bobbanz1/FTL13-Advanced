@@ -13,6 +13,7 @@
 	var/damage_coeff
 	var/scan_level
 	var/precision_coeff
+	var/breakout_time = 1200
 
 /obj/machinery/dna_scannernew/New()
 	..()
@@ -80,16 +81,16 @@
 	open_machine()
 
 /obj/machinery/dna_scannernew/container_resist(mob/living/user)
-	var/breakout_time = 2
 	if(state_open || !locked)	//Open and unlocked, no need to escape
 		state_open = TRUE
 		return
 	user.changeNext_move(CLICK_CD_BREAKOUT)
 	user.last_special = world.time + CLICK_CD_BREAKOUT
-	to_chat(user, "<span class='notice'>You lean on the back of [src] and start pushing the door open... (this will take about [breakout_time] minutes.)</span>")
-	user.visible_message("<span class='italics'>You hear a metallic creaking from [src]!</span>")
+	user.visible_message("<span class='notice'>You see [user] kicking against the door of [src]!</span>", \
+		"<span class='notice'>You lean on the back of [src] and start pushing the door open... (this will take about [DisplayTimeText(breakout_time)].)</span>", \
+		"<span class='italics'>You hear a metallic creaking from [src].</span>")
 
-	if(do_after(user,(breakout_time*60*10), target = src)) //minutes * 60seconds * 10deciseconds
+	if(do_after(user,(breakout_time), target = src))
 		if(!user || user.stat != CONSCIOUS || user.loc != src || state_open || !locked)
 			return
 

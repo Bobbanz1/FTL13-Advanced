@@ -18,6 +18,7 @@ The console is located at computer/gulag_teleporter.dm
 	idle_power_usage = 200
 	active_power_usage = 5000
 	var/locked = FALSE
+	var/breakout_time = 600
 	var/jumpsuit_type = /obj/item/clothing/under/rank/prisoner
 	var/shoes_type = /obj/item/clothing/shoes/sneakers/orange
 	var/obj/machinery/gulag_item_reclaimer/linked_reclaimer = null
@@ -97,14 +98,14 @@ The console is located at computer/gulag_teleporter.dm
 	open_machine()
 
 /obj/machinery/gulag_teleporter/container_resist(mob/living/user)
-	var/breakout_time = 600
 	if(!locked)
 		open_machine()
 		return
 	user.changeNext_move(CLICK_CD_BREAKOUT)
 	user.last_special = world.time + CLICK_CD_BREAKOUT
-	to_chat(user, "<span class='notice'>You lean on the back of [src] and start pushing the door open... (this will take about a minute.)</span>")
-	user.visible_message("<span class='italics'>You hear a metallic creaking from [src]!</span>")
+	user.visible_message("<span class='notice'>You see [user] kicking against the door of [src]!</span>", \
+		"<span class='notice'>You lean on the back of [src] and start pushing the door open... (this will take about [DisplayTimeText(breakout_time)].)</span>", \
+		"<span class='italics'>You hear a metallic creaking from [src].</span>")
 
 	if(do_after(user,(breakout_time), target = src))
 		if(!user || user.stat != CONSCIOUS || user.loc != src || state_open || !locked)

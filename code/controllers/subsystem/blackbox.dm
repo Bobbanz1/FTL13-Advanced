@@ -5,11 +5,22 @@ SUBSYSTEM_DEF(blackbox)
 	runlevels = RUNLEVEL_GAME | RUNLEVEL_POSTGAME
 	init_order = INIT_ORDER_BLACKBOX
 
+	var/list/msg_common = list()
+	var/list/msg_science = list()
+	var/list/msg_command = list()
+	var/list/msg_medical = list()
+	var/list/msg_engineering = list()
+	var/list/msg_security = list()
+	var/list/msg_deathsquad = list()
+	var/list/msg_syndicate = list()
+	var/list/msg_service = list()
+	var/list/msg_cargo = list()
+	var/list/msg_other = list()
+
 	var/list/feedback = list()	//list of datum/feedback_variable
 	var/triggertime = 0
 	var/sealed = FALSE	//time to stop tracking stats?
-	var/list/research_levels = list() //list of highest tech levels attained that isn't lost lost by destruction of RD computers
-	var/list/versions = list() //associative list of any feedback variables that have had their format changed since creation and their current version, remember to update this
+
 
 /datum/controller/subsystem/blackbox/Initialize()
 	triggertime = world.time
@@ -33,7 +44,20 @@ SUBSYSTEM_DEF(blackbox)
 
 
 /datum/controller/subsystem/blackbox/Recover()
+	msg_common = SSblackbox.msg_common
+	msg_science = SSblackbox.msg_science
+	msg_command = SSblackbox.msg_command
+	msg_medical = SSblackbox.msg_medical
+	msg_engineering = SSblackbox.msg_engineering
+	msg_security = SSblackbox.msg_security
+	msg_deathsquad = SSblackbox.msg_deathsquad
+	msg_syndicate = SSblackbox.msg_syndicate
+	msg_service = SSblackbox.msg_service
+	msg_cargo = SSblackbox.msg_cargo
+	msg_other = SSblackbox.msg_other
+
 	feedback = SSblackbox.feedback
+
 	sealed = SSblackbox.sealed
 
 //no touchie
@@ -47,7 +71,10 @@ SUBSYSTEM_DEF(blackbox)
 
 /datum/controller/subsystem/blackbox/Shutdown()
 	sealed = FALSE
-	record_feedback("tally", "ahelp_stats", GLOB.ahelp_tickets.active_tickets.len, "unresolved")
+	set_val("ahelp_unresolved", GLOB.ahelp_tickets.active_tickets.len)
+
+	var/pda_msg_amt = 0
+	var/rc_msg_amt = 0
 
 	for (var/obj/machinery/message_server/MS in GLOB.message_servers)
 		if (MS.pda_msgs.len > pda_msg_amt)
@@ -158,8 +185,7 @@ SUBSYSTEM_DEF(blackbox)
 		return
 	if(!L || !L.key || !L.mind)
 		return
-	var/turf/T = get_turf(L)
-	var/area/placeofdeath = get_area(T.loc)
+	var/area/placeofdeath = get_area(L)
 	var/sqlname = sanitizeSQL(L.real_name)
 	var/sqlkey = sanitizeSQL(L.ckey)
 	var/sqljob = sanitizeSQL(L.mind.assigned_role)
@@ -184,7 +210,7 @@ SUBSYSTEM_DEF(blackbox)
 	var/last_words = sanitizeSQL(L.last_words)
 	var/suicide = sanitizeSQL(L.suiciding)
 	var/map = sanitizeSQL(SSmapping.config.map_name)
-	var/datum/DBQuery/query_report_death = SSdbcore.NewQuery("INSERT INTO [format_table_name("death")] (pod, x_coord, y_coord, z_coord, mapname, server_ip, server_port, round_id, tod, job, special, name, byondkey, laname, lakey, bruteloss, fireloss, brainloss, oxyloss, toxloss, cloneloss, staminaloss, last_words) VALUES ('[sqlpod]', '[x_coord]', '[y_coord]', '[z_coord]', '[map]', INET_ATON(IF('[world.internet_address]' LIKE '', '0', '[world.internet_address]')), '[world.port]', [GLOB.round_id], '[SQLtime()]', '[sqljob]', '[sqlspecial]', '[sqlname]', '[sqlkey]', '[laname]', '[lakey]', [sqlbrute], [sqlfire], [sqlbrain], [sqloxy], [sqltox], [sqlclone], [sqlstamina], [last_words], [suicide])")
+	var/datum/DBQuery/query_report_death = SSdbcore.NewQuery("INSERT INTO [format_table_name("death")] (pod, x_coord, y_coord, z_coord, mapname, server_ip, server_port, round_id, tod, job, special, name, byondkey, laname, lakey, bruteloss, fireloss, brainloss, oxyloss, toxloss, cloneloss, staminaloss, last_words, suicide) VALUES ('[sqlpod]', '[x_coord]', '[y_coord]', '[z_coord]', '[map]', INET_ATON(IF('[world.internet_address]' LIKE '', '0', '[world.internet_address]')), '[world.port]', [GLOB.round_id], '[SQLtime()]', '[sqljob]', '[sqlspecial]', '[sqlname]', '[sqlkey]', '[laname]', '[lakey]', [sqlbrute], [sqlfire], [sqlbrain], [sqloxy], [sqltox], [sqlclone], [sqlstamina], '[last_words]', [suicide])")
 	query_report_death.Execute()
 
 /datum/controller/subsystem/blackbox/proc/Seal()
@@ -200,7 +226,7 @@ SUBSYSTEM_DEF(blackbox)
 /datum/feedback_variable
 	var/variable
 	var/value
-	var/details
+	var/list/details
 
 /datum/feedback_variable/New(param_variable, param_value = 0)
 	variable = param_variable
@@ -238,19 +264,17 @@ SUBSYSTEM_DEF(blackbox)
 /datum/feedback_variable/proc/get_variable()
 	return variable
 
-/datum/feedback_variable/proc/set_details(text)
-	if (istext(text))
-		details = text
+/datum/feedback_variable/proc/set_details(deets)
+	details = list("\"[deets]\"")
 
-/datum/feedback_variable/proc/add_details(text)
-	if (istext(text))
-		if (!details)
-			details = text
-		else
-			details += " [text]"
+/datum/feedback_variable/proc/add_details(deets)
+	if (!details)
+		set_details(deets)
+	else
+		details += "\"[deets]\""
 
 /datum/feedback_variable/proc/get_details()
-	return details
+	return details ? details.Join(" | ") : null
 
 /datum/feedback_variable/proc/get_parsed()
-	return list(variable,value,details)
+	return list(variable,value,details.Join(" | "))

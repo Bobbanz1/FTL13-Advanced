@@ -13,6 +13,9 @@ CONFIG_DEF(string/servername)	// server name (the name of the game window)
 CONFIG_DEF(string/serversqlname)	// short form server name used for the DB
 	protection = CONFIG_ENTRY_LOCKED
 
+CONFIG_DEF(string/bot_ip)	// short form server name used for the DB
+	protection = CONFIG_ENTRY_LOCKED
+
 CONFIG_DEF(string/stationname)	// station name (the name of the station in-game)
 
 CONFIG_DEF(number/lobby_countdown)	// In between round countdown.

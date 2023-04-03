@@ -168,7 +168,7 @@
 
 							c.name = copy.name
 
-							c.fields = copy.fiicons/obj/items_and_weapons.dmi
+							c.fields = copy.fields
 
 							c.update_icon()
 
@@ -327,7 +327,7 @@
 
 					var/icon/small_img = icon(temp_img) //Icon() is needed or else temp_img will be rescaled too >.>
 
-					var/icon/ic = icon('icons/obj/items.dmi',"photo")
+					var/icon/ic = icon('icons/obj/items_and_weapons.dmi',"photo")
 
 					small_img.Scale(8, 8)
 

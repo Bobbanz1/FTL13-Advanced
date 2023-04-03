@@ -23,6 +23,7 @@
 	var/obj/structure/tray/connected = null
 	var/locked = FALSE
 	var/opendir = SOUTH
+	var/breakout_time = 600
 
 /obj/structure/bodycontainer/Destroy()
 	open()
@@ -84,11 +85,20 @@
 	qdel(src)
 
 /obj/structure/bodycontainer/container_resist(mob/living/user)
-	open()
-
-/obj/structure/bodycontainer/relay_container_resist(mob/living/user, obj/O)
-	to_chat(user, "<span class='notice'>You slam yourself into the side of [O].</span>")
-	container_resist(user)
+	if(!locked)
+		open()
+		return
+	user.changeNext_move(CLICK_CD_BREAKOUT)
+	user.last_special = world.time + CLICK_CD_BREAKOUT
+	user.visible_message(null, \
+		"<span class='notice'>You lean on the back of [src] and start pushing the tray open... (this will take about [DisplayTimeText(breakout_time)].)</span>", \
+		"<span class='italics'>You hear a metallic creaking from [src].</span>")
+	if(do_after(user,(breakout_time), target = src))
+		if(!user || user.stat != CONSCIOUS || user.loc != src )
+			return
+		user.visible_message("<span class='warning'>[user] successfully broke out of [src]!</span>", \
+			"<span class='notice'>You successfully break out of [src]!</span>")
+		open()
 
 /obj/structure/bodycontainer/proc/open()
 	playsound(src.loc, 'sound/items/deconstruct.ogg', 50, 1)
