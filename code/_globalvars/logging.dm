@@ -14,6 +14,8 @@ GLOBAL_VAR(round_id)
 GLOBAL_PROTECT(round_id)
 GLOBAL_VAR(config_error_log)
 GLOBAL_PROTECT(config_error_log)
+GLOBAL_VAR(manifest_log)
+GLOBAL_PROTECT(manifest_log)
 
 GLOBAL_LIST_EMPTY(bombers)
 GLOBAL_PROTECT(bombers)
