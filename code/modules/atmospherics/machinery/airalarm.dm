@@ -68,8 +68,8 @@
 	var/shorted = 0
 	var/buildstage = 2 // 2 = complete, 1 = no wires,  0 = circuit gone
 
-	var/frequency = 1439
-	var/alarm_frequency = 1437
+	var/frequency = FREQ_ATMOS_CONTROL
+	var/alarm_frequency = FREQ_ATMOS_ALARMS
 	var/datum/radio_frequency/radio_connection
 
 	var/list/TLV = list( // Breathable air.
@@ -399,22 +399,21 @@
 /obj/machinery/airalarm/proc/set_frequency(new_frequency)
 	SSradio.remove_object(src, frequency)
 	frequency = new_frequency
-	radio_connection = SSradio.add_object(src, frequency, GLOB.RADIO_TO_AIRALARM)
+	radio_connection = SSradio.add_object(src, frequency, RADIO_TO_AIRALARM)
 
 /obj/machinery/airalarm/proc/send_signal(target, list/command)//sends signal 'command' to 'target'. Returns 0 if no radio connection, 1 otherwise
 	if(!radio_connection)
 		return 0
 
 	var/datum/signal/signal = new
-	signal.transmission_method = 1 //radio signal
+	signal.transmission_method = TRANSMISSION_RADIO
 	signal.source = src
 
 	signal.data = command
 	signal.data["tag"] = target
 	signal.data["sigtype"] = "command"
 
-	radio_connection.post_signal(src, signal, GLOB.RADIO_FROM_AIRALARM)
-//			to_chat(world, text("Signal [] Broadcasted to []", command, target))
+	radio_connection.post_signal(src, signal, RADIO_FROM_AIRALARM)
 
 	return 1
 
@@ -616,7 +615,7 @@
 
 	var/datum/signal/alert_signal = new
 	alert_signal.source = src
-	alert_signal.transmission_method = 1
+	alert_signal.transmission_method = TRANSMISSION_RADIO
 	alert_signal.data["zone"] = A.name
 	alert_signal.data["type"] = "Atmospheric"
 

@@ -84,6 +84,8 @@ SUBSYSTEM_DEF(ticker)
 			for(var/client/C in GLOB.clients)
 				window_flash(C, ignorepref = TRUE) //let them know lobby has opened up.
 			to_chat(world, "<span class='boldnotice'>Welcome to [station_name()]!</span>")
+			if(CONFIG_GET(flag/irc_announce_new_game))
+				SERVER_TOOLS_CHAT_BROADCAST("New round starting on [SSmapping.config.map_name]!")
 			current_state = GAME_STATE_PREGAME
 			//Everyone who wants to be an observer is now spawned
 			create_observers()
@@ -666,7 +668,7 @@ SUBSYSTEM_DEF(ticker)
 		if(5) //every 5 ticks check if there is a slot available
 			if(living_player_count() < hpc)
 				if(next_in_line && next_in_line.client)
-					to_chat(next_in_line, "<span class='userdanger'>A slot has opened! You have approximately 20 seconds to join. <a href='?src=\ref[next_in_line];late_join=override'>\>\>Join Game\<\<</a></span>")
+					to_chat(next_in_line, "<span class='userdanger'>A slot has opened! You have approximately 20 seconds to join. <a href='?src=[REF(next_in_line)];late_join=override'>\>\>Join Game\<\<</a></span>")
 					SEND_SOUND(next_in_line, sound('sound/misc/notice1.ogg'))
 					next_in_line.LateChoices()
 					return

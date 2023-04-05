@@ -100,7 +100,7 @@
 		if(!istype(get_area(PC), /area/shuttle/ftl))
 			continue
 		var/list/shipweapon = list()
-		shipweapon["id"]	= "\ref[PC]"
+		shipweapon["id"]	= "[REF(PC)]"
 		shipweapon["name"] = "[PC]"
 		if(PC.chip)
 			shipweapon["charge"] = PC.current_charge

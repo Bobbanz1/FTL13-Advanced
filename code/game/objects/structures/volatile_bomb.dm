@@ -36,7 +36,7 @@
 				'sound/effects/bodyfall4.ogg',),40,0)
 
 obj/structure/volatile_bomb/attackby(obj/item/I, mob/living/user)
-	message_admins("[key_name_admin(user)] (<A HREF='?_src_=holder;adminmoreinfo=\ref[user]'>?</A>) (<A HREF='?_src_=holder;adminplayerobservefollow=\ref[user]'>FLW</A>) Hit a volatile bomb!")
+	message_admins("[key_name_admin(user)] (<A HREF='?_src_=holder;adminmoreinfo=[REF(user)]'>?</A>) (<A HREF='?_src_=holder;adminplayerobservefollow=[REF(user)]'>FLW</A>) Hit a volatile bomb!")
 	if(user.a_intent == "harm")
 		user.visible_message("<span class='danger'>[user] is fucking mentally handicapped and hits the [src] with [I].</span>") //it's true
 		playsound(src.loc, 'sound/items/trayhit2.ogg')

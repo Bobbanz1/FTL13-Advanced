@@ -1,4 +1,7 @@
 
+#define PR_ANNOUNCEMENTS_PER_ROUND 5 //The number of unique PR announcements allowed per round
+									//This makes sure that a single person can only spam 3 reopens and 3 closes before being ignored
+
 /world/New()
 	GLOB.map_ready = 1
 	log_world("World loaded at [time_stamp()]")
@@ -16,8 +19,7 @@
 
 	SetupLogs()
 
-	if(!RunningService())	//tgs2 support
-		GLOB.revdata.DownloadPRDetails()
+	SERVER_TOOLS_ON_NEW
 
 	load_motd()
 	load_admins()
@@ -29,9 +31,6 @@
 	GLOB.timezoneOffset = text2num(time2text(0,"hh")) * 36000
 
 	Master.Initialize(10, FALSE)
-
-	if(CONFIG_GET(flag/irc_announce_new_game))
-		IRCBroadcast("New round starting on [SSmapping.config.map_name]!")
 
 /world/proc/SetupExternalRSC()
 #if (PRELOAD_RSC == 0)
@@ -80,6 +79,7 @@
 	GLOB.world_game_log = file("[GLOB.log_directory]/game.log")
 	GLOB.world_attack_log = file("[GLOB.log_directory]/attack.log")
 	GLOB.world_runtime_log = file("[GLOB.log_directory]/runtime.log")
+	GLOB.world_qdel_log = file("[GLOB.log_directory]/qdel.log")
 	GLOB.world_href_log = file("[GLOB.log_directory]/hrefs.html")
 	GLOB.world_game_log << "\n\nStarting up round ID [GLOB.round_id]. [time_stamp()]\n---------------------"
 	GLOB.world_attack_log << "\n\nStarting up round ID [GLOB.round_id]. [time_stamp()]\n---------------------"
@@ -101,6 +101,8 @@
 	if(!pinging && !playing && config && CONFIG_GET(flag/log_world_topic))
 		GLOB.world_game_log << "TOPIC: \"[T]\", from:[addr], master:[master], key:[key]"
 
+	SERVER_TOOLS_ON_TOPIC	//redirect to server tools if necessary
+
 	var/comms_key = CONFIG_GET(string/comms_key)
 	var/key_valid = (comms_key && input["key"] == comms_key)
 
@@ -116,17 +118,6 @@
 			if(M.client)
 				n++
 		return n
-
-	else if("ircstatus" in input)	//tgs2 support
-		var/static/last_irc_status = 0
-		if(world.time - last_irc_status < 50)
-			return
-		var/list/adm = get_admin_counts()
-		var/list/allmins = adm["total"]
-		var/status = "Admins: [allmins.len] (Active: [english_list(adm["present"])] AFK: [english_list(adm["afk"])] Stealth: [english_list(adm["stealth"])] Skipped: [english_list(adm["noflags"])]). "
-		status += "Players: [GLOB.clients.len] (Active: [get_active_player_count(0,1,0)]). Mode: [SSticker.mode.name]."
-		send2irc("Status", status)
-		last_irc_status = world.time
 
 	else if("status" in input)
 		var/list/s = list()
@@ -190,29 +181,6 @@
 					CM.overrideCooldown()
 			if(input["crossmessage"] == "News_Report")
 				minor_announce(input["message"], "Breaking Update From [input["message_sender"]]")
-
-	else if("adminmsg" in input)	//tgs2 support
-		if(!key_valid)
-			return "Bad Key"
-		else
-			return IrcPm(input["adminmsg"],input["msg"],input["sender"])
-
-	else if("namecheck" in input)	//tgs2 support
-		if(!key_valid)
-			return "Bad Key"
-		else
-			log_admin("IRC Name Check: [input["sender"]] on [input["namecheck"]]")
-			message_admins("IRC name checking on [input["namecheck"]] from [input["sender"]]")
-			return keywords_lookup(input["namecheck"],1)
-	else if("getAdmins" in input)
-		var/list/s = list()
-		var/list/adm = get_admin_counts()
-		var/list/presentmins = adm["present"]
-		var/list/afkmins = adm["afk"]
-		s["admins"] = presentmins
-		s["admins"] += afkmins
-
-		return list2params(s)
 		
 	else if("server_hop" in input)
 		show_server_hop_transfer_screen(input["server_hop"])
@@ -232,7 +200,7 @@
 		C.AnnouncePR(final_composed)
 
 /world/Reboot(reason = 0, fast_track = FALSE)
-	ServiceReboot() //handles alternative actions if necessary
+	SERVER_TOOLS_ON_REBOOT
 	if (reason || fast_track) //special reboot, do none of the normal stuff
 		if (usr)
 			log_admin("[key_name(usr)] Has requested an immediate world restart via client side debugging tools")

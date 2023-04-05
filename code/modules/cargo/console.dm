@@ -141,7 +141,7 @@ proc/get_cost_multiplier(var/datum/planet/PL)
 				if(is_type_in_list(O, GLOB.objective_delivery_types))
 					data["deliver"] += list(list(
 						"name" = O.name,
-						"id" = "\ref[O]"
+						"id" = "[REF(O)]"
 					))
 				var/price = export_item_and_contents(O, contraband, emagged, dry_run=TRUE)
 				if(!price)
@@ -156,7 +156,7 @@ proc/get_cost_multiplier(var/datum/planet/PL)
 					data["sell"] += list(list(
 						"name" = O.name,
 						"cost" = price,// / cost_mult,
-						"id" = "\ref[O]"
+						"id" = "[REF(O)]"
 					))
 
 
@@ -335,14 +335,14 @@ proc/get_cost_multiplier(var/datum/planet/PL)
 
 /obj/machinery/computer/cargo/proc/post_signal(command)
 
-	var/datum/radio_frequency/frequency = SSradio.return_frequency(1435)
+	var/datum/radio_frequency/frequency = SSradio.return_frequency(FREQ_STATUS_DISPLAYS)
 
 	if(!frequency)
 		return
 
 	var/datum/signal/status_signal = new
 	status_signal.source = src
-	status_signal.transmission_method = 1
+	status_signal.transmission_method = TRANSMISSION_RADIO
 	status_signal.data["command"] = command
 
 	frequency.post_signal(src, status_signal)

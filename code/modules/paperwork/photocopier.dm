@@ -80,21 +80,21 @@
 
 	if(copy || photocopy || doccopy || (ass && (ass.loc == src.loc)))
 
-		dat += "<a href='byond://?src=\ref[src];remove=1'>Remove Paper</a><BR>"
+		dat += "<a href='byond://?src=[REF(src)];remove=1'>Remove Paper</a><BR>"
 
 		if(toner)
 
-			dat += "<a href='byond://?src=\ref[src];copy=1'>Copy</a><BR>"
+			dat += "<a href='byond://?src=[REF(src)];copy=1'>Copy</a><BR>"
 
 			dat += "Printing: [copies] copies."
 
-			dat += "<a href='byond://?src=\ref[src];min=1'>-</a> "
+			dat += "<a href='byond://?src=[REF(src)];min=1'>-</a> "
 
-			dat += "<a href='byond://?src=\ref[src];add=1'>+</a><BR><BR>"
+			dat += "<a href='byond://?src=[REF(src)];add=1'>+</a><BR><BR>"
 
 			if(photocopy)
 
-				dat += "Printing in <a href='byond://?src=\ref[src];colortoggle=1'>[greytoggle]</a><BR><BR>"
+				dat += "Printing in <a href='byond://?src=[REF(src)];colortoggle=1'>[greytoggle]</a><BR><BR>"
 
 	else if(toner)
 
@@ -102,7 +102,7 @@
 
 	if(isAI(user))
 
-		dat += "<a href='byond://?src=\ref[src];aipic=1'>Print photo from database</a><BR><BR>"
+		dat += "<a href='byond://?src=[REF(src)];aipic=1'>Print photo from database</a><BR><BR>"
 
 	dat += "Current toner level: [toner]"
 

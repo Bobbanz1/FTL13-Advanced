@@ -1,5 +1,9 @@
 //defines that give qdel hints. these can be given as a return in destory() or by calling
 
+#define GC_QUEUE_PREQUEUE 1
+#define GC_QUEUE_CHECK 2
+#define GC_QUEUE_HARDDELETE 3
+#define GC_QUEUE_COUNT 3 //increase this when adding more steps.
 
 #define QDEL_HINT_QUEUE 		0 //qdel should queue the object for deletion.
 #define QDEL_HINT_LETMELIVE		1 //qdel should let the object live after calling destory.

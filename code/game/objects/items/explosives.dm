@@ -43,7 +43,7 @@
 				message_say = "[uppertext(user.mind.gang_datum.name)] RULES!"
 	user.say(message_say)
 	target = user
-	message_admins("[key_name_admin(user)](<A HREF='?_src_=holder;adminmoreinfo=\ref[user]'>?</A>) (<A HREF='?_src_=holder;adminplayerobservefollow=\ref[user]'>FLW</A>) suicided with [src.name] at ([x],[y],[z] - <A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[x];Y=[y];Z=[z]'>JMP</a>)",0,1)
+	message_admins("[key_name_admin(user)](<A HREF='?_src_=holder;adminmoreinfo=[REF(user)]'>?</A>) (<A HREF='?_src_=holder;adminplayerobservefollow=[REF(user)]'>FLW</A>) suicided with [src.name] at ([x],[y],[z] - <A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[x];Y=[y];Z=[z]'>JMP</a>)",0,1)
 	message_admins("[key_name(user)] suicided with [src.name] at ([x],[y],[z])")
 	sleep(10)
 	explode(get_turf(user))
@@ -87,7 +87,7 @@
 		src.target = AM
 		loc = null
 
-		message_admins("[key_name_admin(user)](<A HREF='?_src_=holder;adminmoreinfo=\ref[user]'>?</A>) (<A HREF='?_src_=holder;adminplayerobservefollow=\ref[user]'>FLW</A>) planted [src.name] on [target.name] at ([target.x],[target.y],[target.z] - <A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[target.x];Y=[target.y];Z=[target.z]'>JMP</a>) with [timer] second fuse",0,1)
+		message_admins("[key_name_admin(user)](<A HREF='?_src_=holder;adminmoreinfo=[REF(user)]'>?</A>) (<A HREF='?_src_=holder;adminplayerobservefollow=[REF(user)]'>FLW</A>) planted [src.name] on [target.name] at ([target.x],[target.y],[target.z] - <A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[target.x];Y=[target.y];Z=[target.z]'>JMP</a>) with [timer] second fuse",0,1)
 		log_game("[key_name(user)] planted [src.name] on [target.name] at ([target.x],[target.y],[target.z]) with [timer] second fuse")
 
 		target.add_overlay(image_overlay, 1)

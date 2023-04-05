@@ -235,7 +235,7 @@
 		var/choice = input("WARNING: There is a loaded shell inside the MAC cannon! Opening it may cause severe damage to the ship, are you sure you wish to open it?", "WARNING!", "No") in list("Yes", "No")
 		if(choice != "Yes")
 			return
-		message_admins("[key_name_admin(user)] (<A HREF='?_src_=holder;adminmoreinfo=\ref[user]'>?</A>) (<A HREF='?_src_=holder;adminplayerobservefollow=\ref[user]'>FLW</A>) opened an armed MAC cannon!")
+		message_admins("[key_name_admin(user)] (<A HREF='?_src_=holder;adminmoreinfo=[REF(user)]'>?</A>) (<A HREF='?_src_=holder;adminplayerobservefollow=[REF(user)]'>FLW</A>) opened an armed MAC cannon!")
 	toggle_loader()
 
 /obj/machinery/mac_breech/proc/throw_loader()

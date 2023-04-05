@@ -310,11 +310,11 @@
 
 	var/dat = ""
 	dat += "AntiMatter Control Panel<BR>"
-	dat += "<A href='?src=\ref[src];close=1'>Close</A><BR>"
-	dat += "<A href='?src=\ref[src];refresh=1'>Refresh</A><BR>"
-	dat += "<A href='?src=\ref[src];refreshicons=1'>Force Shielding Update</A><BR><BR>"
+	dat += "<A href='?src=[REF(src)];close=1'>Close</A><BR>"
+	dat += "<A href='?src=[REF(src)];refresh=1'>Refresh</A><BR>"
+	dat += "<A href='?src=[REF(src)];refreshicons=1'>Force Shielding Update</A><BR><BR>"
 	dat += "Status: [(active?"Injecting":"Standby")] <BR>"
-	dat += "<A href='?src=\ref[src];togglestatus=1'>Toggle Status</A><BR>"
+	dat += "<A href='?src=[REF(src)];togglestatus=1'>Toggle Status</A><BR>"
 
 	check_core_stability()
 	dat += "Overall Stability: [stored_core_stability]%<BR>"
@@ -330,11 +330,11 @@
 	if(!fueljar)
 		dat += "<BR>No fuel receptacle detected."
 	else
-		dat += "<A href='?src=\ref[src];ejectjar=1'>Eject</A><BR>"
+		dat += "<A href='?src=[REF(src)];ejectjar=1'>Eject</A><BR>"
 		dat += "- [fueljar.fuel]/[fueljar.fuel_max] Units<BR>"
 
 		dat += "- Injecting: [fuel_injection] units<BR>"
-		dat += "- <A href='?src=\ref[src];strengthdown=1'>--</A>|<A href='?src=\ref[src];strengthup=1'>++</A><BR><BR>"
+		dat += "- <A href='?src=[REF(src)];strengthdown=1'>--</A>|<A href='?src=[REF(src)];strengthup=1'>++</A><BR><BR>"
 
 
 	//user << browse(dat, "window=AMcontrol;size=420x500")

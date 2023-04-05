@@ -36,7 +36,7 @@
 	center = T
 
 	spawn(10)	// must wait for map loading to finish
-		SSradio.add_object(src, freq, GLOB.RADIO_MAGNETS)
+		SSradio.add_object(src, freq, RADIO_MAGNETS)
 
 	spawn()
 		magnetic_process()
@@ -199,7 +199,7 @@
 	anchored = TRUE
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 45
-	var/frequency = 1449
+	var/frequency = FREQ_MAGNETS
 	var/code = 0
 	var/list/magnets = list()
 	var/title = "Magnetic Control Console"
@@ -224,7 +224,7 @@
 				magnets.Add(M)
 
 	spawn(45)	// must wait for map loading to finish
-		radio_connection = SSradio.add_object(src, frequency, GLOB.RADIO_MAGNETS)
+		radio_connection = SSradio.add_object(src, frequency, RADIO_MAGNETS)
 
 
 	if(path) // check for default path
@@ -253,9 +253,9 @@
 	var/dat = "<B>Magnetic Control Console</B><BR><BR>"
 	if(!autolink)
 		dat += {"
-		Frequency: <a href='?src=\ref[src];operation=setfreq'>[frequency]</a><br>
-		Code: <a href='?src=\ref[src];operation=setfreq'>[code]</a><br>
-		<a href='?src=\ref[src];operation=probe'>Probe Generators</a><br>
+		Frequency: <a href='?src=[REF(src)];operation=setfreq'>[frequency]</a><br>
+		Code: <a href='?src=[REF(src)];operation=setfreq'>[code]</a><br>
+		<a href='?src=[REF(src)];operation=probe'>Probe Generators</a><br>
 		"}
 
 	if(magnets.len >= 1)
@@ -264,11 +264,11 @@
 		var/i = 0
 		for(var/obj/machinery/magnetic_module/M in magnets)
 			i++
-			dat += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;< \[[i]\] (<a href='?src=\ref[src];radio-op=togglepower'>[M.on ? "On":"Off"]</a>) | Electricity level: <a href='?src=\ref[src];radio-op=minuselec'>-</a> [M.electricity_level] <a href='?src=\ref[src];radio-op=pluselec'>+</a>; Magnetic field: <a href='?src=\ref[src];radio-op=minusmag'>-</a> [M.magnetic_field] <a href='?src=\ref[src];radio-op=plusmag'>+</a><br>"
+			dat += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;< \[[i]\] (<a href='?src=[REF(src)];radio-op=togglepower'>[M.on ? "On":"Off"]</a>) | Electricity level: <a href='?src=[REF(src)];radio-op=minuselec'>-</a> [M.electricity_level] <a href='?src=[REF(src)];radio-op=pluselec'>+</a>; Magnetic field: <a href='?src=[REF(src)];radio-op=minusmag'>-</a> [M.magnetic_field] <a href='?src=[REF(src)];radio-op=plusmag'>+</a><br>"
 
-	dat += "<br>Speed: <a href='?src=\ref[src];operation=minusspeed'>-</a> [speed] <a href='?src=\ref[src];operation=plusspeed'>+</a><br>"
-	dat += "Path: {<a href='?src=\ref[src];operation=setpath'>[path]</a>}<br>"
-	dat += "Moving: <a href='?src=\ref[src];operation=togglemoving'>[moving ? "Enabled":"Disabled"]</a>"
+	dat += "<br>Speed: <a href='?src=[REF(src)];operation=minusspeed'>-</a> [speed] <a href='?src=[REF(src)];operation=plusspeed'>+</a><br>"
+	dat += "Path: {<a href='?src=[REF(src)];operation=setpath'>[path]</a>}<br>"
+	dat += "Moving: <a href='?src=[REF(src)];operation=togglemoving'>[moving ? "Enabled":"Disabled"]</a>"
 
 
 	user << browse(dat, "window=magnet;size=400x500")
@@ -283,7 +283,7 @@
 
 		// Prepare signal beforehand, because this is a radio operation
 		var/datum/signal/signal = new
-		signal.transmission_method = 1 // radio transmission
+		signal.transmission_method = TRANSMISSION_RADIO
 		signal.source = src
 		signal.frequency = frequency
 		signal.data["code"] = code
@@ -306,7 +306,7 @@
 
 		// Broadcast the signal
 
-		radio_connection.post_signal(src, signal, filter = GLOB.RADIO_MAGNETS)
+		radio_connection.post_signal(src, signal, filter = RADIO_MAGNETS)
 
 		spawn(1)
 			updateUsrDialog() // pretty sure this increases responsiveness
@@ -332,7 +332,8 @@
 			if("togglemoving")
 				moving = !moving
 				if(moving)
-					spawn() MagnetMove()
+					spawn()
+						MagnetMove()
 
 
 	updateUsrDialog()
@@ -349,7 +350,7 @@
 
 		// Prepare the radio signal
 		var/datum/signal/signal = new
-		signal.transmission_method = 1 // radio transmission
+		signal.transmission_method = TRANSMISSION_RADIO
 		signal.source = src
 		signal.frequency = frequency
 		signal.data["code"] = code
@@ -373,7 +374,7 @@
 
 		// Broadcast the signal
 		spawn()
-			radio_connection.post_signal(src, signal, filter = GLOB.RADIO_MAGNETS)
+			radio_connection.post_signal(src, signal, filter = RADIO_MAGNETS)
 
 		if(speed == 10)
 			sleep(1)

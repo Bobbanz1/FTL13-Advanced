@@ -57,7 +57,7 @@ obj/item/circuitboard/computer/shuttle/advanced/attackby(obj/item/I, mob/user, p
 	else //Main content
 		if(admin_controlled)
 			dat += "Authorized personnel only<br>"
-			dat += "<A href='?src=\ref[src];request=1]'>Request Authorization</A><hr>"
+			dat += "<A href='?src=[REF(src)];request=1)]'>Request Authorization</A><hr>"
 		else if(SSstarmap.ftl_is_spooling) //Don't let them do anything if we are starting FTL
 			dat += "<b>Unstable bluespace tether detected!</b><br>Flight controls disabled during FTL spoolup.<hr><hr>"
 		else
@@ -65,7 +65,7 @@ obj/item/circuitboard/computer/shuttle/advanced/attackby(obj/item/I, mob/user, p
 				if(M.id == "fob") //Only the FOB can scan
 					switch(SSstarmap.planet_loaded)
 						if(FALSE)
-							dat += "<A href='?src=\ref[src];scan=[1]'>Scan [SSstarmap.current_planet] for viable landing sites</A><hr><hr>"
+							dat += "<A href='?src=[REF(src)];scan=[1]'>Scan [SSstarmap.current_planet] for viable landing sites</A><hr><hr>"
 						if(PLANET_LOADING)
 							dat += "<b>Currently searching for viable landing site</b><hr><hr>"
 						if(PLANET_IS_A_GAS_GIANT)
@@ -83,7 +83,7 @@ obj/item/circuitboard/computer/shuttle/advanced/attackby(obj/item/I, mob/user, p
 							if(S.dock_distance < M.max_distance) //Are we the cargo shuttle, and unable to land at the planet?
 								switch(M.canDock(S))
 									if(SHUTTLE_CAN_DOCK)
-										dat += "<A href='?src=\ref[src];move=[S.id]'>Send to [S.name]</A><hr>"
+										dat += "<A href='?src=[REF(src)];move=[S.id]'>Send to [S.name]</A><hr>"
 									if(SHUTTLE_NOT_A_DOCKING_PORT)
 										dat += "MAJOR ERROR - Please report to Centcomm.<hr>"
 									if(SHUTTLE_ALREADY_DOCKED)
@@ -110,7 +110,7 @@ obj/item/circuitboard/computer/shuttle/advanced/attackby(obj/item/I, mob/user, p
 							if(S.dock_distance < M.max_distance) //Are we the cargo shuttle, and unable to land at the planet?
 								switch(M.canDock(S))
 									if(SHUTTLE_CAN_DOCK)
-										dat += "<A href='?src=\ref[src];move=[S.id]'>Send to [S.name]</A><hr>"
+										dat += "<A href='?src=[REF(src)];move=[S.id]'>Send to [S.name]</A><hr>"
 									if(SHUTTLE_NOT_A_DOCKING_PORT)
 										dat += "MAJOR ERROR - Please report to Centcomm.<hr>"
 									if(SHUTTLE_ALREADY_DOCKED)
@@ -128,7 +128,7 @@ obj/item/circuitboard/computer/shuttle/advanced/attackby(obj/item/I, mob/user, p
 						// 	dat += "[S.name] is not compatible with this shuttle<hr>" //Turning this off since half of the docks are now invalid
 
 
-	dat += "<a href='?src=\ref[user];mach_close=computer'>Close</a>"
+	dat += "<a href='?src=[REF(user)];mach_close=computer'>Close</a>"
 
 	var/datum/browser/popup = new(user, "computer", M ? M.name : "shuttle", 500, 500)
 	popup.set_content("<center>[dat]</center>")

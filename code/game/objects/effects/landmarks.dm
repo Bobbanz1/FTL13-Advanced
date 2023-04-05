@@ -1,25 +1,15 @@
 /obj/effect/landmark
-
 	name = "landmark"
-
 	icon = 'icons/mob/screen_gen.dmi'
-
 	icon_state = "x2"
-
 	anchored = TRUE
-
 	shuttle_abstract_movable = 1
-
 	invisibility = INVISIBILITY_ABSTRACT
-
-
+	use_tag = TRUE
 
 /obj/effect/landmark/New()
-
 	..()
-
 	tag = text("landmark*[]", name)
-
 	GLOB.landmarks_list += src
 
 

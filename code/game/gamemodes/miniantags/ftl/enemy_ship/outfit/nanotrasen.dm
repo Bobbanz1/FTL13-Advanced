@@ -8,8 +8,8 @@
 /datum/outfit/defender/nanotrasen/post_equip(mob/living/carbon/human/H)
   . = ..()
   var/obj/item/device/radio/R = H.ears
-  R.set_frequency(GLOB.CENTCOM_FREQ)
-  R.freqlock = 1
+  R.set_frequency(FREQ_CENTCOM)
+  R.freqlock = TRUE
 
 /datum/outfit/defender/nanotrasen/announce_to()
   var/text = "<B>You need to protect NT property!</B>\n"
@@ -38,8 +38,8 @@
   var/obj/item/card/id/I = H.wear_id
   I.update_label("Cpt. [H.real_name]", "NT Ship Commander")
   var/obj/item/device/radio/R = H.ears
-  R.set_frequency(GLOB.CENTCOM_FREQ)
-  R.freqlock = 1
+  R.set_frequency(FREQ_CENTCOM)
+  R.freqlock = TRUE
   var/obj/item/device/radio/uplink/U = H.get_item_by_slot(slot_l_store)
   U.hidden_uplink.name = "Centcomm TCNet"
   U.hidden_uplink.style = "nanotrasen"

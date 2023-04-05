@@ -97,7 +97,7 @@
 				system_list["in_range"] = 0
 			system_list["x"] = system.x
 			system_list["y"] = system.y
-			system_list["star_id"] = "\ref[system]"
+			system_list["star_id"] = "[REF(system)]"
 			system_list["is_current"] = (system == SSstarmap.current_system)
 			system_list["alignment"] = system.alignment
 			system_list["visited"] = system.visited
@@ -142,7 +142,7 @@
 /obj/structure/viewscreen_controller/attack_hand(mob/user)
 	var/dat = "<B>Viewscreen Control Panel</B><HR>"
 	dat += "Viewing Mode: [linked.view_mode ? "Navigation" : "Tactical"]"
-	dat += "<BR><BR><A href=?src=\ref[src];switch=1>Switch View Modes</A>"
+	dat += "<BR><BR><A href=?src=[REF(src)];switch=1>Switch View Modes</A>"
 
 	var/datum/browser/popup = new(user, "view_control", name, 400, 300)
 

@@ -2,19 +2,10 @@
 	var/originmastercommit
 	var/commit
 	var/list/testmerge = list()
-	var/has_pr_details = FALSE	//tgs2 support
 	var/date
 
 /datum/getrev/New()
-	if(world.RunningService() && fexists(SERVICE_PR_TEST_JSON))
-		testmerge = json_decode(file2text(SERVICE_PR_TEST_JSON))
-#ifdef SERVERTOOLS
-	else if(!world.RunningService() && fexists("../prtestjob.lk"))	//tgs2 support
-		var/list/tmp = world.file2list("..\\prtestjob.lk")
-		for(var/I in tmp)
-			if(I)
-				testmerge |= I
-#endif
+	testmerge = SERVER_TOOLS_PR_LIST
 	log_world("Running ftl13 revision:")
 	var/list/logs = world.file2list(".git/logs/HEAD")
 	if(logs)
@@ -36,44 +27,14 @@
 		log_world("Based off origin/master commit [originmastercommit]")
 	else
 		log_world(originmastercommit)
-		
-/datum/getrev/proc/DownloadPRDetails()
-	var/repo_id = CONFIG_GET(number/githubrepoid)
-	if(!repo_id)
-		if(testmerge.len)
-			log_world("PR details download failed: No github repo config set")
-		return
-	for(var/line in testmerge)
-		if(!isnum(text2num(line)))
-			log_world("PR details download failed: Invalid PR number: [line]")
-			return
-
-		var/url = "https://api.github.com/repositories/[repo_id]/pulls/[line].json"
-		GLOB.valid_HTTPSGet = TRUE
-		var/json = HTTPSGet(url)
-		if(!json)
-			return
-
-		testmerge[line] = json_decode(json)
-
-		if(!testmerge[line])
-			log_world("PR details download failed: null details returned")
-			return
-		CHECK_TICK
-	log_world("PR details successfully downloaded")
-	has_pr_details = TRUE
 
 /datum/getrev/proc/GetTestMergeInfo(header = TRUE)
 	if(!testmerge.len)
 		return ""
 	. = header ? "The following pull requests are currently test merged:<br>" : ""
 	for(var/line in testmerge)
-		var/details
-		if(world.RunningService())
-			var/cm = testmerge[line]["commit"]
-			details = ": '" + rhtml_encode(testmerge[line]["title"]) + "' by " + rhtml_encode(testmerge[line]["author"]) + " at commit " + rhtml_encode(copytext(cm, 1, min(length(cm), 7)))
-		else if(has_pr_details)	//tgs2 support
-			details = ": '" + rhtml_encode(testmerge[line]["title"]) + "' by " + rhtml_encode(testmerge[line]["user"]["login"])
+		var/cm = testmerge[line]["commit"]
+		var/details = ": '" + html_encode(testmerge[line]["title"]) + "' by " + html_encode(testmerge[line]["author"]) + " at commit " + html_encode(copytext(cm, 1, min(length(cm), 7)))
 		if(details && findtext(details, "\[s\]") && (!usr || !usr.client.holder))
 			continue
 		. += "<a href=\"[CONFIG_GET(string/githuburl)]/pull/[line]\">#[line][details]</a><br>"

@@ -69,14 +69,14 @@ Passive gate is similar to the regular pump except:
 	SSradio.remove_object(src, frequency)
 	frequency = new_frequency
 	if(frequency)
-		radio_connection = SSradio.add_object(src, frequency, filter = GLOB.RADIO_ATMOSIA)
+		radio_connection = SSradio.add_object(src, frequency, filter = RADIO_ATMOSIA)
 
 /obj/machinery/atmospherics/components/binary/passive_gate/proc/broadcast_status()
 	if(!radio_connection)
 		return 0
 
 	var/datum/signal/signal = new
-	signal.transmission_method = 1 //radio signal
+	signal.transmission_method = TRANSMISSION_RADIO
 	signal.source = src
 
 	signal.data = list(
@@ -87,7 +87,7 @@ Passive gate is similar to the regular pump except:
 		"sigtype" = "status"
 	)
 
-	radio_connection.post_signal(src, signal, filter = GLOB.RADIO_ATMOSIA)
+	radio_connection.post_signal(src, signal, filter = RADIO_ATMOSIA)
 
 	return 1
 

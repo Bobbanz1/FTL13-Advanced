@@ -10,8 +10,8 @@
 	wires = WIRE_RECEIVE | WIRE_PULSE | WIRE_RADIO_PULSE | WIRE_RADIO_RECEIVE
 	attachable = 1
 
-	var/code = 30
-	var/frequency = 1457
+	var/code = DEFAULT_SIGNALER_CODE
+	var/frequency = FREQ_SIGNALER
 	var/delay = 0
 	var/datum/radio_frequency/radio_connection
 
@@ -40,27 +40,27 @@
 	if(is_secured(user))
 		var/t1 = "-------"
 	//	if ((src.b_stat && !( flag1 )))
-	//		t1 = text("-------<BR>\nGreen Wire: []<BR>\nRed Wire:   []<BR>\nBlue Wire:  []<BR>\n", (src.wires & 4 ? text("<A href='?src=\ref[];wires=4'>Cut Wire</A>", src) : text("<A href='?src=\ref[];wires=4'>Mend Wire</A>", src)), (src.wires & 2 ? text("<A href='?src=\ref[];wires=2'>Cut Wire</A>", src) : text("<A href='?src=\ref[];wires=2'>Mend Wire</A>", src)), (src.wires & 1 ? text("<A href='?src=\ref[];wires=1'>Cut Wire</A>", src) : text("<A href='?src=\ref[];wires=1'>Mend Wire</A>", src)))
+	//		t1 = text("-------<BR>\nGreen Wire: []<BR>\nRed Wire:   []<BR>\nBlue Wire:  []<BR>\n", (src.wires & 4 ? text("<A href='?src=[REF()];wires=4'>Cut Wire</A>", src) : text("<A href='?src=[REF()];wires=4'>Mend Wire</A>", src)), (src.wires & 2 ? text("<A href='?src=[REF()];wires=2'>Cut Wire</A>", src) : text("<A href='?src=[REF()];wires=2'>Mend Wire</A>", src)), (src.wires & 1 ? text("<A href='?src=[REF()];wires=1'>Cut Wire</A>", src) : text("<A href='?src=[REF()];wires=1'>Mend Wire</A>", src)))
 	//	else
-	//		t1 = "-------"	Speaker: [src.listening ? "<A href='byond://?src=\ref[src];listen=0'>Engaged</A>" : "<A href='byond://?src=\ref[src];listen=1'>Disengaged</A>"]<BR>
+	//		t1 = "-------"	Speaker: [src.listening ? "<A href='byond://?src=[REF(src)];listen=0'>Engaged</A>" : "<A href='byond://?src=[REF(src)];listen=1'>Disengaged</A>")]<BR>
 		var/dat = {"
 <TT>
 
-<A href='byond://?src=\ref[src];send=1'>Send Signal</A><BR>
+<A href='byond://?src=[REF(src)];send=1'>Send Signal</A><BR>
 <B>Frequency/Code</B> for signaler:<BR>
 Frequency:
-<A href='byond://?src=\ref[src];freq=-10'>-</A>
-<A href='byond://?src=\ref[src];freq=-2'>-</A>
+<A href='byond://?src=[REF(src)];freq=-10'>-</A>
+<A href='byond://?src=[REF(src)];freq=-2'>-</A>
 [format_frequency(src.frequency)]
-<A href='byond://?src=\ref[src];freq=2'>+</A>
-<A href='byond://?src=\ref[src];freq=10'>+</A><BR>
+<A href='byond://?src=[REF(src)];freq=2'>+</A>
+<A href='byond://?src=[REF(src)];freq=10'>+</A><BR>
 
 Code:
-<A href='byond://?src=\ref[src];code=-5'>-</A>
-<A href='byond://?src=\ref[src];code=-1'>-</A>
+<A href='byond://?src=[REF(src)];code=-5'>-</A>
+<A href='byond://?src=[REF(src)];code=-1'>-</A>
 [src.code]
-<A href='byond://?src=\ref[src];code=1'>+</A>
-<A href='byond://?src=\ref[src];code=5'>+</A><BR>
+<A href='byond://?src=[REF(src)];code=1'>+</A>
+<A href='byond://?src=[REF(src)];code=5'>+</A><BR>
 [t1]
 </TT>"}
 		user << browse(dat, "window=radio")
@@ -78,7 +78,7 @@ Code:
 
 	if (href_list["freq"])
 		var/new_frequency = (frequency + text2num(href_list["freq"]))
-		if(new_frequency < 1200 || new_frequency > 1600)
+		if(new_frequency < MIN_FREE_FREQ || new_frequency > MAX_FREE_FREQ)
 			new_frequency = sanitize_frequency(new_frequency)
 		set_frequency(new_frequency)
 
@@ -148,13 +148,9 @@ Code:
 
 
 /obj/item/device/assembly/signaler/proc/set_frequency(new_frequency)
-	if(!SSradio)
-		sleep(20)
-	if(!SSradio)
-		return
 	SSradio.remove_object(src, frequency)
 	frequency = new_frequency
-	radio_connection = SSradio.add_object(src, frequency, GLOB.RADIO_CHAT)
+	radio_connection = SSradio.add_object(src, frequency, RADIO_SIGNALER)
 	return
 
 // Embedded signaller used in grenade construction.

@@ -178,7 +178,7 @@ mob
 			// Send the icon to src's local cache
 			src<<browse_rsc(I, iconName)
 			// Update the label to show it
-			winset(src,"imageLabel","image='\ref[I]'");
+			winset(src,"imageLabel","image='[REF(I)]'");
 
 		Add_Overlay()
 			set name = "4. Add Overlay"
@@ -1014,7 +1014,7 @@ GLOBAL_LIST_EMPTY(friendly_animal_types)
 	dir = newdir
 
 /atom/proc/freeze_icon_index()
-	return "\ref[initial(icon)]-[initial(icon_state)]"
+	return "[REF(initial(icon))]-[initial(icon_state)]"
 
 /obj/proc/make_frozen_visual()
 	// Used to make the frozen item visuals for Freon.

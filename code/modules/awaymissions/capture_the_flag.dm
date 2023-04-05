@@ -311,7 +311,7 @@
 
 	dead_barricades.Cut()
 
-	notify_ghosts("[name] has been activated!", enter_link="<a href=?src=\ref[src];join=1>(Click to join the [team] team!)</a> or click on the controller directly!", source = src, action=NOTIFY_ATTACK)
+	notify_ghosts("[name] has been activated!", enter_link="<a href=?src=[REF(src)];join=1>(Click to join the [team] team!)</a> or click on the controller directly!", source = src, action=NOTIFY_ATTACK)
 
 	if(!arena_reset)
 		reset_the_arena()
@@ -511,7 +511,7 @@
 /datum/outfit/ctf/red/post_equip(mob/living/carbon/human/H)
 	..()
 	var/obj/item/device/radio/R = H.ears
-	R.set_frequency(GLOB.REDTEAM_FREQ)
+	R.set_frequency(FREQ_CTF_RED)
 	R.freqlock = TRUE
 	R.independent = TRUE
 	H.dna.species.stunmod = 0
@@ -519,7 +519,7 @@
 /datum/outfit/ctf/blue/post_equip(mob/living/carbon/human/H)
 	..()
 	var/obj/item/device/radio/R = H.ears
-	R.set_frequency(GLOB.BLUETEAM_FREQ)
+	R.set_frequency(FREQ_CTF_BLUE)
 	R.freqlock = TRUE
 	R.independent = TRUE
 	H.dna.species.stunmod = 0

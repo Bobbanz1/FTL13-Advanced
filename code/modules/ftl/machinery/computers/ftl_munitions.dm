@@ -52,18 +52,18 @@
 	dat += "<HR>"
 
 	for(var/obj/machinery/ammo_rack/M in ammo_racks)
-		dat += "<BR><B>[M.name]</B> - (<A href=?src=\ref[src];dispense=\ref[M]>Dispense</A>|"
+		dat += "<BR><B>[M.name]</B> - (<A href=?src=[REF(src)];dispense=[REF(M)]>Dispense</A>|"
 		if(!M.loader)
-			dat += "<A href=?src=\ref[src];loader=\ref[M]>Extend Loader</A>"
+			dat += "<A href=?src=[REF(src)];loader=[REF(M)]>Extend Loader</A>"
 		else
-			dat += "<A href=?src=\ref[src];loader=\ref[M]>Retract Loader</A>"
+			dat += "<A href=?src=[REF(src)];loader=[REF(M)]>Retract Loader</A>"
 		dat += ")"
 		for(var/obj/structure/shell/S in M.loaded_shells)
 			dat += "<BR>-[S.name]"
 
 	dat += "<BR><BR><BR><HR>"
-	dat += "<center><A href=?src=\ref[src];reload=1>Reload Connections</A></center>"
-	dat += "<center><A href=?src=\ref[src];refresh=1>Refresh</A></center>"
+	dat += "<center><A href=?src=[REF(src)];reload=1>Reload Connections</A></center>"
+	dat += "<center><A href=?src=[REF(src)];refresh=1>Refresh</A></center>"
 
 	var/datum/browser/popup = new(user, "scanner", name, 800, 660)
 

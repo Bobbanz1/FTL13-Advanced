@@ -62,7 +62,7 @@
 			var/list/kinetic_list = list()
 
 			kinetic_list["name"] = "[K]"
-			kinetic_list["id"] = "\ref[K]"
+			kinetic_list["id"] = "[REF(K)]"
 			kinetic_list["loaded"] = K.breech.loaded_shell
 			kinetic_list["can_fire"] = K.can_fire(TRUE)
 			kinetics_list[++kinetics_list.len] = kinetic_list
@@ -74,7 +74,7 @@
 		var/list/laser_list = list()
 
 		laser_list["name"] = "[L]"
-		laser_list["id"] = "\ref[L]"
+		laser_list["id"] = "[REF(L)]"
 		laser_list["can_fire"] = L.can_fire()
 		if(L.chip)
 			laser_list["charge"] = L.current_charge
@@ -122,7 +122,7 @@
 		var/list/ships_list = list()
 		data["ships"] = ships_list
 		for(var/datum/starship/S in SSstarmap.current_system.ships)
-			ships_list[++ships_list.len] = list("name" = S.name, "faction" = S.faction, "planet" = S.planet.name, "id" = "\ref[S]", "selected" = (S == target))
+			ships_list[++ships_list.len] = list("name" = S.name, "faction" = S.faction, "planet" = S.planet.name, "id" = "[REF(S)]", "selected" = (S == target))
 
 		if(target)
 			data["target"] = target.name
@@ -158,7 +158,7 @@
 						ship_component_list["max_health"] = initial(C.health)
 						ship_component_list["selected"] = (C == target_ship_component)
 						ship_component_list["name"] = C.name
-						ship_component_list["id"] = "\ref[C]"
+						ship_component_list["id"] = "[REF(C)]"
 					row[++row.len] = ship_component_list
 
 	return data

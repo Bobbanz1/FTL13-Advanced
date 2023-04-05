@@ -199,14 +199,14 @@ GLOBAL_LIST_EMPTY(bicon_cache)
 
 	if (isicon(obj))
 		//Icons get pooled constantly, references are no good here.
-		/*if (!bicon_cache["\ref[obj]"]) // Doesn't exist yet, make it.
-			bicon_cache["\ref[obj]"] = icon2base64(obj)
-		return "<img class='icon misc' src='data:image/png;base64,[bicon_cache["\ref[obj]"]]'>"*/
+		/*if (!bicon_cache["[REF(obj]")]) // Doesn't exist yet, make it.
+			bicon_cache["[REF(obj]")] = icon2base64(obj)
+		return "<img class='icon misc' src='data:image/png;base64,[bicon_cache["[REF(obj]"])]'>"*/
 		return "<img class='icon misc' src='data:image/png;base64,[icon2base64(obj)]'>"
 
 	// Either an atom or somebody fucked up and is gonna get a runtime, which I'm fine with.
 	var/atom/A = obj
-	var/key = "[istype(A.icon, /icon) ? "\ref[A.icon]" : A.icon]:[A.icon_state]"
+	var/key = "[istype(A.icon, /icon) ? "[REF(A.icon]" : A.icon)]:[A.icon_state]"
 	if (!GLOB.bicon_cache[key]) // Doesn't exist, make it.
 		var/icon/I = icon(A.icon, A.icon_state, SOUTH, 1)
 		if (ishuman(obj)) // Shitty workaround for a BYOND issue.

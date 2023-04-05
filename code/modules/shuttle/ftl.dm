@@ -190,24 +190,24 @@
 	if(screen == 0) // ship information
 		if(!SSstarmap.in_transit)
 			data["in_transit"] = 0
-			data["star_id"] = "\ref[SSstarmap.current_system]"
+			data["star_id"] = "[REF(SSstarmap.current_system)]"
 			data["star_name"] = SSstarmap.current_system.name
 		else
 			data["in_transit"] = 1
-			data["from_star_id"] = "\ref[SSstarmap.from_system]"
+			data["from_star_id"] = "[REF(SSstarmap.from_system)]"
 			data["from_star_name"] = SSstarmap.from_system.name
-			data["to_star_id"] = "\ref[SSstarmap.to_system]"
+			data["to_star_id"] = "[REF(SSstarmap.to_system)]"
 			data["to_star_name"] = SSstarmap.to_system.name
 
 		if(SSstarmap.in_transit_planet)
 			data["in_transit_planet"] = 1
-			data["from_planet_id"] = "\ref[SSstarmap.from_planet]"
+			data["from_planet_id"] = "[REF(SSstarmap.from_planet)]"
 			data["from_planet_name"] = SSstarmap.from_planet.name
-			data["to_planet_id"] = "\ref[SSstarmap.to_planet]"
+			data["to_planet_id"] = "[REF(SSstarmap.to_planet)]"
 			data["to_planet_name"] = SSstarmap.to_planet.name
 		else if(!SSstarmap.in_transit)
 			data["in_transit_planet"] = 0
-			data["planet_id"] = "\ref[SSstarmap.current_planet]"
+			data["planet_id"] = "[REF(SSstarmap.current_planet)]"
 			data["planet_name"] = SSstarmap.current_planet.name
 
 		if(SSstarmap.in_transit || SSstarmap.in_transit_planet)
@@ -220,7 +220,7 @@
 			var/list/ports_list = list()
 			data["ports"] = ports_list
 			for(var/obj/docking_port/stationary/D in SSstarmap.current_planet.docks)
-				ports_list[++ports_list.len] = list("name" = D.name, "docked" = (D == docked_port), "port_id" = "\ref[D]")*/
+				ports_list[++ports_list.len] = list("name" = D.name, "docked" = (D == docked_port), "port_id" = "[REF(D)]")*/
 
 		if(SSstarmap.ftl_drive)
 			data["has_drive"] = 1
@@ -275,7 +275,7 @@
 				system_list["in_range"] = 0
 			system_list["x"] = system.x
 			system_list["y"] = system.y
-			system_list["star_id"] = "\ref[system]"
+			system_list["star_id"] = "[REF(system)]"
 			system_list["is_current"] = (system == SSstarmap.current_system)
 			system_list["alignment"] = system.alignment
 			system_list["visited"] = system.visited
@@ -300,7 +300,7 @@
 			data["freepointer_cos"] = dx / dist
 			data["freepointer_sin"] = dy / dist
 	else if(screen == 2) // show info about system screen
-		data["star_id"] = "\ref[selected_system]"
+		data["star_id"] = "[REF(selected_system)]"
 		data["star_name"] = selected_system.name
 		data["alignment"] = capitalize(selected_system.alignment)
 		if(SSstarmap.current_system)
@@ -313,7 +313,7 @@
 		for(var/datum/planet/planet in SSstarmap.current_system.planets)
 			var/list/planet_list = list()
 			planet_list["name"] = planet.name
-			planet_list["planet_id"] = "\ref[planet]"
+			planet_list["planet_id"] = "[REF(planet)]"
 			planet_list["is_current"] = (planet == SSstarmap.current_planet)
 			planet_list["x"] = planet.disp_x
 			planet_list["y"] = planet.disp_y
@@ -331,7 +331,7 @@
 			planet_list["icon_name"] = planet.nav_icon_name
 			planets_list[++planets_list.len] = planet_list
 	else if(screen == 4) // show info about planet screen
-		data["planet_id"] = "\ref[selected_planet]"
+		data["planet_id"] = "[REF(selected_planet)]"
 		data["planet_name"] = selected_planet.name
 		data["planet_type"] = selected_planet.planet_type
 		data["goto_action"] = selected_planet.goto_action
@@ -412,13 +412,13 @@
 
 /obj/machinery/computer/ftl_navigation/proc/post_status(command, data1, data2)
 
-	var/datum/radio_frequency/frequency = SSradio.return_frequency(1435)
+	var/datum/radio_frequency/frequency = SSradio.return_frequency(FREQ_STATUS_DISPLAYS)
 
 	if(!frequency) return
 
 	var/datum/signal/status_signal = new
 	status_signal.source = src
-	status_signal.transmission_method = 1
+	status_signal.transmission_method = TRANSMISSION_RADIO
 	status_signal.data["command"] = command
 
 	switch(command)

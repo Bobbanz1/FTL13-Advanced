@@ -24,8 +24,8 @@
   I.update_label("[H.real_name]", "Crewman")
   I.access += ACCESS_SYNDICATE
   var/obj/item/device/radio/R = H.ears
-  R.set_frequency(GLOB.SYND_FREQ)
-  R.freqlock = 1
+  R.set_frequency(FREQ_SYNDICATE)
+  R.freqlock = TRUE
   var/obj/item/device/radio/uplink/U = H.get_item_by_slot(slot_l_store)
   U.hidden_uplink.telecrystals = 7
   U.hidden_uplink.boarding = 1

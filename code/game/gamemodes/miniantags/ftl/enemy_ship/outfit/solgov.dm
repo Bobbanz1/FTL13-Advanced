@@ -8,8 +8,8 @@
 /datum/outfit/defender/solgov/post_equip(mob/living/carbon/human/H)
   . = ..()
   var/obj/item/device/radio/R = H.ears
-  R.set_frequency(GLOB.CENTCOM_FREQ)
-  R.freqlock = 1
+  R.set_frequency(FREQ_CENTCOM)
+  R.freqlock = TRUE
 
 /datum/outfit/defender/solgov/announce_to()
   var/text = "<span class='warning'>-ALERT! This is transmission from Earth Fleet Command!-</span>\n"
@@ -39,8 +39,8 @@
   var/obj/item/card/id/I = H.wear_id
   I.update_label("CEO [H.real_name]", "Executive Officer")
   var/obj/item/device/radio/R = H.ears
-  R.set_frequency(GLOB.CENTCOM_FREQ)
-  R.freqlock = 1
+  R.set_frequency(FREQ_CENTCOM)
+  R.freqlock = TRUE
   var/obj/item/device/radio/uplink/U = H.get_item_by_slot(slot_l_store)
   U.hidden_uplink.name = "Earth Emergency Network"
   U.hidden_uplink.style = "solgov"

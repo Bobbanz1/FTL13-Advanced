@@ -74,7 +74,7 @@
 	var/nearest_beacon			// the nearest beacon's tag
 	var/turf/nearest_beacon_loc	// the nearest beacon's location
 
-	var/beacon_freq = 1445		// navigation beacon frequency
+	var/beacon_freq = FREQ_NAV_BEACON		// navigation beacon frequency
 	var/model = "" //The type of bot it is.
 	var/bot_type = 0 //The type of bot it is, for radio control.
 	var/data_hud_type = DATA_HUD_DIAGNOSTIC //The type of data HUD the bot uses. Diagnostic by default.
@@ -817,9 +817,9 @@ Pass a positive integer as an argument to override a bot's default speed.
 	var/hack
 	if(issilicon(user) || IsAdminGhost(user)) //Allows silicons or admins to toggle the emag status of a bot.
 		hack += "[emagged == 2 ? "Software compromised! Unit may exhibit dangerous or erratic behavior." : "Unit operating normally. Release safety lock?"]<BR>"
-		hack += "Harm Prevention Safety System: <A href='?src=\ref[src];operation=hack'>[emagged ? "<span class='bad'>DANGER</span>" : "Engaged"]</A><BR>"
+		hack += "Harm Prevention Safety System: <A href='?src=[REF(src)];operation=hack'>[emagged ? "<span class='bad'>DANGER</span>" : "Engaged"]</A><BR>"
 	else if(!locked) //Humans with access can use this option to hide a bot from the AI's remote control panel and PDA control.
-		hack += "Remote network control radio: <A href='?src=\ref[src];operation=remote'>[remote_disabled ? "Disconnected" : "Connected"]</A><BR>"
+		hack += "Remote network control radio: <A href='?src=[REF(src)];operation=remote'>[remote_disabled ? "Disconnected" : "Connected"]</A><BR>"
 	return hack
 
 /mob/living/simple_animal/bot/proc/showpai(mob/user)
@@ -829,9 +829,9 @@ Pass a positive integer as an argument to override a bot's default speed.
 			eject += "Personality card status: "
 			if(paicard)
 				if(client)
-					eject += "<A href='?src=\ref[src];operation=ejectpai'>Active</A>"
+					eject += "<A href='?src=[REF(src)];operation=ejectpai'>Active</A>"
 				else
-					eject += "<A href='?src=\ref[src];operation=ejectpai'>Inactive</A>"
+					eject += "<A href='?src=[REF(src)];operation=ejectpai'>Inactive</A>"
 			else if(!allow_pai || key)
 				eject += "Unavailable"
 			else

@@ -1,4 +1,3 @@
-
 GLOBAL_LIST_EMPTY(rad_collectors)
 
 /obj/machinery/power/rad_collector

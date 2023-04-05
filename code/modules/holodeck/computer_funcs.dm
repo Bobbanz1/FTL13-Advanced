@@ -2,13 +2,13 @@
 	user.set_machine(src)
 
 	var/dat = "<h3>Current Loaded Programs</h3>"
-	dat += "<a href='?src=\ref[src];loadarea=[offline_program.type]'>Power Off</a><br>"
+	dat += "<a href='?src=[REF(src)];loadarea=[offline_program.type]'>Power Off</a><br>"
 	for(var/area/A in program_cache)
-		dat += "<a href='?src=\ref[src];loadarea=[A.type]'>[A.name]</a><br>"
+		dat += "<a href='?src=[REF(src)];loadarea=[A.type]'>[A.name]</a><br>"
 	if(emagged && emag_programs.len)
 		dat += "<span class='warning'>SUPERVISOR ACCESS - SAFETY PROTOCOLS DISABLED - CAUTION: EMITTER ANOMALY</span><br>"
 		for(var/area/A in emag_programs)
-			dat += "<a href='?src=\ref[src];loadarea=[A.type]'>[A.name]</a><br>"
+			dat += "<a href='?src=[REF(src)];loadarea=[A.type]'>[A.name]</a><br>"
 
 	var/datum/browser/popup = new(user, "computer", name, 400, 500)
 	popup.set_content(dat)
@@ -19,18 +19,18 @@
 /obj/machinery/computer/holodeck/attack_ai(var/mob/user as mob)
 	var/dat = "<h3>Current Loaded Programs</h3>"
 
-	dat += "<a href='?src=\ref[src];loadarea=[offline_program.type]'>Power Off</a><br>"
+	dat += "<a href='?src=[REF(src)];loadarea=[offline_program.type]'>Power Off</a><br>"
 	for(var/area/A in program_cache)
-		dat += "<a href='?src=\ref[src];loadarea=[A.type]'>[A.name]</a><br>"
+		dat += "<a href='?src=[REF(src)];loadarea=[A.type]'>[A.name]</a><br>"
 
 	if(emag_programs.len)
 		dat += "<br>"
 		if(emagged)
-			dat += "Safety protocol: <span class='bad'>Offline</span> <a href='?\ref[src];safety=1'>Engage</a><br>"
+			dat += "Safety protocol: <span class='bad'>Offline</span> <a href='?[REF(src)];safety=1'>Engage</a><br>"
 			for(var/area/A in emag_programs)
-				dat += "<a href='?src=\ref[src];loadarea=[A.type]'>[A.name]</a><br>"
+				dat += "<a href='?src=[REF(src)];loadarea=[A.type]'>[A.name]</a><br>"
 		else
-			dat += "Safety protocol: <span class='good'>Online</span> <a href='?\ref[src];safety=0'>Disengage</a><br>"
+			dat += "Safety protocol: <span class='good'>Online</span> <a href='?[REF(src)];safety=0'>Disengage</a><br>"
 
 	var/datum/browser/popup = new(user, "computer", name, 400, 500)
 	popup.set_content(dat)
