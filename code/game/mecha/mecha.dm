@@ -202,6 +202,19 @@
 	GLOB.mechas_list -= src //global mech list
 	return ..()
 
+/obj/mecha/CheckParts(list/parts_list)
+	..()
+	var/obj/item/C = locate(/obj/item/stock_parts/cell) in contents
+	cell = C
+	var/obj/item/stock_parts/scanning_module/SM = locate() in contents
+	var/obj/item/stock_parts/capacitor/CP = locate() in contents
+	if(SM)
+		step_energy_drain = 20 - (5 * SM.rating) //10 is normal, so on lowest part its worse, on second its ok and on higher its real good up to 0 on best
+		qdel(SM)
+	if(CP)
+		armor["energy"] += (CP.rating * 10) //Each level of capacitor protects the mech against emp by 10%
+		qdel(CP)
+
 ////////////////////////
 ////// Helpers /////////
 ////////////////////////
@@ -713,8 +726,8 @@
 	AI.remote_control = src
 	AI.canmove = 1 //Much easier than adding AI checks! Be sure to set this back to 0 if you decide to allow an AI to leave a mech somehow.
 	AI.can_shunt = 0 //ONE AI ENTERS. NO AI LEAVES.
-	to_chat(AI, "[AI.can_dominate_mechs ? "<span class='announce'>Takeover of [name] complete! You are now loaded onto the onboard computer. Do not attempt to leave the station sector!</span>" \
-	: "<span class='notice'>You have been uploaded to a mech's onboard computer."]")
+	to_chat(AI, AI.can_dominate_mechs ? "<span class='announce'>Takeover of [name] complete! You are now loaded onto the onboard computer. Do not attempt to leave the station sector!</span>" :\
+		"<span class='notice'>You have been uploaded to a mech's onboard computer.</span>")
 	to_chat(AI, "<span class='reallybig boldnotice'>Use Middle-Mouse to activate mech functions and equipment. Click normally for AI interactions.</span>")
 	if(interaction == AI_TRANS_FROM_CARD)
 		GrantActions(AI, FALSE) //No eject/return to core action for AI uploaded by card

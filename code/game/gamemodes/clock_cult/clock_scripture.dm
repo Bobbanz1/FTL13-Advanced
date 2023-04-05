@@ -86,7 +86,7 @@ Judgement: 12 servants, 5 caches, 300 CV, and any existing AIs are converted or 
 		else
 			successful = TRUE
 			if(slab && !slab.no_cost && !GLOB.ratvar_awakens) //if the slab exists and isn't debug and ratvar isn't up, log the scripture as being used
-				SSblackbox.add_details("clockcult_scripture_recited", name)
+				SSblackbox.record_feedback("tally", "clockcult_scripture_recited", 1, name)
 	if(slab)
 		slab.busy = null
 	qdel(src)

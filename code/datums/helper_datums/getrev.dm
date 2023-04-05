@@ -30,16 +30,13 @@
 		log_world(commit)
 		for(var/line in testmerge)
 			if(line)
-				if(world.RunningService())
-					var/tmcommit = testmerge[line]["commit"]
-					log_world("Test merge active of PR #[line] commit [tmcommit]")
-					SSblackbox.add_details("testmerged_prs","[line]|[tmcommit]")
-				else //tgs2 support
-					log_world("Test merge active of PR #[line]")
-					SSblackbox.add_details("testmerged_prs","[line]")
+				var/tmcommit = testmerge[line]["commit"]
+				log_world("Test merge active of PR #[line] commit [tmcommit]")
+				SSblackbox.record_feedback("nested tally", "testmerged_prs", 1, list("[line]", "[tmcommit]"))
 		log_world("Based off origin/master commit [originmastercommit]")
 	else
 		log_world(originmastercommit)
+		
 /datum/getrev/proc/DownloadPRDetails()
 	var/repo_id = CONFIG_GET(number/githubrepoid)
 	if(!repo_id)

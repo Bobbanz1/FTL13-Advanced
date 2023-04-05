@@ -16,7 +16,7 @@
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 50
 
-	var/freq = 1449		// radio frequency
+	var/freq = FREQ_MAGNETS		// radio frequency
 	var/electricity_level = 1 // intensity of the magnetic pull
 	var/magnetic_field = 1 // the range of magnetic attraction
 	var/code = 0 // frequency code, they should be different unless you have a group of magnets working together or something
@@ -217,13 +217,11 @@
 
 
 /obj/machinery/magnetic_controller/New()
-	..()
-
+	. = ..()
 	if(autolink)
 		for(var/obj/machinery/magnetic_module/M in GLOB.machines)
 			if(M.freq == frequency && M.code == code)
 				magnets.Add(M)
-
 
 	spawn(45)	// must wait for map loading to finish
 		radio_connection = SSradio.add_object(src, frequency, GLOB.RADIO_MAGNETS)

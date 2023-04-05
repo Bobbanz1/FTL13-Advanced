@@ -85,6 +85,7 @@ GLOBAL_VAR_INIT(previous_level, 0)
 		for(var/area/shuttle/ftl/F in world)
 			for(var/mob/living/L in F)
 				F.update_ship_ambience(L) //update the alert sound in progress
+		SSblackbox.record_feedback("tally", "security_level_changes", 1, level)
 	else
 		return
 

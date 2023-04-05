@@ -820,10 +820,11 @@ world
 
 /proc/getIconMask(atom/A)//By yours truly. Creates a dynamic mask for a mob/whatever. /N
 	var/icon/alpha_mask = new(A.icon,A.icon_state)//So we want the default icon and icon state of A.
-	for(var/I in A.overlays)//For every image in overlays. var/image/I will not work, don't try it.
-		if(I:layer>A.layer)
+	for(var/V in A.overlays)//For every image in overlays. var/image/I will not work, don't try it.
+		var/image/I = V
+		if(I.layer>A.layer)
 			continue//If layer is greater than what we need, skip it.
-		var/icon/image_overlay = new(I:icon,I:icon_state)//Blend only works with icon objects.
+		var/icon/image_overlay = new(I.icon,I.icon_state)//Blend only works with icon objects.
 		//Also, icons cannot directly set icon_state. Slower than changing variables but whatever.
 		alpha_mask.Blend(image_overlay,ICON_OR)//OR so they are lumped together in a nice overlay.
 	return alpha_mask//And now return the mask.

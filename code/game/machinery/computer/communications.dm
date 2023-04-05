@@ -30,7 +30,6 @@
 	var/const/STATE_PURCHASE = 11
 	var/const/STATE_VIEW_OBJECTIVES = 12
 
-	var/status_display_freq = "1435"
 	var/stat_msg1
 	var/stat_msg2
 
@@ -121,13 +120,6 @@
 						//Only notify the admins if an actual change happened
 						log_game("[key_name(usr)] has changed the security level to [get_security_level()].")
 						message_admins("[key_name_admin(usr)] has changed the security level to [get_security_level()].")
-						switch(GLOB.security_level)
-							if(SEC_LEVEL_GREEN)
-								SSblackbox.inc("alert_comms_green",1)
-							if(SEC_LEVEL_AMBER)
-								SSblackbox.inc("alert_comms_amber",1)
-							if(SEC_LEVEL_GQ)
-								SSblackbox.inc("alert_comms_gq",1)
 					tmp_alertlevel = 0
 				else
 					to_chat(usr, "<span class='warning'>You are not authorized to do this!</span>")
@@ -188,7 +180,7 @@
 								alter_station_funds(-S.credit_cost)
 								minor_announce("[usr.name] has purchased [S.name] for [S.credit_cost] credits." , "Shuttle Purchase")
 								message_admins("[key_name_admin(usr)] purchased [S.name].")
-								SSblackbox.add_details("shuttle_purchase", S.name)
+								SSblackbox.record_feedback("text", "shuttle_purchase", 1, "[S.name]")
 							else
 								to_chat(usr, "Something went wrong! The shuttle exchange system seems to be down.")
 						else
@@ -378,13 +370,6 @@
 				//Only notify the admins if an actual change happened
 				log_game("[key_name(usr)] has changed the security level to [get_security_level()].")
 				message_admins("[key_name_admin(usr)] has changed the security level to [get_security_level()].")
-				switch(GLOB.security_level)
-					if(SEC_LEVEL_GREEN)
-						SSblackbox.inc("alert_comms_green",1)
-					if(SEC_LEVEL_AMBER)
-						SSblackbox.inc("alert_comms_blue",1)
-					if(SEC_LEVEL_GQ)
-						SSblackbox.inc("alert_comms_gq",1)
 			tmp_alertlevel = 0
 			src.aistate = STATE_DEFAULT
 		if("ai-changeseclevel")
@@ -704,13 +689,14 @@
 
 /obj/machinery/computer/communications/proc/post_status(command, data1, data2)
 
-	var/datum/radio_frequency/frequency = SSradio.return_frequency(1435)
+	var/datum/radio_frequency/frequency = SSradio.return_frequency(FREQ_STATUS_DISPLAYS)
 
-	if(!frequency) return
+	if(!frequency)
+		return
 
 	var/datum/signal/status_signal = new
 	status_signal.source = src
-	status_signal.transmission_method = 1
+	status_signal.transmission_method = TRANSMISSION_RADIO
 	status_signal.data["command"] = command
 
 	switch(command)
