@@ -461,7 +461,7 @@ GLOBAL_PROTECT(AdminProcCallCount)
 					PDA.id = id
 					id.forceMove(PDA)
 				else if(istype(worn, /obj/item/storage/wallet))
-					var/obj/item/weapon/storage/wallet/W = worn
+					var/obj/item/storage/wallet/W = worn
 					W.front_id = id
 					id.forceMove(W)
 					W.update_icon()
