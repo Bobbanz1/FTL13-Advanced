@@ -21,20 +21,23 @@
 
 //Please don't edit these values without speaking to Errorage first	~Carn
 //Admin Permissions
-#define R_BUILDMODE		1
-#define R_ADMIN			2
-#define R_BAN			4
-#define R_FUN			8
-#define R_SERVER		16
-#define R_DEBUG			32
-#define R_POSSESS		64
-#define R_PERMISSIONS	128
-#define R_STEALTH		256
-#define R_POLL			512
-#define R_VAREDIT		1024
-#define R_SOUNDS		2048
-#define R_SPAWN			4096
-#define R_TICKET		8192
+#define R_BUILDMODE		0x1
+#define R_ADMIN			0x2
+#define R_BAN			0x4
+#define R_FUN			0x8
+#define R_SERVER		0x10
+#define R_DEBUG			0x20
+#define R_POSSESS		0x40
+#define R_PERMISSIONS	0x80
+#define R_STEALTH		0x100
+#define R_POLL			0x200
+#define R_VAREDIT		0x400
+#define R_SOUNDS		0x800
+#define R_SPAWN			0x1000
+#define R_AUTOLOGIN		0x2000
+#define R_DBRANKS		0x4000
+
+#define R_DEFAULT R_AUTOLOGIN
 
 #define R_MAXPERMISSION 4096 //This holds the maximum value for a permission. It is used in iteration, so keep it updated.
 
