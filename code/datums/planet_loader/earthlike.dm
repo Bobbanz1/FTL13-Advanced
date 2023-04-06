@@ -25,7 +25,7 @@
 	while(unused_cells.len)
 		var/datum/biome/B = pickweight(biomes)
 		var/datum/biome_cell/closest_cell
-		var/closest_dist = 9876543210
+		var/closest_dist = 9876543000
 		for(var/datum/biome_cell/C1 in B.cells)
 			for(var/datum/biome_cell/C2 in unused_cells)
 				var/dx = C2.center_x - C1.center_x

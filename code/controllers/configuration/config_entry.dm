@@ -1,5 +1,3 @@
-#undef CURRENT_RESIDENT_FILE
-
 #define LIST_MODE_NUM 0
 #define LIST_MODE_TEXT 1
 #define LIST_MODE_FLAG 2
