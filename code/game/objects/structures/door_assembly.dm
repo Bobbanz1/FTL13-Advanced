@@ -707,7 +707,7 @@
 	add_overlay(get_airlock_overlay("panel_c[state+1]", overlays_file))
 
 /obj/structure/door_assembly/deconstruct(disassembled = TRUE)
-	if(!(flags & NODECONSTRUCT))
+	if(!(flags_1 & NODECONSTRUCT_1))
 		var/turf/T = get_turf(src)
 		var/metal_amt = 4
 		if(!disassembled)

@@ -6,7 +6,7 @@
 	icon_state = null
 	alpha = 0
 	invisibility = INVISIBILITY_ABSTRACT
-	flags = ABSTRACT|ON_BORDER
+	flags_1 = ABSTRACT_1|ON_BORDER_1
 	mouse_opacity = 0
 	var/datum/proximity_monitor/advanced/parent = null
 

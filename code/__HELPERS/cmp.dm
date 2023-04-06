@@ -64,3 +64,8 @@ GLOBAL_VAR_INIT(cmp_field, "name")
 		. = B.failures - A.failures
 	if (!.)
 		. = B.qdels - A.qdels
+
+/proc/cmp_generic_stat_item_time(list/A, list/B)
+	. = B[STAT_ENTRY_TIME] - A[STAT_ENTRY_TIME]
+	if (!.)
+		. = B[STAT_ENTRY_COUNT] - A[STAT_ENTRY_COUNT]

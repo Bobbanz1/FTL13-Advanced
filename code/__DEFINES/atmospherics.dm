@@ -20,6 +20,12 @@
 
 //stuff you should probably leave well alone!
 //ATMOS
+#define R_IDEAL_GAS_EQUATION	8.31	//kPa*L/(K*mol)
+#define ONE_ATMOSPHERE			101.325	//kPa
+#define T0C						273.15	// 0degC
+#define T20C					293.15	// 20degC
+#define TCMB					2.7		// -270.3degC
+
 #define CELL_VOLUME							2500	//liters in a cell
 #define BREATH_VOLUME						0.5		//liters in a normal breath
 #define BREATH_PERCENTAGE					(BREATH_VOLUME/CELL_VOLUME)					//Amount of air to take a from a tile

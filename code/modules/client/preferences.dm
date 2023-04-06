@@ -209,7 +209,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			dat += "<table width='100%'><tr><td width='24%' valign='top'>"
 
-			if(CONFIG_GET(flag/join_with_mutant_race))
+			if(CONFIG_GET(flag/join_with_mutant_humans))
 				dat += "<b>Species:</b><BR><a href='?_src_=prefs;preference=species;task=input'>[pref_species.name]</a><BR>"
 			else
 				dat += "<b>Species:</b> Human<BR>"
@@ -261,7 +261,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "</td>"
 
-			if(CONFIG_GET(flag/join_with_mutant_race)) //We don't allow mutant bodyparts for humans either unless this is true.
+			if(CONFIG_GET(flag/join_with_mutant_humans)) //We don't allow mutant bodyparts for humans either unless this is true.
 
 				if((MUTCOLORS in pref_species.species_traits) || (MUTCOLORS_PARTSONLY in pref_species.species_traits))
 
@@ -334,7 +334,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "<a href='?_src_=prefs;preference=legs;task=input'>[features["legs"]]</a><BR>"
 
 					dat += "</td>"
-			if(CONFIG_GET(flag/join_with_mutant_race))
+			if(CONFIG_GET(flag/join_with_mutant_humans))
 
 				if("tail_human" in pref_species.mutant_bodyparts)
 					dat += "<td valign='top' width='7%'>"
@@ -1243,12 +1243,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					toggles ^= MIDROUND_ANTAG
 
 				if("parallaxup")
-					parallax = Wrap(parallax + 1, PARALLAX_INSANE, PARALLAX_DISABLE + 1)
+					parallax = WRAP(parallax + 1, PARALLAX_INSANE, PARALLAX_DISABLE + 1)
 					if (parent && parent.mob && parent.mob.hud_used)
 						parent.mob.hud_used.update_parallax_pref(parent.mob)
 
 				if("parallaxdown")
-					parallax = Wrap(parallax - 1, PARALLAX_INSANE, PARALLAX_DISABLE + 1)
+					parallax = WRAP(parallax - 1, PARALLAX_INSANE, PARALLAX_DISABLE + 1)
 					if (parent && parent.mob && parent.mob.hud_used)
 						parent.mob.hud_used.update_parallax_pref(parent.mob)
 
@@ -1315,7 +1315,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.dna.features = features.Copy()
 	character.dna.real_name = character.real_name
 	var/datum/species/chosen_species
-	if(pref_species != /datum/species/human && CONFIG_GET(flag/join_with_mutant_race))
+	if(pref_species != /datum/species/human && CONFIG_GET(flag/join_with_mutant_humans))
 		chosen_species = pref_species.type
 	else
 		chosen_species = /datum/species/human

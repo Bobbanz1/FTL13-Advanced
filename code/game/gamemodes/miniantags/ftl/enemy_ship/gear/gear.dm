@@ -109,7 +109,7 @@
 
 // /datum/uplink_item/defender/traps/n2o //sleep effects are broke my dude
 //   name = "Sleep mine"
-//   desc = "360 moles of N2O. Click the button to activate.\
+//   desc = "360 moles of N2O. Click the button to activate.
 //    Triggers on step. No IFF system included."
 //   cost = 2
 //   item = /obj/item/mine/gas/n2o

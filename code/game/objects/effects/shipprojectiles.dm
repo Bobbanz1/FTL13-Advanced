@@ -28,7 +28,7 @@
 		pixel_x = pick(rand_edge) * 1000
 		pixel_y = rand_coord
 
-	angle = Atan2(0-pixel_y, 0-pixel_x)
+	angle = ATAN2(0-pixel_y, 0-pixel_x)
 
 	var/matrix/M = new
 	M.Turn(angle + 180)

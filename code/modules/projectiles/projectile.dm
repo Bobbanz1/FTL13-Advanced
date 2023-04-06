@@ -4,7 +4,7 @@
 	icon_state = "bullet"
 	density = FALSE
 	anchored = TRUE
-	flags = ABSTRACT
+	flags_1 = ABSTRACT_1
 	pass_flags = PASSTABLE
 	mouse_opacity = 0
 	hitsound = 'sound/weapons/pierce.ogg'
@@ -133,7 +133,7 @@
 
 /obj/item/projectile/proc/vol_by_damage()
 	if(src.damage)
-		return Clamp((src.damage) * 0.67, 30, 100)// Multiply projectile damage by 0.67, then clamp the value between 30 and 100
+		return CLAMP((src.damage) * 0.67, 30, 100)// Multiply projectile damage by 0.67, then clamp the value between 30 and 100
 	else
 		return 50 //if the projectile doesn't do damage, play its hitsound at 50% volume
 
@@ -152,7 +152,7 @@
 	def_zone = ran_zone(def_zone, max(100-(7*distance), 5)) //Lower accurancy/longer range tradeoff. 7 is a balanced number to use.
 
 	if(isturf(A) && hitsound_wall)
-		var/volume = Clamp(vol_by_damage() + 20, 0, 100)
+		var/volume = CLAMP(vol_by_damage() + 20, 0, 100)
 		if(suppressed)
 			volume = 5
 		playsound(loc, hitsound_wall, volume, 1, -1)
@@ -170,7 +170,7 @@
 			permutated.Add(A)
 		return FALSE
 	else
-		if(A && A.density && !ismob(A) && !(A.flags & ON_BORDER)) //if we hit a dense non-border obj or dense turf then we also hit one of the mobs on that tile.
+		if(A && A.density && !ismob(A) && !(A.flags_1 & ON_BORDER_1)) //if we hit a dense non-border obj or dense turf then we also hit one of the mobs on that tile.
 			var/list/mobs_list = list()
 			for(var/mob/living/L in target_turf)
 				mobs_list += L
@@ -188,7 +188,7 @@
 	return FALSE
 
 /obj/item/projectile/proc/check_ricochet_flag(atom/A)
-	if(A.flags & CHECK_RICOCHET)
+	if(A.flags_1 & CHECK_RICOCHET_1)
 		return TRUE
 	return FALSE
 
@@ -217,7 +217,7 @@
 				continue
 
 			if((!( current ) || loc == current))
-				current = locate(Clamp(x+xo,1,world.maxx),Clamp(y+yo,1,world.maxy),z)
+				current = locate(CLAMP(x+xo,1,world.maxx),CLAMP(y+yo,1,world.maxy),z)
 
 			if(!Angle)
 				Angle=round(Get_Angle(src,current))
@@ -276,7 +276,7 @@
 		while(loc)
 			if(!paused)
 				if((!( current ) || loc == current))
-					current = locate(Clamp(x+xo,1,world.maxx),Clamp(y+yo,1,world.maxy),z)
+					current = locate(CLAMP(x+xo,1,world.maxx),CLAMP(y+yo,1,world.maxy),z)
 				step_towards(src, current)
 				if(can_hit_target(original, permutated))
 					Collide(original)
@@ -335,7 +335,7 @@
 		var/ox = round(screenview/2) - user.client.pixel_x //"origin" x
 		var/oy = round(screenview/2) - user.client.pixel_y //"origin" y
 		// to_chat(world, "Pixel position: [x] [y]")
-		angle = Atan2(y - oy, x - ox)
+		angle = ATAN2(y - oy, x - ox)
 		// to_chat(world, "Angle: [angle]")
 	return list(angle, p_x, p_y)
 

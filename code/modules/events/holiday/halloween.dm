@@ -51,7 +51,7 @@
 	endWhen	= 40
 
 /datum/round_event/meteor_wave/spooky/tick()
-	if(IsMultiple(activeFor, 4))
+	if(ISMULTIPLE(activeFor, 4))
 		spawn_meteors(3, GLOB.meteorsSPOOKY) //meteor list types defined in gamemode/meteor/meteors.dm
 
 //Creepy clown invasion
@@ -76,7 +76,7 @@
 			new /obj/effect/hallucination/simple/clown(T, H, 50)
 
 /datum/round_event/creepy_clowns/tick()
-	if(IsMultiple(activeFor, 4))
+	if(ISMULTIPLE(activeFor, 4))
 		for(var/mob/living/carbon/human/H in GLOB.living_mob_list)
 			if (prob(66))
 				playsound(H.loc, pick('sound/spookoween/scary_horn.ogg','sound/spookoween/scary_horn2.ogg', 'sound/spookoween/scary_horn3.ogg'), 100, 1)

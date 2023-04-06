@@ -95,7 +95,7 @@
 			return
 
 	if(user.a_intent != INTENT_HARM)
-		if(!user.drop_item() || (I.flags & ABSTRACT))
+		if(!user.drop_item() || (I.flags_1 & ABSTRACT_1))
 			return
 		place_item_in_disposal(I, user)
 		update_icon()
@@ -236,7 +236,7 @@
 
 /obj/machinery/disposal/deconstruct(disassembled = TRUE)
 	var/turf/T = loc
-	if(!(flags & NODECONSTRUCT))
+	if(!(flags_1 & NODECONSTRUCT_1))
 		if(stored)
 			stored.forceMove(T)
 			src.transfer_fingerprints_to(stored)
@@ -300,7 +300,7 @@
 	data["full_pressure"] = full_pressure
 	data["pressure_charging"] = pressure_charging
 	data["panel_open"] = panel_open
-	var/per = Clamp(100* air_contents.return_pressure() / (SEND_PRESSURE), 0, 100)
+	var/per = CLAMP(100* air_contents.return_pressure() / (SEND_PRESSURE), 0, 100)
 	data["per"] = round(per, 1)
 	data["isai"] = isAI(user)
 	return data

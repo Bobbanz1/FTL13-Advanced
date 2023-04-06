@@ -90,16 +90,16 @@
 			lowest_y = T.y
 		if(!lowest_x || T.x < lowest_x)
 			lowest_x = T.x
-	var/mean_y = Lerp(lowest_y, highest_y)
-	var/mean_x = Lerp(lowest_x, highest_x)
+	var/mean_y = LERP(lowest_y, highest_y, 1)
+	var/mean_x = LERP(lowest_x, highest_x, 1)
 	if(prob(50))
-		mean_y = Ceiling(mean_y)
+		mean_y = CEILING(mean_y, 1)
 	else
-		mean_y = Floor(mean_y)
+		mean_y = FLOOR(mean_y, 1)
 	if(prob(50))
-		mean_x = Ceiling(mean_x)
+		mean_x = CEILING(mean_x, 1)
 	else
-		mean_x = Floor(mean_x)
+		mean_x = FLOOR(mean_x, 1)
 	var/turf/semi_random_center_turf = locate(mean_x, mean_y, ZLEVEL_STATION)
 	for(var/t in getline(src, semi_random_center_turf))
 		prism_turfs[t] = TRUE
@@ -107,19 +107,19 @@
 	for(var/t in prism_turfs)
 		var/turf/T = t
 		if(placement_style)
-			if(IsOdd(T.x + T.y))
+			if(ISODD(T.x + T.y))
 				seven_random_hexes(T, efficiency)
 			else if(prob(50 * efficiency))
 				new /obj/effect/temp_visual/ratvar/prolonging_prism(T)
 		else
-			if(IsEven(T.x + T.y))
+			if(ISEVEN(T.x + T.y))
 				seven_random_hexes(T, efficiency)
 			else if(prob(50 * efficiency))
 				new /obj/effect/temp_visual/ratvar/prolonging_prism(T)
 		CHECK_TICK //we may be going over a hell of a lot of turfs
 
 /obj/structure/destructible/clockwork/powered/prolonging_prism/proc/get_delay_cost()
-	return Floor(delay_cost, MIN_CLOCKCULT_POWER)
+	return FLOOR(delay_cost, MIN_CLOCKCULT_POWER)
 
 /obj/structure/destructible/clockwork/powered/prolonging_prism/proc/seven_random_hexes(turf/T, efficiency)
 	var/static/list/hex_states = list("prismhex1", "prismhex2", "prismhex3", "prismhex4", "prismhex5", "prismhex6", "prismhex7")

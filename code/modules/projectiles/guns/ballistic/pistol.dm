@@ -90,7 +90,7 @@
 
 /obj/item/gun/ballistic/automatic/pistol/automag/update_icon()
 	..()
-	icon_state = "automag[magazine ? "-[Ceiling(get_ammo(0)/7)*7]" : ""][chambered ? "" : "-e"]"
+	icon_state = "automag[magazine ? "-[CEILING(get_ammo(0)/7, 1)*7]" : ""][chambered ? "" : "-e"]"
 	return
 /obj/item/gun/ballistic/automatic/pistol/c05r
 	name = "C05-R"
@@ -116,5 +116,5 @@
 
 /obj/item/gun/ballistic/automatic/pistol/luger/update_icon()
 	..()
-	icon_state = "p08[magazine ? "-[Ceiling(get_ammo(0)/10)*10]" : ""][chambered ? "" : "-e"]"
+	icon_state = "p08[magazine ? "-[CEILING(get_ammo(0)/10, 1)*10]" : ""][chambered ? "" : "-e"]"
 	return

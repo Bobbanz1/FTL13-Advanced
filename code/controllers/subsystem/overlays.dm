@@ -1,4 +1,4 @@
-PROCESSING_SUBSYSTEM_DEF(overlays)
+SUBSYSTEM_DEF(overlays)
 	name = "Overlay"
 	flags = SS_TICKER
 	wait = 1
@@ -6,56 +6,63 @@ PROCESSING_SUBSYSTEM_DEF(overlays)
 	init_order = INIT_ORDER_OVERLAY
 	runlevels = RUNLEVELS_DEFAULT | RUNLEVEL_SETUP
 
-	stat_tag = "Ov"
-	currentrun = null
+	var/list/queue
+	var/list/stats
 	var/list/overlay_icon_state_caches
 	var/list/overlay_icon_cache
 	var/initialized = FALSE
 
-/datum/controller/subsystem/processing/overlays/PreInit()
-	LAZYINITLIST(overlay_icon_state_caches)
-	LAZYINITLIST(overlay_icon_cache)
+/datum/controller/subsystem/overlays/PreInit()
+	overlay_icon_state_caches = list()
+	overlay_icon_cache = list()
+	queue = list()
+	stats = list()
 
-/datum/controller/subsystem/processing/overlays/Initialize()
+/datum/controller/subsystem/overlays/Initialize()
 	initialized = TRUE
-	Flush()
+	fire(mc_check = FALSE)
 	..()
 
-/datum/controller/subsystem/processing/overlays/Recover()
+
+/datum/controller/subsystem/overlays/stat_entry()
+	..("Ov:[length(queue)]")
+
+
+/datum/controller/subsystem/overlays/Shutdown()
+	text2file(render_stats(stats), "[GLOB.log_directory]/overlay.log")
+
+
+/datum/controller/subsystem/overlays/Recover()
 	overlay_icon_state_caches = SSoverlays.overlay_icon_state_caches
 	overlay_icon_cache = SSoverlays.overlay_icon_cache
-	processing = SSoverlays.processing
+	queue = SSoverlays.queue
 
-/datum/controller/subsystem/processing/overlays/fire(resumed = FALSE, mc_check = TRUE)
-	var/list/processing = src.processing
-	while(processing.len)
-		var/atom/thing = processing[processing.len]
-		processing.len--
+
+/datum/controller/subsystem/overlays/fire(resumed = FALSE, mc_check = TRUE)
+	var/list/queue = src.queue
+	var/static/count = 0
+	if (count)
+		var/c = count
+		count = 0 //so if we runtime on the Cut, we don't try again.
+		queue.Cut(1,c+1)
+
+	for (var/thing in queue)
+		count++
 		if(thing)
-			thing.compile_overlays()
+			STAT_START_STOPWATCH
+			var/atom/A = thing
+			COMPILE_OVERLAYS(A)
+			STAT_STOP_STOPWATCH
+			STAT_LOG_ENTRY(stats, A.type)
 		if(mc_check)
 			if(MC_TICK_CHECK)
 				break
 		else
 			CHECK_TICK
 
-/datum/controller/subsystem/processing/overlays/proc/Flush()
-	if(processing.len)
-		testing("Flushing [processing.len] overlays")
-		fire(mc_check = FALSE)	//pair this thread up with the MC to get extra compile time
-
-/atom/proc/compile_overlays()
-	var/list/oo = our_overlays
-	var/list/po = priority_overlays
-	if(LAZYLEN(po) && LAZYLEN(oo))
-		overlays = oo + po
-	else if(LAZYLEN(oo))
-		overlays = oo
-	else if(LAZYLEN(po))
-		overlays = po
-	else
-		overlays.Cut()
-	flags &= ~OVERLAY_QUEUED
+	if (count)
+		queue.Cut(1,count+1)
+		count = 0
 
 /proc/iconstate2appearance(icon, iconstate)
 	var/static/image/stringbro = new()
@@ -83,27 +90,32 @@ PROCESSING_SUBSYSTEM_DEF(overlays)
 		. = iconbro.appearance
 		icon_cache[icon] = .
 
-/atom/proc/build_appearance_list(new_overlays)
+/atom/proc/build_appearance_list(old_overlays)
 	var/static/image/appearance_bro = new()
-	if (!islist(new_overlays))
-		new_overlays = list(new_overlays)
-	else
-		listclearnulls(new_overlays)
-	for (var/i in 1 to length(new_overlays))
-		var/image/cached_overlay = new_overlays[i]
-		if (istext(cached_overlay))
-			new_overlays[i] = iconstate2appearance(icon, cached_overlay)
-		else if(isicon(cached_overlay))
-			new_overlays[i] = icon2appearance(cached_overlay)
-		else	//image/mutable_appearance probable
-			appearance_bro.appearance = cached_overlay
-			if(!ispath(cached_overlay))
-				appearance_bro.dir = cached_overlay.dir
-			new_overlays[i] = appearance_bro.appearance
+	var/list/new_overlays = list()
+	if (!islist(old_overlays))
+		old_overlays = list(old_overlays)
+	for (var/overlay in old_overlays)
+		if(!overlay)
+			continue
+		if (istext(overlay))
+			new_overlays += iconstate2appearance(icon, overlay)
+		else if(isicon(overlay))
+			new_overlays += icon2appearance(overlay)
+		else
+			if(isloc(overlay))
+				var/atom/A = overlay
+				if (A.flags_1 & OVERLAY_QUEUED_1)
+					COMPILE_OVERLAYS(A)
+			appearance_bro.appearance = overlay //this works for images and atoms too!
+			if(!ispath(overlay))
+				var/image/I = overlay
+				appearance_bro.dir = I.dir
+			new_overlays += appearance_bro.appearance
 	return new_overlays
 
-#define NOT_QUEUED_ALREADY (!(flags & OVERLAY_QUEUED))
-#define QUEUE_FOR_COMPILE flags |= OVERLAY_QUEUED; SSoverlays.processing += src;
+#define NOT_QUEUED_ALREADY (!(flags_1 & OVERLAY_QUEUED_1))
+#define QUEUE_FOR_COMPILE flags_1 |= OVERLAY_QUEUED_1; SSoverlays.queue += src;
 /atom/proc/cut_overlays(priority = FALSE)
 	var/list/cached_overlays = our_overlays
 	var/list/cached_priority = priority_overlays

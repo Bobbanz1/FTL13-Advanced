@@ -145,7 +145,7 @@
 	//CONNECT//
 	///////////
 #if (PRELOAD_RSC == 0)
-GLOBAL_LIST(external_rsc_urls)
+GLOBAL_LIST_EMPTY(external_rsc_urls)
 #endif
 
 
@@ -156,13 +156,6 @@ GLOBAL_LIST(external_rsc_urls)
 
 	if(connection != "seeker" && connection != "web")//Invalid connection type.
 		return null
-
-#if (PRELOAD_RSC == 0)
-	var/static/next_external_rsc = 0
-	if(external_rsc_urls && external_rsc_urls.len)
-		next_external_rsc = Wrap(next_external_rsc+1, 1, external_rsc_urls.len+1)
-		preload_rsc = external_rsc_urls[next_external_rsc]
-#endif
 
 	GLOB.clients += src
 	GLOB.directory[ckey] = src
@@ -426,7 +419,7 @@ GLOBAL_LIST(external_rsc_urls)
 			message_admins("<span class='adminnotice'>Failed Login: [key] - New account attempting to connect during panic bunker</span>")
 			to_chat(src, "Sorry but the server is currently not accepting connections from never before seen players.")
 			var/list/connectiontopic_a = params2list(connectiontopic)
-			var/list/panic_addr = CONFIG_GET(string/panic_address)
+			var/list/panic_addr = CONFIG_GET(string/panic_server_address)
 			if(panic_addr && !connectiontopic_a["redirect"])
 				var/panic_name = CONFIG_GET(string/panic_server_name)
 				to_chat(src, "<span class='notice'>Sending you to [panic_name ? panic_name : panic_addr].</span>")
@@ -594,9 +587,7 @@ GLOBAL_LIST(external_rsc_urls)
 		verbs += /client/proc/self_notes
 
 
-#undef TOPIC_SPAM_DELAY
 #undef UPLOAD_LIMIT
-#undef MIN_CLIENT_VERSION
 
 //checks if a client is afk
 //3000 frames = 5 minutes
@@ -619,6 +610,12 @@ GLOBAL_LIST(external_rsc_urls)
 
 //send resources to the client. It's here in its own proc so we can move it around easiliy if need be
 /client/proc/send_resources()
+#if (PRELOAD_RSC == 0)
+	var/static/next_external_rsc = 0
+	if(GLOB.external_rsc_urls && GLOB.external_rsc_urls.len)
+		next_external_rsc = WRAP(next_external_rsc+1, 1, GLOB.external_rsc_urls.len+1)
+		preload_rsc = GLOB.external_rsc_urls[next_external_rsc]
+#endif
 	//get the common files
 	getFiles(
 		'html/search.js',

@@ -110,7 +110,7 @@
 
 /obj/item/gun/ballistic/automatic/c20r/update_icon()
 	..()
-	icon_state = "c20r[magazine ? "-[Ceiling(get_ammo(0)/4)*4]" : ""][chambered ? "" : "-e"][suppressed ? "-suppressed" : ""]"
+	icon_state = "c20r[magazine ? "-[CEILING(get_ammo(0)/4, 1)*4]" : ""][chambered ? "" : "-e"][suppressed ? "-suppressed" : ""]"
 
 /obj/item/gun/ballistic/automatic/wt550
 	name = "security auto rifle"
@@ -125,7 +125,7 @@
 
 /obj/item/gun/ballistic/automatic/wt550/update_icon()
 	..()
-	icon_state = "wt550[magazine ? "-[Ceiling(get_ammo(0)/4)*4]" : ""]"
+	icon_state = "wt550[magazine ? "-[CEILING(get_ammo(0)/4, 1)*4]" : ""]"
 
 /obj/item/gun/ballistic/automatic/mini_uzi
 	name = "\improper Type U3 Uzi"
@@ -436,7 +436,7 @@
 
 /obj/item/gun/ballistic/automatic/laser/update_icon()
 	..()
-	icon_state = "oldrifle[magazine ? "-[Ceiling(get_ammo(0)/4)*4]" : ""]"
+	icon_state = "oldrifle[magazine ? "-[CEILING(get_ammo(0)/4, 1)*4]" : ""]"
 	return
 
 /obj/item/gun/ballistic/automatic/xmg80
@@ -495,5 +495,5 @@
 
 /obj/item/gun/ballistic/automatic/ak922/update_icon()
 	..()
-	icon_state = "ak922[magazine ? "-[Ceiling(get_ammo(0)/5)*5]" : ""][chambered ? "" : "-e"]"
+	icon_state = "ak922[magazine ? "-[CEILING(get_ammo(0)/5, 1)*5]" : ""][chambered ? "" : "-e"]"
 	return

@@ -241,8 +241,8 @@
 
 
 /mob/living/silicon/pai/process()
-	emitterhealth = Clamp((emitterhealth + emitterregen), -50, emittermaxhealth)
-	hit_slowdown = Clamp((hit_slowdown - 1), 0, 100)
+	emitterhealth = CLAMP((emitterhealth + emitterregen), -50, emittermaxhealth)
+	hit_slowdown = CLAMP((hit_slowdown - 1), 0, 100)
 
 /mob/living/silicon/pai/generateStaticOverlay()
 	return

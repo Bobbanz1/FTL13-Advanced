@@ -111,7 +111,7 @@ research holder datum.
 
 	for(var/v in known_tech)
 		var/datum/tech/T = known_tech[v]
-		T.level = Clamp(T.level, 0, 20)
+		T.level = CLAMP(T.level, 0, 20)
 	return
 
 //Refreshes the levels of a given tech.

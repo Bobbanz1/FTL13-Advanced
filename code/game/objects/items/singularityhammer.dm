@@ -4,7 +4,7 @@
 	icon_state = "mjollnir0"
 	lefthand_file = 'icons/mob/inhands/weapons/hammers_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/hammers_righthand.dmi'
-	flags = CONDUCT
+	flags_1 = CONDUCT_1
 	slot_flags = SLOT_BACK
 	force = 5
 	force_unwielded = 5
@@ -51,7 +51,7 @@
 					var/obj/item/clothing/shoes/magboots/M = H.shoes
 					if(M.magpulse)
 						continue
-				H.apply_effect(20, KNOCKDOWN, 0)
+				H.apply_effect(20, EFFECT_KNOCKDOWN, 0)
 				step_towards(H,pull)
 				step_towards(H,pull)
 				step_towards(H,pull)
@@ -75,7 +75,7 @@
 	icon_state = "mjollnir0"
 	lefthand_file = 'icons/mob/inhands/weapons/hammers_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/hammers_righthand.dmi'
-	flags = CONDUCT
+	flags_1 = CONDUCT_1
 	slot_flags = SLOT_BACK
 	force = 5
 	force_unwielded = 5

@@ -340,7 +340,7 @@
 					var/N = text2num(user_input)
 					if(!N)
 						return
-					timer_set = Clamp(N,minimum_timer_set,maximum_timer_set)
+					timer_set = CLAMP(N,minimum_timer_set,maximum_timer_set)
 				. = TRUE
 		if("safety")
 			if(auth && yes_code)
@@ -422,8 +422,7 @@
 	yes_code = FALSE
 	safety = TRUE
 	update_icon()
-	for(var/mob/M in GLOB.player_list)
-		M << 'sound/machines/alarm.ogg'
+	sound_to_playing_players('sound/machines/alarm.ogg')
 	if(SSticker && SSticker.mode)
 		SSticker.mode.explosion_in_progress = 1
 	sleep(100)

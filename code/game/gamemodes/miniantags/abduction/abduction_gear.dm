@@ -28,10 +28,10 @@
 	var/stealth_armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 15, rad = 15, fire = 70, acid = 70)
 	var/combat_armor = list(melee = 50, bullet = 50, laser = 50, energy = 50, bomb = 50, bio = 50, rad = 50, fire = 90, acid = 90)
 
-/obj/item/clothing/suit/armor/abductor/vest/proc/toggle_nodrop()
-	flags ^= NODROP
+/obj/item/clothing/suit/armor/abductor/vest/proc/toggle_NODROP_1()
+	flags_1 ^= NODROP_1
 	if(ismob(loc))
-		to_chat(loc, "<span class='notice'>Your vest is now [flags & NODROP ? "locked" : "unlocked"].</span>")
+		to_chat(loc, "<span class='notice'>Your vest is now [flags_1 & NODROP_1 ? "locked" : "unlocked"].</span>")
 
 /obj/item/clothing/suit/armor/abductor/vest/proc/flip_mode()
 	switch(mode)
@@ -422,7 +422,7 @@ Congratulations! You are now trained for invasive xenobiology research!"}
 	L.lastattacker = user
 
 	L.Knockdown(140)
-	L.apply_effect(STUTTER, 7)
+	L.apply_effect(EFFECT_STUTTER, 7)
 
 	L.visible_message("<span class='danger'>[user] has stunned [L] with [src]!</span>", \
 							"<span class='userdanger'>[user] has stunned you with [src]!</span>")
@@ -500,7 +500,7 @@ Congratulations! You are now trained for invasive xenobiology research!"}
 
 /obj/item/restraints/handcuffs/energy/used
 	desc = "energy discharge"
-	flags = DROPDEL
+	flags_1 = DROPDEL_1
 
 /obj/item/restraints/handcuffs/energy/used/dropped(mob/user)
 	user.visible_message("<span class='danger'>[user]'s [src] break in a discharge of energy!</span>", \
@@ -533,7 +533,7 @@ Congratulations! You are now trained for invasive xenobiology research!"}
 
 /obj/item/device/radio/headset/abductor/Initialize(mapload)
 	..()
-	SET_SECONDARY_FLAG(src, BANG_PROTECT)
+	flags_2 |= BANG_PROTECT_2
 	make_syndie()
 
 /obj/item/device/radio/headset/abductor/attackby(obj/item/W, mob/user, params)

@@ -82,7 +82,7 @@
 	. = ..()
 
 /obj/structure/destructible/clockwork/massive/celestial_gateway/deconstruct(disassembled = TRUE)
-	if(!(flags & NODECONSTRUCT))
+	if(!(flags_1 & NODECONSTRUCT_1))
 		if(!disassembled)
 			resistance_flags |= INDESTRUCTIBLE
 			countdown.stop()
@@ -186,7 +186,7 @@
 				to_chat(M, "<span class='warning'><b>You hear otherworldly sounds from the [dir2text(get_dir(get_turf(M), get_turf(src)))]...</span>")
 	if(!obj_integrity)
 		return 0
-	var/convert_dist = 1 + (round(Floor(progress_in_seconds, 15) * 0.067))
+	var/convert_dist = 1 + (round(FLOOR(progress_in_seconds, 15) * 0.067))
 	for(var/t in RANGE_TURFS(convert_dist, loc))
 		var/turf/T = t
 		if(!T)

@@ -48,7 +48,7 @@
 
 /obj/item/device/radio/headset/syndicate/alt/Initialize(mapload)
 	. = ..()
-	SET_SECONDARY_FLAG(src, BANG_PROTECT)
+	flags_2 |= BANG_PROTECT_2
 
 /obj/item/device/radio/headset/syndicate/alt/leader
 	name = "team leader headset"
@@ -80,7 +80,7 @@
 
 /obj/item/device/radio/headset/headset_sec/alt/Initialize(mapload)
 	. = ..()
-	SET_SECONDARY_FLAG(src, BANG_PROTECT)
+	flags_2 |= BANG_PROTECT_2
 
 /obj/item/device/radio/headset/headset_eng
 	name = "engineering radio headset"
@@ -135,7 +135,7 @@
 
 /obj/item/device/radio/headset/heads/captain/alt/Initialize(mapload)
 	. = ..()
-	SET_SECONDARY_FLAG(src, BANG_PROTECT)
+	flags_2 |= BANG_PROTECT_2
 
 /obj/item/device/radio/headset/heads/rd
 	name = "\proper the research director's headset"
@@ -157,7 +157,7 @@
 
 /obj/item/device/radio/headset/heads/hos/alt/Initialize(mapload)
 	. = ..()
-	SET_SECONDARY_FLAG(src, BANG_PROTECT)
+	flags_2 |= BANG_PROTECT_2
 
 /obj/item/device/radio/headset/heads/ce
 	name = "\proper the chief engineer's headset"
@@ -232,7 +232,7 @@
 
 /obj/item/device/radio/headset/headset_cent/alt/Initialize(mapload)
 	. = ..()
-	SET_SECONDARY_FLAG(src, BANG_PROTECT)
+	flags_2 |= BANG_PROTECT_2
 
 /obj/item/device/radio/headset/ai
 	name = "\proper Integrated Subspace Transceiver "

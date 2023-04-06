@@ -111,7 +111,7 @@
 
 
 /obj/machinery/shieldgen/deconstruct(disassembled = TRUE)
-	if(!(flags & NODECONSTRUCT))
+	if(!(flags_1 & NODECONSTRUCT_1))
 		if(!(stat && BROKEN))
 			stat |= BROKEN
 			locked = pick(0,1)
@@ -210,7 +210,7 @@
 	anchored = FALSE
 	density = TRUE
 	req_access = list(ACCESS_TELEPORTER)
-	flags = CONDUCT
+	flags_1 = CONDUCT_1
 	use_power = NO_POWER_USE
 	max_integrity = 300
 	var/active = FALSE
@@ -256,7 +256,7 @@
 	use_stored_power(50)
 
 /obj/machinery/shieldwallgen/proc/use_stored_power(amount)
-	power = Clamp(power - amount, 0, maximum_stored_power)
+	power = CLAMP(power - amount, 0, maximum_stored_power)
 	update_activity()
 
 /obj/machinery/shieldwallgen/proc/update_activity()

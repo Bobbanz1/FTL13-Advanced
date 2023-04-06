@@ -365,7 +365,7 @@ SUBSYSTEM_DEF(starmap)
 		while(!AT)
 			AT = place.contents[i++]
 		if(AT.z == ZLEVEL_STATION)
-			place << sound(sound,0,0,null,volume)
+			SEND_SOUND(place, sound(sound,0,0,null,volume))
 
 /datum/controller/subsystem/starmap/proc/ftl_cancel() //reusable proc for when your FTL jump fails or is canceled
 	minor_announce("The scheduled FTL translation has either been cancelled or failed during the safe processing stage. All crew are to standby for orders from the bridge.","Alert! FTL spoolup failure!")

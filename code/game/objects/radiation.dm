@@ -36,7 +36,7 @@
 		if(!silent)
 			to_chat(src, "Your skin feels warm.")
 
-		apply_effect(amount, IRRADIATE, blocked)
+		apply_effect(amount, EFFECT_IRRADIATE, blocked)
 		for(var/obj/I in src) //Radiation is also applied to items held by the mob
 			I.rad_act(amount)
 

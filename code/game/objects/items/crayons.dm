@@ -79,7 +79,7 @@
 	if(name == "crayon")
 		name = "[item_color] crayon"
 
-	if(CONFIG_GET(flag/join_with_mutant_race))
+	if(CONFIG_GET(flag/join_with_mutant_humans))
 		graffiti |= "antilizard"
 		graffiti |= "prolizard"
 

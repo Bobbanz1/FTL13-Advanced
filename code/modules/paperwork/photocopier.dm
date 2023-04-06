@@ -613,7 +613,7 @@
 
 /obj/machinery/photocopier/obj_break(damage_flag)
 
-	if(!(flags & NODECONSTRUCT))
+	if(!(flags_1 & NODECONSTRUCT_1))
 
 		if(toner > 0)
 

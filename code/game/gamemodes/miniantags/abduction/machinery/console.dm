@@ -69,7 +69,7 @@
 
 		dat+="<br>"
 		dat += "<a href='?src=[REF(src)];select_disguise=1'>Select Agent Vest Disguise</a><br>"
-		dat += "<a href='?src=[REF(src)];toggle_vest=1'>[vest.flags & NODROP ? "Unlock" : "Lock"] Vest</a><br>"
+		dat += "<a href='?src=[REF(src)];toggle_vest=1'>[vest.flags_1 & NODROP_1 ? "Unlock" : "Lock"] Vest</a><br>"
 	else
 		dat += "<span class='bad'>NO AGENT VEST DETECTED</span>"
 	var/datum/browser/popup = new(user, "computer", "Abductor Console", 400, 500)
@@ -89,7 +89,7 @@
 		FlipVest()
 	else if(href_list["toggle_vest"])
 		if(vest)
-			vest.toggle_nodrop()
+			vest.toggle_NODROP_1()
 	else if(href_list["select_disguise"])
 		SelectDisguise()
 	else if(href_list["dispense"])

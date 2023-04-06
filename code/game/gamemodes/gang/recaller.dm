@@ -8,7 +8,7 @@
 	w_class = WEIGHT_CLASS_TINY
 	throw_speed = 3
 	throw_range = 7
-	flags = CONDUCT
+	flags_1 = CONDUCT_1
 	origin_tech = "programming=5;bluespace=2;syndicate=5"
 	var/datum/gang/gang //Which gang uses this?
 	var/recalling = 0
@@ -106,7 +106,7 @@
 /obj/item/device/gangtool/proc/ping_gang(mob/user)
 	if(!user)
 		return
-	var/message = stripped_input(user,"Discreetly send a gang-wide message.","Send Message") as null|text
+	var/message = stripped_input(user,"Discreetly send a gang-wide message.","Send Message")
 	if(!message || !can_use(user))
 		return
 	if(user.z > 2)

@@ -29,7 +29,7 @@
 	name = "\improper SWAT boots"
 	desc = "High speed, no drag combat boots."
 	permeability_coefficient = 0.01
-	flags = NOSLIP
+	flags_1 = NOSLIP_1
 	armor = list(melee = 40, bullet = 30, laser = 25, energy = 25, bomb = 50, bio = 30, rad = 30, fire = 90, acid = 50)
 
 /obj/item/clothing/shoes/combat/camo //camo boots for ruskies
@@ -38,7 +38,7 @@
 	icon_state = "camoboots"
 	item_state = "camoboots"
 	permeability_coefficient = 0.01
-	flags = NOSLIP
+	flags_1 = NOSLIP_1
 	armor = list(melee = 40, bullet = 30, laser = 25, energy = 25, bomb = 50, bio = 30, rad = 30)
 
 /obj/item/clothing/shoes/sandal
@@ -64,7 +64,7 @@
 	name = "galoshes"
 	icon_state = "galoshes"
 	permeability_coefficient = 0.05
-	flags = NOSLIP
+	flags_1 = NOSLIP_1
 	slowdown = SHOES_SLOWDOWN+1
 	strip_delay = 50
 	equip_delay_other = 50
@@ -159,7 +159,7 @@
 	icon_state = "cultalt"
 
 /obj/item/clothing/shoes/cult/alt/ghost
-	flags = NODROP|DROPDEL
+	flags_1 = NODROP_1|DROPDEL_1
 
 /obj/item/clothing/shoes/cyborg
 	name = "cyborg boots"

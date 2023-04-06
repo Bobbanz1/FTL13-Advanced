@@ -2,7 +2,7 @@
 	name = "Holodeck"
 	icon_state = "Holodeck"
 	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
-	flags = 0
+	flags_1 = 0
 	hidden = TRUE
 
 	var/obj/machinery/computer/holodeck/linked
@@ -55,7 +55,7 @@
 	name = "Holodeck" //Also fixes locate() being bad.
 	icon_state = "Holodeck"
 	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
-	flags = 0
+	flags_1 = 0
 	hidden = TRUE
 	var/obj/machinery/computer/holodeck/linked
 	var/restricted = 0 // if true, program goes on emag list

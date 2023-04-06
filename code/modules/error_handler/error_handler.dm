@@ -4,8 +4,21 @@ GLOBAL_VAR_INIT(total_runtimes_skipped, 0)
 #ifdef DEBUG
 /world/Error(exception/E, datum/e_src)
 	if(!istype(E)) //Something threw an unusual exception
-		log_world("\[[time_stamp()]] Uncaught exception: [E]")
+		log_world("uncaught runtime error: [E]")
 		return ..()
+
+	//this is snowflake because of a byond bug (ID:2306577), do not attempt to call non-builtin procs in this if
+	if(copytext(E.name,1,32) == "Maximum recursion level reached")
+		//log to world while intentionally triggering the byond bug.
+		log_world("runtime error: [E.name]\n[E.desc]")
+		//if we got to here without silently ending, the byond bug has been fixed.
+		log_world("The bug with recursion runtimes has been fixed. Please remove the snowflake check from world/Error in [__FILE__]:[__LINE__]")
+		return //this will never happen.
+
+	if (islist(stack_trace_storage))
+		for (var/line in splittext(E.desc, "\n"))
+			if (text2ascii(line) != 32)
+				stack_trace_storage += line
 
 	var/static/list/error_last_seen = list()
 	var/static/list/error_cooldown = list() /* Error_cooldown items will either be positive(cooldown time) or negative(silenced error)
@@ -97,24 +110,11 @@ GLOBAL_VAR_INIT(total_runtimes_skipped, 0)
 	if(GLOB.error_cache)
 		GLOB.error_cache.log_error(E, desclines)
 
-	world.log << "\[[time_stamp()]] Runtime in [E.file],[E.line]: [E]"
+	var/main_line = "\[[time_stamp()]] Runtime in [E.file],[E.line]: [E]"
+	SEND_TEXT(world.log, main_line)
 	for(var/line in desclines)
-		world.log << line
+		SEND_TEXT(world.log, line)
 
-/* This logs the runtime in the old format */
-
-	E.name = "\n\[[time2text(world.timeofday,"hh:mm:ss")]\][E.name]"
-
-	//Original
-	//
-	var/list/split = splittext(E.desc, "\n")
-	for (var/i in 1 to split.len)
-		if (split[i] != "")
-			split[i] = "\[[time2text(world.timeofday,"hh:mm:ss")]\][split[i]]"
-	E.desc = jointext(split, "\n")
-	world.log = GLOB.world_runtime_log
-	..(E)
-
-	world.log = null
-
+	// This writes the regular format (unwrapping newlines and inserting timestamps as needed).
+	log_runtime("runtime error: [E.name]\n[E.desc]")
 #endif

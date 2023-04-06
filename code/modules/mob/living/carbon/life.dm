@@ -173,7 +173,7 @@
 	//TOXINS/PLASMA
 	if(Toxins_partialpressure > safe_tox_max)
 		var/ratio = (breath_gases["plasma"][MOLES]/safe_tox_max) * 10
-		adjustToxLoss(Clamp(ratio, MIN_TOXIC_GAS_DAMAGE, MAX_TOXIC_GAS_DAMAGE))
+		adjustToxLoss(CLAMP(ratio, MIN_TOXIC_GAS_DAMAGE, MAX_TOXIC_GAS_DAMAGE))
 		throw_alert("too_much_tox", /obj/screen/alert/too_much_tox)
 	else
 		clear_alert("too_much_tox")
@@ -213,7 +213,7 @@
 		if(internal.loc != src)
 			internal = null
 			update_internals_hud_icon(0)
-		else if ((!wear_mask || !(wear_mask.flags & MASKINTERNALS)) && !getorganslot("breathing_tube"))
+		else if ((!wear_mask || !(wear_mask.flags_1 & MASKINTERNALS_1)) && !getorganslot("breathing_tube"))
 			internal = null
 			update_internals_hud_icon(0)
 		else
@@ -272,7 +272,7 @@
 				dna.temporary_mutations.Remove(mut)
 
 	if(radiation)
-		radiation = Clamp(radiation, 0, 100)
+		radiation = CLAMP(radiation, 0, 100)
 		switch(radiation)
 			if(0 to 50)
 				radiation = max(radiation-1,0)

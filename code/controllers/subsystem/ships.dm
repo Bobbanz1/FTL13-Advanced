@@ -292,13 +292,12 @@ SUBSYSTEM_DEF(ship)
 		return
 
 
-	playsound_global (
-		pick (
+	sound_to_playing_players(pick (
 			'sound/effects/enemy_ship_destroyed.ogg',
 			'sound/effects/enemy_ship_destroyed_2.ogg',
 			'sound/effects/enemy_ship_destroyed_3.ogg',
 			)
-	)
+		)
 
 	if(S.planet != SSstarmap.current_planet)
 		qdel(S)

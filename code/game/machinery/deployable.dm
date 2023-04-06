@@ -18,7 +18,7 @@
 	var/material = METAL
 
 /obj/structure/barricade/deconstruct(disassembled = TRUE)
-	if(!(flags & NODECONSTRUCT))
+	if(!(flags_1 & NODECONSTRUCT_1))
 		make_debris()
 	qdel(src)
 
@@ -33,7 +33,7 @@
 				to_chat(user, "<span class='notice'>You begin repairing [src]...</span>")
 				playsound(loc, WT.usesound, 40, 1)
 				if(do_after(user, 40*I.toolspeed, target = src))
-					obj_integrity = Clamp(obj_integrity + 20, 0, max_integrity)
+					obj_integrity = CLAMP(obj_integrity + 20, 0, max_integrity)
 	else
 		return ..()
 

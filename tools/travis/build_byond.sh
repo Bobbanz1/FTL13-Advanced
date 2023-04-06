@@ -20,8 +20,9 @@ if [ "$BUILD_TOOLS" = false ]; then
 	fi;
     source $HOME/BYOND-${BYOND_MAJOR}.${BYOND_MINOR}/byond/bin/byondsetup
 	if [ "$BUILD_TESTING" = true ]; then
-		tools/travis/dm.sh -DTRAVISBUILDING ftl13.dme
-	else
 		tools/travis/dm.sh -DTRAVISBUILDING -DTRAVISTESTING -DALL_MAPS ftl13.dme
+	else
+		tools/travis/dm.sh -DTRAVISBUILDING ftl13.dme && DreamDaemon ftl13.dmb -close -trusted -params "test-run&log-directory=travis"
+		cat data/logs/travis/clean_run.lk
 	fi;
 fi;

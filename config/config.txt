@@ -1,3 +1,17 @@
+# You can use the "$include" directive to split your configs however you want
+
+$include game_options.txt
+$include dbconfig.txt
+$include comms.txt
+
+# You can use the @ character at the beginning of a config option to lock it from being edited in-game
+# Example usage:
+# @SERVERNAME tgstation
+# Which sets the SERVERNAME, and disallows admins from being able to change it using View Variables.
+# @LOG_TWITTER 0
+# Which explicitly disables LOG_TWITTER, as well as locking it.
+# There are various options which are hard-locked for security reasons.
+
 ## Server name: This appears at the top of the screen in-game and in the BYOND hub. Uncomment and replace 'tgstation' with the name of your choice.
 # SERVERNAME tgstation
 
@@ -365,3 +379,9 @@ DEBUG_ADMIN_HREFS
 ## BOT_IP
 ## HTTP server that receives certain events.
 #BOT_IP ftl13.com
+
+## Uncomment to prevent the world from sleeping while no players are connected after initializations
+#RESUME_AFTER_INITIALIZATIONS
+
+## Uncomment to set the number of /world/Reboot()s before the DreamDaemon restarts itself. 0 means restart every round. Requires tgstation server tools.
+#ROUNDS_UNTIL_HARD_RESTART 10

@@ -93,7 +93,7 @@
 	if(amount_temp < 2)
 		to_chat(user, "<span class='warning'>You need at least <b>2</b> floor tiles to convert into power.</span>")
 		return TRUE
-	if(IsOdd(amount_temp))
+	if(ISODD(amount_temp))
 		amount_temp--
 		no_delete = TRUE
 		use(amount_temp)
@@ -242,7 +242,7 @@
 		if(!do_after(user, repair_values["healing_for_cycle"] * fabricator.speed_multiplier, target = src, \
 			extra_checks = CALLBACK(fabricator, /obj/item/clockwork/replica_fabricator.proc/fabricator_repair_checks, repair_values, src, user, TRUE)))
 			break
-		obj_integrity = Clamp(obj_integrity + repair_values["healing_for_cycle"], 0, max_integrity)
+		obj_integrity = CLAMP(obj_integrity + repair_values["healing_for_cycle"], 0, max_integrity)
 		fabricator.modify_stored_power(-repair_values["power_required"])
 		playsound(src, 'sound/machines/click.ogg', 50, 1)
 
@@ -328,7 +328,7 @@
 		return
 	if(health == maxHealth)
 		return FALSE
-	else if(!(flags & GODMODE))
+	else if(!(flags_1 & GODMODE))
 		user.visible_message("<span class='notice'>[user]'s [fabricator.name] starts coverin[src == user ? "g [user.p_them()]" : "g [src]"] in glowing orange energy...</span>", \
 		"<span class='alloy'>You start repairin[src == user ? "g yourself" : "g [src]"]...</span>")
 		fabricator.repairing = src

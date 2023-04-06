@@ -50,7 +50,7 @@
 
 /datum/reagent/toxin/mutagen/on_mob_life(mob/living/carbon/M)
 	if(istype(M))
-		M.apply_effect(5,IRRADIATE,0)
+		M.apply_effect(5,EFFECT_IRRADIATE,0)
 	return ..()
 
 /datum/reagent/toxin/plasma
@@ -851,9 +851,9 @@
 
 /datum/reagent/toxin/peaceborg/confuse/on_mob_life(mob/living/M)
 	if(M.confused < 6)
-		M.confused = Clamp(M.confused + 3, 0, 5)
+		M.confused = CLAMP(M.confused + 3, 0, 5)
 	if(M.dizziness < 6)
-		M.dizziness = Clamp(M.dizziness + 3, 0, 5)
+		M.dizziness = CLAMP(M.dizziness + 3, 0, 5)
 	if(prob(20))
 		to_chat(M, "You feel confused and disorientated.")
 	..()

@@ -190,7 +190,7 @@
 	return queue.len
 
 /obj/machinery/mecha_part_fabricator/proc/remove_from_queue(index)
-	if(!isnum(index) || !IsInteger(index) || !istype(queue) || (index<1 || index>queue.len))
+	if(!isnum(index) || !ISINTEGER(index) || !istype(queue) || (index<1 || index>queue.len))
 		return 0
 	queue.Cut(index,++index)
 	return 1
@@ -385,8 +385,8 @@
 	if(href_list["queue_move"] && href_list["index"])
 		var/index = mecha_part_filter.getNum("index")
 		var/new_index = index + mecha_part_filter.getNum("queue_move")
-		if(isnum(index) && isnum(new_index) && IsInteger(index) && IsInteger(new_index))
-			if(IsInRange(new_index,1,queue.len))
+		if(isnum(index) && isnum(new_index) && ISINTEGER(index) && ISINTEGER(new_index))
+			if(ISINRANGE(new_index,1,queue.len))
 				queue.Swap(index,new_index)
 		return update_queue_on_page()
 	if(href_list["clear_queue"])

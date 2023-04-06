@@ -40,7 +40,7 @@
 		return
 	if(breech.charge_process < 100)
 		return
-	if(breech.flags & NOPOWER)
+	if(breech.flags_1 & NOPOWER)
 		return
 	if(breech.actuator.spent || !breech.actuator)
 		if(!console)
@@ -152,7 +152,7 @@
 	var/list/loaded_objects = list()
 	var/obj/structure/shell/loaded_shell = null
 	var/obj/item/twohanded/required/firing_actuator/actuator = new
-	container_type = OPENCONTAINER
+	container_type = OPENCONTAINER_1
 	var/charge_process = 100
 
 	active_power_usage = 80000

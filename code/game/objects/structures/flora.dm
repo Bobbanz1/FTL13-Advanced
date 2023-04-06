@@ -13,7 +13,7 @@
 	var/log_amount = 10
 
 /obj/structure/flora/tree/attackby(obj/item/W, mob/user, params)
-	if(!cut && log_amount && (!(NODECONSTRUCT in flags)))
+	if(!cut && log_amount && (!(NODECONSTRUCT_1 in flags_1)))
 		if(W.sharpness && W.force > 0)
 			if(W.hitsound)
 				playsound(get_turf(src), W.hitsound, 100, 0, 0)
@@ -40,6 +40,7 @@
 
 /obj/structure/flora/tree/pine
 	name = "pine tree"
+	desc = "A coniferous pine tree."
 	icon = 'icons/obj/flora/pinetrees.dmi'
 	icon_state = "pine_1"
 
@@ -49,7 +50,23 @@
 
 /obj/structure/flora/tree/pine/xmas
 	name = "xmas tree"
+	desc = "A wondrous decorated Christmas tree."
 	icon_state = "pine_c"
+	var/gifts_under_tree = FALSE
+	var/list/ckeys_that_took = list()
+
+/obj/structure/flora/tree/pine/xmas/attack_hand(mob/living/user)
+	if(!gifts_under_tree)
+		return
+	if(!user.ckey)
+		return
+	if(ckeys_that_took[user.ckey])
+		to_chat(user, "<span class='warning'>You already took your gift.</span>")
+		return
+	to_chat(user, "<span class='warning'>After a bit of rummaging, you locate a gift with your name on it!</span>")
+	ckeys_that_took[user.ckey] = TRUE
+	var/obj/item/a_gift/anything/A = new
+	user.put_in_hands(A)
 
 /obj/structure/flora/tree/pine/xmas/Initialize()
 	. = ..()

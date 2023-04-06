@@ -4,7 +4,7 @@
 	var/ready = 0
 	var/spawning = 0//Referenced when you want to delete the new_player later on in the code.
 
-	flags = NONE
+	flags_1 = NONE
 
 	invisibility = INVISIBILITY_ABSTRACT
 
@@ -187,7 +187,7 @@
 		var/pollid = href_list["pollid"]
 		if(istext(pollid))
 			pollid = text2num(pollid)
-		if(isnum(pollid) && IsInteger(pollid))
+		if(isnum(pollid) && ISINTEGER(pollid))
 			src.poll_player(pollid)
 		return
 
@@ -225,7 +225,7 @@
 							rating = null
 						else
 							rating = text2num(href_list["o[optionid]"])
-							if(!isnum(rating) || !IsInteger(rating))
+							if(!isnum(rating) || !ISINTEGER(rating))
 								return
 
 						if(!vote_on_numval_poll(pollid, optionid, rating))

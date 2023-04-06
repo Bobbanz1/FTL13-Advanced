@@ -23,7 +23,7 @@
 
 	user.do_attack_animation(M)
 	M.Knockdown(100)
-	M.apply_effect(STUTTER, 5)
+	M.apply_effect(EFFECT_STUTTER, 5)
 
 	M.visible_message("<span class='danger'>[user] has prodded [M] with [src]!</span>", \
 					"<span class='userdanger'>[user] has prodded you with [src]!</span>")
@@ -153,7 +153,7 @@
 /obj/item/borg/charger
 	name = "power connector"
 	icon_state = "charger_draw"
-	flags = NOBLUDGEON
+	flags_1 = NOBLUDGEON_1
 	var/mode = "draw"
 	var/static/list/charge_machines = typecacheof(list(/obj/machinery/cell_charger, /obj/machinery/recharger, /obj/machinery/recharge_station, /obj/machinery/mech_bay_recharge_port))
 	var/static/list/charge_items = typecacheof(list(/obj/item/stock_parts/cell, /obj/item/gun/energy))
@@ -601,7 +601,7 @@
 			continue
 		usage += projectile_tick_speed_ecost
 		usage += (tracked[I] * projectile_damage_tick_ecost_coefficient)
-	energy = Clamp(energy - usage, 0, maxenergy)
+	energy = CLAMP(energy - usage, 0, maxenergy)
 	if(energy <= 0)
 		deactivate_field()
 		visible_message("<span class='warning'>The [src] blinks \"ENERGY DEPLETED\"</span>")
@@ -611,7 +611,7 @@
 		if(iscyborg(host.loc))
 			host = host.loc
 		else
-			energy = Clamp(energy + energy_recharge, 0, maxenergy)
+			energy = CLAMP(energy + energy_recharge, 0, maxenergy)
 			return
 	if((host.cell.charge >= (host.cell.maxcharge * cyborg_cell_critical_percentage)) && (energy < maxenergy))
 		host.cell.use(energy_recharge*energy_recharge_cyborg_drain_coefficient)

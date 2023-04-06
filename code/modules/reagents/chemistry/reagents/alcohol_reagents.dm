@@ -947,7 +947,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 /datum/reagent/consumable/ethanol/changelingsting/on_mob_life(mob/living/M)
 	if(M.mind && M.mind.changeling) //Changeling Sting assists in the recharging of changeling chemicals.
 		M.mind.changeling.chem_charges += metabolization_rate
-		M.mind.changeling.chem_charges = Clamp(M.mind.changeling.chem_charges, 0, M.mind.changeling.chem_storage)
+		M.mind.changeling.chem_charges = CLAMP(M.mind.changeling.chem_charges, 0, M.mind.changeling.chem_storage)
 	return ..()
 
 /datum/reagent/consumable/ethanol/irishcarbomb

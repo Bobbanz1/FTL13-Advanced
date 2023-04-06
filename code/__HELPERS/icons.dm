@@ -979,23 +979,25 @@ GLOBAL_LIST_EMPTY(friendly_animal_types)
 		if(J)
 			J.equip(body, TRUE, FALSE)
 
-		SSoverlays.Flush()
-
 		var/icon/out_icon = icon('icons/effects/effects.dmi', "nothing")
 
 		body.setDir(NORTH)
+		COMPILE_OVERLAYS(body)
 		var/icon/partial = getFlatIcon(body)
 		out_icon.Insert(partial,dir=NORTH)
 
 		body.setDir(SOUTH)
+		COMPILE_OVERLAYS(body)
 		partial = getFlatIcon(body)
 		out_icon.Insert(partial,dir=SOUTH)
 
 		body.setDir(WEST)
+		COMPILE_OVERLAYS(body)
 		partial = getFlatIcon(body)
 		out_icon.Insert(partial,dir=WEST)
 
 		body.setDir(EAST)
+		COMPILE_OVERLAYS(body)
 		partial = getFlatIcon(body)
 		out_icon.Insert(partial,dir=EAST)
 
@@ -1021,7 +1023,7 @@ GLOBAL_LIST_EMPTY(friendly_animal_types)
 	var/static/list/freeze_item_icons = list()
 	if(resistance_flags & FREEZE_PROOF)
 		return
-	if(!HAS_SECONDARY_FLAG(src, FROZEN) && (initial(icon) && initial(icon_state)))
+	if(!(flags_2 & FROZEN_2) && (initial(icon) && initial(icon_state)))
 		var/index = freeze_icon_index()
 		var/icon/IC
 		var/icon/P = freeze_item_icons[index]
@@ -1035,10 +1037,11 @@ GLOBAL_LIST_EMPTY(friendly_animal_types)
 			freeze_item_icons[index] = P
 		icon = P
 		name = "frozen [name]"
-		SET_SECONDARY_FLAG(src, FROZEN)
+		flags_2 |= FROZEN_2
 
 //Assumes already frozed
 /obj/proc/make_unfrozen()
-	icon = initial(icon)
-	name = replacetext(name, "frozen ", "")
-	CLEAR_SECONDARY_FLAG(src, FROZEN)
+	if(flags_2 & FROZEN_2)
+		icon = initial(icon)
+		name = replacetext(name, "frozen ", "")
+		flags_2 &= ~FROZEN_2

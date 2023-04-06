@@ -16,7 +16,7 @@
 	var/busy = FALSE		// needed for delayed drawing of blood
 	var/proj_piercing = 0 //does it pierce through thick clothes when shot with syringe gun
 	materials = list(MAT_METAL=10, MAT_GLASS=20)
-	container_type = TRANSPARENT
+	container_type = TRANSPARENT_1
 
 /obj/item/reagent_containers/syringe/Initialize()
 	. = ..()
@@ -158,7 +158,7 @@
 
 
 /obj/item/reagent_containers/syringe/update_icon()
-	var/rounded_vol = Clamp(round((reagents.total_volume / volume * 15),5), 0, 15)
+	var/rounded_vol = CLAMP(round((reagents.total_volume / volume * 15),5), 0, 15)
 	cut_overlays()
 	if(ismob(loc))
 		var/injoverlay

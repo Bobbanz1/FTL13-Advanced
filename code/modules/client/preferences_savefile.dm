@@ -249,7 +249,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	var/species_id
 	S["species"]			>> species_id
 	var/list/roundstart_races = CONFIG_GET(keyed_flag_list/roundstart_races)
-	if(species_id && (species_id in roundstart_races) && CONFIG_GET(flag/join_with_mutant_race))
+	if(species_id && (species_id in roundstart_races) && CONFIG_GET(flag/join_with_mutant_humans))
 		var/newtype = GLOB.species_list[species_id]
 		pref_species = new newtype()
 	else if (roundstart_races.len)

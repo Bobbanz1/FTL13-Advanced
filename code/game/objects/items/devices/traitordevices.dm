@@ -23,7 +23,7 @@ effective or pretty fucking useless.
 	w_class = WEIGHT_CLASS_TINY
 	throw_speed = 3
 	throw_range = 7
-	flags = CONDUCT
+	flags_1 = CONDUCT_1
 	item_state = "electronic"
 	lefthand_file = 'icons/mob/inhands/misc/devices_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
@@ -90,7 +90,7 @@ effective or pretty fucking useless.
 		spawn((wavelength+(intensity*4))*5)
 			if(M)
 				if(intensity >= 5)
-					M.apply_effect(round(intensity/0.075), UNCONSCIOUS)
+					M.apply_effect(round(intensity/0.075), EFFECT_UNCONSCIOUS)
 				M.rad_act(intensity*10)
 	else
 		to_chat(user, "<span class='warning'>The radioactive microlaser is still recharging.</span>")
@@ -221,7 +221,7 @@ effective or pretty fucking useless.
 			charge = max(0,charge - 25)//Quick decrease in light
 		else
 			charge = min(max_charge,charge + 50) //Charge in the dark
-		animate(user,alpha = Clamp(255 - charge,0,255),time = 10)
+		animate(user,alpha = CLAMP(255 - charge,0,255),time = 10)
 
 
 /obj/item/device/jammer

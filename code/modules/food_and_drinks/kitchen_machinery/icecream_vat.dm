@@ -17,7 +17,7 @@
 	var/list/product_types = list()
 	var/dispense_flavour = ICECREAM_VANILLA
 	var/flavour_name = "vanilla"
-	container_type = OPENCONTAINER
+	container_type = OPENCONTAINER_1
 	max_integrity = 300
 
 /obj/machinery/icecream_vat/proc/get_ingredient_list(type)
@@ -221,7 +221,7 @@
 	name = "[M.name] icecream"
 
 /obj/machinery/icecream_vat/deconstruct(disassembled = TRUE)
-	if(!(flags & NODECONSTRUCT))
+	if(!(flags_1 & NODECONSTRUCT_1))
 		new /obj/item/stack/sheet/metal(loc, 4)
 	qdel(src)
 

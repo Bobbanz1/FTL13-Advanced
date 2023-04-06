@@ -7,7 +7,7 @@
 	icon = 'icons/obj/grenade.dmi'
 	icon_state = "plastic-explosive0"
 	item_state = "plasticx"
-	flags = NOBLUDGEON
+	flags_1 = NOBLUDGEON_1
 	w_class = 2
 	origin_tech = "syndicate=1"
 	var/timer = 10
@@ -61,7 +61,7 @@
 /obj/item/c4/attack_self(mob/user)
 	var/newtime = input(usr, "Please set the timer.", "Timer", 10) as num
 	if(attack_hand(user) == src)
-		newtime = Clamp(newtime, 10, 60000)
+		newtime = CLAMP(newtime, 10, 60000)
 		timer = newtime
 		to_chat(user, "Timer set for [timer] seconds.")
 

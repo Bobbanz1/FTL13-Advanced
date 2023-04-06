@@ -109,7 +109,7 @@
 
 /obj/item/ammo_box/magazine/xmg80/update_icon()
 	..()
-	icon_state = "[initial(icon_state)]-[Ceiling(ammo_count(0)/36)*36]"
+	icon_state = "[initial(icon_state)]-[CEILING(ammo_count(0)/36, 1)*36]"
 
 /obj/item/ammo_box/magazine/ak922
 	name = "AK-922 magazine (7.62x39)"
@@ -133,7 +133,7 @@
 
 /obj/item/ammo_box/magazine/aks74/update_icon()
 	..()
-	icon_state = "[initial(icon_state)]-[Ceiling(ammo_count(0)/30)*30]"
+	icon_state = "[initial(icon_state)]-[CEILING(ammo_count(0)/30, 1)*30]"
 
 /obj/item/ammo_box/magazine/luger
 	name = "P057A Luger Magazine (.357)"
@@ -155,7 +155,7 @@
 
 /obj/item/ammo_box/magazine/c05r/update_icon()
 	..()
-	icon_state = "[initial(icon_state)]-[Ceiling(ammo_count(0)/12)*12]"
+	icon_state = "[initial(icon_state)]-[CEILING(ammo_count(0)/12, 1)*12]"
 
 /obj/item/ammo_box/magazine/m44
 	name = "handgun magazine (.44 AMP)"
@@ -166,7 +166,7 @@
 
 /obj/item/ammo_box/magazine/m44/update_icon()	//Shamelessly copied M1911 magazine sprites
 	..()
-	icon_state = "[initial(icon_state)]-[Ceiling(ammo_count(0)/7)*7]"
+	icon_state = "[initial(icon_state)]-[CEILING(ammo_count(0)/7, 1)*7]"
 
 /obj/item/ammo_box/magazine/smgm9mm
 	name = "SMG magazine (9mm)"
@@ -266,7 +266,7 @@
 
 /obj/item/ammo_box/magazine/m12g/update_icon()
 	..()
-	icon_state = "[initial(icon_state)]-[Ceiling(ammo_count(0)/8)*8]"
+	icon_state = "[initial(icon_state)]-[CEILING(ammo_count(0)/8, 1)*8]"
 
 /obj/item/ammo_box/magazine/m12g/buckshot
 	name = "shotgun magazine (12g buckshot slugs)"

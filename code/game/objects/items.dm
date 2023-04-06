@@ -127,7 +127,7 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 		force_string_override = TRUE
 
 /obj/item/Destroy()
-	flags &= ~DROPDEL	//prevent reqdels
+	flags_1 &= ~DROPDEL_1	//prevent reqdels
 	if(ismob(loc))
 		var/mob/m = loc
 		m.temporarilyRemoveItemFromInventory(src, TRUE)
@@ -378,7 +378,7 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	for(var/X in actions)
 		var/datum/action/A = X
 		A.Remove(user)
-	if(DROPDEL & flags)
+	if(DROPDEL_1 & flags_1)
 		qdel(src)
 	in_inventory = FALSE
 

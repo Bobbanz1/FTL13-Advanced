@@ -22,7 +22,7 @@
 	. = ..()
 
 	// No running around with open laptops in hands.
-	SET_SECONDARY_FLAG(src, SLOWS_WHILE_IN_HAND)
+	flags_2 = SLOWS_WHILE_IN_HAND_2
 
 	if(start_open && !screen_on)
 		toggle_open()

@@ -53,7 +53,7 @@
 	item_state = "disintegrate"
 	name = "god hand"
 	desc = "This hand of yours glows with an awesome power!"
-	flags = ABSTRACT | NODROP | DROPDEL
+	flags_1 = ABSTRACT_1 | NODROP_1 | DROPDEL_1
 	w_class = WEIGHT_CLASS_HUGE
 	hitsound = 'sound/weapons/sear.ogg'
 	damtype = BURN
@@ -275,7 +275,7 @@
 	lefthand_file = 'icons/mob/inhands/weapons/chainsaw_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/chainsaw_righthand.dmi'
 	w_class = WEIGHT_CLASS_HUGE
-	flags = NODROP | ABSTRACT
+	flags_1 = NODROP_1 | ABSTRACT_1
 	sharpness = IS_SHARP
 	attack_verb = list("sawed", "torn", "cut", "chopped", "diced")
 	hitsound = 'sound/weapons/chainsawhit.ogg'
@@ -320,7 +320,7 @@
 	desc = "Particularly twisted dieties grant gifts of dubious value."
 	icon_state = "arm_blade"
 	item_state = "arm_blade"
-	flags = ABSTRACT | NODROP
+	flags_1 = ABSTRACT_1 | NODROP_1
 	w_class = WEIGHT_CLASS_HUGE
 	sharpness = IS_SHARP
 
@@ -373,8 +373,7 @@
 
 /obj/item/nullrod/tribal_knife/Initialize(mapload)
 	..()
-	SET_SECONDARY_FLAG(src, SLOWS_WHILE_IN_HAND)
-
+	flags_2 |= SLOWS_WHILE_IN_HAND_2
 /obj/item/nullrod/tribal_knife/New()
 	..()
 	START_PROCESSING(SSobj, src)

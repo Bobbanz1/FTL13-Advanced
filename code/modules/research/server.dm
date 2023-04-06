@@ -58,7 +58,7 @@
 		if(0 to T0C)
 			heat_health = min(100, heat_health + 1)
 		if(T0C to (T20C + 20))
-			heat_health = Clamp(heat_health, 0, 100)
+			heat_health = CLAMP(heat_health, 0, 100)
 		if((T20C + 20) to (T0C + 70))
 			heat_health = max(0, heat_health - 1)
 	if(heat_health <= 0)

@@ -450,8 +450,8 @@ SUBSYSTEM_DEF(mapping)
 
 /datum/controller/subsystem/mapping/proc/preloadRuinTemplates()
 	// Still supporting bans by filename
-	var/list/banned = generateMapList("config/lavaruinblacklist.txt")
-	banned += generateMapList("config/spaceruinblacklist.txt")
+	var/list/banned = generateMapList("[global.config.directory]/lavaruinblacklist.txt")
+	banned += generateMapList("[global.config.directory]/spaceruinblacklist.txt")
 
 	for(var/item in sortList(subtypesof(/datum/map_template/ruin), /proc/cmp_ruincost_priority))
 		var/datum/map_template/ruin/ruin_type = item
@@ -472,7 +472,7 @@ SUBSYSTEM_DEF(mapping)
 			space_ruins_templates[R.name] = R
 
 /datum/controller/subsystem/mapping/proc/preloadShuttleTemplates()
-	var/list/unbuyable = generateMapList("config/unbuyableshuttles.txt")
+	var/list/unbuyable = generateMapList("[global.config.directory]/unbuyableshuttles.txt")
 
 	for(var/item in subtypesof(/datum/map_template/shuttle))
 		var/datum/map_template/shuttle/shuttle_type = item

@@ -16,7 +16,7 @@
 	item_state = "chain"
 	lefthand_file = 'icons/mob/inhands/weapons/melee_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
-	flags = CONDUCT
+	flags_1 = CONDUCT_1
 	slot_flags = SLOT_BELT
 	force = 10
 	throwforce = 7
@@ -35,7 +35,7 @@
 	desc = "An elegant weapon, for a more civilized age."
 	icon_state = "rapier"
 	item_state = "rapier"
-	flags = CONDUCT
+	flags_1 = CONDUCT_1
 	slot_flags = SLOT_BELT
 	force = 15
 	throwforce = 10
@@ -74,7 +74,7 @@
 	item_state = "sabre"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
-	flags = CONDUCT
+	flags_1 = CONDUCT_1
 	unique_rename = 1
 	force = 15
 	throwforce = 10

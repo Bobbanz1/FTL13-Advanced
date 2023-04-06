@@ -83,7 +83,7 @@
 	if(!amount && scanning)
 		return 0
 	if(emagged)
-		amount = Clamp(amount, 0, 25) //Emagged geiger counters can only accept 25 radiation at a time
+		amount = CLAMP(amount, 0, 25) //Emagged geiger counters can only accept 25 radiation at a time
 	radiation_count += amount
 	if(isliving(loc))
 		var/mob/living/M = loc

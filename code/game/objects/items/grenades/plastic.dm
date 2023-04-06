@@ -3,7 +3,7 @@
 	desc = "Used to put holes in specific areas without too much extra hole."
 	icon_state = "plastic-explosive0"
 	item_state = "plastic-explosive"
-	flags = NOBLUDGEON
+	flags_1 = NOBLUDGEON_1
 	det_time = 10
 	display_timer = 0
 	var/atom/target = null
@@ -20,7 +20,7 @@
 
 /obj/item/grenade/plastic/Initialize(mapload)
 	. = ..()
-	SET_SECONDARY_FLAG(src, NO_EMP_WIRES)
+	flags_2 |= NO_EMP_WIRES_2
 
 /obj/item/grenade/plastic/Destroy()
 	qdel(nadeassembly)
@@ -87,7 +87,7 @@
 		return
 	var/newtime = input(usr, "Please set the timer.", "Timer", 10) as num
 	if(user.get_active_held_item() == src)
-		newtime = Clamp(newtime, 10, 60000)
+		newtime = CLAMP(newtime, 10, 60000)
 		det_time = newtime
 		to_chat(user, "Timer set for [det_time] seconds.")
 
@@ -164,7 +164,7 @@
 	item_state = "plasticx"
 	lefthand_file = 'icons/mob/inhands/weapons/bombs_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/bombs_righthand.dmi'
-	flags = NOBLUDGEON
+	flags_1 = NOBLUDGEON_1
 	w_class = WEIGHT_CLASS_SMALL
 	origin_tech = "syndicate=1"
 	var/timer = 10
@@ -217,7 +217,7 @@
 /obj/item/grenade/plastic/c4/attack_self(mob/user)
 	var/newtime = input(usr, "Please set the timer.", "Timer", 10) as num
 	if(user.get_active_held_item() == src)
-		newtime = Clamp(newtime, 10, 60000)
+		newtime = CLAMP(newtime, 10, 60000)
 		timer = newtime
 		to_chat(user, "Timer set for [timer] seconds.")
 

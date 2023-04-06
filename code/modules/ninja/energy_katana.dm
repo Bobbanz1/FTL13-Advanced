@@ -13,7 +13,7 @@
 	var/dash_beam_type = /obj/effect/ebeam
 
 /obj/item/dash/proc/charge()
-	current_charges = Clamp(current_charges + 1, 0, max_charges)
+	current_charges = CLAMP(current_charges + 1, 0, max_charges)
 	if(istype(loc, /mob/living))
 		to_chat(loc, "<span class='notice'>[src] now has [current_charges]/[max_charges] charges.</span>")
 

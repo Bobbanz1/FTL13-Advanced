@@ -1,13 +1,3 @@
-#define HUMAN_MAX_OXYLOSS 3
-#define HUMAN_CRIT_MAX_OXYLOSS (SSmobs.wait/30)
-#define HEAT_GAS_DAMAGE_LEVEL_1 2
-#define HEAT_GAS_DAMAGE_LEVEL_2 4
-#define HEAT_GAS_DAMAGE_LEVEL_3 8
-
-#define COLD_GAS_DAMAGE_LEVEL_1 0.5
-#define COLD_GAS_DAMAGE_LEVEL_2 1.5
-#define COLD_GAS_DAMAGE_LEVEL_3 3
-
 /obj/item/organ/lungs
 	name = "lungs"
 	icon_state = "lungs"
@@ -110,7 +100,7 @@
 	if(safe_oxygen_max)
 		if(O2_pp > safe_oxygen_max)
 			var/ratio = (breath_gases["o2"][MOLES]/safe_oxygen_max) * 10
-			H.apply_damage_type(Clamp(ratio, oxy_breath_dam_min, oxy_breath_dam_max), oxy_damage_type)
+			H.apply_damage_type(CLAMP(ratio, oxy_breath_dam_min, oxy_breath_dam_max), oxy_damage_type)
 			H.throw_alert("too_much_oxy", /obj/screen/alert/too_much_oxy)
 		else
 			H.clear_alert("too_much_oxy")
@@ -137,7 +127,7 @@
 	if(safe_nitro_max)
 		if(N2_pp > safe_nitro_max)
 			var/ratio = (breath_gases["n2"][MOLES]/safe_nitro_max) * 10
-			H.apply_damage_type(Clamp(ratio, nitro_breath_dam_min, nitro_breath_dam_max), nitro_damage_type)
+			H.apply_damage_type(CLAMP(ratio, nitro_breath_dam_min, nitro_breath_dam_max), nitro_damage_type)
 			H.throw_alert("too_much_nitro", /obj/screen/alert/too_much_nitro)
 		else
 			H.clear_alert("too_much_nitro")
@@ -201,7 +191,7 @@
 	if(safe_toxins_max)
 		if(Toxins_pp > safe_toxins_max)
 			var/ratio = (breath_gases["plasma"][MOLES]/safe_toxins_max) * 10
-			H.apply_damage_type(Clamp(ratio, tox_breath_dam_min, tox_breath_dam_max), tox_damage_type)
+			H.apply_damage_type(CLAMP(ratio, tox_breath_dam_min, tox_breath_dam_max), tox_damage_type)
 			H.throw_alert("too_much_tox", /obj/screen/alert/too_much_tox)
 		else
 			H.clear_alert("too_much_tox")
@@ -315,13 +305,3 @@
 	safe_oxygen_min = 0 //We don't breath this
 	safe_toxins_min = 16 //We breath THIS!
 	safe_toxins_max = 0
-
-#undef HUMAN_MAX_OXYLOSS
-#undef HUMAN_CRIT_MAX_OXYLOSS
-#undef HEAT_GAS_DAMAGE_LEVEL_1
-#undef HEAT_GAS_DAMAGE_LEVEL_2
-#undef HEAT_GAS_DAMAGE_LEVEL_3
-
-#undef COLD_GAS_DAMAGE_LEVEL_1
-#undef COLD_GAS_DAMAGE_LEVEL_2
-#undef COLD_GAS_DAMAGE_LEVEL_3

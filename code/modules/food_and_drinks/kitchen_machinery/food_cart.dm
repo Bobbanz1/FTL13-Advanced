@@ -15,7 +15,7 @@
 	var/portion = 10
 	var/selected_drink
 	var/list/stored_food = list()
-	container_type = OPENCONTAINER
+	container_type = OPENCONTAINER_1
 	var/obj/item/reagent_containers/mixer
 
 /obj/machinery/food_cart/New()
@@ -128,7 +128,7 @@
 					break
 
 	if(href_list["portion"])
-		portion = Clamp(input("How much drink do you want to dispense per glass?") as num, 0, 50)
+		portion = CLAMP(input("How much drink do you want to dispense per glass?") as num, 0, 50)
 
 	if(href_list["pour"] || href_list["m_pour"])
 		if(glasses-- <= 0)
@@ -157,7 +157,7 @@
 	return
 
 /obj/machinery/food_cart/deconstruct(disassembled = TRUE)
-	if(!(flags & NODECONSTRUCT))
+	if(!(flags_1 & NODECONSTRUCT_1))
 		new /obj/item/stack/sheet/metal(loc, 4)
 	qdel(src)
 

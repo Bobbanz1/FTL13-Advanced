@@ -243,7 +243,7 @@
 			break
 
 		var/list/L = list(45)
-		if(IsOdd(dir2angle(dir))) // We're going at an angle and we want thick angled tunnels.
+		if(ISODD(dir2angle(dir))) // We're going at an angle and we want thick angled tunnels.
 			L += -45
 
 		// Expand the edges of our tunnel
@@ -341,7 +341,7 @@
 	slowdown = 2
 	environment_type = "snow"
 	sand_type = /obj/item/stack/sheet/mineral/snow
-	flags = NONE
+	flags_1 = NONE
 
 /turf/open/floor/plating/asteroid/snow/airless
 	initial_gas_mix = "TEMP=2.7"

@@ -14,7 +14,7 @@
 	/turf/closed/wall,
 	/obj/structure/falsewall)
 	smooth = SMOOTH_MORE
-	//	flags = CONDUCT
+	//	flags_1 = CONDUCT_1
 
 /obj/structure/lattice/Initialize(mapload)
 	. = ..()
@@ -26,7 +26,7 @@
 	return
 
 /obj/structure/lattice/ratvar_act()
-	if(IsEven(x + y))
+	if(ISEVEN(x + y))
 		new /obj/structure/lattice/clockwork(loc)
 	else
 		new /obj/structure/lattice/clockwork/large(loc)
@@ -40,7 +40,7 @@
 		return T.attackby(C, user) //hand this off to the turf instead (for building plating, catwalks, etc)
 
 /obj/structure/lattice/deconstruct(disassembled = TRUE)
-	if(!(flags & NODECONSTRUCT))
+	if(!(flags_1 & NODECONSTRUCT_1))
 		new /obj/item/stack/rods(get_turf(src), number_of_rods)
 	qdel(src)
 
@@ -58,7 +58,7 @@
 	ratvar_act()
 
 /obj/structure/lattice/clockwork/ratvar_act()
-	if(IsOdd(x+y))
+	if(ISODD(x+y))
 		new /obj/structure/lattice/clockwork/large(loc) // deletes old one
 
 /obj/structure/lattice/clockwork/large/Initialize(mapload)
@@ -68,7 +68,7 @@
 	pixel_y = -9
 
 /obj/structure/lattice/clockwork/large/ratvar_act()
-	if(IsEven(x + y))
+	if(ISEVEN(x + y))
 		new /obj/structure/lattice/clockwork(loc)
 
 /obj/structure/lattice/catwalk
