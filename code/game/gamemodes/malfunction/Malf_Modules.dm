@@ -436,7 +436,7 @@
 	for(var/obj/machinery/firealarm/F in GLOB.machines)
 		if(F.z != ZLEVEL_STATION)
 			continue
-		F.emagged = 1
+		F.obj_flags |= EMAGGED
 	to_chat(owner, "<span class='notice'>All thermal sensors on the ship have been disabled. Fire alerts will no longer be recognized.</span>")
 
 
@@ -462,7 +462,7 @@
 	for(var/obj/machinery/airalarm/AA in GLOB.machines)
 		if(AA.z != ZLEVEL_STATION)
 			continue
-		AA.emagged = 1
+		AA.obj_flags |= EMAGGED
 	to_chat(owner, "<span class='notice'>All air alarm safeties on the ship have been overriden. Air alarms may now use the Flood environmental mode.")
 
 /*/datum/AI_Module/small/overload_machine

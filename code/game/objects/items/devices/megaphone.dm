@@ -8,7 +8,6 @@
 	w_class = WEIGHT_CLASS_SMALL
 	siemens_coefficient = 1
 	var/spamcheck = 0
-	var/emagged = FALSE
 	var/list/voicespan = list(SPAN_COMMAND)
 
 /obj/item/device/megaphone/get_held_item_speechspans(mob/living/carbon/user)
@@ -20,10 +19,10 @@
 		return voicespan
 
 /obj/item/device/megaphone/emag_act(mob/user)
-	if(emagged)
+	if(obj_flags & EMAGGED)
 		return
 	to_chat(user, "<span class='warning'>You overload \the [src]'s voice synthesizer.</span>")
-	emagged = TRUE
+	obj_flags |= EMAGGED
 	voicespan = list(SPAN_REALLYBIG, "userdanger")
 
 /obj/item/device/megaphone/sec

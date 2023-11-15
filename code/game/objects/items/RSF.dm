@@ -134,8 +134,8 @@ RSF
 	return
 
 /obj/item/cookiesynth/emag_act(mob/user)
-	emagged = !emagged
-	if(emagged)
+	obj_flags ^= EMAGGED
+	if(obj_flags & EMAGGED)
 		to_chat(user, "<span class='warning'>You short out the [src]'s reagent safety checker!</span>")
 	else
 		to_chat(user, "<span class='warning'>You reset the [src]'s reagent safety checker!</span>")

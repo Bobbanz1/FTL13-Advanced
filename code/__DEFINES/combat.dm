@@ -12,11 +12,11 @@
 #define BRAIN		"brain"
 
 //bitflag damage defines used for suicide_act
-#define BRUTELOSS 1
-#define FIRELOSS 2
-#define TOXLOSS 4
-#define OXYLOSS 8
-#define SHAME 16
+#define BRUTELOSS 		(1<<0)
+#define FIRELOSS 		(1<<1)
+#define TOXLOSS 		(1<<2)
+#define OXYLOSS 		(1<<3)
+#define SHAME 			(1<<4)
 
 #define EFFECT_STUN		"stun"
 #define EFFECT_KNOCKDOWN		"knockdown"
@@ -29,14 +29,15 @@
 #define EFFECT_JITTER		"jitter"
 
 //Bitflags defining which status effects could be or are inflicted on a mob
-#define CANSTUN		1
-#define CANKNOCKDOWN	2
-#define CANUNCONSCIOUS	4
-#define CANPUSH		8
+#define CANSTUN (1<<0)
+#define CANKNOCKDOWN (1<<1)
+#define CANUNCONSCIOUS (1<<2)
+#define CANPUSH (1<<3)
+#define GODMODE (1<<4)
+
 #define IGNORESLOWDOWN	16
 #define GOTTAGOFAST	32
 #define GOTTAGOREALLYFAST	64
-#define GODMODE		4096
 #define FAKEDEATH	8192	//Replaces stuff like changeling.changeling_fakedeath
 #define DISFIGURED	16384	//I'll probably move this elsewhere if I ever get wround to writing a bitflag mob-damage system
 #define XENO_HOST	32768	//Tracks whether we're gonna be a baby alien's mummy.

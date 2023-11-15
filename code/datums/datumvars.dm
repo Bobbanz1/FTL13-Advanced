@@ -472,6 +472,12 @@
 		else
 			item = "<a href='?_src_=vars;[HrefToken()];Vars=[REF(value)]'>[VV_RHTML_ENCODE(name)] = /list ([L.len])</a>"
 
+	else if (name in GLOB.bitfields)
+		var/list/flags = list()
+		for (var/i in GLOB.bitfields[name])
+			if (value & GLOB.bitfields[name][i])
+				flags += i
+			item = "[VV_RHTML_ENCODE(name)] = [VV_RHTML_ENCODE(jointext(flags, ", "))]"
 	else
 		item = "[VV_RHTML_ENCODE(name)] = <span class='value'>[VV_RHTML_ENCODE(value)]</span>"
 

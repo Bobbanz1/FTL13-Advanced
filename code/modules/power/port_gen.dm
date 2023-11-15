@@ -216,9 +216,9 @@
 	return ..()
 
 /obj/machinery/power/port_gen/pacman/emag_act(mob/user)
-	if(emagged)
+	if(obj_flags & EMAGGED)
 		return
-	emagged = TRUE
+	obj_flags |= EMAGGED
 	emp_act(1)
 
 /obj/machinery/power/port_gen/pacman/attack_hand(mob/user)

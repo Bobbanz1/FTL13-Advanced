@@ -253,7 +253,7 @@
 			locked = !locked
 			to_chat(user, "Controls are now [locked ? "locked." : "unlocked."]")
 		else
-			if(emagged)
+			if(obj_flags & EMAGGED)
 				to_chat(user, "<span class='danger'>ERROR</span>")
 			if(open)
 				to_chat(user, "<span class='warning'>Please close the access panel before locking it.</span>")

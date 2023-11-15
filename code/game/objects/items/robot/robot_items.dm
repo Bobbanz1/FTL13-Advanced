@@ -283,8 +283,8 @@
 	var/emagged = FALSE
 
 /obj/item/device/harmalarm/emag_act(mob/user)
-	emagged = !emagged
-	if(emagged)
+	obj_flags ^= EMAGGED
+	if(obj_flags & EMAGGED)
 		to_chat(user, "<font color='red'>You short out the safeties on the [src]!</font>")
 	else
 		to_chat(user, "<font color='red'>You reset the safeties on the [src]!</font>")

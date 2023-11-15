@@ -60,8 +60,6 @@ GLOBAL_PROTECT(admin_ranks)
 			flag = R_SPAWN
 		if("autologin", "autoadmin")
 			flag = R_AUTOLOGIN
-		if("ticket")
-			flag = R_TICKET
 		if("@","prev")
 			flag = previous_rights
 		if("rejuv","rejuvinate")

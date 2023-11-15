@@ -84,16 +84,16 @@
 	..()
 
 /obj/machinery/firealarm/emag_act(mob/user)
-	if(emagged)
+	if(obj_flags & EMAGGED)
 		return
-	emagged = TRUE
+	obj_flags |= EMAGGED
 	if(user)
 		user.visible_message("<span class='warning'>Sparks fly out of the [src]!</span>",
 							"<span class='notice'>You emag [src], disabling its thermal sensors.</span>")
 	playsound(src, "sparks", 50, 1)
 
 /obj/machinery/firealarm/temperature_expose(datum/gas_mixture/air, temperature, volume)
-	if(!emagged && detecting && !stat && (temperature > T0C + 200 || temperature < BODYTEMP_COLD_DAMAGE_LIMIT))
+	if((temperature > T0C + 200 || temperature < BODYTEMP_COLD_DAMAGE_LIMIT) && (last_alarm+FIREALARM_COOLDOWN < world.time) && !(obj_flags & EMAGGED) && detecting && !stat)
 		alarm()
 	..()
 
@@ -125,7 +125,7 @@
 
 /obj/machinery/firealarm/ui_data(mob/user)
 	var/list/data = list()
-	data["emagged"] = emagged
+	data["emagged"] = obj_flags & EMAGGED ? 1 : 0
 
 	if(src.z == ZLEVEL_STATION)
 		data["seclevel"] = get_security_level()

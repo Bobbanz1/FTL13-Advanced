@@ -498,7 +498,7 @@
 			to_chat(user, "<span class='warning'>Unable to locate a radio!</span>")
 
 	else if (istype(W, /obj/item/card/id)||istype(W, /obj/item/device/pda))			// trying to unlock the interface with an ID card
-		if(emagged)//still allow them to open the cover
+		if(obj_flags & EMAGGED)//still allow them to open the cover
 			to_chat(user, "<span class='notice'>The interface seems slightly damaged.</span>")
 		if(opened)
 			to_chat(user, "<span class='warning'>You must close the cover to swipe an ID card!</span>")
@@ -620,7 +620,7 @@
 	update_fire()
 
 /mob/living/silicon/robot/proc/self_destruct()
-	if(emagged)
+	if(obj_flags & EMAGGED)
 		if(mmi)
 			qdel(mmi)
 		explosion(src.loc,1,2,4,flame_range = 2)
@@ -683,7 +683,7 @@
 	emagged = new_state
 	module.rebuild_modules()
 	update_icons()
-	if(emagged)
+	if(obj_flags & EMAGGED)
 		throw_alert("hacked", /obj/screen/alert/hacked)
 	else
 		clear_alert("hacked")

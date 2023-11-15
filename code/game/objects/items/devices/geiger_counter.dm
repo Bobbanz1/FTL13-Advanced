@@ -27,7 +27,7 @@
 	return ..()
 
 /obj/item/device/geiger_counter/process()
-	if(emagged)
+	if(obj_flags & EMAGGED)
 		if(radiation_count < 20)
 			radiation_count++
 		return 0
@@ -40,7 +40,7 @@
 	if(!scanning)
 		return 1
 	to_chat(user, "<span class='info'>Alt-click it to clear stored radiation levels.</span>")
-	if(emagged)
+	if(obj_flags & EMAGGED)
 		to_chat(user, "<span class='warning'>The display seems to be incomprehensible.</span>")
 		return 1
 	switch(radiation_count)
@@ -61,7 +61,7 @@
 	if(!scanning)
 		icon_state = "geiger_off"
 		return 1
-	if(emagged)
+	if(obj_flags & EMAGGED)
 		icon_state = "geiger_on_emag"
 		return 1
 	switch(radiation_count)
@@ -82,12 +82,12 @@
 /obj/item/device/geiger_counter/rad_act(amount)
 	if(!amount && scanning)
 		return 0
-	if(emagged)
+	if(obj_flags & EMAGGED)
 		amount = CLAMP(amount, 0, 25) //Emagged geiger counters can only accept 25 radiation at a time
 	radiation_count += amount
 	if(isliving(loc))
 		var/mob/living/M = loc
-		if(!emagged)
+		if(!(obj_flags & EMAGGED))
 			to_chat(M, "<span class='boldannounce'>[bicon(src)] RADIATION PULSE DETECTED.</span>")
 			to_chat(M, "<span class='boldannounce'>[bicon(src)] Severity: [amount]</span>")
 		else
@@ -102,7 +102,7 @@
 
 /obj/item/device/geiger_counter/attack(mob/living/M, mob/user)
 	if(user.a_intent == INTENT_HELP)
-		if(!emagged)
+		if(!(obj_flags & EMAGGED))
 			user.visible_message("<span class='notice'>[user] scans [M] with [src].</span>", "<span class='notice'>You scan [M]'s radiation levels with [src]...</span>")
 			if(!M.radiation)
 				to_chat(user, "<span class='notice'>[bicon(src)] Radiation levels within normal boundaries.</span>")
@@ -146,13 +146,13 @@
 	update_icon()
 
 /obj/item/device/geiger_counter/emag_act(mob/user)
-	if(emagged)
+	if(obj_flags & EMAGGED)
 		return
 	if(scanning)
 		to_chat(user, "<span class='warning'>Turn off [src] before you perform this action!</span>")
 		return 0
 	to_chat(user, "<span class='warning'>You override [src]'s radiation storing protocols. It will now generate small doses of radiation, and stored rads are now projected into creatures you scan.</span>")
-	emagged = TRUE
+	obj_flags |= EMAGGED
 
 #undef RAD_LEVEL_NORMAL
 #undef RAD_LEVEL_MODERATE

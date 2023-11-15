@@ -691,9 +691,9 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 /obj/item/clothing/mask/vape/emag_act(mob/user)// I WON'T REGRET WRITTING THIS, SURLY.
 	if(screw)
-		if(!emagged)
+		if(!(obj_flags & EMAGGED))
 			cut_overlays()
-			emagged = TRUE
+			obj_flags |= EMAGGED
 			super = 0
 			to_chat(user, "<span class='warning'>You maximize the voltage in the [src]</span>")
 			add_overlay("vapeopen_high")

@@ -572,7 +572,7 @@
 			return
 		else
 			to_chat(user, "<span class='warning'>Airlock AI control has been blocked with a firewall. Unable to hack.</span>")
-	if(emagged)
+	if(obj_flags & EMAGGED)
 		to_chat(user, "<span class='warning'>Unable to interface: Airlock is unresponsive.</span>")
 		return
 	if(detonated)
@@ -1140,7 +1140,7 @@
 		if(!panel_open || security_level)
 			to_chat(user, "<span class='warning'>The maintenance panel must be open to apply [C]!</span>")
 			return
-		if(emagged)
+		if(obj_flags & EMAGGED)
 			return
 		if(charge && !detonated)
 			to_chat(user, "<span class='warning'>There's already a charge hooked up to this door!</span>")
@@ -1308,7 +1308,7 @@
 			H.apply_damage(40, BRUTE, "chest")
 		return
 	if(forced < 2)
-		if(emagged)
+		if(obj_flags & EMAGGED)
 			return FALSE
 		use_power(50)
 		playsound(src.loc, doorOpen, 30, 1)
@@ -1355,7 +1355,7 @@
 				return
 
 	if(forced < 2)
-		if(emagged)
+		if(obj_flags & EMAGGED)
 			return
 		use_power(50)
 		playsound(src.loc, doorClose, 30, 1)
@@ -1390,7 +1390,7 @@
 	return TRUE
 
 /obj/machinery/door/airlock/proc/prison_open()
-	if(emagged)
+	if(obj_flags & EMAGGED)
 		return
 	locked = FALSE
 	src.open()
@@ -1467,7 +1467,7 @@
 	return !density || (check_access(ID) && !locked && hasPower())
 
 /obj/machinery/door/airlock/emag_act(mob/user)
-	if(!operating && density && hasPower() && !emagged)
+	if(!operating && density && hasPower() && !(obj_flags & EMAGGED))
 		operating = TRUE
 		update_icon(AIRLOCK_EMAG, 1)
 		sleep(6)
@@ -1476,7 +1476,7 @@
 		operating = FALSE
 		if(!open())
 			update_icon(AIRLOCK_CLOSED, 1)
-		emagged = TRUE
+		obj_flags |= EMAGGED
 		desc = "<span class='warning'>Its access panel is smoking slightly.</span>"
 		lights = FALSE
 		locked = TRUE
@@ -1559,7 +1559,7 @@
 		if(!disassembled)
 			if(A)
 				A.obj_integrity = A.max_integrity * 0.5
-		else if(emagged)
+		else if(obj_flags & EMAGGED)
 			if(user)
 				to_chat(user, "<span class='warning'>You discard the damaged electronics.</span>")
 		else

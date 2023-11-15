@@ -145,7 +145,7 @@
 
 /* Airlocks */
 /obj/machinery/door/airlock/AICtrlClick() // Bolts doors
-	if(emagged)
+	if(obj_flags & EMAGGED)
 		return
 	if(locked)
 		Topic("aiEnable=4", list("aiEnable"="4"), 1)// 1 meaning no window (consistency!)
@@ -153,7 +153,7 @@
 		Topic("aiDisable=4", list("aiDisable"="4"), 1)
 
 /obj/machinery/door/airlock/AIAltClick() // Eletrifies doors.
-	if(emagged)
+	if(obj_flags & EMAGGED)
 		return
 	if(!secondsElectrified)
 		// permenant shock
@@ -163,7 +163,7 @@
 		Topic("aiDisable=5", list("aiDisable"="5"), 1)
 
 /obj/machinery/door/airlock/AIShiftClick()  // Opens and closes doors!
-	if(emagged)
+	if(obj_flags & EMAGGED)
 		return
 	if(density)
 		Topic("aiEnable=7", list("aiEnable"="7"), 1) // 1 meaning no window (consistency!)
@@ -171,7 +171,7 @@
 		Topic("aiDisable=7", list("aiDisable"="7"), 1)
 
 /obj/machinery/door/airlock/AICtrlShiftClick()  // Sets/Unsets Emergency Access Override
-	if(emagged)
+	if(obj_flags & EMAGGED)
 		return
 	if(!emergency)
 		Topic("aiEnable=11", list("aiEnable"="11"), 1) // 1 meaning no window (consistency!)

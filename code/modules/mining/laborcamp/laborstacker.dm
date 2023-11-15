@@ -103,13 +103,13 @@
 					if(3)
 						to_chat(usr, "<span class='notice'>No permission to dock could be granted.</span>")
 					else
-						if(!emagged)
+						if(!(obj_flags & EMAGGED))
 							Radio.set_frequency(FREQ_SECURITY)
 							Radio.talk_into(src, "[inserted_id.registered_name] has returned to the station. Minerals and Prisoner ID card ready for retrieval.", FREQ_SECURITY, get_spans(), get_default_language())
 						to_chat(usr, "<span class='notice'>Shuttle received message and will be sent shortly.</span>")
 
 /obj/machinery/mineral/labor_claim_console/proc/check_auth()
-	if(emagged)
+	if(obj_flags & EMAGGED)
 		return 1 //Shuttle is emagged, let any ol' person through
 	return (istype(inserted_id) && inserted_id.points >= inserted_id.goal) //Otherwise, only let them out if the prisoner's reached his quota.
 
@@ -121,8 +121,8 @@
 		qdel(src)
 
 /obj/machinery/mineral/labor_claim_console/emag_act(mob/user)
-	if(!emagged)
-		emagged = TRUE
+	if(!(obj_flags & EMAGGED))
+		obj_flags |= EMAGGED
 		to_chat(user, "<span class='warning'>PZZTTPFFFT</span>")
 
 

@@ -75,8 +75,3 @@
 #error Your version of BYOND is too out-of-date to compile this project. Go to byond.com/download and update.
 #error You need version 513.1493 or higher
 #endif
-
-//Update this whenever the db schema changes
-//make sure you add an update to the schema_version stable in the db changelog
-#define DB_MAJOR_VERSION 4
-#define DB_MINOR_VERSION 0

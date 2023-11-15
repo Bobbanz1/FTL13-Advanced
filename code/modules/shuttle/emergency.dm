@@ -36,7 +36,7 @@
 		var/name = ID.registered_name
 		var/job = ID.assignment
 
-		if(emagged)
+		if(obj_flags & EMAGGED)
 			name = Gibberish(name, 0)
 			job = Gibberish(job, 0)
 		A += list(list("name" = name, "job" = job))
@@ -119,7 +119,7 @@
 
 	if(SSshuttle.emergency.mode == SHUTTLE_STRANDED)
 		authorized.Cut()
-		emagged = FALSE
+		obj_flags &= ~EMAGGED
 
 	if(ENGINES_STARTED || (!IS_DOCKED))
 		return .
@@ -149,7 +149,7 @@
 	has emagged the emergency shuttle [time] seconds before launch.", 0, 1)
 	log_game("[key_name(user)] has emagged the emergency shuttle in \
 		[COORD(src)] [time] seconds before launch.")
-	emagged = TRUE
+	obj_flags |= EMAGGED
 	var/datum/species/S = new
 	for(var/i in 1 to 10)
 		// the shuttle system doesn't know who these people are, but they
@@ -499,9 +499,9 @@
 	return
 
 /obj/machinery/computer/shuttle/pod/emag_act(mob/user)
-	if(emagged)
+	if(obj_flags & EMAGGED)
 		return
-	emagged = TRUE
+	obj_flags |= EMAGGED
 	to_chat(user, "<span class='warning'>You fry the pod's alert level checking system.</span>")
 
 /obj/docking_port/stationary/random

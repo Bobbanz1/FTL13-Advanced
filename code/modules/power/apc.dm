@@ -446,7 +446,7 @@
 					to_chat(user, "<span class='warning'>There is nothing to secure!</span>")
 					return
 				update_icon()
-		else if(emagged)
+		else if(obj_flags & EMAGGED)
 			to_chat(user, "<span class='warning'>The interface is broken!</span>")
 		else if((stat & MAINT) && !opened)
 			..() //its an empty closed frame... theres no wires to expose!
@@ -456,7 +456,7 @@
 			update_icon()
 
 	else if (W.GetID())			// trying to unlock the interface with an ID card
-		if(emagged)
+		if(obj_flags & EMAGGED)
 			to_chat(user, "<span class='warning'>The interface is broken!</span>")
 		else if(opened)
 			to_chat(user, "<span class='warning'>You must close the cover to swipe an ID card!</span>")
@@ -614,7 +614,7 @@
 		else
 			flick("apc-spark", src)
 			playsound(src, "sparks", 75, 1)
-			emagged = TRUE
+			obj_flags |= EMAGGED
 			locked = FALSE
 			to_chat(user, "<span class='notice'>You emag the APC interface.</span>")
 			update_icon()

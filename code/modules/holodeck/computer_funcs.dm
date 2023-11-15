@@ -25,7 +25,7 @@
 
 	if(emag_programs.len)
 		dat += "<br>"
-		if(emagged)
+		if(obj_flags & EMAGGED)
 			dat += "Safety protocol: <span class='bad'>Offline</span> <a href='?[REF(src)];safety=1'>Engage</a><br>"
 			for(var/area/A in emag_programs)
 				dat += "<a href='?src=[REF(src)];loadarea=[A.type]'>[A.name]</a><br>"
